@@ -1,0 +1,100 @@
+@import 'webfonts/odudo-bold.css';
+
+body {
+	background-color: #BDFFE2;
+	font-family: -apple-system, Helvetica, Arial, sans-serif;
+}
+
+section {
+	position: absolute;
+	left:0;
+	right:0;
+	width:64%;
+	margin: 100px auto 100px;
+	background: #fff;
+	border: 30px solid #000;
+	padding: 200px 8% 100px;
+}
+
+@media only screen and (min-width: 1000px) {
+	section:before {
+		content: ' ';
+		display: block;
+		position: absolute;
+		left: -60px;
+		top: 0;
+		right: 0;
+		bottom: -60px;
+		z-index: -1;
+		opacity: 0.2;
+		background-image:url('img/checkers.png');
+	}
+}
+
+h1 {
+	text-transform: uppercase;
+	font-family: 'Odudo-Bold', Helvetica, Arial, Sans-Serif;
+	-moz-font-feature-settings:'aalt=0,ccmp=0,dlig=0,frac=0,sups=0';
+	font-size: 92px;
+	letter-spacing: 50px;
+	margin: 80px 0 40px 20%;
+	text-align: left;
+	line-height: 1.5em;
+}
+@media only screen and (min-width: 1400px) {
+	h1 {
+		font-size:130px;
+		margin:40px 0 0 25%;
+	}
+}
+
+p {
+	text-align: center;
+	font-size: 32px;
+	line-height: 1.5em;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.fold {
+	position: absolute;
+    bottom: 25px;
+    right: 0;
+    left: -215px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 200px 0 0 160px;
+    border-color: transparent transparent transparent #75F7BF;
+    line-height: 0px;
+    _border-color: #000000 #000000 #000000 #75F7BF;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+    transform: rotate(360deg);
+}
+.fold-border {
+    position: absolute;
+    bottom: 0;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 300px 0 0 240px;
+    border-color: #BDFFE2 #BDFFE2 #BDFFE2 #000;
+    line-height: 0px;
+    _border-color: #000000 #000000 #000000 #000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+    transform: rotate(360deg);
+}
+.fold-wrapper {
+	position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 280px;
+    overflow: hidden;
+    height: 260px;
+
+}

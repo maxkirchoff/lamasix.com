@@ -1,0 +1,27 @@
+/*
+Font: 		Odudo
+Style: 		Bold
+URL: 		https://www.youworkforthem.com/font/T6016/odudo
+Foundry: 	Thom Niessink
+Foundry: 	https://www.youworkforthem.com/designer/521/thom-niessink
+Copyright:	Copyright (c) 2015 by thmbnl. graphic design. All rights reserved
+Version: 	17
+Created:	September 18, 2015
+License: 	https://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'Odudo-Bold';
+	src: url('odudo-bold.eot');
+	src: url('odudo-bold.eot?#iefix') format('embedded-opentype'),
+             url('odudo-bold.woff2') format('woff2'),
+	     url('odudo-bold.woff') format('woff'),
+	     url('odudo-bold.ttf') format('truetype'),
+	     url('odudo-bold.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

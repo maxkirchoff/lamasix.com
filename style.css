@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Franklin:400,400italic,700,700italic,200,200italic);
+
+body {
+	margin:0;
+	padding:0;
+	border:0;
+	background-color:rgba(63, 81, 181, 1);
+	color:#fff;
+	font-family: 'Libre Franklin', sans-serif;
+}
+
+article {
+    width: 95%;
+    margin: 100px auto 0;
+    text-align: left;
+}
+
+h1 {
+	font-weight: 200;
+    font-size: 22px;
+    margin: 5px 0 0;
+}
+h1 span {
+    animation: fade 10s;
+    opacity: .5;
+}
+h1 strong {
+	font-weight: 800;
+}
+p {
+	font-weight: 200;
+	font-size:18px;
+	margin-top:30px;
+}
+p:not(.hand) {
+	animation: fade 10s;
+	opacity: .5;
+}
+p.hand {
+	font-size:80px;
+	margin: 0;
+}
+
+@keyframes fade {
+    from { opacity: 1; }
+    to   { opacity: .5; }
+}
