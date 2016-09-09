@@ -153,18 +153,18 @@ function createMadness(containerId, canvasId, particleAmount, speed) {
 	}
 
 	uaDetails = getUaDetails();
-	if (uaDetails.mobile == "i" || uaDetails.mobile === "a") {
+	if ((uaDetails.mobile == "i" || uaDetails.mobile === "a") && (window.innerHeight > window.innerWidth)) {
 		setTimeout(function(){
 			var lama = document.getElementById('lama');
 			lama.style.bottom = "-5%";
-		    lama.style.width = "100%";
-		   	lama.style.left = "0";
+		    lama.style.width = "70%";
+		   	lama.style.left = "15%";
 
 		   	var madnessContainer = document.getElementById(containerId);
-		   	madnessContainer.style.width = "450px";
-			madnessContainer.style.height = "250px";
-			madnessContainer.style.bottom = "35%";
-			madnessContainer.style.left = "420px";
+		   	madnessContainer.style.width = "300px";
+			madnessContainer.style.height = "180px";
+			madnessContainer.style.bottom = "410px";
+			madnessContainer.style.left = "490px";
 		},2500);
 	}
 
@@ -190,4 +190,9 @@ e.onmouseover = function() {
 }
 e.onmouseout = function() {
   document.getElementById('contact-email-popup').style.display = 'none';
+}
+
+window.onorientationchange = function()
+{
+   window.location.reload();
 }
