@@ -35,17 +35,33 @@
 	<link rel="stylesheet" type="text/css" href="app.css" />
 </head>
 <body>
-	<div class="section-wrapper">
-		<section>
-			<h1>Lama <br /> -Six</h1>
+	<header>
+		<h1>Lama<br class="mobile" />-Six <span>Studios</span></h1>
+		<a href="mailto:hi@lamasix.com" id="contact-email"><img src="img/email.png" /><div id="contact-email-popup">hi@lamasix.com</div></a>
+	</header>
+	<section>
+		<div class="copy mobile">
 			<p>
-				A creative, high tech studio based in Brooklyn. Designing up rad creative solutions for you. Hit us up, we'd love to work together.
+				A creative, digital studio based in booklyn. Designing up rad creative solutions for you. Hit us up,  <a href="mailto:hi@lamasix.com">hi@lamasix.com</a>
 			</p>
-			<p>
-				<a href="mailto:hi@lamasix.com">hi@lamasix.com</a>
-			</p>
-			<div class="fold-wrapper"><div class="fold-border"><div class="fold"></div></div></div>
-		</section>
-	</div>
+		</div>
+		<div class="copy desktop">
+			<div class="copy-inner">
+				<p>
+				A creative, digital studio based in booklyn. Designing up rad creative solutions for you. Hit us up, we’d love to work together.
+				</p>
+			</div>
+		</div>
+		<div id="lama">
+			<div id="madnessBrainContainer">
+				<canvas id="madnessBrain" width="100" height="100">Your browser does not support the Canvas element.</canvas>
+			</div>
+			<div id="madnessEyeContainer">
+				<canvas id="madnessEye" width="100" height="100">Your browser does not support the Canvas element.</canvas>
+			</div>
+		</div>
+		
+	</section>
+	<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
