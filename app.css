@@ -222,14 +222,14 @@ section .copy a {
 	    top: 30%;
 	    font-size: 12px;
 	    margin-left: 160px;
-	    width: 155px;
-	    height:155px;
+	    width: 135px;
+	    height: 155px;
 	    line-height: 20px;
 	    text-align: left;
 	    background-image: url('img/note.svg');
 	    background-repeat: no-repeat;
 	    background-size:100% auto;
-	    padding: 40px 50px;
+	    padding: 45px 50px 40px 60px;
 	}
 
 	section .copy.desktop p {
