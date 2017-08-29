@@ -65,13 +65,13 @@ section .copy a {
 }
 
 /* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
+@media only screen
+  and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
-  	body {
+  	body#home {
 		position: fixed;
 		overflow:hidden;
 		top:0;
@@ -93,15 +93,15 @@ section .copy a {
 	    height:100%;
 	    width:140%;
 		-webkit-transition: all 1000ms cubic-bezier(0.680, 0, 0.205, 1); /* older webkit */
-		-webkit-transition: all 1000ms cubic-bezier(0.680, -0.550, 0.205, 1.250); 
-		   -moz-transition: all 1000ms cubic-bezier(0.680, -0.550, 0.205, 1.250); 
-		     -o-transition: all 1000ms cubic-bezier(0.680, -0.550, 0.205, 1.250); 
+		-webkit-transition: all 1000ms cubic-bezier(0.680, -0.550, 0.205, 1.250);
+		   -moz-transition: all 1000ms cubic-bezier(0.680, -0.550, 0.205, 1.250);
+		     -o-transition: all 1000ms cubic-bezier(0.680, -0.550, 0.205, 1.250);
 		        transition: all 1000ms cubic-bezier(0.680, -0.550, 0.205, 1.250); /* custom */
 
 		-webkit-transition-timing-function: cubic-bezier(0.680, 0, 0.205, 1); /* older webkit */
-		-webkit-transition-timing-function: cubic-bezier(0.680, -0.550, 0.205, 1.250); 
-		   -moz-transition-timing-function: cubic-bezier(0.680, -0.550, 0.205, 1.250); 
-		     -o-transition-timing-function: cubic-bezier(0.680, -0.550, 0.205, 1.250); 
+		-webkit-transition-timing-function: cubic-bezier(0.680, -0.550, 0.205, 1.250);
+		   -moz-transition-timing-function: cubic-bezier(0.680, -0.550, 0.205, 1.250);
+		     -o-transition-timing-function: cubic-bezier(0.680, -0.550, 0.205, 1.250);
 		        transition-timing-function: cubic-bezier(0.680, -0.550, 0.205, 1.250); /* custom */
 	}
 
@@ -129,15 +129,15 @@ section .copy a {
 	    -moz-border-bottom-right-radius: 10px;
 	  	border-bottom-right-radius: 10px;
 		-webkit-transition: all 800ms cubic-bezier(0.680, 0, 0.205, 1); /* older webkit */
-		-webkit-transition: all 800ms cubic-bezier(0.680, -0.550, 0.205, 1.250); 
-		   -moz-transition: all 800ms cubic-bezier(0.680, -0.550, 0.205, 1.250); 
-		     -o-transition: all 800ms cubic-bezier(0.680, -0.550, 0.205, 1.250); 
+		-webkit-transition: all 800ms cubic-bezier(0.680, -0.550, 0.205, 1.250);
+		   -moz-transition: all 800ms cubic-bezier(0.680, -0.550, 0.205, 1.250);
+		     -o-transition: all 800ms cubic-bezier(0.680, -0.550, 0.205, 1.250);
 		        transition: all 800ms cubic-bezier(0.680, -0.550, 0.205, 1.250); /* custom */
 
 		-webkit-transition-timing-function: cubic-bezier(0.680, 0, 0.205, 1); /* older webkit */
-		-webkit-transition-timing-function: cubic-bezier(0.680, -0.550, 0.205, 1.250); 
-		   -moz-transition-timing-function: cubic-bezier(0.680, -0.550, 0.205, 1.250); 
-		     -o-transition-timing-function: cubic-bezier(0.680, -0.550, 0.205, 1.250); 
+		-webkit-transition-timing-function: cubic-bezier(0.680, -0.550, 0.205, 1.250);
+		   -moz-transition-timing-function: cubic-bezier(0.680, -0.550, 0.205, 1.250);
+		     -o-transition-timing-function: cubic-bezier(0.680, -0.550, 0.205, 1.250);
 		        transition-timing-function: cubic-bezier(0.680, -0.550, 0.205, 1.250); /* custom */
 	}
 }
@@ -146,9 +146,6 @@ section .copy a {
 @media only screen and (min-width: 1000px) {
 	.mobile {
 		display: none !important;
-	}
-
-	body {
 	}
 
 	header {
@@ -207,7 +204,7 @@ section .copy a {
 		box-shadow: 10px 10px 0px -4px rgba(0,0,0,0.12);
 	}
 
-	section {
+	body#home section {
 		position:fixed;
 		top:40px;
 		bottom:0;
@@ -289,4 +286,107 @@ section .copy a {
 	  	border-bottom-right-radius: 300px;
 		border: transparent 2px;
 	}
-}	
+}
+
+/* Sign-Up Page */
+#sign-up img {
+	width: 300px;
+	height: auto;
+}
+
+#sign-up .copy p {
+	font-size: 32px;
+	line-height: 50px;
+	text-align: left;
+	width: 600px;
+	margin: 0 auto;
+}
+
+#mc_embed_signup label {
+	display: none;
+}
+
+#mc_embed_signup input.button {
+	text-transform: uppercase;
+	border: 2px solid #000;
+	background: #fff;
+	font-size: 36px;
+	font-weight: bold;
+	padding: 20px 0;
+	width: 600px;
+	margin-bottom: 100px;
+	letter-spacing: 2px;
+}
+
+#mc_embed_signup .email {
+	width: 600px;
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid #000;
+	margin: 75px 0 50px;
+	color: #000;
+	text-align: left;
+	font-size: 32px;
+}
+
+#mc_embed_signup input[type=text], #mc_embed_signup input[type=email] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+		outline: none;
+		border-radius: 0;
+}
+
+@media only screen and (min-width: 1000px) {
+	#sign-up .header {
+		width: 1000px;
+		margin: 0 auto;
+	}
+
+	#sign-up img {
+		margin: 0 auto;
+	}
+
+	#sign-up .copy p {
+		clear: both;
+	}
+
+	#mc_embed_signup {
+		width: 600px;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	#mc_embed_signup .mc-field-group {
+    width: 300px;
+    display: inline-block;
+	}
+
+	#mc_embed_signup .mc-field-group input {
+		font-size: 18px;
+		width: 300px;
+		line-height: 32px;
+	}
+
+	#mc_embed_signup #mce-responses {
+		display: inline-block;
+	}
+
+	#mc_embed_signup .submit {
+		width: 270px;
+		display: inline-block;
+	}
+
+	#mc_embed_signup .submit input {
+		width: 270px;
+		font-size: 14px;
+		padding: 0;
+		line-height: 36px;
+		margin-bottom: 20px;
+	}
+
+	#sign-up .copy p {
+		font-size: 18px;
+    line-height: 26px;
+	}
+}
