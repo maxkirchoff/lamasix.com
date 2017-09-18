@@ -175,8 +175,9 @@ and (min-device-width : 800px) {
 
   .hello {
     width: 300px;
-    bottom: 50vh;
-    left: 20vw;
+    top: 60vh;
+    left: 15vw;
+    font-size:18px;
   }
 }
 </style>

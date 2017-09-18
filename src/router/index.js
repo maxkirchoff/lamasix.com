@@ -24,7 +24,7 @@ export default new Router({
       component: Work
     },
     {
-      path: '/work/:client',
+      path: '/work/:work_key',
       component: Work
     }
   ]

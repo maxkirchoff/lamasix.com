@@ -147,6 +147,10 @@ h3 {
   text-align: right;
 }
 
+#press {
+  margin: 200px 0;
+}
+
 #press ul {
   margin-top:40px;
   padding: 0;
@@ -157,6 +161,10 @@ h3 {
   border-top: solid 3px #000;
   padding: 20px 0;
 }
+#press ul li:last-of-type {
+  border-bottom: 3px solid #000;
+}
+
 #press a {
   text-decoration: none;
   color: #000;
@@ -174,4 +182,60 @@ h3 {
   content: "\2014\a0";
   margin: 0 5px 0 20px;
 }
+
+/* Desktop Only stuff! */
+@media only screen
+and (min-device-width : 800px) {
+  h1 {
+    max-width: 1200px;
+    width: 80%;
+    font-size: 100px;
+    margin: 0;
+  }
+
+  #what-we-do p {
+    width: 65%;
+    max-width: 1000px;
+    font-size:20px;
+    margin: 20px 0;
+  }
+
+  #services {
+    margin: 140px 0;
+  }
+
+  #services div#describe, #services div#design, #services div#build {
+    display: inline-block;
+    margin: 0;
+    width: auto;
+  }
+
+  #services div#describe, #services div#design {
+    margin-right: 10vw;
+  }
+
+  #services ul {
+    width: 20vw;
+    border-top: 2px solid #000;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  #services h3, #services ul li {
+    font-size: 20px;
+  }
+
+  #press {
+    width: 30vw;
+  }
+
+  #press ul li {
+    border-top: 2px solid #000;
+  }
+  #press ul li:last-of-type {
+    border-bottom: 2px solid #000;
+  }
+}
+
 </style>

@@ -2,7 +2,30 @@
   <div id="app">
     <header>
       <router-link to="/">
-        <img class="logo" src="./assets/lama-six-logo.svg">
+        <svg v-bind:class="{ black: menuButtonActive }" class="logo" width="510px" height="380px" viewBox="0 0 51 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+            <desc>Created with Sketch.</desc>
+            <defs>
+                <polygon id="path-1" points="0.0125700084 0.256428571 33.7865361 0.256428571 33.7865361 24.6783172 0.0125700084 24.6783172 0.0125700084 0.256428571"></polygon>
+            </defs>
+            <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Homepage" transform="translate(-42.000000, -31.000000)">
+                    <g id="Logo" transform="translate(42.000000, 31.000000)">
+                        <g id="Page-1">
+                            <polygon id="Fill-1" fill="#000000" points="0 4 0 38 19 38 19 30.4785303 7.50739184 30.4785303 7.50739184 4"></polygon>
+                            <g id="Group-4" transform="translate(17.000000, 0.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Clip-3"></g>
+                                <path d="M12.503132,17.1739286 C14.9945959,16.8957143 16.9455649,14.5764286 16.662699,11.9457143 C16.3847402,9.36107143 13.9872144,7.52678571 11.4957505,7.80464286 C8.9590701,8.08785714 7.09888454,10.3975 7.3768433,12.9821429 C7.65970928,15.6128571 9.96645155,17.4571429 12.503132,17.1739286 M13.3023072,24.605 C6.73399794,25.3382143 0.803276289,20.4885714 0.0836680412,13.7964286 C-0.63103299,7.15 4.12370928,1.06107143 10.691668,0.327857143 C12.6394825,0.110357143 14.6871938,0.395357143 16.3672144,1.09571429 L33.7867814,9.19357143 L30.8119567,16.0646429 L23.9982866,12.8082143 C23.8633381,18.8017857 19.326967,23.9325 13.3023072,24.605" id="Fill-2" fill="#000000" mask="url(#mask-2)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+
       </router-link>
       <a class="menu-button"
         v-bind:class="{ active: menuButtonActive }"
@@ -66,6 +89,10 @@ body {
   padding: 0;
 }
 
+a {
+  color: #000;
+}
+
 #app {
   font-family: "europa", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -107,11 +134,10 @@ header .menu-button div {
   box-shadow: -40px 0, -40px 40px, 40px 0, 40px -40px, 0 -40px, -40px -40px, 0 40px, 40px 40px;
   transform: none;
   transition: 0.5s;
-  border-radius: 0.125rem;
 }
 
 header .menu-button.active .icon.diagonal {
-  width: 28px;
+  width: 29px;
   box-shadow: -48px 0, -28px 0, 48px 0, 28px 0, 0 -48px, 0 -28px, 0 48px, 0 28px;
   border-radius: 0;
 }
@@ -141,9 +167,10 @@ header #contact-info {
   position: absolute;
   right: 30px;
   bottom: 15px;
+  display: none;
 }
 
-header nav:not(.active), header #contact-info {
+header nav:not(.active) {
   right: 0;
   left: 100vw;
   bottom:0;
@@ -161,7 +188,6 @@ header ul li {
 
 header ul li a {
   text-decoration: none;
-  color: #000;
   font-weight: bold;
   margin: 0 10px;
   font-size: 40pt;
@@ -193,12 +219,13 @@ and (min-device-width : 800px) {
     display: none;
   }
 
-  header nav {
+  header nav, header nav:not(.active) {
     position: absolute;
     left: 120px;
     bottom: 15px;
     top:auto;
     right:auto;
+    background: transparent;
   }
 
   header nav, header #contact-info {
