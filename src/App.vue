@@ -3,8 +3,6 @@
     <header>
       <router-link to="/">
         <svg v-bind:class="{ black: menuButtonActive }" class="logo" width="510px" height="380px" viewBox="0 0 51 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
-            <desc>Created with Sketch.</desc>
             <defs>
                 <polygon id="path-1" points="0.0125700084 0.256428571 33.7865361 0.256428571 33.7865361 24.6783172 0.0125700084 24.6783172 0.0125700084 0.256428571"></polygon>
             </defs>
@@ -27,19 +25,22 @@
         </svg>
 
       </router-link>
-      <a class="menu-button"
+      <button class="menu-button"
         v-bind:class="{ active: menuButtonActive }"
         v-on:click="menuButtonActive = !menuButtonActive">
-        <div class="icon diagonal x"></div>
-      </a>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav v-bind:class="{ active: menuButtonActive}">
         <ul>
-          <li><router-link to="/" class='sm-only' v-on:click="closeMenu">Home</router-link></li>
-          <li><router-link to="/about" v-on:click="closeMenu">About</router-link></li>
-          <li><router-link to="/work" v-on:click="closeMenu">Work</router-link></li>
-          <li><router-link to="/contact" class='sm-only' v-on:click="closeMenu">Contact</router-link></li>
+          <li><router-link to="/" class='sm-only' v-on:click.native="closeMenu">Home</router-link></li>
+          <li><router-link to="/work" v-on:click.native="closeMenu">Work</router-link></li>
+          <li><router-link to="/about" v-on:click.native="closeMenu">About</router-link></li>
+          <li><a href="mailto:hi@lamasix.com" class='sm-only' v-on:click.native="closeMenu">Contact</a></li>
         </ul>
       </nav>
+
       <div id="contact-info" alt="Contact Information" class='sm-hidden'>
         <ul>
           <li><a href="mailto:hi@lamasix.com">hi@lamasix.com</a></li>
@@ -74,7 +75,6 @@ export default {
   },
   methods: {
     closeMenu: function () {
-      console.log('what?')
       if (this.menuButtonActive) {
         this.menuButtonActive = false
       }
@@ -83,10 +83,15 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "scss/variables";
+
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: $regular-sans-serif;
 }
 
 a {
@@ -94,9 +99,9 @@ a {
 }
 
 #app {
-  font-family: "europa", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hiiden;
 }
 
 header {
@@ -104,146 +109,232 @@ header {
   width: 100%;
   text-align: left;
   position: relative;
-  margin-bottom:100px;
-}
+  margin-bottom:40px;
 
-header .logo {
-  z-index:99;
-  width: 130px;
-  height: auto;
-  margin: 40px 0 0 50px;
-  position: relative;
-}
+  .logo {
+    z-index:9;
+    width: 40px;
+    height: auto;
+    margin: 30px 0 0 30px;
+    position: relative;
 
-header .menu-button {
-  z-index: 99;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  color: #000;
-  padding: 48px;
-  cursor: pointer;
-  transition: 0.5s;
-}
+    @media (min-width: $md-width-min) {
+      margin: 40px 0 0 40px;
+    }
+  }
 
-header .menu-button div {
-  width: 44px;
-  height: 24px;
-  background: #000;
-  color: #000;
-  box-shadow: -40px 0, -40px 40px, 40px 0, 40px -40px, 0 -40px, -40px -40px, 0 40px, 40px 40px;
-  transform: none;
-  transition: 0.5s;
-}
+  .menu-button {
+    position: absolute;
+    z-index:999;
+    top: 0;
+    right: 0;
+    margin: 30px 25px 0 0;
+    outline: none;
+    background: transparent;
+    border: none;
 
-header .menu-button.active .icon.diagonal {
-  width: 29px;
-  box-shadow: -48px 0, -28px 0, 48px 0, 28px 0, 0 -48px, 0 -28px, 0 48px, 0 28px;
-  border-radius: 0;
-}
+    @media (min-width: $sm-width-min) {
+      display: none;
+    }
 
-header .menu-button.active .x {
-  transform: rotate(45deg);
-}
+    span {
+      display: block;
+      width: 23px;
+      height: 2px;
+      margin-bottom: 5px;
+      position: relative;
+      background: #000;
 
-header .menu-button.active .collapse {
-  box-shadow: -1rem 0, 0 0 transparent, 1rem 0, 0 0 transparent, 0 -1rem, 0 0 transparent, 0 1rem, 0 0 transparent;
-  border-radius: 0;
-}
+      transform-origin: 4px 0px;
 
-header nav {
-  text-transform: uppercase;
-  position: fixed;
-  z-index: 9;
-  background-color: #8DFFBD;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  transition: all 200ms ease-in;
-}
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
 
-header #contact-info {
-  position: absolute;
-  right: 30px;
-  bottom: 15px;
-  display: none;
-}
+      &:first-of-type {
+        transform-origin: 0% 0%;
+      }
+      &:nth-of-type(3) {
+        transform-origin: 0% 100%;
+      }
+    }
 
-header nav:not(.active) {
-  right: 0;
-  left: 100vw;
-  bottom:0;
-  top:0;
-}
+    &.active span {
+      &:first-of-type {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+      }
 
-header ul {
-  list-style: none;
-  margin-top: 200px;
-}
+      &:nth-of-type(2) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+      }
+      &:nth-of-type(3) {
+        transform: rotate(-45deg) translate(0, -1px);
+      }
+    }
 
-header ul li {
-  margin: 30px 0;
-}
+  }
 
-header ul li a {
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 10px;
-  font-size: 40pt;
-}
+  ul {
+    list-style: none;
+    margin-top: 140px;
 
-header > * {
-  display: inline;
+    @media (min-width: $sm-width-min) {
+      display: inline;
+    }
+
+    li {
+      margin: 30px 0;
+
+      @media (min-width: $sm-width-min) {
+        display: inline-block;
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0;
+        font-size: 20px;
+
+        @media (min-width: $sm-width-min) {
+          margin: 0 10px;
+          font-size: 12px;
+
+          &.router-link-active {
+            border-bottom: 2px solid #000;
+          }
+        }
+      }
+    }
+  }
+
+  nav {
+    text-transform: uppercase;
+    position: fixed;
+    z-index: 9;
+    background-color: #8DFFBD;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    transition: all 200ms ease-in;
+
+    &:not(.active) {
+      right: 0;
+      left: 100%;
+      bottom:0;
+      top:0;
+    }
+
+    @media (min-width: $sm-width-min) {
+      display: block;
+
+      &, &:not(.active) {
+        position: absolute;
+        left:60px;
+        top:40px;
+        bottom:auto;
+        right:auto;
+        background: transparent;
+
+        @media (min-width: $md-width-min) {
+          top: 50px;
+        }
+      }
+    }
+  }
+
+  #contact-info {
+    position: absolute;
+    right: 35px;
+    top: 40px;
+    display: none;
+
+    @media (min-width: $sm-width-min) {
+      display: block;
+    }
+
+    @media (min-width: $md-width-min) {
+      top: 50px;
+      right: 40px;
+    }
+  }
 }
 
 section {
-  margin: 0 60px;
+  margin: 0;
+  overflow-x: hidden;
+
+  @media (min-width: $sm-width-min) {
+    margin: 0 60px;
+  }
+}
+
+.sm-only {
+  @media (min-width: $sm-width-min) {
+    display: none;
+  }
 }
 
 .sm-hidden {
-    display: none;
-}
-
-/* Desktop Only stuff! */
-@media only screen
-and (min-device-width : 800px) {
-  .sm-hidden {
+  display: none;
+  @media (min-width: $sm-width-min) {
     display: inherit;
   }
-  .sm-only {
-    display: none !important;
-  }
+}
 
-  header .menu-button {
-    display: none;
-  }
+a.cta-button {
+  text-decoration: none;
+  font-size:12px;
+  font-weight: 300;
+  border: 2px solid #000;
+  padding: 15px 30px;
+  display: inline-block;
+}
+.bg-wrapper {
+  transform: rotate(90deg);
+  min-height:20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1000px;
+  z-index: -1;
+  overflow:hidden;
 
-  header nav, header nav:not(.active) {
-    position: absolute;
-    left: 120px;
-    bottom: 15px;
-    top:auto;
-    right:auto;
-    background: transparent;
+  @media (min-width: $sm-width-min)  {
+    right:100px;
+    overflow-x:visible;
   }
+  #bg {
+    position:absolute;
+    top:0;
+    text-align: left;
+    font-size: 140px;
+    font-family: $bold-serif;
+    font-weight: bold;
+    color: #8DFFBD;
+    line-height: .8em;
+    position: relative;
+    height: 1000px;
+    opacity: 0.4;
 
-  header nav, header #contact-info {
-    display: block;
+    @media (min-width: $sm-width-min) {
+      font-size: 180px;
+    }
+
+    @media (min-width: $md-width-min) {
+      line-height: 1em;
+    }
+
+    .extra {
+      display: none;
+
+      @media (min-width: $sm-width-min) {
+        display: inline;
+      }
+    }
   }
-
-  header .logo {
-    width: 65px;
-  }
-
-  header ul, header ul li {
-    display: inline;
-  }
-
-  header ul li a {
-    margin: 0 10px;
-    font-size: 10pt;
-  }
-
 }
 </style>

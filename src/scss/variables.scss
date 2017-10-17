@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'apercu-regular';
+    src: url('/assets/fonts/apercu-regular.eot');
+    src: url('/assets/fonts/apercu-regular.eot') format('embedded-opentype'),
+         url('/assets/fonts/apercu-regular.woff2') format('woff2'),
+         url('/assets/fonts/apercu-regular.woff') format('woff'),
+         url('/assets/fonts/apercu-regular.ttf') format('truetype'),
+         url('/assets/fonts/apercu-regular.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'apercu-bold';
+    src: url('/assets/fonts/apercu-bold.eot');
+    src: url('/assets/fonts/apercu-bold.eot') format('embedded-opentype'),
+         url('/assets/fonts/apercu-bold.woff2') format('woff2'),
+         url('/assets/fonts/apercu-bold.woff') format('woff'),
+         url('/assets/fonts/apercu-bold.ttf') format('truetype'),
+         url('/assets/fonts/apercu-bold.svg') format('svg');
+}
+
+$bold-sans-serif: "apercu-bold", sans-serif;
+$regular-sans-serif: "apercu-regular", sans-serif;
+
+$bold-serif: "schoolbook", Georgia, Times, "Times New Roman", serif;
+
+$sm-width-min: 700px;
+$md-width-min: 1200px;
+$lg-width-min: 1500px;
+$xl-width-min: 2000px;
+
+$l6-green: #8DFFBD;

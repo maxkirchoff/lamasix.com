@@ -1,9 +1,15 @@
 <template>
   <section>
+    <div class="bg-wrapper">
+      <div id="bg">
+        Describe Design Build
+      </div>
+    </div>
     <div id="what-we-do">
       <h2>What we do</h2>
       <h1>Brand, Product, and  Digital Experience</h1>
       <p>We specialize in Brand, Product and Digital Experience. LAMA SIX is a creative & innovation studio that was formed by ISLA MURRAY and MAXIMILLIAN KIRCHOFF.</p>
+      <a href="mailto:hi@lamasix.com" class="cta-button">Tell us about your project.</a>
     </div>
     <div id="services">
       <div id="describe">
@@ -92,150 +98,223 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang='scss'>
+@import "../scss/variables";
 
 h2 {
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 40px 0 15px;
 }
 
-h1 {
-  font-size: 120px;
-  margin: 0;
+#what-we-do {
+  margin: 20px 30px 140px;
+
+  @media (min-width: $sm-width-min) {
+    margin-top: 80px;
+    margin-bottom: 160px;
+  }
+
+  @media (min-width: $md-width-min) {
+    width: 800px;
+    margin: 80px auto 200px;
+  }
+
+  @media (min-width: $xl-width-min) {
+    margin: 80px 0 200px 200px;
+    position: absolute;
+    right: 50%;
+  }
+
+  h1 {
+    font-family: $bold-serif;
+    font-size: 60px;
+    margin: 0 0 0 -5px;
+    line-height: 1em;
+
+    @media (min-width: $sm-width-min) {
+
+    }
+  }
+
+  @media (min-width: $sm-width-min) {
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+
+  p {
+    margin: 40px 0;
+    line-height: 1.4em;
+
+    @media (min-width: $sm-width-min) {
+      margin-top: 20px;
+    }
+  }
+
+  a.cta-button {
+    margin-top: 20px;
+    @media (min-width: $sm-width-min) {
+      margin-top: 40px;
+    }
+  }
 }
 
-h3 {
-  font-size: 36px;
-  font-weight: normal;
-  margin: 0;
-}
+#services {
 
-#what-we-do p {
-  margin: 100px 0;
-}
+  @media (min-width: $md-width-min) {
+    width: 800px;
+    margin: 0 auto;
+  }
 
-#services div {
-  width: 60vw;
-  margin: 180px 0;
-}
+  @media (min-width: $xl-width-min) {
+    width: 800px;
+    position: absolute;
+    margin: 0;
+    left: 50%;
+  }
 
-#services #design {
-  margin-right: -20px;
-  margin-left: auto;
-}
+  > div {
+    width: 60vw;
+    margin: 90px 0 0 30px;
 
-#services ul {
-  border-top: 3px solid #000;
-  list-style: none;
-  font-size: 36px;
-  padding-top:20px;
-  margin-top:25px;
-  display: table;
-  width: 100%;
-}
+    &#design {
+      margin-right: 30px;
+      margin-left: auto;
+    }
 
-#services ul > li {
-  display: table-row;
-  line-height: 1.5em;
-}
+    @media (min-width: $sm-width-min) {
+      width: 50%;
+      margin: 0 0 0 30px;
+      max-width: 400px;
 
-#services ul > li:before {
-  content: "\2014\a0";
-  margin: 0 10px;
-  display: table-cell; /* aha! */
-  text-align: right;
+      &#build {
+          margin: 80px 0 0 90px;
+      }
+    }
+
+    @media (min-width: $md-width-min) {
+      &#describe {
+        margin-left: -100px;
+      }
+
+      &#design {
+        margin-top: -50px;
+        margin-right: -100px;
+      }
+
+      &#build {
+          margin: 120px 0 0 90px;
+      }
+    }
+
+    @media (min-width: $xl-width-min) {
+      &#describe {
+        margin-left: 100px;
+      }
+
+      &#design {
+        margin-top: -50px;
+        margin-right: -100px;
+      }
+
+      &#build {
+          margin: 120px 0 0 180px;
+      }
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    ul {
+      border-top: 2px solid #000;
+      list-style: none;
+      font-size: 16px;
+      padding-top:20px;
+      margin-top:10px;
+      display: table;
+      width: 100%;
+      padding-left:0;
+
+
+      > li {
+        display: table-row;
+        line-height: 1.5em;
+
+        &:before {
+          content: "\2014\a0";
+          width: 20px;
+          margin: 0 10px 0 10px;
+          text-align: left;
+          display: table-cell;
+        }
+      }
+    }
+  }
+}
+#who-we-are {
+  margin: 140px 30px 0;
+
+  @media (min-width: $md-width-min) {
+    width: 800px;
+    margin: 180px auto 0;
+  }
+
+  @media (min-width: $xl-width-min) {
+    width: 550px;
+    margin-top: 900px;
+    position: absolute;
+    left: 60%;
+  }
+
+  p {
+    line-height: 1.4em;
+
+  }
 }
 
 #press {
-  margin: 200px 0;
-}
+  margin: 140px 30px 0;
 
-#press ul {
-  margin-top:40px;
-  padding: 0;
-  list-style-type: none;
-}
-
-#press ul li {
-  border-top: solid 3px #000;
-  padding: 20px 0;
-}
-#press ul li:last-of-type {
-  border-bottom: 3px solid #000;
-}
-
-#press a {
-  text-decoration: none;
-  color: #000;
-}
-
-#press a:hover {
-  text-decoration: underline;
-}
-
-#press a .source {
-  text-transform: uppercase;
-}
-
-#press a .source:after {
-  content: "\2014\a0";
-  margin: 0 5px 0 20px;
-}
-
-/* Desktop Only stuff! */
-@media only screen
-and (min-device-width : 800px) {
-  h1 {
-    max-width: 1200px;
-    width: 80%;
-    font-size: 100px;
-    margin: 0;
+  @media (min-width: $md-width-min) {
+    width: 800px;
+    margin: 140px auto 0;
   }
 
-  #what-we-do p {
-    width: 65%;
-    max-width: 1000px;
-    font-size:20px;
-    margin: 20px 0;
+  @media (min-width: $xl-width-min) {
+    width: 600px;
+    margin-top: 700px;
+    position: absolute;
+    right: 65%;
   }
 
-  #services {
-    margin: 140px 0;
-  }
-
-  #services div#describe, #services div#design, #services div#build {
-    display: inline-block;
-    margin: 0;
-    width: auto;
-  }
-
-  #services div#describe, #services div#design {
-    margin-right: 10vw;
-  }
-
-  #services ul {
-    width: 20vw;
-    border-top: 2px solid #000;
+  ul {
+    padding: 0;
     list-style-type: none;
-    margin-left: 0;
-    padding-left: 0;
+
+    li {
+      border-top: solid 2px #000;
+      padding: 15px 0 20px;
+    }
   }
 
-  #services h3, #services ul li {
-    font-size: 20px;
-  }
+  a {
+    text-decoration: none;
+    color: #000;
 
-  #press {
-    width: 30vw;
-  }
+    &:hover {
+      text-decoration: underline;
+    }
 
-  #press ul li {
-    border-top: 2px solid #000;
-  }
-  #press ul li:last-of-type {
-    border-bottom: 2px solid #000;
+    .source {
+      text-transform: uppercase;
+      display: block;
+      margin: 5px 0;
+    }
   }
 }
-
 </style>

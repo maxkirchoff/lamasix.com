@@ -5,8 +5,7 @@
         <p>Hit us up <a href="mailto:hi@lamasix.com">hi@lamasix.com</a></p>
     </div>
     <div class="greeting-wrapper">
-      <div id="greeting">
-        {{ greeting }}
+      <div id="greeting" v-html="greeting">
       </div>
     </div>
   </section>
@@ -21,9 +20,17 @@ export default {
     }
   },
   mounted: function () {
-    this.dropInGreeting()
     let greeting = document.getElementById('greeting')
-    let greetingStr = greeting.innerText.split('')
+
+    let greetingStr
+
+    if (screen.width < 700) {
+      greetingStr = greeting.innerHTML.split('<')[0]
+      greetingStr = greetingStr.split('')
+    } else {
+      greetingStr = greeting.innerText.split('')
+    }
+
     for (let i = 0; i < greetingStr.length; i++) {
       greetingStr[i] = '<span>' + greetingStr[i] + '</span>'
     }
@@ -69,9 +76,6 @@ export default {
     }
   },
   methods: {
-    dropInGreeting: function () {
-      // $('#app').append(this.getGreeting())
-    },
     getGreeting: function () {
       const dateTime = new Date()
       const day = dateTime.getDay()
@@ -87,7 +91,7 @@ export default {
           return 'Good morning.'
 
         case (hour > 11 && hour <= 17):
-          return 'Good afternoon.'
+          return "Good afternoon. <span class='extra'>It's lovely to see you.</span>"
 
         case (hour > 17 && hour <= 23):
           return 'Good evening.'
@@ -115,37 +119,79 @@ export default {
 }
 </style>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
+@import "../scss/variables";
+
 .hello {
-  margin: 0 10vw;
-  width: 80vw;
+  margin: 0 0 0 30px;
+  width: 80%;
   position: absolute;
   bottom: 5vh;
-  font-size:46px;
+  font-size:18px;
+  line-height: 1.3;
+
+  @media (min-width: $sm-width-min)  {
+    width: 300px;
+    bottom: 100px;
+    left: 50px;
+    font-size:18px;
+  }
+
+  @media (min-width: $sm-width-min) {
+    left: 85px;
+    bottom: 125px;
+  }
+
+  a {
+    color: #000;
+  }
 }
 
 .greeting-wrapper {
   transform: rotate(90deg);
   min-height:20px;
   position: absolute;
-  right: 200px;
-  top: 50px;
+  right: 0;
+  top: 0;
   width: 800px;
   z-index: -1;
-}
+  overflow-x:hidden;
 
-#greeting {
+  @media (min-width: $sm-width-min)  {
+    right:100px;
+    overflow-x:visible;
+  }
+
+  #greeting {
+    position:absolute;
+    top:30px;
     text-align: left;
-    font-size: 240px;
-    font-family: "kepler-std",serif;
+    font-size: 140px;
+    font-family: $bold-serif;
     font-weight: bold;
     color: #8DFFBD;
     transition: all 5s linear;
     animation: 1s letterSpacingImplode;
-    line-height: 1;
-    letter-spacing: 10px;
+    line-height: .8em;
     position: relative;
     height: 800px;
+
+    @media (min-width: $sm-width-min) {
+      font-size: 180px;
+    }
+
+    @media (min-width: $md-width-min) {
+      line-height: 1em;
+    }
+
+    .extra {
+      display: none;
+
+      @media (min-width: $sm-width-min) {
+        display: inline;
+      }
+    }
+  }
 }
 
 h1, h2 {
@@ -164,20 +210,5 @@ li {
 
 a {
   color: #42b983;
-}
-
-/* Desktop Only stuff! */
-@media only screen
-and (min-device-width : 800px) {
-  #greeting {
-    font-size: 140px;
-  }
-
-  .hello {
-    width: 300px;
-    top: 60vh;
-    left: 15vw;
-    font-size:18px;
-  }
 }
 </style>
