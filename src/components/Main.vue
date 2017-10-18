@@ -175,6 +175,7 @@ export default {
     line-height: .8em;
     position: relative;
     height: 800px;
+    letter-spacing: -5px;
 
     @media (min-width: $sm-width-min) {
       font-size: 180px;

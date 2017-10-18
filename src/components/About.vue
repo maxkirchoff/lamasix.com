@@ -67,6 +67,11 @@ export default {
     return {
       pressLinks: [
         {
+          title: 'The Fight Against Sexist Stock Photography',
+          url: 'https://www.racked.com/2015/11/5/9648598/stock-photography-sexist-getty-images-shutterstock',
+          source: 'Racked'
+        },
+        {
           title: 'The Women Behind The New Bustle On Reinventing “Women’s Media”',
           url: 'https://www.fastcompany.com/3063755/exclusive-the-women-behind-the-new-bustle-on-reinventing-womens-media',
           source: 'Fast Company'
