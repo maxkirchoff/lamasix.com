@@ -166,7 +166,7 @@ export default {
     position:absolute;
     top:30px;
     text-align: left;
-    font-size: 140px;
+    font-size: 120px;
     font-family: $bold-serif;
     font-weight: bold;
     color: #8DFFBD;
@@ -175,7 +175,7 @@ export default {
     line-height: .8em;
     position: relative;
     height: 800px;
-    letter-spacing: -5px;
+    letter-spacing: 2px;
 
     @media (min-width: $sm-width-min) {
       font-size: 180px;

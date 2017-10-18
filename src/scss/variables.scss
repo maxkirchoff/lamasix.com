@@ -3,31 +3,31 @@
 
 @font-face {
   font-family: 'NewCenturySchlbkLTPro-Bd';
-  src: url('/assets/fonts/34E6E7_0_0.eot');
-  src: url('/assets/fonts/34E6E7_0_0.eot?#iefix') format('embedded-opentype'),
-       url('/assets/fonts/34E6E7_0_0.woff2') format('woff2'),
-       url('/assets/fonts/34E6E7_0_0.woff') format('woff'),
-       url('/assets/fonts/34E6E7_0_0.ttf') format('truetype');}
+  src: url('/static/fonts/34E6E7_0_0.eot');
+  src: url('/static/fonts/34E6E7_0_0.eot?#iefix') format('embedded-opentype'),
+       url('/static/fonts/34E6E7_0_0.woff2') format('woff2'),
+       url('/static/fonts/34E6E7_0_0.woff') format('woff'),
+       url('/static/fonts/34E6E7_0_0.ttf') format('truetype');}
 
 
 @font-face {
   font-family: 'apercu-regular';
-  src: url('/assets/fonts/apercu-regular.eot');
-  src: url('/assets/fonts/apercu-regular.eot') format('embedded-opentype'),
-       url('/assets/fonts/apercu-regular.woff2') format('woff2'),
-       url('/assets/fonts/apercu-regular.woff') format('woff'),
-       url('/assets/fonts/apercu-regular.ttf') format('truetype'),
-       url('/assets/fonts/apercu-regular.svg') format('svg');
+  src: url('/static/fonts/apercu-regular.eot');
+  src: url('/static/fonts/apercu-regular.eot') format('embedded-opentype'),
+       url('/static/fonts/apercu-regular.woff2') format('woff2'),
+       url('/static/fonts/apercu-regular.woff') format('woff'),
+       url('/static/fonts/apercu-regular.ttf') format('truetype'),
+       url('/static/fonts/apercu-regular.svg') format('svg');
 }
 
 @font-face {
   font-family: 'apercu-bold';
-  src: url('/assets/fonts/apercu-bold.eot');
-  src: url('/assets/fonts/apercu-bold.eot') format('embedded-opentype'),
-       url('/assets/fonts/apercu-bold.woff2') format('woff2'),
-       url('/assets/fonts/apercu-bold.woff') format('woff'),
-       url('/assets/fonts/apercu-bold.ttf') format('truetype'),
-       url('/assets/fonts/apercu-bold.svg') format('svg');
+  src: url('/static/fonts/apercu-bold.eot');
+  src: url('/static/fonts/apercu-bold.eot') format('embedded-opentype'),
+       url('/static/fonts/apercu-bold.woff2') format('woff2'),
+       url('/static/fonts/apercu-bold.woff') format('woff'),
+       url('/static/fonts/apercu-bold.ttf') format('truetype'),
+       url('/static/fonts/apercu-bold.svg') format('svg');
 }
 
 $bold-sans-serif: "apercu-bold", sans-serif;

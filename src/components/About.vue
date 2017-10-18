@@ -136,7 +136,8 @@ h2 {
     font-family: $bold-serif;
     font-size: 60px;
     margin: 0 0 0 -5px;
-    line-height: 1em;
+    line-height: 1.1em;
+    letter-spacing: 0.5px;
 
     @media (min-width: $sm-width-min) {
 
