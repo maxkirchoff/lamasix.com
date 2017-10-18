@@ -172,13 +172,13 @@ export default {
     color: #8DFFBD;
     transition: all 5s linear;
     animation: 1s letterSpacingImplode;
-    line-height: .8em;
+    line-height: 1em;
     position: relative;
     height: 800px;
     letter-spacing: 2px;
 
     @media (min-width: $sm-width-min) {
-      font-size: 180px;
+      font-size: 150px;
     }
 
     @media (min-width: $md-width-min) {

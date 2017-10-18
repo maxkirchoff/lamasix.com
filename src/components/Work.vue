@@ -1004,7 +1004,7 @@ body[data-theme="bustle"] {
           margin-left: 10%;
         }
 
-        @media (min-width: $md-width-min) {
+        @media (min-width: $sm-width-min) {
           &:first-of-type {
             width: 70%;
           }
