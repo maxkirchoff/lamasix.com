@@ -5,8 +5,12 @@
         <div class="hero" v-if="works[$route.params.work_key].hero">
           <div v-if="works[$route.params.work_key].hero.type === 'gifMovie'" id="gifMovie">
             <img v-bind:src="works[$route.params.work_key].hero.container" />
-            <img v-bind:src="works[$route.params.work_key].hero.gif" />
+
+            <img v-if="Array.isArray(works[$route.params.work_key].hero)" v-bind:src="works[$route.params.work_key].hero[0]" :srcset="`${works[$route.params.work_key].hero[0]} 600w, ${works[$route.params.work_key].hero[1]} 1000w`"/>
+            <img v-else v-bind:src="works[$route.params.work_key].hero.gif" />
+
           </div>
+          <img v-else-if="Array.isArray(works[$route.params.work_key].hero)" v-bind:src="works[$route.params.work_key].hero[0]" :srcset="`${works[$route.params.work_key].hero[0]} 600w, ${works[$route.params.work_key].hero[1]} 1000w`"/>
           <img v-else v-bind:src="works[$route.params.work_key].hero" />
         </div>
         <h1>
@@ -29,17 +33,20 @@
             <div v-if="image.type === 'iphoneScroll'" id="iphone-scroll">
               <img v-bind:src="image.iphone" id="iphone-container" />
               <div id="iphone-content-wrapper">
-                <img v-bind:src="image.content" id="iphone-content" />
+                <img v-if="Array.isArray(image.content)" v-bind:src="image.content[0]" :srcset="`${image.content[0]} 600w, ${image.content[1]} 1000w`" />
+                <img v-else v-bind:src="image.content" id="iphone-content" />
               </div>
             </div>
             <div v-else-if="image.type === 'gifMovie'" id="gifMovie">
               <img v-bind:src="image.container" id="movieContainer" />
-              <img v-bind:src="image.gif" id="movieGif" />
+              <img v-if="Array.isArray(image.gif)" v-bind:src="image.gif[0]" :srcset="`${image.gif[0]} 600w, ${image.gif[1]} 1000w`" />
+              <img v-else v-bind:src="image.gif" id="movieGif" />
             </div>
             <div v-else-if="image.type === 'text'" class="text"  v-html="image.content">
               what
             </div>
           </div>
+          <img v-else-if="Array.isArray(image)" v-bind:src="image[0]" :srcset="`${image[0]} 600w, ${image[1]} 1000w`" />
           <img v-else v-bind:src="image" />
         </div>
       </div>
@@ -77,7 +84,10 @@ export default {
           thumbnail: require('../assets/work/monegraph.png'),
           short_description: 'Mobile-only ephemeral web platform for influencer driven e-commerce.',
           long_description: '<p>This is a mobile-only, influencer-centric platform for ephemeral web and ecommerce experiences. We worked with Monegraph from ideation to launch, crafting the strategy and approach that enabled brands to work with influencers to easily create and distribute original, compelling content across their social channels that seamlessly drove their fans to unique and bespoke, short-lived digital experiences and conversion opportunities.</p><p>In addition to the platform creation, we designed the initial campaign in partnership with <a href=”http://graintheory.bigcartel.com/” target=”_blank”>Grain Theory</a>, a US-based, small production Kendama brand. The Grain Theory campaign that launched on the platform sold out of product in 10 minutes and had a 40% opt-in rate for SMS notifications and interactions. The experience was both financially successful and very well received by their audience.</p>',
-          hero: require('../assets/work/monegraph-hero.png'),
+          hero: [
+            require('../assets/work/monegraph-hero_1x.png'),
+            require('../assets/work/monegraph-hero_2x.png')
+          ],
           cta_text: 'View Campaign',
           cta_url: 'http://graintheory.mcast.io',
           background_image: require('../assets/work/monegraph-bg.png'),
@@ -121,19 +131,31 @@ export default {
           thumbnail: require('../assets/work/fries.jpg'),
           short_description: 'A slack community of supportive, creative ladies.',
           long_description: '<p>Fresh. Rad. Interesting. Encouraging. Sisters.<br /> We created Fries as a community of women to support and promote personal and professional development while maintaining the playful and creative inspiration we all need.</p><p>We designed, built and launched the identity, community and all supporting technology - as well as actively manage and moderate the community. This community is primarily on Slack and across social channels, however there have now been regional meet-ups in San Francisco and New York.</p>',
-          hero: require('../assets/work/fries-hero.png'),
+          hero: [
+            require('../assets/work/fries-hero_1x.png'),
+            require('../assets/work/fries-hero_2x.png')
+          ],
           cta_text: 'Visit Website',
           cta_url: 'http://fries.social',
           background_image: '',
           images: {
-            image1: require('../assets/work/fries-1.png'),
+            image1: [
+              require('../assets/work/fries-1_1x.jpg'),
+              require('../assets/work/fries-1_2x.jpg')
+            ],
             image2: require('../assets/work/fries-2.png'),
             special: {
               type: 'gifMovie',
-              gif: require('../assets/work/fries-signup.gif'),
+              gif: [
+                require('../assets/work/fries-signup_1x.gif'),
+                require('../assets/work/fries-signup_2x.gif')
+              ],
               container: require('../assets/work/macbook-empty.png')
             },
-            image4: require('../assets/work/fries-4.png')
+            image4: [
+              require('../assets/work/fries-4_1x.jpg'),
+              require('../assets/work/fries-4_2x.jpg')
+            ]
           }
         },
         the_sum: {
@@ -142,13 +164,22 @@ export default {
           thumbnail: require('../assets/work/the-sum.jpg'),
           short_description: 'A two-day conference designed to help guests reimagine creative possibilities.',
           long_description: '<p>The Sum was a two-day conference in San Francisco designed to help guests reimagine creative possibilities for themselves and their cities, organized by The Bold Italic.</p><p>Leveraging the idea of exquisite corpse, we created a visual system and collaged photography used throughout all promotional materials. We also designed the responsive website and produced environmental graphics and schwag for the event itself.</p><p>This project included event design, brand identity, visual system design, photography and digital expereince design & development.',
-          hero: require('../assets/work/the-sum-hero.png'),
+          hero: [
+            require('../assets/work/the-sum-hero_1x.png'),
+            require('../assets/work/the-sum-hero_2x.png')
+          ],
           cta_text: 'Visit Website',
           cta_url: 'http://thesum.lamasix.com',
           background_image: '',
           images: [
-            require('../assets/work/thesum-3.jpg'),
-            require('../assets/work/thesum-2.jpg'),
+            [
+              require('../assets/work/thesum-3_1x.jpg'),
+              require('../assets/work/thesum-3_2x.jpg')
+            ],
+            [
+              require('../assets/work/thesum-2_1x.jpg'),
+              require('../assets/work/thesum-2_2x.jpg')
+            ],
             require('../assets/work/thesum-1.jpg')
           ]
         },
@@ -158,13 +189,19 @@ export default {
           thumbnail: require('../assets/work/romper.png'),
           short_description: 'A site for a new generation of women figuring out what motherhood means for them.',
           long_description: "<p>Created while working with Bustle Digital Group, this site focuses on Millenial motherhood and chronicles the crazy adventure in a thoughtful, honest and fun way.</p><p>We worked on branding, identity design, web design and built the visual language from the ground up, partnered with Bustle's editorial and technology teams.</p>",
-          hero: require('../assets/work/romper-hero.gif'),
+          hero: [
+            require('../assets/work/romper-hero_1x.gif'),
+            require('../assets/work/romper-hero_2x.gif')
+          ],
           background_image: require('../assets/work/romper-bg.png'),
           cta_text: 'View Website',
           cta_url: 'https://www.romper.com',
           images: [
             require('../assets/work/grow-up-together.png'),
-            require('../assets/work/romper-1.png'),
+            [
+              require('../assets/work/romper-1_1x.png'),
+              require('../assets/work/romper-1_2x.png')
+            ],
             require('../assets/work/romper-2.png')
           ]
         },
@@ -176,11 +213,23 @@ export default {
           long_description: '<p>A series of neighborhood guides that Levi’s used to introduce their Senior Global Marketing team to the company’s hometown of San Francisco. The guides put a spotlight on San Francisco’s most exciting areas and provided an in-depth exploration of the culture and makers thriving within each. The final products were printed pieces with expandable maps that could easily be referenced on the go.</p><p>We built these guides from ideation to execution, designing the entire book as well as creating content with our partners at The Bold Italic.</p>',
           hero: require('../assets/work/levis-hero.png'),
           images: [
-            require('../assets/work/levis-1.jpg'),
+            [
+              require('../assets/work/levis-1_1x.jpg'),
+              require('../assets/work/levis-1_2x.jpg')
+            ],
             require('../assets/work/levis-2.png'),
-            require('../assets/work/levis-3.jpg'),
-            require('../assets/work/levis-4.jpg'),
-            require('../assets/work/levis-5.jpg')
+            [
+              require('../assets/work/levis-3_1x.jpg'),
+              require('../assets/work/levis-3_2x.jpg')
+            ],
+            [
+              require('../assets/work/levis-4_1x.jpg'),
+              require('../assets/work/levis-4_2x.jpg')
+            ],
+            [
+              require('../assets/work/levis-5_1x.jpg'),
+              require('../assets/work/levis-5_2x.jpg')
+            ]
           ]
         },
         interactive_flowcharts: {
@@ -208,10 +257,22 @@ export default {
           cta_url: 'https://www.bustle.com/p/heres-what-happened-when-we-transformed-a-nyc-hotspot-into-a-tropical-oasis-70141',
           background_image: '',
           images: {
-            image1: require('../assets/work/ogx-1.jpg'),
-            image2: require('../assets/work/ogx-2.jpg'),
-            image3: require('../assets/work/ogx-3.jpg'),
-            image4: require('../assets/work/ogx-4.jpg')
+            image1: [
+              require('../assets/work/ogx-1_1x.jpg'),
+              require('../assets/work/ogx-1_2x.jpg')
+            ],
+            image2: [
+              require('../assets/work/ogx-2_1x.jpg'),
+              require('../assets/work/ogx-2_2x.jpg')
+            ],
+            image3: [
+              require('../assets/work/ogx-3_1x.jpg'),
+              require('../assets/work/ogx-3_2x.jpg')
+            ],
+            image4: [
+              require('../assets/work/ogx-4_1x.jpg'),
+              require('../assets/work/ogx-4_2x.jpg')
+            ]
           }
         },
         please: {
@@ -242,7 +303,10 @@ export default {
           hero: require('../assets/work//bustle-hero.png'),
           background_image: '',
           images: {
-            image1: require('../assets/work/bustle-1.png'),
+            image1: [
+              require('../assets/work/bustle-1_1x.png'),
+              require('../assets/work/bustle-1_2x.png')
+            ],
             image2: require('../assets/work/bustle-2.png'),
             special1: {
               type: 'text',
@@ -254,7 +318,10 @@ export default {
               content: '<p>"The stock photos don’t represent the people reading our articles. So we made our own" — <a href="https://www.racked.com/2015/11/5/9648598/stock-photography-sexist-getty-images-shutterstock" target="_blank">Isla, as quoted on Racked</a></p>'
             },
             image4: require('../assets/work/bustle-4.jpg'),
-            image5: require('../assets/work/bustle-5.jpg')
+            image5: [
+              require('../assets/work/bustle-5_1x.jpg'),
+              require('../assets/work/bustle-5_2x.jpg')
+            ]
           }
         },
         gen_z_studio: {

@@ -321,7 +321,7 @@ a.cta-button {
     opacity: 0.4;
 
     @media (min-width: $sm-width-min) {
-      font-size: 180px;
+      font-size: 150px;
     }
 
     @media (min-width: $md-width-min) {
