@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Main from '@/components/Main'
 import About from '@/components/About'
 import Work from '@/components/Work'
+import SignUp from '@/components/SignUp'
 
 Vue.use(Router)
 
@@ -26,6 +27,17 @@ export default new Router({
     {
       path: '/work/:work_key',
       component: Work
+    },
+    {
+      path: '/sign-up',
+      name: 'SignUp',
+      component: SignUp
+    },
+    {
+      path: '/signup',
+      redirect: {
+        name: 'SignUp'
+      }
     }
   ]
 })
