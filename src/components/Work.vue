@@ -800,7 +800,7 @@ body[data-theme="romper"] {
       margin-top: -20px;
 
       @media (min-width: $sm-width-min) {
-        margin-top:50px;
+        margin-top:120px;
       }
     }
     .assets {

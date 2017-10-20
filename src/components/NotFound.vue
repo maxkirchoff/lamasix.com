@@ -6,10 +6,10 @@
       <div style="background-image:url('/static/404-3.jpg')"></div>
       <div style="background-image:url('/static/404-4.jpg')"></div>
     </div>
+    <div class="white-overlay"></div>
     <div id="floater">
-      <h1>We can't find that.</h1>
-      <p>Sorry, but we can't find what you're looking for.</p>
-      <p>We know...this is awkward and frustrating.</p>
+      <h1>Huh?!</h1>
+      <p>We can't find what you're looking for.<br />...this is awkward.</p>
       <p>Maybe just check out some of our cool <router-link :to="{ name: 'Work' }">work</router-link> or <router-link :to="{ name: 'SignUp' }">sign-up</router-link> for our newsletter? :)</p>
     </div>
   </section>
@@ -62,9 +62,7 @@ export default {
 <style lang="scss">
 @import "../scss/variables";
 body {
-  background-size: cover cover;
-  background-position: top center;
-  background-repeat: no-repeat;
+  background-color: #fff;
 }
 
 #magic-bgs {
@@ -78,7 +76,7 @@ body {
   z-index: -1;
   div {
     background-position: top center;
-    background-size: cover;
+    background-size: covernpm;
     background-repeat: no-repeat;
     position: absolute;
     top:0;
@@ -88,25 +86,41 @@ body {
     z-index: 0;
   }
 }
+.white-overlay {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right:0;
+  left:0;
+  opacity: 0.4;
+  background: #fff;
+  z-index: -1;
+}
 #floater {
-  background: rgba(255,255,255,0.5);
   padding: 100px 50px;
 
   @media (min-width: $md-width-min) {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
-    padding: 150px 100px;
+    padding: 150px 50px;
+  }
+
+  br {
+    @media (min-width: $md-width-min) {
+      display: none;
+    }
   }
 
   h1 {
     font-family: $bold-serif;
-    font-size: 30px;
+    font-size: 100px;
+    margin: 0;
 
     @media (min-width: $sm-width-min) {
-      font-size: 50px;
+      font-size: 150px;
     }
     @media (min-width: $md-width-min) {
-      font-size: 80px;
+      font-size: 300px;
       margin: 0;
     }
   }

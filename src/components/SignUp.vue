@@ -118,7 +118,7 @@ export default {
         font-size: 16px;
         display: block;
         outline: none;
-        text-align: center;
+        text-align: left;
         color: #000;
         width: 100%;
 
@@ -132,13 +132,21 @@ export default {
         }
 
         &[type="email"] {
-          padding: 14px 0 10px;
-          background: #8DFFBD;
+          padding: 14px 20px 10px;
+          background: #ededed;
           border: none;
-          font-family: $bold-serif;
+          text-transform: lowercase;
+          width: calc(100% - 40px);
+          @media (min-width: $sm-width-min) {
+            width: calc(60% - 40px);
+          }
+          @media (min-width: $md-width-min) {
+            width: calc(40% - 40px);
+          }
         }
 
         &[type="submit"] {
+          text-align: center;
           margin-top: 10px;
           border: 2px solid #000;
           background: #fff;
