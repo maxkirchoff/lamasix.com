@@ -83,7 +83,7 @@ export default {
           type: 'client',
           thumbnail: require('../assets/work/monegraph.png'),
           short_description: 'Mobile-only ephemeral web platform for influencer driven e-commerce.',
-          long_description: '<p>This is a mobile-only, influencer-centric platform of ephemeral web and ecommerce experiences. We worked with Monegraph from ideation to launch, to enable brands to work with influencers in easily creating and distributing original, compelling content across their social channels. This seamlessly drove their fans to unique, short-lived digital experiences and conversions.</p><p>We  also crafted the initial campaign in partnership with <a href=”http://graintheory.bigcartel.com/” target=”_blank”>Grain Theory</a>, a US-based Kendama brand. The Grain Theory campaign sold out of product in 10 minutes and had a 40% opt-in rate for SMS. The experience was financially successful and loved by their core audience.</p>',
+          long_description: '<p>This is a mobile-only, influencer-centric platform of ephemeral web and e-commerce experiences. We worked with Monegraph from ideation to launch, to enable brands to work with influencers in easily creating and distributing original, compelling content across their social channels. This seamlessly drove their fans to unique, short-lived digital experiences and conversions.</p><p>We  also crafted the initial campaign in partnership with <a href=”http://graintheory.bigcartel.com/” target=”_blank”>Grain Theory</a>, a US-based Kendama brand. The Grain Theory campaign sold out of product in 10 minutes and had a 40% opt-in rate for SMS. The experience was financially successful and loved by their core audience.</p>',
           hero: [
             require('../assets/work/monegraph-hero_1x.png'),
             require('../assets/work/monegraph-hero_2x.png')
@@ -163,7 +163,7 @@ export default {
           type: 'project',
           thumbnail: require('../assets/work/the-sum.jpg'),
           short_description: 'A two-day conference designed to help guests reimagine creative possibilities.',
-          long_description: '<p>The Sum was a two-day conference in San Francisco designed to have guests reimagine creative possibilities for themselves and their cities, organized by The Bold Italic.</p><p>This project was led by, and done in collaboration with, Melissa Small of <a href="http://creativegeneralists.io/" target="_blank">Creative Generalists</a>. It included event design, brand identity, visual system design, photography and digital expereince design & development.</p><p>Leveraging the idea of exquisite corpse, we created a visual system and collaged photography used throughout all promotional materials. We also designed the responsive website and produced environmental graphics and schwag for the event itself.</p>',
+          long_description: '<p>The Sum was a two-day conference in San Francisco designed to have guests reimagine creative possibilities for themselves and their cities, organized by The Bold Italic.</p><p>This project was led by, and done in collaboration with, Melissa Small of <a href="http://creativegeneralists.io/" target="_blank">Creative Generalists</a>. It included event design, brand identity, visual system design, photography and digital experience design & development.</p><p>Leveraging the idea of exquisite corpse, we created a visual system and collaged photography used throughout all promotional materials. We also designed the responsive website and produced environmental graphics and shwag for the event itself.</p>',
           hero: [
             require('../assets/work/the-sum-hero_1x.png'),
             require('../assets/work/the-sum-hero_2x.png')
@@ -188,7 +188,7 @@ export default {
           type: '',
           thumbnail: require('../assets/work/romper.png'),
           short_description: 'A site for a new generation of women figuring out what motherhood means for them.',
-          long_description: "<p>Created while working with Bustle Digital Group, this site focuses on Millenial motherhood and chronicles the crazy adventure in a thoughtful, honest and fun way.</p><p>We worked on branding, identity design, web design and built the visual language from the ground up, partnered with Bustle's editorial and technology teams.</p>",
+          long_description: "<p>Created while working with Bustle Digital Group, this site focuses on Millennial motherhood and chronicles the crazy adventure in a thoughtful, honest and fun way.</p><p>We worked on branding, identity design, web design and built the visual language from the ground up, partnered with Bustle's editorial and technology teams.</p>",
           hero: [
             require('../assets/work/romper-hero_1x.gif'),
             require('../assets/work/romper-hero_2x.gif')
@@ -237,7 +237,7 @@ export default {
           type: 'project',
           thumbnail: require('../assets/work/interactive-flowcharts.png'),
           short_description: 'A beautiful new way to engage with content and tell stories.',
-          long_description: '<p>The Interactive Flowcharts offer an exciting and compelling platform for content and story-telling beyond static images, text articles or cutsy magazine quizzes. The platform offers a content creator the chance to make interactive and rich expereinces for the content they are working with.</p><p>The platform has won a <a href="https://www.webbyawards.com/winners/2017/websites/website-features-and-design/best-visual-design-function/bustles-interactive-flowcharts/" target="_blank">Webby for "Best Visual Design - Function"</a> as well as other <a href="https://www.designrush.com/best-design/bustle" target="_blank">awards and mentions</a>. Originally designed & built in collaboration with the taleneted <a href="http://work.tetto.org/" target="_blank">Donald Tetto</a>, this platform for flowcharts was created and launched on Bustle in partnership with their editorial team.</p>',
+          long_description: '<p>The Interactive Flowcharts offer an exciting and compelling platform for content and story-telling beyond static images, text articles or cutesy magazine quizzes. The platform offers a content creator the chance to make interactive and rich experiences for the content they are working with.</p><p>The platform has won a <a href="https://www.webbyawards.com/winners/2017/websites/website-features-and-design/best-visual-design-function/bustles-interactive-flowcharts/" target="_blank">Webby for "Best Visual Design - Function"</a> as well as other <a href="https://www.designrush.com/best-design/bustle" target="_blank">awards and mentions</a>. Originally designed & built in collaboration with the talented <a href="http://work.tetto.org/" target="_blank">Donald Tetto</a>, this platform for flowcharts was created and launched on Bustle in partnership with their editorial team.</p>',
           hero: require('../assets/work/interactive-flowcharts-hero.png'),
           background_image: '',
           cta_text: 'View Flowcharts',
@@ -252,7 +252,7 @@ export default {
           type: 'Client',
           thumbnail: require('../assets/work/ogx.jpg'),
           short_description: 'A fresh look for OGX as branded content on Bustle.',
-          long_description: '<p>As part of an OGX campaign for Bustle.com, we managed art direction of visuals across photoshoots for multiple peices of branded content and for a custom event.</p><p>Photographs by <a href="http://www.ashleybatz.com/" target="_blank">Ashley Batz</a>.</p>',
+          long_description: '<p>As part of an OGX campaign for Bustle.com, we managed art direction of visuals across photoshoots for multiple pieces of branded content and for a custom event.</p><p>Photographs by <a href="http://www.ashleybatz.com/" target="_blank">Ashley Batz</a>.</p>',
           cta_text: 'View Campaign',
           cta_url: 'https://www.bustle.com/p/heres-what-happened-when-we-transformed-a-nyc-hotspot-into-a-tropical-oasis-70141',
           background_image: '',
@@ -296,8 +296,8 @@ export default {
           name: 'Bustle',
           type: '',
           thumbnail: require('../assets/work/bustle.jpg'),
-          short_description: 'Rebrand and visual identity of the largest publication for millenial women.',
-          long_description: '<p>"Bustle is for & by women who are moving forward as fast as you are." As a large publication for women, specifically mellenials, Bustle leads with thoughtful content, bold design and brave ideas.</p><p>Isla Murray, co-founder of LAMA SIX, served as the Creative Director through a massive rebrand. She managed the development of Bustle’s visual voice, logomark, site and app designs.',
+          short_description: 'Rebrand and visual identity of the largest publication for millennial women.',
+          long_description: '<p>"Bustle is for & by women who are moving forward as fast as you are." As a large publication for women, specifically millennial, Bustle leads with thoughtful content, bold design and brave ideas.</p><p>Isla Murray, co-founder of LAMA SIX, served as the Creative Director through a massive rebrand. She managed the development of Bustle’s visual voice, logomark, site and app designs.',
           cta_text: 'View Website',
           cta_url: 'https://www.bustle.com',
           hero: require('../assets/work//bustle-hero.png'),
@@ -328,7 +328,7 @@ export default {
           name: 'Gen Z Studio, a think tank',
           thumbnail: require('../assets/work/gen-z-studio.png'),
           short_description: 'Generation Z and young Millenial marketing strategy.',
-          long_description: '<p>Gen Z Studio is a think tank and service offering specifically targeted at Generation Z and young Millennials. We specialize in orgnaizations and companies that want to connect to the emerging youth. We are full-service in that we formulate the brand or product marketing strategy and can execute & launch that strategy for you.</p><ul><li>Product Marketing Strategy</li><li>Guide the development and execution of product marketing campaigns</li><li>Brand Affinity</li><li>Develop and execute the futureproof brand identity and voice for GenZ</li><li>Brand or Product Auditing/Calibration</li></ul>',
+          long_description: '<p>Gen Z Studio is a think tank and service offering specifically targeted at Generation Z and young Millennials. We specialize in organizations and companies that want to connect to the emerging youth. We are full-service in that we formulate the brand or product marketing strategy and can execute & launch that strategy for you.</p><ul><li>Product Marketing Strategy</li><li>Guide the development and execution of product marketing campaigns</li><li>Brand Affinity</li><li>Develop and execute the future-proof brand identity and voice for Generation Z</li><li>Brand or Product Auditing/Calibration</li></ul>',
           hero: require('../assets/work/gen-z-hero.png'),
           cta_text: 'Work With Us',
           cta_url: 'mailto:hi@lamasix.com',

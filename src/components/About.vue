@@ -1,9 +1,6 @@
 <template>
   <section>
     <div class="bg-wrapper">
-      <div id="bg">
-        Describe Design Build
-      </div>
     </div>
     <div id="what-we-do">
       <h2>What we do</h2>
@@ -41,10 +38,15 @@
         </ul>
       </div>
     </div>
-    <div id="who-we-are">
-      <h2>Who we are</h2>
-      <p>LAMA SIX is a creative & innovation studio that was formed by ISLA MURRAY and MAXIMILLIAN KIRCHOFF. Our collaborators and clients include entrepreneurs, industry leaders, start-ups, investors, makers and content creators. We guide, plan and execute with rapid and thoughtful approaches to realize and substantialize visionary ideas.  </p>
-      <p>We believe in the transformational experiences that products are to every person. The name is an anagram of “Isla” and “Max,” remixed into “LAMA SIX.” The studio and name is a representation of their own talent, experience and skills as well as the playful, yet clever, nature of their work and work styles. Both Max and Isla come from diverse backgrounds colored by their curiosity, drive and creativity.</p>
+    <div class="who-we-are-wrapper">
+      <div id="who-we-are">
+        <h2>Who we are</h2>
+        <p>LAMA SIX is a creative & innovation studio that was formed by ISLA MURRAY and MAXIMILLIAN KIRCHOFF. Our collaborators and clients include entrepreneurs, industry leaders, start-ups, investors, makers and content creators. We guide, plan and execute with rapid and thoughtful approaches to realize and substantialize visionary ideas.  </p>
+        <p>We believe in the transformational experiences that products are to every person. The name is an anagram of “Isla” and “Max,” remixed into “LAMA SIX.” The studio and name is a representation of their own talent, experience and skills as well as the playful, yet clever, nature of their work and work styles. Both Max and Isla come from diverse backgrounds colored by their curiosity, drive and creativity.</p>
+      </div>
+      <div id="bio-pic">
+        <img src="../assets/isla-max_1x.jpg" srcset="../assets/isla-max_1x.jpg 600w, ../assets/isla-max_2x.jpg 1000w" />
+      </div>
     </div>
     <div id="press">
       <h2>Press</h2>
@@ -117,12 +119,13 @@ h2 {
   margin: 20px 30px 140px;
 
   @media (min-width: $sm-width-min) {
+    width: 700px;
     margin-top: 80px;
     margin-bottom: 160px;
   }
 
   @media (min-width: $md-width-min) {
-    width: 800px;
+    width: 700px;
     margin: 80px auto 200px;
   }
 
@@ -138,10 +141,6 @@ h2 {
     margin: 0 0 0 -5px;
     line-height: 1.1em;
     letter-spacing: 0.5px;
-
-    @media (min-width: $sm-width-min) {
-
-    }
   }
 
   @media (min-width: $sm-width-min) {
@@ -156,6 +155,7 @@ h2 {
 
     @media (min-width: $sm-width-min) {
       margin-top: 20px;
+      margin-right: 100px;
     }
   }
 
@@ -211,7 +211,7 @@ h2 {
       }
 
       &#build {
-          margin: 120px 0 0 90px;
+          margin: 80px 0 0 40px;
       }
     }
 
@@ -246,6 +246,10 @@ h2 {
       width: 100%;
       padding-left:0;
 
+      @media (min-width: $sm-width-min) {
+        max-width: 300px;
+      }
+
 
       > li {
         display: table-row;
@@ -266,15 +270,15 @@ h2 {
   margin: 140px 30px 0;
 
   @media (min-width: $md-width-min) {
-    width: 800px;
-    margin: 180px auto 0;
+    width: 400px;
+    margin: 450px 0 0 100px;
+    float: left;
   }
 
   @media (min-width: $xl-width-min) {
-    width: 550px;
-    margin-top: 900px;
-    position: absolute;
-    left: 60%;
+    margin-top: 800px;
+    float: right;
+    margin-right: 100px;
   }
 
   p {
@@ -283,19 +287,59 @@ h2 {
   }
 }
 
+#bio-pic {
+  margin: 50px 30px;
+
+  @media (min-width: $md-width-min) {
+    width: 400px;
+    float: right;
+    margin-top: 100px;
+    margin-right: 100px;
+  }
+  @media (min-width: $xl-width-min) {
+    float: left;
+    margin-top: 700px;
+    margin-left: 1000px;
+    width: 30%;
+    position: absolute;
+    z-index: -1;
+  }
+  img {
+    width: 100%;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+  }
+}
+
+.who-we-are-wrapper {
+  &:after {
+    content: " ";
+    display: block;
+    clear:both;
+    @media (min-width: $xl-width-min) {
+      clear: none;
+    }
+  }
+}
+
 #press {
   margin: 140px 30px 0;
 
+  @media (min-width: $sm-width-min) {
+    width: 500px;
+  }
+
   @media (min-width: $md-width-min) {
-    width: 800px;
-    margin: 140px auto 0;
+    width: 400px;
+    margin: 200px auto 0 40%;
   }
 
   @media (min-width: $xl-width-min) {
-    width: 600px;
-    margin-top: 700px;
     position: absolute;
-    right: 65%;
+    margin: 600px 0 0 100px;
   }
 
   ul {

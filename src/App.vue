@@ -307,34 +307,5 @@ a.cta-button {
     right:100px;
     overflow-x:visible;
   }
-  #bg {
-    position:absolute;
-    top:0;
-    text-align: left;
-    font-size: 140px;
-    font-family: $bold-serif;
-    font-weight: bold;
-    color: #8DFFBD;
-    line-height: .8em;
-    position: relative;
-    height: 1000px;
-    opacity: 0.4;
-
-    @media (min-width: $sm-width-min) {
-      font-size: 150px;
-    }
-
-    @media (min-width: $md-width-min) {
-      line-height: 1em;
-    }
-
-    .extra {
-      display: none;
-
-      @media (min-width: $sm-width-min) {
-        display: inline;
-      }
-    }
-  }
 }
 </style>
