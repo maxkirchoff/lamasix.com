@@ -120,12 +120,6 @@ h2 {
 
   @media (min-width: $sm-width-min) {
     width: 700px;
-    margin-top: 80px;
-    margin-bottom: 160px;
-  }
-
-  @media (min-width: $md-width-min) {
-    width: 700px;
     margin: 80px auto 200px;
   }
 
@@ -169,7 +163,7 @@ h2 {
 
 #services {
 
-  @media (min-width: $md-width-min) {
+  @media (min-width: $sm-width-min) {
     width: 800px;
     margin: 0 auto;
   }
@@ -195,14 +189,8 @@ h2 {
       margin: 0 0 0 30px;
       max-width: 400px;
 
-      &#build {
-          margin: 80px 0 0 90px;
-      }
-    }
-
-    @media (min-width: $md-width-min) {
       &#describe {
-        margin-left: -100px;
+        margin-left: -50px;
       }
 
       &#design {
@@ -212,6 +200,12 @@ h2 {
 
       &#build {
           margin: 80px 0 0 40px;
+      }
+    }
+
+    @media (min-width: $md-width-min) {
+      &#describe {
+        margin-left: -100px;
       }
     }
 
@@ -269,10 +263,14 @@ h2 {
 #who-we-are {
   margin: 140px 30px 0;
 
-  @media (min-width: $md-width-min) {
+  @media (min-width: $sm-width-min) {
     width: 400px;
-    margin: 450px 0 0 100px;
+    margin: 450px 0 0 0;
     float: left;
+  }
+
+  @media (min-width: $md-width-min) {
+    margin: 450px 0 0 100px;
   }
 
   @media (min-width: $xl-width-min) {
@@ -290,7 +288,17 @@ h2 {
 #bio-pic {
   margin: 50px 30px;
 
+  @media (min-width: $sm-width-min) {
+    width: 400px;
+    position: absolute;
+    right: 30px;
+    margin-top: 200px;
+    z-index: -1;
+  }
+
   @media (min-width: $md-width-min) {
+    right: auto;
+    position:static;
     width: 400px;
     float: right;
     margin-top: 100px;
@@ -302,7 +310,6 @@ h2 {
     margin-left: 1000px;
     width: 30%;
     position: absolute;
-    z-index: -1;
   }
   img {
     width: 100%;
@@ -329,10 +336,6 @@ h2 {
   margin: 140px 30px 0;
 
   @media (min-width: $sm-width-min) {
-    width: 500px;
-  }
-
-  @media (min-width: $md-width-min) {
     width: 400px;
     margin: 200px auto 0 40%;
   }

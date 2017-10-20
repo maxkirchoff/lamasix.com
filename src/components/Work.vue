@@ -708,7 +708,7 @@ a {
     left:0;
     right:0;
     bottom:0;
-    margin: 25px 0;
+    margin: 50px 0;
     overflow:hidden;
     img {
       transition: all 500ms ease-in;
