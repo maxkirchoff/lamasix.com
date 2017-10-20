@@ -37,6 +37,7 @@
           <li><router-link to="/" class='sm-only' v-on:click.native="closeMenu">Home</router-link></li>
           <li><router-link to="/work" v-on:click.native="closeMenu">Work</router-link></li>
           <li><router-link to="/about" v-on:click.native="closeMenu">About</router-link></li>
+          <li><router-link to="/sign-up" v-on:click.native="closeMenu">Newsletter</router-link></li>
           <li><a href="mailto:hi@lamasix.com" class='sm-only' v-on:click.native="closeMenu">Contact</a></li>
         </ul>
       </nav>
@@ -44,7 +45,6 @@
       <div id="contact-info" alt="Contact Information" class='sm-hidden'>
         <ul>
           <li><a href="mailto:hi@lamasix.com">hi@lamasix.com</a></li>
-          <li><a href="tel:1-347-395-4304">+1 (347) 395-4304</a></li>
         </ul>
       </div>
     </header>

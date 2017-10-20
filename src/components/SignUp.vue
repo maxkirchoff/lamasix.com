@@ -1,24 +1,23 @@
 <template>
   <section id="sign-up">
 		<div class="copy">
-        <img src="static/sign-up.gif" />
+      <img src="static/sign-up.gif" />
       <!-- Begin MailChimp Signup Form -->
       <div id="mc_embed_signup">
-      <form action="//lamasix.us16.list-manage.com/subscribe/post?u=543c25805cf05076563093e23&amp;id=233ea62b4c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div id="mc_embed_signup_scroll">
-
-      <div class="mc-field-group">
-      	<label for="mce-EMAIL">Email Address</label>
-      	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" v-bind:placeholder="inputPlaceholder" v-on:focus="clearPlaceholder" v-on:blur="newPlaceholder" />
-      </div>
-      	<div id="mce-responses" class="clear">
-      		<div class="response" id="mce-error-response" style="display:none"></div>
-      		<div class="response" id="mce-success-response" style="display:none"></div>
-      	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_543c25805cf05076563093e23_233ea62b4c" tabindex="-1" value=""></div>
-          <div class="clear submit"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" :disabled="inputSubmitActive === false"></div>
-          </div>
-      </form>
+        <form action="//lamasix.us16.list-manage.com/subscribe/post?u=543c25805cf05076563093e23&amp;id=233ea62b4c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+        <div class="mc-field-group">
+        	<label for="mce-EMAIL">Email Address</label>
+        	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" v-bind:placeholder="inputPlaceholder" v-on:focus="clearPlaceholder" v-on:blur="newPlaceholder" />
+        </div>
+        	<div id="mce-responses" class="clear">
+        		<div class="response" id="mce-error-response" style="display:none"></div>
+        		<div class="response" id="mce-success-response" style="display:none"></div>
+        	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_543c25805cf05076563093e23_233ea62b4c" tabindex="-1" value=""></div>
+            <div class="clear submit"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" :disabled="inputSubmitActive === false"></div>
+            </div>
+        </form>
       </div>
       <!--End mc_embed_signup-->
 			<p>
@@ -108,7 +107,29 @@ export default {
     }
 
     form {
-      margin-top: 60px;
+      margin: 60px auto 0;
+      max-width: 450px;
+
+      #mc_embed_signup_scroll {
+        @media (min-width: $sm-width-min) {
+          .mc-field-group, .submit {
+            float: left;
+          }
+          .mc-field-group {
+            width: 60%;
+            margin-right: 5%;
+          }
+          .submit {
+            width: 35%;
+          }
+        }
+
+        &:after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+      }
 
       label {
         display: none;
@@ -123,25 +144,20 @@ export default {
         width: 100%;
 
         @media (min-width: $sm-width-min) {
-          width: 60%;
-          margin-left: auto;
-          margin-right: auto;
+          width: 100%;
+          margin: 0;
         }
         @media (min-width: $md-width-min) {
-          width: 40%;
         }
 
         &[type="email"] {
+          font-size: 14px;
           padding: 14px 20px 10px;
           background: #ededed;
           border: none;
           text-transform: lowercase;
           width: calc(100% - 40px);
-          @media (min-width: $sm-width-min) {
-            width: calc(60% - 40px);
-          }
           @media (min-width: $md-width-min) {
-            width: calc(40% - 40px);
           }
         }
 
@@ -150,7 +166,13 @@ export default {
           margin-top: 10px;
           border: 2px solid #000;
           background: #fff;
-          text-transform: uppercase;
+          text-transform: capitalize;
+          font-size: 12px;
+
+          @media (min-width: $sm-width-min) {
+            margin: 0;
+            padding: 11px;
+          }
 
           &[disabled="disabled"] {
             opacity: 0.1;
@@ -180,16 +202,16 @@ export default {
     margin-top: 40px;
     text-align: left;
     font-size: 16px;
-    line-height: 1.2em;
+    line-height: 1.4em;
 
     @media (min-width: $sm-width-min) {
       font-size: 14px;
-      width: 60%;
+      width: 450px;
+      max-width: 450px;
       margin-left: auto;
       margin-right: auto;
     }
     @media (min-width: $md-width-min) {
-      width: 40%;
     }
   }
 }
