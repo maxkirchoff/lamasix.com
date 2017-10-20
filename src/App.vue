@@ -23,7 +23,6 @@
                 </g>
             </g>
         </svg>
-
       </router-link>
       <button class="menu-button"
         v-bind:class="{ active: menuButtonActive }"

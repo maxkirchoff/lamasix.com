@@ -188,7 +188,7 @@ export default {
           type: '',
           thumbnail: require('../assets/work/romper.png'),
           short_description: 'A site for a new generation of women figuring out what motherhood means for them.',
-          long_description: "<p>Created while working with Bustle Digital Group, this site focuses on Millennial motherhood and chronicles the crazy adventure in a thoughtful, honest and fun way.</p><p>We worked on branding, identity design, web design and built the visual language from the ground up, partnered with Bustle's editorial and technology teams.</p>",
+          long_description: '<p>Created while working with Bustle Digital Group, this site focuses on Millennial motherhood and chronicles the crazy adventure in a thoughtful, honest and fun way.</p><p>Isla Murray, co-founder of LAMA SIX, served as Creative Director and worked on branding, identity design, web design as well as built the visual language from the ground up.</p>',
           hero: [
             require('../assets/work/romper-hero_1x.gif'),
             require('../assets/work/romper-hero_2x.gif')
@@ -237,7 +237,7 @@ export default {
           type: 'project',
           thumbnail: require('../assets/work/interactive-flowcharts.png'),
           short_description: 'A beautiful new way to engage with content and tell stories.',
-          long_description: '<p>The Interactive Flowcharts offer an exciting and compelling platform for content and story-telling beyond static images, text articles or cutesy magazine quizzes. The platform offers a content creator the chance to make interactive and rich experiences for the content they are working with.</p><p>The platform has won a <a href="https://www.webbyawards.com/winners/2017/websites/website-features-and-design/best-visual-design-function/bustles-interactive-flowcharts/" target="_blank">Webby for "Best Visual Design - Function"</a> as well as other <a href="https://www.designrush.com/best-design/bustle" target="_blank">awards and mentions</a>. Originally designed & built in collaboration with the talented <a href="http://work.tetto.org/" target="_blank">Donald Tetto</a>, this platform for flowcharts was created and launched on Bustle in partnership with their editorial team.</p>',
+          long_description: '<p>The Interactive Flowcharts offer an exciting and compelling platform for content and story-telling beyond static images, text articles or cutesy magazine quizzes. The platform offers a content creator the chance to make interactive and rich experiences for the content they are working with.</p><p>The platform has won a <a href="https://www.webbyawards.com/winners/2017/websites/website-features-and-design/best-visual-design-function/bustles-interactive-flowcharts/" target="_blank">Webby for "Best Visual Design - Function"</a> as well as other <a href="https://www.designrush.com/best-design/bustle" target="_blank">awards and mentions</a>. Originally designed & built in collaboration with the talented <a href="http://work.tetto.org/" target="_blank">Donald Tetto</a>, this platform for flowcharts was created and launched with Bustle.com.</p>',
           hero: require('../assets/work/interactive-flowcharts-hero.png'),
           background_image: '',
           cta_text: 'View Flowcharts',
@@ -280,7 +280,7 @@ export default {
           type: '',
           thumbnail: require('../assets/work/please.png'),
           short_description: 'A place for beauty, realness, and humor to come together to form all of those IRL moments.',
-          long_description: '<p>A celebration of real women who are having fun with beauty, makeup, and trends. A community that shares photos of real ladies having fun with new styles and showcasing the "ones they love best". Strong women who use beauty to express themselves and are fighting the old beauty standards.</p><p>We led Bustle’s design team from ideation to launch of the community, with on-going support for content and community brand.</p>',
+          long_description: '<p>A celebration of real women who are having fun with beauty, makeup, and trends. A community that shares photos of real ladies having fun with new styles and showcasing the "ones they love best". Strong women who use beauty to express themselves and are fighting the old beauty standards.</p><p>Isla Murray, co-founder of LAMA SIX, led Bustle’s design team from ideation to launch of the community, with on-going support for content and community brand.</p>',
           cta_text: 'View Community',
           cta_url: 'https://www.instagram.com/please/',
           hero: require('../assets/work/please-hero.png'),
