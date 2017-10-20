@@ -163,7 +163,7 @@ export default {
           type: 'project',
           thumbnail: require('../assets/work/the-sum.jpg'),
           short_description: 'A two-day conference designed to help guests reimagine creative possibilities.',
-          long_description: '<p>The Sum was a two-day conference in San Francisco designed to help guests reimagine creative possibilities for themselves and their cities, organized by The Bold Italic.</p><p>Leveraging the idea of exquisite corpse, we created a visual system and collaged photography used throughout all promotional materials. We also designed the responsive website and produced environmental graphics and schwag for the event itself.</p><p>This project included event design, brand identity, visual system design, photography and digital expereince design & development.',
+          long_description: '<p>The Sum was a two-day conference in San Francisco designed to have guests reimagine creative possibilities for themselves and their cities, organized by The Bold Italic.</p><p>This project was led by, and done in collaboration with, Melissa Small of <a href="http://creativegeneralists.io/" target="_blank">Creative Generalists</a>. It included event design, brand identity, visual system design, photography and digital expereince design & development.</p><p>Leveraging the idea of exquisite corpse, we created a visual system and collaged photography used throughout all promotional materials. We also designed the responsive website and produced environmental graphics and schwag for the event itself.</p>',
           hero: [
             require('../assets/work/the-sum-hero_1x.png'),
             require('../assets/work/the-sum-hero_2x.png')
@@ -252,7 +252,7 @@ export default {
           type: 'Client',
           thumbnail: require('../assets/work/ogx.jpg'),
           short_description: 'A fresh look for OGX as branded content on Bustle.',
-          long_description: '<p>As part of an OGX campaign for Bustle.com, we managed art direction of visuals across photoshoots for multiple peices of branded content and for a custom event.</p>',
+          long_description: '<p>As part of an OGX campaign for Bustle.com, we managed art direction of visuals across photoshoots for multiple peices of branded content and for a custom event.</p><p>Photographs by <a href="http://www.ashleybatz.com/" target="_blank">Ashley Batz</a>.</p>',
           cta_text: 'View Campaign',
           cta_url: 'https://www.bustle.com/p/heres-what-happened-when-we-transformed-a-nyc-hotspot-into-a-tropical-oasis-70141',
           background_image: '',
@@ -404,7 +404,6 @@ export default {
         let onloadMethods = this.works[workKey].onload_methods
         for (let i = 0; i < onloadMethods.length; i++) {
           onloadMethods[i]()
-          console.log('what?')
         }
       }
     }
