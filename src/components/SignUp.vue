@@ -142,6 +142,7 @@ export default {
         text-align: left;
         color: #000;
         width: 100%;
+        border-radius: 0;
 
         @media (min-width: $sm-width-min) {
           width: 100%;
@@ -168,6 +169,7 @@ export default {
           background: #fff;
           text-transform: capitalize;
           font-size: 12px;
+          -webkit-appearance: none;
 
           @media (min-width: $sm-width-min) {
             margin: 0;

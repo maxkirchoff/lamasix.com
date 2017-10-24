@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="hello">
-      <p>LAMA SIX is a digital creative studio based in Brooklyn. We build and execute bold new ideas and listen to hip hop.</p>
+      <p>LAMA SIX is a creative & innovation studio based in Brooklyn. We build and execute bold new ideas and listen to hip hop.</p>
         <p>Hit us up <a href="mailto:hi@lamasix.com">hi@lamasix.com</a></p>
     </div>
     <div class="greeting-wrapper">
