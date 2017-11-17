@@ -3,7 +3,7 @@
     <div id="work-feature" v-if="$route.params.work_key">
       <div class="header-section">
         <div class="hero" v-if="works[$route.params.work_key].hero">
-          <div v-if="works[$route.params.work_key].hero.type === 'gifMovie'" id="gifMovie">
+          <div v-if="works[$route.params.work_key].hero.type === 'macbookMovie' || works[$route.params.work_key].hero.type === 'iMacMovie'" v-bind:id="works[$route.params.work_key].hero.type">
             <img v-bind:src="works[$route.params.work_key].hero.container" />
 
             <img v-if="Array.isArray(works[$route.params.work_key].hero)" v-bind:src="works[$route.params.work_key].hero[0]" :srcset="`${works[$route.params.work_key].hero[0]} 600w, ${works[$route.params.work_key].hero[1]} 1000w`"/>
@@ -37,7 +37,7 @@
                 <img v-else v-bind:src="image.content" id="iphone-content" />
               </div>
             </div>
-            <div v-else-if="image.type === 'gifMovie'" id="gifMovie">
+            <div v-else-if="image.type === 'macbookMovie' || image.type === 'iMacMovie'" v-bind:id="image.type">
               <img v-bind:src="image.container" id="movieContainer" />
               <img v-if="Array.isArray(image.gif)" v-bind:src="image.gif[0]" :srcset="`${image.gif[0]} 600w, ${image.gif[1]} 1000w`" />
               <img v-else v-bind:src="image.gif" id="movieGif" />
@@ -50,7 +50,11 @@
           <img v-else v-bind:src="image" />
         </div>
       </div>
-      <div id="work-bg" v-bind:style="{ backgroundImage: 'url(' + works[$route.params.work_key].background_image  + ')' }">
+      <div v-if="Array.isArray(works[$route.params.work_key].background_image)" id="work-bg" class="work-bgs">
+        <div v-for="(bg_image, key) in works[$route.params.work_key].background_image" class="work-bg" v-bind:style="{ backgroundImage: 'url(' + bg_image  + ')' }">
+        </div>
+      </div>
+      <div v-else id="work-bg" v-bind:style="{ backgroundImage: 'url(' + works[$route.params.work_key].background_image  + ')' }">
       </div>
     </div>
     <div id="work-list">
@@ -78,6 +82,29 @@ export default {
   data () {
     return {
       works: {
+        leanstartup: {
+          name: 'Lean Startup',
+          type: 'client',
+          thumbnail: require('../assets/work/leanstartup.png'),
+          short_description: 'Popular tech education Identity and website redesign.',
+          long_description: "<p>This projects involved a large repositioning and redesign of Lean Startup's Identity. It included their logo and visual language for the core and subdivision brands, as well as design and development of their main website and conference website.</p><p>This was a collaboration with Melissa Small of <a href='http://creativegeneralists.io/' target='_blank'>Creative Generalists</a>, where we worked together on all design and development aspects.</p>",
+          hero: {
+            type: 'iMacMovie',
+            gif: require('../assets/work/leanstartup-hero.gif'),
+            container: require('../assets/work/imac-empty.png')
+          },
+          cta_text: 'View Website',
+          cta_url: 'http://leanstartup.co',
+          background_image: require('../assets/work/leanstartup-bg.png'),
+          images: {
+            image1: require('../assets/work/leanstartup-1.png'),
+            image2: require('../assets/work/leanstartup-2.png'),
+            image3: require('../assets/work/leanstartup-3.png')
+          },
+          onload_methods: [
+            this.iphoneScroll
+          ]
+        },
         monegraph: {
           name: 'Monegraph',
           type: 'client',
@@ -112,7 +139,7 @@ export default {
           short_description: 'A new 20 minute creative exercise every day.',
           long_description: '<p>An exercise in daily creativity, this releases a new 20 minute creative exercise every day. It is both a web app and a community of people who submit their prompted creations to be shared.</p><p>We designed the identity and interface of the promptme.xyz site and social community, and collaborated with <a href=”http://zahraism.com” target=”_blank”>Zahra Jabini</a> to build and launch the site.</p>',
           hero: {
-            type: 'gifMovie',
+            type: 'macbookMovie',
             gif: require('../assets/work/prompt-me.gif'),
             container: require('../assets/work/macbook-empty.png')
           },
@@ -145,7 +172,7 @@ export default {
             ],
             image2: require('../assets/work/fries-2.png'),
             special: {
-              type: 'gifMovie',
+              type: 'macbookMovie',
               gif: [
                 require('../assets/work/fries-signup_1x.gif'),
                 require('../assets/work/fries-signup_2x.gif')
@@ -391,7 +418,7 @@ export default {
         if (oldTop < 230) {
           newTop = oldTop + Math.random() * ((maxTop - oldTop) - minTop) + minTop
         }
-        console.log('iphone scroll active')
+
         let that = this
         setTimeout(function () {
           iphoneContent.style.top = '-' + newTop + '%'
@@ -562,18 +589,28 @@ a {
      width: 100%;
     }
   }
-  #gifMovie {
+  #macbookMovie {
     position: relative;
     overflow: hidden;
-    img:first-of-type {
 
-    }
     img:last-of-type {
       position: absolute;
       top: 0;
       z-index: -1;
       width: 78%;
       margin: 4% 11%;
+    }
+  }
+  #iMacMovie {
+    position: relative;
+    overflow: hidden;
+
+    img:last-of-type {
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      width: 92%;
+      margin: 4% 4%;
     }
   }
 }
@@ -1129,7 +1166,83 @@ body[data-theme="gen_z_studio"] {
     }
   }
 }
+body[data-theme="leanstartup"] {
+  background: #EFEFEF;
 
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  #work-feature {
+    margin-top: 180px;
+
+    @media (min-width: $sm-width-min) {
+      margin-top: 0;
+    }
+
+    .hero {
+      margin-bottom: 50px;
+
+      @media (min-width: $sm-width-min) {
+        margin-top: 75px;
+      }
+    }
+    .assets {
+      > div:nth-of-type(n) {
+        width: 90%;
+        @media (min-width: $sm-width-min) {
+          width: 40%;
+        }
+      }
+      > div:first-of-type {
+        margin-top: 50px;
+        @media (min-width: $sm-width-min) {
+          margin-top: 80px;
+          width: 45%;
+        }
+      }
+      > div:nth-of-type(2) {
+        margin: 50px 5% 100px;
+        @media (min-width: $sm-width-min) {
+          margin: 130px 0 0;
+
+          &:after {
+            content: "";
+            clear: both;
+            display: block;
+          }
+        }
+      }
+      > div:nth-of-type(3) {
+        @media (min-width: $sm-width-min) {
+          text-align: center;
+          width: 100%;
+          margin-top: 150px;
+          img {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+
+  #work-list {
+    position: relative;
+
+    &:before {
+      z-index: -1;
+      content: "";
+      background-image: url('/static/img/leanstartup-bg-2.png');
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: bottom;
+      height: 100%;
+      position:absolute;
+      top: -100%;
+      left: 0;
+      right: 0;
+    }
+  }
+}
 body[data-theme="monegraph"] {
   color: #fff;
   background-color: #000;
