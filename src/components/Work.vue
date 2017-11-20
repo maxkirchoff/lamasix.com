@@ -418,7 +418,6 @@ export default {
         if (oldTop < 230) {
           newTop = oldTop + Math.random() * ((maxTop - oldTop) - minTop) + minTop
         }
-
         let that = this
         setTimeout(function () {
           iphoneContent.style.top = '-' + newTop + '%'
