@@ -273,10 +273,10 @@ export default {
         appearance: none;
         text-transform: lowercase;
         border-radius: 0;
+        padding: 11px;
 
         @media (min-width: $sm-width-min) {
           margin: 0;
-          padding: 11px;
         }
 
         &[disabled="disabled"] {
@@ -317,6 +317,10 @@ export default {
       margin-right: auto;
     }
     @media (min-width: $md-width-min) {
+    }
+
+    a {
+      border-bottom: 1px #000 solid;
     }
   }
 
