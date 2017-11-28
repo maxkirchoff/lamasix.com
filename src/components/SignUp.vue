@@ -1,7 +1,7 @@
 <template>
   <section id="sign-up">
 		<div class="copy">
-      <img src="/static/sign-up.gif" />
+      <img src="/static/img/sign-up.gif" />
       <!-- Begin MailChimp Signup Form -->
       <div id="mc_embed_signup">
         <form action="//lamasix.us16.list-manage.com/subscribe/post?u=543c25805cf05076563093e23&amp;id=233ea62b4c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

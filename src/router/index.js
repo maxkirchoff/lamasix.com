@@ -4,6 +4,7 @@ import Main from '@/components/Main'
 import About from '@/components/About'
 import Work from '@/components/Work'
 import SignUp from '@/components/SignUp'
+import WorkWithUs from '@/components/WorkWithUs'
 import NotFound from '@/components/NotFound'
 
 Vue.use(Router)
@@ -40,6 +41,11 @@ export default new Router({
       redirect: {
         name: 'SignUp'
       }
+    },
+    {
+      path: '/work-with-us',
+      name: 'WorkWithUs',
+      component: WorkWithUs
     },
     {
       path: '*',
