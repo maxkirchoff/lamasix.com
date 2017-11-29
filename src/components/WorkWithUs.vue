@@ -7,7 +7,7 @@
         <p>Until then, <a href="#" v-on:click="picard = true">watch this GIF</a> until your brain melts.</p>
       </div>
       <div v-else>
-        <p v-if="letter" v-html="letter">
+        <p v-if="letter" v-html="letter" id="letter">
         </p>
         <p v-else>
           We work with all kinds of people, from interesting new start-ups to established brands that want to do something fun and bold.<br /><br />
@@ -17,18 +17,18 @@
           <p>Sorry but there was an issue submitting your form. Please try again or email us directly at <a href="mailto:hi@lamasix.com">hi@lamasix.com</a></p>
         </div>
         <form id="join-form">
-          <input type="text" placeholder="Your name" v-model="name" />
-          <input type="email" placeholder="Your email" v-model="email" />
+          <input required type="text" placeholder="Your name" v-model="name" />
+          <input required type="email" placeholder="Your email" v-model="email" />
           <input type="text" placeholder="Your favorite vegetable" v-model="favoriteVeggie" />
-          <select v-model="desiredRole">
-            <option disabled value="">Your desired role</option>
+          <select required v-model="desiredRole">
+            <option disabled selected hidden value="">Your desired role</option>
             <option value="internships">Internship</option>
             <option value="freenlance work">Freelance</option>
             <option value="other">Other</option>
           </select>
           <autosize-textarea :value.sync="interests" placeholder="Your interests and/or expertise. i.e. design, development"></autosize-textarea>
           <autosize-textarea :value.sync="portfolio" placeholder="Your resume, CV, portfolio, work, etc."></autosize-textarea>
-    			<button v-on:click="submitForm" v-bind:disabled="formSubmittable !== true">SUBMIT</button>
+    			<button v-on:click="submitForm" v-bind:disabled="formSubmittable !== true">Submit</button>
     		</form>
       </div>
 		</div>
@@ -76,7 +76,7 @@ export default {
   },
   computed: {
     letter: function () {
-      this.injectionGuard(event)
+      this.injectionGuard()
 
       let letter = ''
 
@@ -229,11 +229,17 @@ export default {
       }
     }
 
+    #letter {
+      font-family: $bold-serif;
+    }
+
     form {
-      margin: 60px auto 0;
+      margin: 60px auto 120px;
       max-width: 450px;
+      text-align: left;
 
       input, select, textarea {
+        font-family: $regular-sans-serif;
         padding: 10px;
         font-size: 16px;
         display: block;
@@ -248,22 +254,27 @@ export default {
         border: none;
         text-transform: lowercase;
         width: calc(100% - 40px);
-        margin: 2px 0;
+        margin: 20px 0;
         resize: none;
         appearance: none;
-
-        @media (min-width: $sm-width-min) {
-        }
-        @media (min-width: $md-width-min) {
-        }
       }
 
       select {
         width: 100%;
+        font-weight: normal;
+
+        option {
+          font-weight: normal;
+        }
+
+        &:invalid,
+        & option[value=""] {
+          font-weight: bold;
+        }
       }
 
       button {
-        width: 100%;
+        width: 30%;
         text-align: center;
         margin-top: 10px;
         border: 2px solid #000;
@@ -271,9 +282,9 @@ export default {
         text-transform: capitalize;
         font-size: 12px;
         appearance: none;
-        text-transform: lowercase;
         border-radius: 0;
         padding: 11px;
+        margin: 10px 0 0;
 
         @media (min-width: $sm-width-min) {
           margin: 0;
@@ -285,21 +296,24 @@ export default {
       }
 
       ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-          color:    #000;
+          color: #000;
+          font-weight: bold;
       }
       :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-         color:    #000;
-         opacity:  1;
+         color: #000;
+         opacity: 1;
+         font-weight: bold;
       }
       ::-moz-placeholder { /* Mozilla Firefox 19+ */
-         color:    #000;
-         opacity:  1;
+         color: #000;
+         opacity: 1;
+         font-weight: bold;
       }
       :-ms-input-placeholder { /* Internet Explorer 10-11 */
-         color:    #000;
+         color: #000;
       }
       ::-ms-input-placeholder { /* Microsoft Edge */
-         color:    #000;
+         color: #000;
       }
     }
   }
