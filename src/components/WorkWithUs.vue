@@ -7,11 +7,11 @@
         <p>Until then, <a href="#" v-on:click="picard = true">watch this GIF</a> until your brain melts.</p>
       </div>
       <div v-else>
-        <p v-if="letter" v-html="letter" id="letter">
-        </p>
-        <p v-else>
+        <p>
           We work with all kinds of people, from interesting new start-ups to established brands that want to do something fun and bold.<br /><br />
           Want to work with us?<br />Then write us a sweet note below.'
+        </p>
+        <p v-html="letter" id="letter">
         </p>
         <div class="error" v-if="formError">
           <p>Sorry but there was an issue submitting your form. Please try again or email us directly at <a href="mailto:hi@lamasix.com">hi@lamasix.com</a></p>
@@ -229,17 +229,23 @@ export default {
       }
     }
 
+    p:first-of-type {
+      margin-top: 80px;
+    }
+
     #letter {
       font-family: $bold-serif;
+      font-size: 20px;
     }
 
     form {
-      margin: 60px auto 120px;
+      margin: 80px auto 120px;
       max-width: 450px;
       text-align: left;
 
       input, select, textarea {
         font-family: $regular-sans-serif;
+        font-weight: bold;
         padding: 10px;
         font-size: 16px;
         display: block;
@@ -261,15 +267,15 @@ export default {
 
       select {
         width: 100%;
-        font-weight: normal;
+        font-weight: bold;
 
         option {
-          font-weight: normal;
+          font-weight: bold;
         }
 
         &:invalid,
         & option[value=""] {
-          font-weight: bold;
+          font-weight: normal;
         }
       }
 
@@ -285,35 +291,38 @@ export default {
         border-radius: 0;
         padding: 11px;
         margin: 10px 0 0;
+        color: #000;
 
         @media (min-width: $sm-width-min) {
           margin: 0;
         }
 
         &[disabled="disabled"] {
-          opacity: 0;
+          opacity: 0.5;
         }
       }
 
       ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
           color: #000;
-          font-weight: bold;
+          font-weight: normal;
       }
       :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
          color: #000;
          opacity: 1;
-         font-weight: bold;
+         font-weight: normal;
       }
       ::-moz-placeholder { /* Mozilla Firefox 19+ */
          color: #000;
          opacity: 1;
-         font-weight: bold;
+         font-weight: normal;
       }
       :-ms-input-placeholder { /* Internet Explorer 10-11 */
          color: #000;
+         font-weight: normal;
       }
       ::-ms-input-placeholder { /* Microsoft Edge */
          color: #000;
+         font-weight: normal;
       }
     }
   }
