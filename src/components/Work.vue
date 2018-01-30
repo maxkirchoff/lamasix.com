@@ -96,11 +96,11 @@ export default {
           cta_text: 'View Website',
           cta_url: 'http://leanstartup.co',
           background_image: require('../assets/work/leanstartup-bg.png'),
-          images: {
-            image1: require('../assets/work/leanstartup-1.png'),
-            image2: require('../assets/work/leanstartup-2.png'),
-            image3: require('../assets/work/leanstartup-3.png')
-          },
+          images: [
+            require('../assets/work/leanstartup-1.png'),
+            require('../assets/work/leanstartup-2.png'),
+            require('../assets/work/leanstartup-3.png')
+          ],
           onload_methods: [
             this.iphoneScroll
           ]
