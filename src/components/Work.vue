@@ -595,6 +595,7 @@ a {
     img:last-of-type {
       position: absolute;
       top: 0;
+      left: 0;
       z-index: -1;
       width: 78%;
       margin: 4% 11%;
@@ -607,6 +608,7 @@ a {
     img:last-of-type {
       position: absolute;
       top: 0;
+      left: 0;
       z-index: -1;
       width: 92%;
       margin: 4% 4%;
