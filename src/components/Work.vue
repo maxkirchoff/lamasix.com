@@ -139,7 +139,7 @@ export default {
           name: 'Arsenal',
           type: 'client',
           thumbnail: require('../assets/work/arsenal.png'),
-          short_description: 'Popular tech education Identity and website redesign.',
+          short_description: 'Creative strategy, branding, visual identity and app design for a new app in the social media and beauty space.',
           long_description: '<p>Arsenal is a new way to find and share your favorite beauty products with friends you trust and admire. It connects like-minded friends around beauty and enables discovery & commerce through recommendations by trusted influencers within your network.</p><p>LAMA SIX led creative & marketing strategy, branding, visual identity, as well as all visual, app & web design.</p>',
           hero: require('../assets/work/arsenal-hero.png'),
           cta_text: 'View App',
@@ -163,7 +163,7 @@ export default {
           name: 'Where Does Your Penis Belong',
           type: '',
           thumbnail: require('../assets/work/wdypb.png'),
-          short_description: 'Popular tech education Identity and website redesign.',
+          short_description: "A children's book for grown-ass men.",
           long_description: '<p>This project was a collaboration with Ashley Simon and Allison Gore. It was born out of our collective need to process the spate of shocking sexual assault allegations that have unfolded in 2017. Feeling a desperate need for some comedic relief in the wake of so much trauma and outrage, Where Does Your Penis Belong? was a therapeutic exercise for us and we hope it’s a therapeutic read for many others.</p><p>This project got a bit of press as well.<ul><li><a href="http://www.newsweek.com/where-does-your-penis-belong-childrens-book-grown-ass-men-750147" target="_blank">Newsweek</a></li><li><a href="https://www.pastemagazine.com/articles/2017/12/where-does-your-penis-belong-the-perfect-gift-for.html" target="_blank">PASTE Magazine</a></li><li><a href="https://www.thecut.com/2017/12/handy-book-asks-men-where-their-penis-belongs.html" target="_blank">The Cut</a></li></ul></p>',
           hero: require('../assets/work/wdypb-hero.png'),
           cta_text: 'View Website',
@@ -1343,22 +1343,22 @@ body[data-theme="gen_z_studio"] {
           .group2 {
 
             @media (min-width: $sm-width-min) {
-              display: flex;
-              box-orient: vertical;
-              align-items: center;
               margin-bottom: 50px;
             }
 
             > div {
               @media (min-width: $sm-width-min) {
-                width: 70%;
+                width: 65%;
                 margin-bottom: 0;
+                float: left;
+                margin-top: 100px;
               }
 
               &:nth-of-type(2) {
                 width: 50%;
                 @media (min-width: $sm-width-min) {
                   width: 30%;
+                  float: right;
                 }
               }
             }
