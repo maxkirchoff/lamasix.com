@@ -28,26 +28,49 @@
         </div>
       </div>
       <div class="assets">
-        <div v-for="(image, type) in works[$route.params.work_key].images">
-          <div v-if="isNaN(type) && type.includes('special')" class="special">
-            <div v-if="image.type === 'iphoneScroll'" id="iphone-scroll">
-              <img v-bind:src="image.iphone" id="iphone-container" />
+        <div v-for="(asset, type) in works[$route.params.work_key].assets">
+          <div v-if="isNaN(type) && type.includes('group')" class="group" v-bind:class="type">
+            <div v-for="(child_asset, child_type) in asset">
+              <div v-if="isNaN(child_type) && child_type.includes('special')" class="special">
+                <div v-if="child_asset.child_type === 'iphoneScroll'" id="iphone-scroll">
+                  <img v-bind:src="asset.iphone" id="iphone-container" />
+                  <div id="iphone-content-wrapper">
+                    <img v-if="Array.isArray(child_asset.content)" v-bind:src="child_asset.content[0]" :srcset="`${child_asset.content[0]} 600w, ${child_asset.content[1]} 1000w`" />
+                    <img v-else v-bind:src="child_asset.content" id="iphone-content" />
+                  </div>
+                </div>
+                <div v-else-if="child_asset.type === 'macbookMovie' || child_asset.type === 'iMacMovie'" v-bind:id="child_asset.child_type">
+                  <img v-bind:src="child_asset.container" id="movieContainer" />
+                  <img v-if="Array.isArray(child_asset.gif)" v-bind:src="child_asset.gif[0]" :srcset="`${child_asset.gif[0]} 600w, ${child_asset.gif[1]} 1000w`" />
+                  <img v-else v-bind:src="asset.gif" id="movieGif" />
+                </div>
+                <div v-else-if="child_asset.type === 'text'" class="text"  v-html="child_asset.content">
+                  what
+                </div>
+              </div>
+              <img v-else-if="Array.isArray(child_asset)" v-bind:src="child_asset[0]" :srcset="`${child_asset[0]} 600w, ${child_asset[1]} 1000w`" />
+              <img v-else v-bind:src="child_asset" />
+            </div>
+          </div>
+          <div v-else-if="isNaN(type) && type.includes('special')" class="special">
+            <div v-if="asset.type === 'iphoneScroll'" id="iphone-scroll">
+              <img v-bind:src="asset.iphone" id="iphone-container" />
               <div id="iphone-content-wrapper">
-                <img v-if="Array.isArray(image.content)" v-bind:src="image.content[0]" :srcset="`${image.content[0]} 600w, ${image.content[1]} 1000w`" />
-                <img v-else v-bind:src="image.content" id="iphone-content" />
+                <img v-if="Array.isArray(asset.content)" v-bind:src="asset.content[0]" :srcset="`${asset.content[0]} 600w, ${asset.content[1]} 1000w`" />
+                <img v-else v-bind:src="asset.content" id="iphone-content" />
               </div>
             </div>
-            <div v-else-if="image.type === 'macbookMovie' || image.type === 'iMacMovie'" v-bind:id="image.type">
-              <img v-bind:src="image.container" id="movieContainer" />
-              <img v-if="Array.isArray(image.gif)" v-bind:src="image.gif[0]" :srcset="`${image.gif[0]} 600w, ${image.gif[1]} 1000w`" />
-              <img v-else v-bind:src="image.gif" id="movieGif" />
+            <div v-else-if="asset.type === 'macbookMovie' || asset.type === 'iMacMovie'" v-bind:id="asset.type">
+              <img v-bind:src="asset.container" id="movieContainer" />
+              <img v-if="Array.isArray(asset.gif)" v-bind:src="asset.gif[0]" :srcset="`${asset.gif[0]} 600w, ${asset.gif[1]} 1000w`" />
+              <img v-else v-bind:src="asset.gif" id="movieGif" />
             </div>
-            <div v-else-if="image.type === 'text'" class="text"  v-html="image.content">
+            <div v-else-if="asset.type === 'text'" class="text"  v-html="asset.content">
               what
             </div>
           </div>
-          <img v-else-if="Array.isArray(image)" v-bind:src="image[0]" :srcset="`${image[0]} 600w, ${image[1]} 1000w`" />
-          <img v-else v-bind:src="image" />
+          <img v-else-if="Array.isArray(asset)" v-bind:src="asset[0]" :srcset="`${asset[0]} 600w, ${asset[1]} 1000w`" />
+          <img v-else v-bind:src="asset" />
         </div>
       </div>
       <div v-if="Array.isArray(works[$route.params.work_key].background_image)" id="work-bg" class="work-bgs">
@@ -82,12 +105,92 @@ export default {
   data () {
     return {
       works: {
+        gen_z_studio: {
+          name: 'Gen Z Studio, a think tank',
+          thumbnail: require('../assets/work/gen-z-studio.png'),
+          short_description: 'Generation Z and young Millenial marketing strategy.',
+          long_description: '<p>Gen Z Studio is a think tank and service offering specifically targeted at Generation Z and young Millennials. We specialize in organizations and companies that want to connect to the emerging youth. We are full-service in that we formulate the brand or product marketing strategy and can execute & launch that strategy for you.</p><ul><li>Product Marketing Strategy</li><li>Guide the development and execution of product marketing campaigns</li><li>Brand Affinity</li><li>Develop and execute the future-proof brand identity and voice for Generation Z</li><li>Brand or Product Auditing/Calibration</li></ul>',
+          hero: require('../assets/work/gen-z-hero.png'),
+          cta_text: 'Work With Us',
+          cta_url: 'mailto:hi@lamasix.com',
+          background_image: '',
+          assets: {
+            group1: {
+              image1: require('../assets/work/genz-sdl-slideshow.gif'),
+              special1: {
+                type: 'text',
+                content: "<h2>Case Study: Shoe Design Lab</h2><p>Shoe Design Lab is an immersive experience for young adults and children on the ideation, design and prototyping of sneakers. It was created by LAMA SIX as part of Berkeley Carroll School's STEAM Fair in 2018.</p><p>The core goals of this project was to create a workshop to educate and empower kids to participate in research & development, visual design and prototyping in the creation of their own. The process includes stations for hands-on testing of various materials, a packet and guidance on design thinking to guide their ideation, and a design studio space setup to produce and capture their ideas.</p><p>The workshop launched at Berkeley Carroll School's STEAM Fair on February 10th, 2018. It was wildly successful with kids and parents alike, garnering attention and participants for the length of the fair.</p><p>If you would like to learn more about the workshop, host the workshop, and sponsor future workshops, please contact <a href='mailto:hi@lamasix.com'>hi@lamasix.com</a></p>"
+              }
+            },
+            group2: [
+              require('../assets/work/genz-sdl-1.png'),
+              require('../assets/work/genz-sdl-2.png')
+            ],
+            special2: {
+              type: 'text',
+              content: '<h2>The average Gen Z person has an attention span of <span class="attention-span">6</span> seconds. You must engage, and do it fast.</h2>'
+            }
+          },
+          onload_methods: [
+            this.iphoneScroll
+          ]
+        },
+        arsenal: {
+          name: 'Arsenal',
+          type: 'client',
+          thumbnail: require('../assets/work/arsenal.png'),
+          short_description: 'Popular tech education Identity and website redesign.',
+          long_description: '<p>Arsenal is a new way to find and share your favorite beauty products with friends you trust and admire. It connects like-minded friends around beauty and enables discovery & commerce through recommendations by trusted influencers within your network.</p><p>LAMA SIX led creative & marketing strategy, branding, visual identity, as well as all visual, app & web design.</p>',
+          hero: require('../assets/work/arsenal-hero.png'),
+          cta_text: 'View App',
+          cta_url: 'https://app.myarsenal.co',
+          background_image: require('../assets/work/arsenal-bg.jpg'),
+          assets: {
+            image1: require('../assets/work/arsenal-1.png'),
+            image2: require('../assets/work/arsenal-2.png'),
+            imagebg: require('../assets/work/arsenal-lower-bg.png'),
+            group1: {
+              image3: require('../assets/work/arsenal-3.png'),
+              image4: require('../assets/work/arsenal-4.png')
+            },
+            group2: {
+              image5: require('../assets/work/arsenal-8.png'),
+              image7: require('../assets/work/arsenal-7.png')
+            }
+          }
+        },
+        wdypb: {
+          name: 'Where Does Your Penis Belong',
+          type: '',
+          thumbnail: require('../assets/work/wdypb.png'),
+          short_description: 'Popular tech education Identity and website redesign.',
+          long_description: '<p>This project was a collaboration with Ashley Simon and Allison Gore. It was born out of our collective need to process the spate of shocking sexual assault allegations that have unfolded in 2017. Feeling a desperate need for some comedic relief in the wake of so much trauma and outrage, Where Does Your Penis Belong? was a therapeutic exercise for us and we hope it’s a therapeutic read for many others.</p><p>This project got a bit of press as well.<ul><li><a href="http://www.newsweek.com/where-does-your-penis-belong-childrens-book-grown-ass-men-750147" target="_blank">Newsweek</a></li><li><a href="https://www.pastemagazine.com/articles/2017/12/where-does-your-penis-belong-the-perfect-gift-for.html" target="_blank">PASTE Magazine</a></li><li><a href="https://www.thecut.com/2017/12/handy-book-asks-men-where-their-penis-belongs.html" target="_blank">The Cut</a></li></ul></p>',
+          hero: require('../assets/work/wdypb-hero.png'),
+          cta_text: 'View Website',
+          cta_url: 'http://wdypb.com',
+          assets: {
+            special: {
+              type: 'macbookMovie',
+              gif: require('../assets/work/wdypb-1.gif'),
+              container: require('../assets/work/macbook-empty.png')
+            },
+            special1: {
+              type: 'text',
+              content: "<p><b>Interactive website and game</b></p><p>To promote the launch of the book and provide delight to the fans, we produced an interactive quiz for anyone curious about Where Does Your Penis Belong?. The quiz and website feature Allison Gore's beautiful illustrations, the collective comedy of all collaborators and works across mobile and desktop devices.</p><p>The interactive website was designed and built by LAMA SIX using the content of the book.</p>"
+            },
+            image1: require('../assets/work/wdypb-2.png'),
+            special2: {
+              type: 'text',
+              content: '<p><b><a href="http://www.blurb.com/b/8435234-where-does-your-penis-belong" target="_blank">Print book</a></b></p><p>As a collaboration, the book was written by all three women, illustrated by Allison Gore, art directed & designed by Isla Murray and written by Ashley Simon. After much thoughtful delliberation and laughter, the book was a raging success for us. For any press inquires about the book, please email <a href="maito:pants@wheredoesyourpenisbelong.com">pants@wheredoesyourpenisbelong.com</a>.</p><p>The book is a collaboration of Ashley Simon, Isla Murray and Allison Gore.</p>'
+            }
+          }
+        },
         leanstartup: {
           name: 'Lean Startup',
           type: 'client',
           thumbnail: require('../assets/work/leanstartup.png'),
           short_description: 'Popular tech education Identity and website redesign.',
-          long_description: "<p>This projects involved a large repositioning and redesign of Lean Startup's Identity. It included their logo and visual language for the core and subdivision brands, as well as design and development of their main website and conference website.</p><p>This was a collaboration with Melissa Small of <a href='http://creativegeneralists.io/' target='_blank'>Creative Generalists</a>, where we worked together on all design and development aspects.</p>",
+          long_description: "<p>This project involved a large repositioning and redesign of Lean Startup's Identity. It included their logo and visual language for the core and subdivision brands, as well as design and development of their main website and conference website.</p><p>This was a collaboration with Melissa Small of <a href='http://creativegeneralists.io/' target='_blank'>Creative Generalists</a>, where we worked together on all design and development aspects.</p>",
           hero: {
             type: 'iMacMovie',
             gif: require('../assets/work/leanstartup-hero.gif'),
@@ -96,7 +199,7 @@ export default {
           cta_text: 'View Website',
           cta_url: 'http://leanstartup.co',
           background_image: require('../assets/work/leanstartup-bg.png'),
-          images: [
+          assets: [
             require('../assets/work/leanstartup-1.png'),
             require('../assets/work/leanstartup-2.png'),
             require('../assets/work/leanstartup-3.png')
@@ -118,7 +221,7 @@ export default {
           cta_text: 'View Campaign',
           cta_url: 'http://graintheory.mcast.io',
           background_image: require('../assets/work/monegraph-bg.png'),
-          images: {
+          assets: {
             image1: require('../assets/work/monegraph-1.png'),
             image2: require('../assets/work/monegraph-2.png'),
             special: {
@@ -146,7 +249,7 @@ export default {
           cta_text: 'Visit Website',
           cta_url: 'http://promptme.xyz',
           background_image: require('../assets/work/prompt-me-bg.png'),
-          images: [
+          assets: [
             require('../assets/work/prompt-me-1.png'),
             require('../assets/work/prompt-me-2.png'),
             require('../assets/work/prompt-me-3.png')
@@ -165,7 +268,7 @@ export default {
           cta_text: 'Visit Website',
           cta_url: 'http://fries.social',
           background_image: '',
-          images: {
+          assets: {
             image1: [
               require('../assets/work/fries-1_1x.jpg'),
               require('../assets/work/fries-1_2x.jpg')
@@ -198,7 +301,7 @@ export default {
           cta_text: 'Visit Website',
           cta_url: 'http://thesum.lamasix.com',
           background_image: '',
-          images: [
+          assets: [
             [
               require('../assets/work/thesum-3_1x.jpg'),
               require('../assets/work/thesum-3_2x.jpg')
@@ -223,7 +326,7 @@ export default {
           background_image: require('../assets/work/romper-bg.png'),
           cta_text: 'View Website',
           cta_url: 'https://www.romper.com',
-          images: [
+          assets: [
             require('../assets/work/grow-up-together.png'),
             [
               require('../assets/work/romper-1_1x.png'),
@@ -239,7 +342,7 @@ export default {
           short_description: 'Guides of San Francisco neighborhoods for Levi’s Senior Global Marketing team.',
           long_description: '<p>A series of neighborhood guides that Levi’s used to introduce their Senior Global Marketing team to the company’s hometown of San Francisco. The guides put a spotlight on San Francisco’s most exciting areas and provided an in-depth exploration of the culture and makers thriving within each. The final products were printed pieces with expandable maps that could easily be referenced on the go.</p><p>We built these guides from ideation to execution, designing the entire book as well as creating content with our partners at The Bold Italic.</p>',
           hero: require('../assets/work/levis-hero.png'),
-          images: [
+          assets: [
             [
               require('../assets/work/levis-1_1x.jpg'),
               require('../assets/work/levis-1_2x.jpg')
@@ -269,7 +372,7 @@ export default {
           background_image: '',
           cta_text: 'View Flowcharts',
           cta_url: 'https://www.bustle.com/flowcharts',
-          images: [
+          assets: [
             require('../assets/work/interactive-flowcharts-1.png'),
             require('../assets/work/interactive-flowcharts-2.png')
           ]
@@ -283,7 +386,7 @@ export default {
           cta_text: 'View Campaign',
           cta_url: 'https://www.bustle.com/p/heres-what-happened-when-we-transformed-a-nyc-hotspot-into-a-tropical-oasis-70141',
           background_image: '',
-          images: {
+          assets: {
             image1: [
               require('../assets/work/ogx-1_1x.jpg'),
               require('../assets/work/ogx-1_2x.jpg')
@@ -312,7 +415,7 @@ export default {
           cta_url: 'https://www.instagram.com/please/',
           hero: require('../assets/work/please-hero.png'),
           background_image: '',
-          images: {
+          assets: {
             image1: require('../assets/work/please-1.jpg'),
             image2: require('../assets/work/please-2.png'),
             image3: require('../assets/work/please-3.png'),
@@ -329,7 +432,7 @@ export default {
           cta_url: 'https://www.bustle.com',
           hero: require('../assets/work//bustle-hero.png'),
           background_image: '',
-          images: {
+          assets: {
             image1: [
               require('../assets/work/bustle-1_1x.png'),
               require('../assets/work/bustle-1_2x.png')
@@ -350,17 +453,6 @@ export default {
               require('../assets/work/bustle-5_2x.jpg')
             ]
           }
-        },
-        gen_z_studio: {
-          name: 'Gen Z Studio, a think tank',
-          thumbnail: require('../assets/work/gen-z-studio.png'),
-          short_description: 'Generation Z and young Millenial marketing strategy.',
-          long_description: '<p>Gen Z Studio is a think tank and service offering specifically targeted at Generation Z and young Millennials. We specialize in organizations and companies that want to connect to the emerging youth. We are full-service in that we formulate the brand or product marketing strategy and can execute & launch that strategy for you.</p><ul><li>Product Marketing Strategy</li><li>Guide the development and execution of product marketing campaigns</li><li>Brand Affinity</li><li>Develop and execute the future-proof brand identity and voice for Generation Z</li><li>Brand or Product Auditing/Calibration</li></ul>',
-          hero: require('../assets/work/gen-z-hero.png'),
-          cta_text: 'Work With Us',
-          cta_url: 'mailto:hi@lamasix.com',
-          background_image: '',
-          images: []
         }
       }
     }
@@ -489,6 +581,11 @@ a {
       color: #000;
       width:30%;
     }
+  }
+
+  h2 {
+    font-size: 20px;
+    font-family: $bold-sans-serif;
   }
 
   .description {
@@ -1142,7 +1239,23 @@ body[data-theme="bustle"] {
 body[data-theme="gen_z_studio"] {
   background-color: #fbff7b;
 
+  .header-section {
+
+      margin-bottom: 100px;
+
+    @media (min-width: $md-width-min) {
+      width: 1000px;
+      margin: 0 auto;
+    }
+  }
+
   #work-feature {
+    padding-bottom: 0;
+
+    @media (min-width: $md-width-min) {
+      width: 100%;
+    }
+
     .hero {
       width: 75%;
       margin: 50px auto;
@@ -1164,6 +1277,161 @@ body[data-theme="gen_z_studio"] {
     ul, ul li {
       margin-left: 10px;
       padding-left: 0;
+    }
+
+    .assets {
+      width: calc( 100% + 40px );
+      margin: 0 -20px;
+
+      @media (min-width: $sm-width-min) {
+        width: calc( 100% + 160px);
+        margin: 150px -80px 0;
+      }
+
+      > div {
+        float: none;
+        display: block;
+
+        &:first-of-type, &:nth-of-type(2) {
+          width: 100%;
+          margin: 0;
+          background: #fcffb8;
+
+           &:nth-of-type(2) {
+             background: #fff;
+           }
+
+          .group1, .group2 {
+            padding: 50px 0;
+            float: none;
+            min-height: 650px;
+
+            @media (min-width: $sm-width-min) {
+              width: 90%;
+              margin: 0 auto;
+            }
+
+            @media (min-width: $md-width-min) {
+              width: 1000px;
+              margin: 0 auto;
+            }
+
+            > div {
+              width: 80%;
+              margin: 50px auto;
+
+              @media (min-width: $sm-width-min) {
+                width: 55%;
+                float: left;
+                margin-bottom: 150px;
+              }
+
+              &:nth-of-type(2) {
+                margin-top: 100px;
+
+                @media (min-width: $sm-width-min) {
+                  width: 40%;
+                  margin: 50px 0 0 5%;
+
+                  h2 {
+                    margin: 0;
+                  }
+                }
+              }
+            }
+          }
+          .group2 {
+
+            @media (min-width: $sm-width-min) {
+              display: flex;
+              box-orient: vertical;
+              align-items: center;
+              margin-bottom: 50px;
+            }
+
+            > div {
+              @media (min-width: $sm-width-min) {
+                width: 70%;
+                margin-bottom: 0;
+              }
+
+              &:nth-of-type(2) {
+                width: 50%;
+                @media (min-width: $sm-width-min) {
+                  width: 30%;
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-of-type(3) {
+          width: 80%;
+          margin: 100px 10%;
+
+          @media (min-width: $md-width-min) {
+            width: 1000px;
+            margin: 100px auto;
+          }
+
+          h2 {
+            font-weight: black;
+            font-size: 40px;
+            line-height: 1.2;
+          }
+        }
+      }
+    }
+  }
+  #work-list {
+    margin-top: 0;
+  }
+}
+body[data-theme="wdypb"] {
+  background: #FECD30;
+
+  #work-feature {
+    .hero {
+      width: 60%;
+      margin: -40px auto 0;
+      @media (min-width: $sm-width-min) {
+        margin-top: 0;
+        margin-right: 100px;
+        width: 32%;
+      }
+    }
+
+    .assets {
+      > div {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+
+        @media (min-width: $sm-width-min) {
+          &:first-of-type {
+            width: 60%;
+          }
+          &:nth-of-type(2) {
+            width: 35%;
+            margin-left: 5%;
+          }
+          &:nth-of-type(3) {
+            float: right;
+            width: 60%;
+          }
+          &:nth-of-type(4) {
+            float: left;
+            width: 35%;
+            margin-top: 200px;
+          }
+        }
+        @media (min-width: $md-width-min) {
+          &:nth-of-type(2),
+          &:nth-of-type(3) {
+            margin-top: 100px;
+          }
+        }
+      }
     }
   }
 }
@@ -1241,6 +1509,264 @@ body[data-theme="leanstartup"] {
       top: -100%;
       left: 0;
       right: 0;
+    }
+  }
+}
+body[data-theme="arsenal"] {
+  color: #fff;
+  background-repeat: no-repeat;
+  background-color: #b28da2;
+  background-size: auto 100vh;
+  background-position: 15% top;
+
+  @media (min-width: $sm-width-min) {
+    background-size: 125% auto;
+    background-position: 0 -10vw;
+  }
+  @media (min-width: $lg-width-min) {
+    background-size: 100% auto;
+    background-position: 0 -25vw;
+  }
+
+  .logo:not(.black) * {
+    fill: #ffffff;
+  }
+
+  .menu-button span {
+    background: #fff;
+    color: #fff;
+  }
+
+  .menu-button.active span {
+    background: #000;
+    color: #000;
+  }
+
+  header, nav, header a, nav a{
+    color: #fff;
+
+    .router-link-active {
+      border-color: #fff;
+    }
+  }
+  nav.active a {
+    color: #000;
+
+    @media (min-width: $sm-width-min) {
+      color: #fff;
+      transition: color 750ms;
+      transition-delay: 500ms;
+    }
+  }
+
+  #work-feature {
+    padding-bottom: 0;
+
+    @media (min-width: $sm-width-min) {
+      width: 100%;
+      padding: 0;
+    }
+
+    .header-section {
+      @media (min-width: $sm-width-min) {
+        width: 100%;
+        margin: 0 auto;
+      }
+      @media (min-width: $md-width-min) {
+        width: 1000px;
+      }
+    }
+
+    h1 {
+      color: #fff;
+    }
+    a {
+      color: #fff;
+      border-color: #fff;
+    }
+
+    .hero {
+      width: 60%;
+      margin: -40px auto 0;
+      @media (min-width: $sm-width-min) {
+        margin-top: 100px;
+        margin-right: 10%;
+        width: 32%;
+      }
+    }
+
+    .assets {
+      margin-top: 100px;
+
+      @media (min-width: $sm-width-min) {
+        width: 100%;
+      }
+
+      > div {
+        width: 100%;
+        margin: 40px 0;
+        display: block;
+        position: relative;
+
+        @media (min-width: $sm-width-min) {
+          margin: 80px auto;
+          float: none;
+        }
+        @media (min-width: $md-width-min) {
+          width: 1000px;
+          margin: 80px auto;
+          float: none;
+        }
+        &:nth-of-type(1), &:nth-of-type(2) {
+
+          img {
+              @media (min-width: $sm-width-min) {
+                width: 80%;
+                margin: 0 auto;
+                display: block;
+              }
+          }
+          &:nth-of-type(2) {
+            z-index: 9;
+          }
+        }
+
+
+        &:nth-of-type(3) {
+          background: #916b80;
+          width: calc( 100% + 40px);
+          margin: -80px -20px -50px;
+          padding: 150px 0 125px;
+          position: relative;
+
+          @media (min-width: $sm-width-min) {
+            width: calc( 100% + 120px);
+            margin: -150px -60px -50px;
+          }
+
+          img {
+            width: 80%;
+            margin: 0 auto;
+            display: block;
+
+            @media (min-width: $sm-width-min) {
+              padding: 200px 0;
+            }
+          }
+        }
+
+        &:nth-of-type(4), &:nth-of-type(5) {
+          background: #fff;
+          width: calc(100% + 40px);
+          margin: 0 -20px;
+
+          @media (min-width: $sm-width-min) {
+            background: #fff;
+            width: calc( 100% + 120px);
+            margin: 0 -60px;
+          }
+
+          &:nth-of-type(5) {
+            background: #f5f2f5;
+            @media (min-width: $sm-width-min) {
+              background: #f5f2f5;
+            }
+          }
+        }
+
+        .group {
+          background: #fff;
+          width: 100%;
+
+          padding: 50px 0;
+
+          @media (min-width: $sm-width-min) {
+            width: 1000px;
+            margin: 0 auto;
+          }
+
+          > div {
+            width: 80%;
+            margin: 0 auto;
+          }
+
+          &.group1 {
+            margin-top: 50px;
+
+
+            @media (min-width: $sm-width-min) {
+              display: flex;
+              box-orient: vertical;
+              align-items: center;
+              min-height: 400px;
+              padding: 150px 0;
+            }
+
+            > div {
+              display: block;
+              margin: 0 auto;
+
+              &:nth-of-type(1) {
+                width: 60%;
+                margin-bottom: 50px;
+
+
+                @media (min-width: $sm-width-min) {
+                  width: 25%;
+                  float: left;
+                }
+              }
+              &:nth-of-type(2) {
+                width: 80%;
+                @media (min-width: $sm-width-min) {
+                  width: 60%;
+                  float: right;
+                }
+              }
+            }
+          }
+          &.group2 {
+            background: #f5f2f5;
+
+            @media (min-width: $sm-width-min) {
+              min-height: 500px;
+              padding: 100px 0 150px;
+              margin-bottom: -100px;
+              display: flex;
+              box-orient: vertical;
+              align-items: center;
+            }
+
+            > div {
+              margin-top: 40px;
+              margin-bottom: 40px;
+
+              @media (min-width: $sm-width-min) {
+                width: 45%;
+                float: left;
+              }
+
+              &:nth-of-type(2) {
+                margin-top: 80px;
+                @media (min-width: $sm-width-min) {
+                  float: right;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #work-list {
+    @media (min-width: $md-width-min) {
+      width: calc( 100% + 200px);
+      margin: 100px -100px;
+      padding: 0;
+
+      ul {
+        padding: 0 20%;
+      }
     }
   }
 }
