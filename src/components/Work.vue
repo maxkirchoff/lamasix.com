@@ -116,7 +116,10 @@ export default {
           background_image: '',
           assets: {
             group1: {
-              image1: require('../assets/work/genz-sdl-slideshow.gif'),
+              image1: [
+                require('../assets/work/genz-sdl-slideshow.gif'),
+                require('../assets/work/genz-sdl-slideshow_2x.gif')
+              ],
               special1: {
                 type: 'text',
                 content: "<h2>Case Study: Shoe Design Lab</h2><p>Shoe Design Lab is an immersive experience for young adults and children on the ideation, design and prototyping of sneakers. It was created by LAMA SIX as part of Berkeley Carroll School's STEAM Fair in 2018.</p><p>The core goals of this project was to create a workshop to educate and empower kids to participate in research & development, visual design and prototyping in the creation of their own. The process includes stations for hands-on testing of various materials, a packet and guidance on design thinking to guide their ideation, and a design studio space setup to produce and capture their ideas.</p><p>The workshop launched at Berkeley Carroll School's STEAM Fair on February 10th, 2018. It was wildly successful with kids and parents alike, garnering attention and participants for the length of the fair.</p><p>If you would like to learn more about the workshop, host the workshop, and sponsor future workshops, please contact <a href='mailto:hi@lamasix.com'>hi@lamasix.com</a></p>"
@@ -128,11 +131,11 @@ export default {
             ],
             special2: {
               type: 'text',
-              content: '<h2>The average Gen Z person has an attention span of <span class="attention-span">6</span> seconds. You must engage, and do it fast.</h2>'
+              content: '<h2>The average Gen Z person has an attention span of <span id="attention-span">6</span> seconds. You must engage, and do it fast.</h2>'
             }
           },
           onload_methods: [
-            this.iphoneScroll
+            this.attentionSpan
           ]
         },
         arsenal: {
@@ -480,6 +483,31 @@ export default {
     }
   },
   methods: {
+    attentionSpan: function () {
+      let el = document.getElementById('attention-span')
+      if (this.elInViewport(el)) {
+        const attentionVal = parseInt(el.innerText)
+        let that = this
+        for (let i = 1; i <= attentionVal; i++) {
+          setTimeout(function () {
+            el.innerText = attentionVal - i
+          }, i * 1000)
+          if (i === attentionVal) {
+            setTimeout(function () {
+              el.innerText = attentionVal
+              that.attentionSpan()
+            }, i * 2000)
+          }
+        }
+      }
+    },
+    elInViewport: function (el) {
+      const rect = el.getBoundingClientRect()
+      let elemTop = rect.top
+      let elemBottom = rect.bottom
+      let isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight)
+      return isVisible
+    },
     addWorkStyles: function (workKey) {
       if (workKey) {
         this.addBodyTheme(workKey)
@@ -1314,6 +1342,7 @@ body[data-theme="gen_z_studio"] {
             @media (min-width: $md-width-min) {
               width: 1000px;
               margin: 0 auto;
+              min-height: 700px;
             }
 
             > div {
@@ -1321,7 +1350,7 @@ body[data-theme="gen_z_studio"] {
               margin: 50px auto;
 
               @media (min-width: $sm-width-min) {
-                width: 55%;
+                width: 45%;
                 float: left;
                 margin-bottom: 150px;
               }
@@ -1330,7 +1359,7 @@ body[data-theme="gen_z_studio"] {
                 margin-top: 100px;
 
                 @media (min-width: $sm-width-min) {
-                  width: 40%;
+                  width: 50%;
                   margin: 50px 0 0 5%;
 
                   h2 {
@@ -1352,6 +1381,10 @@ body[data-theme="gen_z_studio"] {
                 margin-bottom: 0;
                 float: left;
                 margin-top: 100px;
+              }
+              @media (min-width: $md-width-min) {
+                width: 60%;
+                margin-top: 150px;
               }
 
               &:nth-of-type(2) {
