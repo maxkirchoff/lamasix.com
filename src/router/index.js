@@ -48,6 +48,12 @@ export default new Router({
       component: WorkWithUs
     },
     {
+      path: '/meet',
+      beforeEnter: (to, from, next) => {
+        window.location = 'http://uberconference.com/lamasix'
+      }
+    },
+    {
       path: '*',
       component: NotFound
     }
