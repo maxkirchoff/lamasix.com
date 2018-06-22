@@ -54,6 +54,12 @@ export default new Router({
       }
     },
     {
+      path: '/tshirt',
+      beforeEnter: (to, from, next) => {
+        window.location = 'https://goo.gl/forms/13K05OPv8koeDbhi1'
+      }
+    },
+    {
       path: '*',
       component: NotFound
     }

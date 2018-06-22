@@ -29,9 +29,9 @@
       </div>
       <div class="assets">
         <div v-for="(asset, type) in works[$route.params.work_key].assets">
-          <div v-if="isNaN(type) && type.includes('group')" class="group" v-bind:class="type">
+          <div v-if="isNaN(type) && type.indexOf('group') > -1" class="group" v-bind:class="type">
             <div v-for="(child_asset, child_type) in asset">
-              <div v-if="isNaN(child_type) && child_type.includes('special')" class="special">
+              <div v-if="isNaN(child_type) && child_type.indexOf('special') > -1" class="special">
                 <div v-if="child_asset.child_type === 'iphoneScroll'" id="iphone-scroll">
                   <img v-bind:src="asset.iphone" id="iphone-container" />
                   <div id="iphone-content-wrapper">
@@ -39,10 +39,10 @@
                     <img v-else v-bind:src="child_asset.content" id="iphone-content" />
                   </div>
                 </div>
-                <div v-else-if="child_asset.type === 'macbookMovie' || child_asset.type === 'iMacMovie'" v-bind:id="child_asset.child_type">
+                <div v-else-if="child_asset.type === 'macbookMovie' || child_asset.type === 'iMacMovie'" v-bind:id="child_asset.type">
                   <img v-bind:src="child_asset.container" id="movieContainer" />
                   <img v-if="Array.isArray(child_asset.gif)" v-bind:src="child_asset.gif[0]" :srcset="`${child_asset.gif[0]} 600w, ${child_asset.gif[1]} 1000w`" />
-                  <img v-else v-bind:src="asset.gif" id="movieGif" />
+                  <img v-else v-bind:src="child_asset.gif" id="movieGif" />
                 </div>
                 <div v-else-if="child_asset.type === 'text'" class="text"  v-html="child_asset.content">
                   what
@@ -52,7 +52,7 @@
               <img v-else v-bind:src="child_asset" />
             </div>
           </div>
-          <div v-else-if="isNaN(type) && type.includes('special')" class="special">
+          <div v-else-if="isNaN(type) && type.indexOf('special') > -1" class="special">
             <div v-if="asset.type === 'iphoneScroll'" id="iphone-scroll">
               <img v-bind:src="asset.iphone" id="iphone-container" />
               <div id="iphone-content-wrapper">
@@ -105,6 +105,35 @@ export default {
   data () {
     return {
       works: {
+        mirra: {
+          name: 'Mirra',
+          type: 'client',
+          thumbnail: require('../assets/work/mirra.png'),
+          short_description: 'Branding, visual identity, social visual strategy, web design and web developement for a community that empowers your skincare.',
+          long_description: '<p>Transparency, inclusivity, innovation and balance are the core tenants of Mirra - a new community, content hub and recommendation system for skincare. Mirra empowers individuals to understand their skincare and make the right decisions for themselves.</p><p>LAMA SIX led and executed branding, visual identity, social visual strategy, web design & web development.</p>',
+          hero: require('../assets/work/mirra-hero.png'),
+          cta_text: 'View Site',
+          cta_url: 'http://askmirra.com',
+          assets: {
+            imageheaderbg: require('../assets/work/mirra-bg.png'),
+            group1: {
+              image1: require('../assets/work/mirra-1.png'),
+              image2: require('../assets/work/mirra-2.png')
+            },
+            group2: {
+              image3: require('../assets/work/mirra-3.png'),
+              image4: require('../assets/work/mirra-4.png')
+            },
+            group3: {
+              image5: require('../assets/work/mirra-5.png'),
+              special: {
+                type: 'macbookMovie',
+                gif: require('../assets/work/mirra-6.gif'),
+                container: require('../assets/work/macbook-empty.png')
+              }
+            }
+          }
+        },
         gen_z_studio: {
           name: 'Gen Z Studio, a think tank',
           thumbnail: require('../assets/work/gen-z-studio.png'),
@@ -717,11 +746,16 @@ a {
     position: relative;
     overflow: hidden;
 
+    img:first-of-type {
+      z-index: 3;
+      position: relative;
+    }
+
     img:last-of-type {
       position: absolute;
       top: 0;
       left: 0;
-      z-index: -1;
+      z-index: 1;
       width: 78%;
       margin: 4% 11%;
     }
@@ -1545,6 +1579,295 @@ body[data-theme="leanstartup"] {
     }
   }
 }
+
+body[data-theme="mirra"] {
+  background-repeat: no-repeat;
+  background-size: auto 100vh;
+  background-position: 15% top;
+
+  @media (min-width: $sm-width-min) {
+    background-size: 125% auto;
+    background-position: 0 -10vw;
+  }
+  @media (min-width: $lg-width-min) {
+    background-size: 100% auto;
+    background-position: 0 -25vw;
+  }
+
+  #work-feature {
+    padding-bottom: 0;
+
+    @media (min-width: $sm-width-min) {
+      width: 100%;
+      padding: 0;
+    }
+
+    .header-section {
+      height: 500px;
+
+      @media (min-width: $sm-width-min) {
+        width: 100%;
+        margin: 0 auto;
+      }
+      @media (min-width: $md-width-min) {
+        width: 1000px;
+      }
+    }
+
+    .hero {
+      width: 80%;
+      margin: 100px auto 50px;
+
+      @media (min-width: $sm-width-min) {
+        margin-top: 140px;
+        width: auto;
+      }
+    }
+
+    .assets {
+      margin-top: 100px;
+
+      @media (min-width: $sm-width-min) {
+        width: 100%;
+      }
+
+      > div {
+        width: 100%;
+        margin: 40px 0;
+        display: block;
+
+        @media (min-width: $sm-width-min) {
+          margin: 80px auto;
+          float: none;
+        }
+        @media (min-width: $md-width-min) {
+          width: 1000px;
+          margin: 80px auto;
+          float: none;
+        }
+
+        &:nth-of-type(1) {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 720px;
+          z-index: -1;
+          width: auto;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+
+          @media (min-width: $sm-width-min) {
+            height: 660px;
+            overflow: hidden;
+          }
+
+          img {
+            height: 100%;
+            width: auto;
+
+            @media (min-width: $sm-width-min) {
+              position: absolute;
+              top: 0;
+              height: 100%;
+              width: auto;
+            }
+
+            @media (min-width: $md-width-min) {
+              height: auto;
+              width: 100%;
+            }
+          }
+        }
+
+        &:nth-of-type(2) {
+          img {
+              @media (min-width: $sm-width-min) {
+                width: 80%;
+                margin: 0 auto;
+                display: block;
+              }
+          }
+          &:nth-of-type(2) {
+            z-index: 9;
+          }
+        }
+
+
+        &:nth-of-type(3) {
+          width: calc( 100% + 40px);
+          margin: -80px -20px -50px;
+          padding: 0;
+          position: relative;
+
+          @media (min-width: $sm-width-min) {
+            width: calc( 100% + 120px);
+            margin: -150px -60px -50px;
+          }
+          @media (min-width: $lg-width-min) {
+            width: $lg-width-min;
+            margin: 0 auto;
+          }
+
+          img {
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+
+            @media (min-width: $sm-width-min) {
+            }
+          }
+        }
+
+        &:nth-of-type(4) {
+          width: calc(100% + 40px);
+          margin: 0 -20px;
+          background-color: #88fad5;
+          background-image: url(../assets/work/mirra-lower-bg.png);
+          background-size: 100% auto;
+
+          @media (min-width: $sm-width-min) {
+            width: calc( 100% + 120px);
+            margin: 0 -60px;
+          }
+        }
+
+        .group {
+          background: #fff;
+          width: 100%;
+
+          padding: 50px 0;
+
+          @media (min-width: $sm-width-min) {
+            width: auto;
+            margin: 0 auto;
+          }
+
+          > div {
+            width: 80%;
+            margin: 0 auto;
+          }
+
+          &.group1 {
+            margin-top: 0;
+
+            @media (min-width: $sm-width-min) {
+              display: flex;
+              box-orient: vertical;
+              align-items: center;
+              min-height: 400px;
+              padding: 0;
+              margin-bottom: 150px;
+            }
+
+            > div {
+              display: block;
+              margin: 0 auto;
+
+              &:nth-of-type(1) {
+                width: 80%;
+                margin-bottom: 100px;
+
+                @media (min-width: $sm-width-min) {
+                  width: 40%;
+                  float: left;
+                  margin-bottom: 0;
+                }
+              }
+              &:nth-of-type(2) {
+                width: 80%;
+                @media (min-width: $sm-width-min) {
+                  width: 60%;
+                  float: right;
+                }
+              }
+            }
+          }
+          &.group2 {
+            margin-top: 80px;
+            margin-bottom: 0;
+            padding-bottom: 0;
+
+            > div {
+              width: 100%;
+
+              @media (min-width: $sm-width-min) {
+                width: 50%;
+                float: left;
+              }
+
+              &:nth-of-type(2) {
+                @media (min-width: $sm-width-min) {
+                  float: right;
+                }
+              }
+            }
+
+            &:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+          }
+
+          &.group3 {
+            background: transparent;
+            padding: 140px 0;
+
+            @media (min-width: $sm-width-min) {
+              width: 80%;
+              margin: auto;
+            }
+
+            @media (min-width: $lg-width-min) {
+              width: $lg-width-min;
+              margin: 0 auto;
+            }
+
+            > div {
+              width: 60%;
+
+              @media (min-width: $sm-width-min) {
+                width: 20%;
+                float: left;
+
+              }
+
+              &:nth-of-type(2) {
+                width: 80%;
+                margin-top: 80px;
+
+                @media (min-width: $sm-width-min) {
+                  width: 70%;
+                  margin: 0 0 0 10%;
+                }
+              }
+            }
+
+            &:after {
+              display: table;
+              content: "";
+              clear: both;
+            }
+          }
+        }
+      }
+    }
+  }
+  #work-list {
+    @media (min-width: $md-width-min) {
+      width: calc( 100% + 120px);
+      margin: 100px -60px;
+      padding: 0;
+
+      ul {
+        padding: 0 20%;
+      }
+    }
+  }
+}
+
 body[data-theme="arsenal"] {
   color: #fff;
   background-repeat: no-repeat;
@@ -1793,8 +2116,8 @@ body[data-theme="arsenal"] {
   }
   #work-list {
     @media (min-width: $md-width-min) {
-      width: calc( 100% + 200px);
-      margin: 100px -100px;
+      width: calc( 100% + 120px);
+      margin: 100px -60px;
       padding: 0;
 
       ul {

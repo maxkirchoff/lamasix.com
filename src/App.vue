@@ -113,7 +113,7 @@ header {
   .logo {
     z-index:9;
     width: 40px;
-    height: auto;
+    height: 30px;
     margin: 30px 0 0 30px;
     position: relative;
 
