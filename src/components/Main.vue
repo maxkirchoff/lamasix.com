@@ -164,7 +164,7 @@ export default {
 
   #greeting {
     position:absolute;
-    top:30px;
+    margin-top:30px;
     text-align: left;
     font-size: 120px;
     font-family: $bold-serif;

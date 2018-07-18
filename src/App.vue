@@ -48,6 +48,11 @@
       </div>
     </header>
     <router-view></router-view>
+    <div id="footer">
+      <div id="copyright">
+        © LAMA SIX, LLC {{ currentYear }} – All rights reserved
+      </div>
+    </div>
   </div>
 </template>
 
@@ -57,6 +62,12 @@ export default {
   data () {
     return {
       menuButtonActive: false
+    }
+  },
+  computed: {
+    currentYear: function () {
+      var date = new Date()
+      return date.getFullYear()
     }
   },
   watch: {
@@ -100,7 +111,9 @@ a {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hiiden;
+  position: relative;
+  padding-bottom: 80px;
+  min-height: 100vh;
 }
 
 header {
@@ -307,4 +320,19 @@ a.cta-button {
     overflow-x:visible;
   }
 }
+
+#footer {
+  z-index: 999;
+  opacity: 0.4;
+  font-size: 12px;
+}
+
+#copyright {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
 </style>

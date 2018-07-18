@@ -131,7 +131,7 @@ h2 {
 
   h1 {
     font-family: $bold-serif;
-    font-size: 60px;
+    font-size: 56px;
     margin: 0 0 0 -5px;
     line-height: 1.1em;
     letter-spacing: 0.5px;
