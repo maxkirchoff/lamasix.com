@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Main from '@/components/Main'
 import About from '@/components/About'
 import Work from '@/components/Work'
 import SignUp from '@/components/SignUp'
@@ -14,13 +13,14 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Main',
-      component: Main
+      name: 'About Us',
+      component: About
     },
     {
       path: '/about',
-      name: 'About Us',
-      component: About
+      redirect: {
+        name: 'About Us'
+      }
     },
     {
       path: '/work',

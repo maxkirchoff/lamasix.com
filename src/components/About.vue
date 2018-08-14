@@ -59,6 +59,10 @@
         </li>
       </ul>
     </div>
+    <div class="greeting-wrapper">
+      <div id="greeting" v-html="greeting">
+      </div>
+    </div>
   </section>
 </template>
 
@@ -67,6 +71,7 @@ export default {
   name: 'about',
   data () {
     return {
+      greeting: this.getGreeting(),
       pressLinks: [
         {
           title: 'The Fight Against Sexist Stock Photography',
@@ -100,11 +105,107 @@ export default {
         }
       ]
     }
+  },
+  mounted: function () {
+    let greeting = document.getElementById('greeting')
+
+    let greetingStr
+
+    if (screen.width < 700) {
+      greetingStr = greeting.innerHTML.split('<')[0]
+      greetingStr = greetingStr.split('')
+    } else {
+      greetingStr = greeting.innerText.split('')
+    }
+
+    for (let i = 0; i < greetingStr.length; i++) {
+      greetingStr[i] = '<span>' + greetingStr[i] + '</span>'
+    }
+    greeting.innerHTML = greetingStr.join('')
+
+    let letters = document.getElementById('greeting').childNodes
+    let letterClones = document.getElementById('greeting').cloneNode(true).childNodes
+
+    let greetingInfo = []
+    for (let j = 0; j < letterClones.length; j++) {
+      greetingInfo[j] = {
+        top: letters[j].offsetTop,
+        left: letters[j].offsetLeft,
+        position: 'absolute'
+      }
+    }
+    greeting.innerHTML = ''
+
+    let j = 0
+    let letterMatrix = {}
+    while (letterClones.length > 0) {
+      letterClones[0].style.top = greetingInfo[j].top + 'px'
+      letterClones[0].style.left = (greetingInfo[j].left + 2000) + 'px'
+      letterClones[0].style.position = greetingInfo[j].position
+
+      if (letterMatrix[greetingInfo[j].top] === undefined) {
+        letterMatrix[greetingInfo[j].top] = []
+      }
+
+      letterMatrix[greetingInfo[j].top].push(greeting.appendChild(letterClones[0]))
+      j++
+    }
+
+    for (var key in letterMatrix) {
+      if (letterMatrix.hasOwnProperty(key)) {
+        for (let i = 0; i < letterMatrix[key].length; i++) {
+          let letter = letterMatrix[key][i]
+          setTimeout(function () {
+            letter.style.left = (letter.offsetLeft - 2000) + 'px'
+          }, 500 + Math.floor(Math.random() * ((i * Math.random()) * 200)))
+        }
+      }
+    }
+  },
+  methods: {
+    getGreeting: function () {
+      const dateTime = new Date()
+      const day = dateTime.getDay()
+      const hour = dateTime.getHours()
+      switch (true) {
+        case (day === 0 || day === 6):
+          return "It's the weekend!"
+
+        case (day === 5 && hour > 12):
+          return 'Hello, hello. TGIF!'
+
+        case (hour > 3 && hour <= 11):
+          return 'Good morning.'
+
+        case (hour > 11 && hour <= 17):
+          return "Good afternoon. <span class='extra'>It's lovely to see you.</span>"
+
+        case (hour > 17 && hour <= 23):
+          return 'Good evening.'
+
+        default:
+          return 'Up late?'
+      }
+    }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
+<style>
+  #greeting span:nth-of-type(3n-1) {
+    transition: all 1s cubic-bezier(0,1.02,.52,1.58);
+  }
+  #greeting span:nth-of-type(4n-1) {
+    transition: all 500ms cubic-bezier(0,1.02,.87,1.15);
+  }
+  #greeting span:nth-of-type(2n-1) {
+    transition: all 1s cubic-bezier(0,1.02,.29,1.15);
+  }
+  #greeting span {
+    transition: all 750ms cubic-bezier(0.685, 1.650, 0.350, 0.555);
+  }
+</style>
 <style scoped lang='scss'>
 @import "../scss/variables";
 
@@ -367,6 +468,55 @@ h2 {
       text-transform: uppercase;
       display: block;
       margin: 5px 0;
+    }
+  }
+}
+.greeting-wrapper {
+  transform: rotate(90deg);
+  min-height:20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 800px;
+  z-index: -1;
+  overflow-x:hidden;
+
+  @media (min-width: $sm-width-min)  {
+    right:100px;
+    overflow-x:visible;
+  }
+
+  #greeting {
+    position:absolute;
+    margin-top:30px;
+    text-align: left;
+    font-size: 120px;
+    font-family: $bold-serif;
+    font-weight: bold;
+    color: #8DFFBD;
+    transition: all 5s linear;
+    animation: 1s letterSpacingImplode;
+    line-height: 1em;
+    position: relative;
+    height: 800px;
+    letter-spacing: 2px;
+    visibility: hidden;
+
+    @media (min-width: $sm-width-min) {
+      font-size: 150px;
+      visibility: visible;
+    }
+
+    @media (min-width: $md-width-min) {
+      line-height: 1em;
+    }
+
+    .extra {
+      display: none;
+
+      @media (min-width: $sm-width-min) {
+        display: inline;
+      }
     }
   }
 }

@@ -35,7 +35,6 @@
         <ul>
           <li><router-link to="/" class='sm-only' v-on:click.native="closeMenu">Home</router-link></li>
           <li><router-link to="/work" v-on:click.native="closeMenu">Work</router-link></li>
-          <li><router-link to="/about" v-on:click.native="closeMenu">About</router-link></li>
           <li><router-link to="/sign-up" v-on:click.native="closeMenu">Newsletter</router-link></li>
           <li><a href="mailto:hi@lamasix.com" class='sm-only' v-on:click.native="closeMenu">Contact</a></li>
         </ul>
