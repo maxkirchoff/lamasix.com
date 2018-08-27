@@ -4,7 +4,7 @@
     </div>
     <div id="what-we-do">
       <h1>Brand, Product, and  Digital Experience</h1>
-      <p>LAMA SIX is a creative studio formed by ISLA MURRAY and MAX. We work with some of the biggest and smallest partners building and execting bold, new ideas. <a href="mailto:hi@lamasix.com">Tell us about your project.</a></p>
+      <p>LAMA SIX is a creative studio formed by ISLA MURRAY and MAX KIRCHOFF. We work with some of the biggest and smallest partners building and execting bold, new ideas. <a href="mailto:hi@lamasix.com">Tell us about your project.</a></p>
     </div>
     <div id="services">
       <div id="describe">
