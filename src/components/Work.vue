@@ -589,13 +589,12 @@ export default {
 <style lang="scss">
 @import "../scss/variables";
 
-a {
-  color: #000;
-  text-decoration: none;
-}
-
 #works {
   overflow-x: visible;
+  a {
+    color: #000;
+    text-decoration: none;
+  }
 }
 
 #work-feature {
