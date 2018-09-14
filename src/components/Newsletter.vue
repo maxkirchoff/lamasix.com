@@ -23,6 +23,59 @@
 			<p>
         Stay in touch by subscribing to our newsletter. This is for our partners, collaborators and friends. We will never give or sell your email to anyone else. We will send you notes, updates on our work, and the latest dad jokes.
 			</p>
+      <div id="previous-newsletters">
+        <h2>Previous Newsletters</h2>
+        <ul>
+          <li>
+            <a href="http://newsletter.lamasix.com/cleveland-podcast-and-apple-review">Community & apples!</a>
+            <span class="date">September 14th, 2018</span>
+          </li>
+          <li>
+            <a href="http://newsletter.lamasix.com/were-expanding">We're expanding!</a>
+            <span class="date">August 7th, 2018</span>
+          </li>
+          <li>
+            <a href="http://newsletter.lamasix.com/coffee-and-hip-hop">Coffee & Hip Hop</a>
+            <span class="date">June 22nd, 2018</span>
+          </li>
+          <li>
+            <a href="http://newsletter.lamasix.com/mirra">Ask Mirra</a>
+            <span class="date">April 20th, 2018</span>
+          </li>
+          <li>
+            <a href="http://newsletter.lamasix.com/arsenal-and-lady-inspo">Arsenal brand & badass women</a>
+            <span class="date">March 8th, 2018</span>
+          </li>
+          <li>
+            <a href="http://newsletter.lamasix.com/shoe-design-lab">Shoe Design Lab</a>
+            <span class="date">February 15th, 2018</span>
+          </li>
+          <li>
+            <a href="http://newsletter.lamasix.com/lets-talk-at-the-yard">"Let's Talk!" with The YARD</a>
+            <span class="date">February 1st, 2018</span>
+          </li>
+          <li>
+            <a href="http://newsletter.lamasix.com/curious-happy-new-year">Curious Elixirs & Happy New Year!</a>
+            <span class="date">December 29th, 2017</span>
+          </li>
+          <li>
+            <a href="http://newsletter.lamasix.com/wdypb-announcement">Where Does Your Penis Belong, the book and game</a>
+            <span class="date">December 15th, 2017</span>
+          </li>
+          <li>
+            <a href="http://newsletter.lamasix.com/we-moved">We Moved!</a>
+            <span class="date">December 4th, 2017</span>
+          </li>
+          <li>
+            <a href="http://newsletter.lamasix.com/lean-startup-thanksgiving">Lean Startup & Thanksgiving!</a>
+            <span class="date">November 20th, 2017</span>
+          </li>
+          <li>
+            <a href="http://newsletter.lamasix.com/we-launched-our-website">We Launched Our Website! Hoooray!</a>
+            <span class="date">October 23rd, 2017</span>
+          </li>
+        </ul>
+      </div>
 		</div>
 	</section>
 </template>
@@ -214,6 +267,55 @@ export default {
       margin-right: auto;
     }
     @media (min-width: $md-width-min) {
+    }
+  }
+
+  #previous-newsletters {
+    margin-top: 100px;
+    @media (min-width: $sm-width-min) {
+      margin: 100px auto;
+      width: 450px;
+      max-width: 450px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 50px;
+      text-align: left;
+      @media (min-width: $sm-width-min) {
+
+      }
+    }
+    ul {
+      margin: 0 auto;
+      text-align: left;
+      padding: 0;
+
+
+
+      li {
+        list-style: none;
+        position: relative;
+        margin: 30px 0 10px;
+        line-height: 1.2;
+
+        a {
+          text-decoration: none;
+          border-bottom: 1px solid #000;
+        }
+
+        .date {
+          font-size: .6em;
+          color: blue;
+          font-weight: bold;
+          display: block;
+          margin-top: 5px;
+
+          @media (min-width: $sm-width-min) {
+            display: inline;
+          }
+        }
+
+      }
     }
   }
 }

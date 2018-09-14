@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import About from '@/components/About'
 import Work from '@/components/Work'
-import SignUp from '@/components/SignUp'
+import Newsletter from '@/components/Newsletter'
 import WorkWithUs from '@/components/WorkWithUs'
 import NotFound from '@/components/NotFound'
 
@@ -32,14 +32,20 @@ export default new Router({
       component: Work
     },
     {
+      path: '/newsletter',
+      name: 'Newsletter',
+      component: Newsletter
+    },
+    {
       path: '/sign-up',
-      name: 'SignUp',
-      component: SignUp
+      redirect: {
+        name: 'Newsletter'
+      }
     },
     {
       path: '/signup',
       redirect: {
-        name: 'SignUp'
+        name: 'Newsletter'
       }
     },
     {
