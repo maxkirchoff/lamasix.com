@@ -1,0 +1,13 @@
+<!-- index.nunjucks -->
+
+{% set pageID = 'home' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<section id="mission-header" class="main-heading">
+  <h1>Hello!</h1>
+</section>
+
+
+{% endblock %}

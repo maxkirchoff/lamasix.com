@@ -1,0 +1,28 @@
+{
+  "name": "lamasix-landing-page",
+  "title": "Lama Six Landing page 2019",
+  "author": "Max Kirchoff",
+  "url": "https://github.com/LamaSix/lamasix.com",
+  "version": "1.9.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/LAmaSix/lamasix.com.git"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-declare": "^0.3.0",
+    "gulp-header": "^1.8.12",
+    "gulp-jshint": "^2.1.0",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.12.1",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.8.0"
+  }
+}

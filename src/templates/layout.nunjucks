@@ -1,0 +1,76 @@
+{% set pageID = pageID | default('') %}
+
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Basic Bro... just call me Todd. By @maxisnow</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="Page Title">
+    <meta name="twitter:description" content="Page description less than 200 characters">
+    <meta name="twitter:creator" content="@author_handle">
+    <!-- Twitter Summary card images must be at least 120x120px -->
+    <meta name="twitter:image" content="http://www.example.com/image.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Title Here" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.example.com/" />
+    <meta property="og:image" content="http://example.com/image.jpg" />
+    <meta property="og:description" content="Description Here" />
+    <meta property="og:site_name" content="Site Name, i.e. Moz" />
+    <meta property="fb:admins" content="Facebook numeric ID" />
+
+    <link href="//www.google-analytics.com" rel="dns-prefetch">
+    <link href="//ajax.googleapis.com" rel="dns-prefetch">
+    <link href="assets/css/style.min.css" rel="stylesheet">
+
+    <script src="assets/components/modernizr/modernizr.js"></script>
+  </head>
+  <body id="{{ pageID }}">
+  
+    <div class="site-container">
+
+
+      {% include "partials/header.nunjucks" %}
+
+
+      <main class="main" role="main">
+        {% block content %}
+        {% endblock %}
+      </main>
+
+      <aside class="sidebar" role="complementary">
+
+      </aside>
+
+      <footer class="footer" role="contentinfo">
+
+      </footer>
+
+    </div>
+
+    <script src="assets/components/jquery/jquery.min.js"></script>
+    <script src="assets/js/scripts.min.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-X"></script>
+    <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-XXXXX-X');
+    </script>
+
+  </body>
+</html>
