@@ -7,7 +7,7 @@
 {% block content %}
 <section id="about">
   <div id="l6-animation">
-    <video muted autoplay loop playsinline>
+    <video muted playsinline id="l6-animation-video" poster="/assets/img/l6-animation-poster.png">
       <source src="assets/video/L6.webm" type="video/webm">
       <source src="assets/video/L6.mp4" type="video/mp4">
     </video>
@@ -31,9 +31,12 @@
 </section>
 <section id="ctas" class="holder">
   <ul class="list">
-    <li class="cta"><a href=""><span class="underline">Read something</span> fun about us</a></li>
-    <li class="cta"><a href="">Sign up for our <span class="underline">newsletter</span></a></li>
-    <li class="cta"><a href="">Eat some <span class="underline">great pizza</span></a></li>
+    <li class="cta">Read something fun <a href="">about us</a></li>
+    <li class="icon">📖</li>
+    <li class="cta">Sign up for our <a href="/newsletter">newsletter</a></li>
+    <li class="icon">💌</li>
+    <li class="cta">Eat some <a href="https://goo.gl/maps/3peSSzx53Yw" target="_blank">great pizza</a></li>
+    <li class="icon">🍕</li>
   </ul>
 </section>
 

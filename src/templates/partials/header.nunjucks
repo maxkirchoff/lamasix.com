@@ -2,9 +2,10 @@
 
 <header class="header" role="banner">
 	<div class="logo">
-		Lama Six
+		<a href="/" class="no-underline">Lama Six</a>
 	</div>
 	<div class="email">
 		<a href="mailto:hi@lamasix.com">hi@lamasix.com</a>
 	</div>
+	<a href="/" class="close"></a>
 </header>

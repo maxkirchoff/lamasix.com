@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Example media query selectors */
 @media print {
   * {
@@ -76,6 +75,41 @@ a {
   a:hover {
     text-decoration: none;
     border-bottom: 2px solid #ab0097; }
+    a:hover.no-underline {
+      border-bottom: transparent; }
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  opacity: 1; }
+  @media only screen and (min-width: 768px) {
+    .close {
+      display: none; } }
+
+#home .header .close {
+  display: none; }
+
+.close:hover {
+  opacity: 1; }
+
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: #333; }
+
+.close:before {
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+
+.close:after {
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -576,6 +610,69 @@ textarea {
         padding-top: 0;
         padding-bottom: 0; } }
 
+body:not(#home) .main > section:first-child {
+  padding-top: 30vw;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto; }
+  @media only screen and (min-width: 768px) {
+    body:not(#home) .main > section:first-child {
+      padding-top: 150px; } }
+
+#newsletter-content .newsletter-image {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 10vw 0 0; }
+  @media only screen and (min-width: 768px) {
+    #newsletter-content .newsletter-image {
+      padding: 0 50px 0 0; } }
+  #newsletter-content .newsletter-image img {
+    width: 100%;
+    height: auto; }
+
+#newsletter-content #mc_embed_signup {
+  margin: 20vw auto 0; }
+  @media only screen and (min-width: 768px) {
+    #newsletter-content #mc_embed_signup {
+      margin: 50px auto 0; } }
+  #newsletter-content #mc_embed_signup input {
+    display: block; }
+  #newsletter-content #mc_embed_signup label {
+    display: none; }
+  #newsletter-content #mc_embed_signup input[type=email] {
+    box-shadow: none;
+    border: none;
+    outline: none;
+    background: #efefef;
+    padding: 3vw 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 5vw; }
+    @media only screen and (min-width: 768px) {
+      #newsletter-content #mc_embed_signup input[type=email] {
+        padding: 10px 0;
+        margin: 0 auto 15px;
+        max-width: 350px; } }
+  #newsletter-content #mc_embed_signup input[type=submit] {
+    background: #fff;
+    border: 1px solid #000;
+    padding: 3vw 0;
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      #newsletter-content #mc_embed_signup input[type=submit] {
+        padding: 10px 0;
+        margin: 0 auto;
+        max-width: 350px; } }
+
+#newsletter-content .copy {
+  margin: 10vw 0;
+  font-size: 3.5vw; }
+  @media only screen and (min-width: 768px) {
+    #newsletter-content .copy {
+      font-size: 14px;
+      max-width: 350px;
+      margin: 50px auto; } }
+
 #about {
   background: #fff; }
   @media only screen and (min-width: 1400px) {
@@ -713,34 +810,16 @@ textarea {
         align-content: space-between;
     list-style: none;
     margin: 0 auto; }
+    #ctas ul li.icon {
+      display: none; }
+      @media only screen and (min-width: 768px) {
+        #ctas ul li.icon {
+          display: block; } }
 
 #ctas .cta {
   margin: 3vw 0; }
   @media only screen and (min-width: 768px) {
     #ctas .cta {
       margin: 0 auto;
-      font-size: 1.6vw;
       -ms-flex-line-pack: justify;
-          align-content: space-between; }
-      #ctas .cta:after {
-        content: "";
-        padding-left: 4vw; }
-      #ctas .cta:nth-of-type(n+1):after {
-        content: "📖"; }
-      #ctas .cta:nth-of-type(1n+2):after {
-        content: "💌"; }
-      #ctas .cta:nth-of-type(1n+3):after {
-        content: "🍕"; } }
-  @media only screen and (min-width: 1400px) {
-    #ctas .cta {
-      font-size: 23px; } }
-  #ctas .cta a {
-    border-bottom: none; }
-    @media only screen and (min-width: 768px) {
-      #ctas .cta a:hover {
-        border-bottom: 2px solid #ab0097; } }
-    #ctas .cta a .underline {
-      border-bottom: 2px solid #ab0097; }
-      @media only screen and (min-width: 768px) {
-        #ctas .cta a .underline {
-          border-bottom: none; } }
+          align-content: space-between; } }

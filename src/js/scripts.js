@@ -54,4 +54,23 @@
     scrollText();
   }
 
+  var vid = document.getElementById("l6-animation-video");
+
+  function playVid() {
+      vid.play();
+  }
+
+  function pauseVid() {
+      vid.pause();
+  }
+
+setTimeout( function() {
+  playVid();
+  setInterval(function() {
+    playVid();
+  }, 7000);
+}, 1000);
+
+
+
 })(jQuery, window, document);

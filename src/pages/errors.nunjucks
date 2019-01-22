@@ -1,0 +1,14 @@
+<!-- index.nunjucks -->
+
+{% set pageID = 'error' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<section class="section">
+  <h1>Huh?!</h1>
+  <p>We can't find what you're looking for....this is awkward.</p>
+</section>
+
+
+{% endblock %}

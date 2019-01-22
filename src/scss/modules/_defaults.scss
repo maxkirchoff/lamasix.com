@@ -30,5 +30,41 @@ a {
   &:hover {
     text-decoration: none;
     border-bottom: 2px solid #ab0097;
+
+    &.no-underline {
+      border-bottom: transparent;
+    }
   }
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  @media only screen and (min-width:$sm-min-width) {
+    display: none;
+  }
+}
+#home .header .close {
+  display: none;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
 }
