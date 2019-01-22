@@ -1,138 +1,45 @@
 .header {
-  top: 20px;
-  z-index: 99;
   position: absolute;
-  left: 0;
-  right: 0;
+  top: 0;
+  left: 8vw;
+  right: 8vw;
+  height: 10vw;
+  z-index: 99;
+
+  @media only screen and (min-width:$sm-min-width) {
+    left: 4vw;
+    right: 4vw;
+    top: 40px;
+  }
+  @media only screen and (min-width:$xl-min-width) {
+    width: 1288px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 
   .logo {
-	display: block;
-    float: left;
-    width: 30px;
+    position: absolute;
+    top: 0;
+    display: none;
 
-    img {
-      width: 100%;
-      height: auto;
+    @media only screen and (min-width:$sm-min-width) {
+      display: block;
+      left: 0;
+      right: auto;
     }
   }
 
-  nav {
-    display: block;
-    width: 70%;
-    float: right;
-    margin-top: 20px;
+  .email {
+    position: absolute;
+    top: 0;
+    left: 0;
 
-    @media only screen and (min-width: $md-min-width) {
-      margin-top: 10px;
-    }
-
-    button.menu-toggle {
-      color: #000;
+    @media only screen and (min-width:$sm-min-width) {
       display: block;
-      position: absolute;
-      padding: 0 0 10px 20px;
-      text-transform: uppercase;
       right: 0;
-      top: 0;
-      z-index: 999;
-      outline: none;
-      background: none;
-      cursor: pointer;
-      border: 0;
-
-
-      @media only screen and (min-width: $md-min-width) {
-        display: none
-      }
-
-      &.menu-active {
-        color: #fff;
-      }
-    }
-
-    ul {
-      display: none;
-      list-style: none;
-      line-height: 1;
-      margin: 0;
-      padding: 50px 8.33% 0;
-      position: fixed;
-      background: $orange;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-
-      @media only screen and (min-width: $md-min-width) {
-        padding: 0;
-        display: block;
-        margin-left: 3vw;
-        float: left;
-        position: relative;
-        top: auto;
-        left: auto;
-        right: auto;
-        bottom: auto;
-        background: transparent;
-        width: 100%;
-      }
-
-      @media only screen and (min-width: $lg-min-width) {
-        margin-left: 35px;
-      }
-
-      &.active {
-        display: block;
-        overflow: auto;
-      }
-
-      li {
-        display: block;
-        margin: 6vh 0;
-
-        @media only screen and (min-width: $md-min-width) {
-          vertical-align: top;
-          margin: 5px 1.3vw;
-          display: block;
-          float: right;
-        }
-
-        @media only screen and (min-width: $lg-min-width) {
-          margin: 10px 28px;
-        }
-
-        a {
-          text-decoration: none;
-          text-transform: uppercase;
-          font-weight: bold;
-          font-size: 7vw;
-          color: #fff;
-
-          @media only screen and (min-width: $md-min-width) {
-            font-size: 1vw;
-            color: #000;
-          }
-          @media only screen and (min-width: $lg-min-width) {
-            font-size: 14px;
-          }
-
-          &.button {
-            padding: 10px;
-            background: $orange;
-            color: #fff;
-            @media only screen and (max-width: $sm-max-width) {
-              padding: 0;
-              background: transparent;
-            }
-          }
-
-          &.active {
-            @media only screen and (min-width: $md-min-width) {
-              border-bottom: 2px solid $orange;
-            }
-          }
-        }
-      }
+      left: auto;
     }
   }
 }

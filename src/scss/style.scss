@@ -8,6 +8,10 @@
 // CONFIG MODULES
 //----------------------------------*/
 
+// Enhancement modules
+@import 'modules/_breakpoints.scss';
+@import 'modules/_print.scss';
+
 // Config modules
 @import 'modules/_vars.scss';
 @import 'modules/_clearfix.scss';
@@ -25,10 +29,6 @@
 @import 'modules/_typography.scss';
 @import 'modules/_misc.scss';
 @import 'modules/_app.scss';
-
-// Enhancement modules
-@import 'modules/_breakpoints.scss';
-@import 'modules/_print.scss';
 
 //----------------------------------*\
 // PARTIALS

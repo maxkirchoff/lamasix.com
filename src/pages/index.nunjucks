@@ -5,8 +5,36 @@
 {% extends "layout.nunjucks" %}
 
 {% block content %}
-<section id="mission-header" class="main-heading">
-  <h1>Hello!</h1>
+<section id="about">
+  <div id="l6-animation">
+    <video muted autoplay loop>
+      <source src="assets/video/L6.webm" type="video/webm">
+      <source src="assets/video/L6.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="content">
+    <h1>A full-service creative studio</h1>
+    <p>We build brands from the ground up, craft beautiful digital experiences and execute them really well.</p>
+    <p>Full site coming soon, <a href="mailto:hi@lamasix.com">hit us up</a> for work samples.
+    <a class="email button" href="mailto:hi@lamasix.com">hi@lamasix.com</a>
+  </div>
+</section>
+<section id="coming-soon">
+  <h5>full site</h5>
+  <h2>coming soon</h2>
+  <h2>coming soon</h2>
+  <h2>coming soon</h2>
+  <h2>coming soon</h2>
+  <h2>coming soon</h2>
+  <h2>coming soon</h2>
+  <h2>coming soon</h2>
+</section>
+<section id="ctas" class="holder">
+  <ul class="list">
+    <li class="cta"><a href=""><span class="underline">Read something</span> fun about us</a></li>
+    <li class="cta"><a href="">Sign up for our <span class="underline">newsletter</span></a></li>
+    <li class="cta"><a href="">Eat some <span class="underline">great pizza</span></a></li>
+  </ul>
 </section>
 
 

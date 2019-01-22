@@ -1,39 +1,10 @@
-{% set navItems = [
-	{
-		url: '/',
-		slug: 'home',
-		title: 'Home'
-	},
-	{
-		url: '/#',
-		slug: 'example',
-		title: 'Example Nav Item'
-	}
-]
-%}
-
 {% set pageID = pageID | default('') %}
-
 
 <header class="header" role="banner">
 	<div class="logo">
-		<a href="/">
-			<img src="assets/img/logo.png" alt="Logo">
-		</a>
+		Lama Six
 	</div>
-	<nav id="site-navigation">
-		<button class="menu-toggle">&#9776; Menu</button>
-		<ul class="nav-items">
-			{% for navItem in navItems %}
-				{% if navItem.slug !== 'home' %}
-					<li>
-						<a href="{{ navItem.url }}" class="{% if navItem.button==true %} button {% endif %} {% if navItem.slug == pageID %} active {% endif %}">
-							{{ navItem.title }}
-						</a>
-					</li>
-				{% endif %}
-			{% endfor %}
-
-		</ul>
-	</nav>
+	<div class="email">
+		<a href="mailto:hi@lamasix.com">hi@lamasix.com</a>
+	</div>
 </header>
