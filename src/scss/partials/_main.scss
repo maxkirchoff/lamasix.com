@@ -11,27 +11,22 @@
     bottom: 0;
   }
 
-  @media only screen and (min-width:$sm-min-width) and (max-height: '50vw') {
+  @media only screen and (min-width:$sm-min-width) and (max-width:$lg-max-width) and (max-height: '50vw') {
     top: -5vw;
   }
-  @media only screen and (min-width:$sm-min-width) and (max-height: '45vw') {
+  @media only screen and (min-width:$sm-min-width) and (max-width:$lg-max-width) and (max-height: '45vw') {
     top: -10vw;
   }
 
   a {
-    padding-bottom: 0.5vw;
     border-bottom: 2px solid #AB0097;
-
-    @media only screen and (min-width:$sm-min-width) {
-      padding-bottom: 1px;
-    }
 
     &:hover {
       border-bottom: transparent;
     }
 
     &.button {
-      border: solid 2px #000;
+      border: solid 1px #000;
       display: block;
       text-align: center;
       padding: 5vw 0;
@@ -104,6 +99,15 @@
         font-size: 56px;
       }
     }
+
+    p {
+      @media only screen and (min-width:$sm-min-width) {
+        font-size: 1.4vw;
+      }
+      @media only screen and (min-width:$xl-min-width) {
+        font-size: 18px;
+      }
+    }
   }
 }
 
@@ -134,6 +138,7 @@
   color: #fff;
   padding-left: 0;
   padding-right: 0;
+  padding-bottom: 25vw;
 
   @media only screen and (min-width:$sm-min-width) {
     display: none;
@@ -157,7 +162,7 @@
     padding-right: 4vw;
     margin-top: 0;
     margin-bottom: 0;
-    line-height: 1.05;
+    line-height: 1;
 
     &:first-of-type {
       margin-top: 5vw;
