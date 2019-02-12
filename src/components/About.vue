@@ -3,7 +3,7 @@
     <div class="bg-wrapper">
     </div>
     <div id="what-we-do">
-      <h1>Brand, Product, and  Digital Experience</h1>
+      <h1>Brand, Product, and Digital Experience</h1>
       <p>LAMA SIX is a creative studio formed by ISLA MURRAY and MAX KIRCHOFF. We work with some of the biggest and smallest partners building and executing bold, new ideas. <a href="mailto:hi@lamasix.com">Tell us about your project.</a></p>
     </div>
     <div id="services">
@@ -39,7 +39,7 @@
     <div class="who-we-are-wrapper">
       <div id="who-we-are">
         <h2>Who we are</h2>
-        <p>Our collaborators and clients include entrepreneurs, industry leaders, start-ups, investors, makers and content creators. We guide, plan and execute with rapid and thoughtful approaches to realize and substantialize visionary ideas.  </p>
+        <p>Our collaborators and clients include entrepreneurs, industry leaders, start-ups, investors, makers and content creators. We guide, plan and execute with rapid and thoughtful approaches to realize and substantialize visionary ideas.</p>
         <p>We believe in the transformational expression that products and digital experiences open up to every person.</p><p>Our name is an anagram of “Isla” and “Max,” remixed into “LAMA SIX.” The studio, as the name, is a representation of our own talent, experience and skills as well as the playful and clever nature of our work. Both of us come from diverse backgrounds colored by our curiosity, creativity and drive.</p>
       </div>
       <div id="bio-pic">
