@@ -1,0 +1,12 @@
+
+<div class="category-projects">
+  {% import "data/work.nunjucks" as work %}
+  {% for key, project in work.projects %}
+    {% for cat in project.categories %}
+      {% if category == cat.slug %}
+        {% set projectSlug = key %}
+        {% include "partials/project.nunjucks" %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</div>

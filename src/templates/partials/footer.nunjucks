@@ -1,0 +1,42 @@
+<footer class="footer" role="contentinfo">
+  <div class="footer-nav-wrapper">
+    <nav class="footer-nav">
+      <div class="social">
+        <h1>Follow Us</h1>
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/lama.six/" target="_blank">Instagram</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/lama-six-llc" target="_blank">Linkedin</a>
+          </li>
+          <li>
+            <a href="/newsletter">Newsletter</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <h1>Contact Us</h1>
+        <ul>
+          <li><a href="mailto:hi@lamasix.com">hi@lamasix.com</a></li>
+          <li><a href="tel:9715065205">+1 971.506.5205</a></li>
+        </ul>
+      </div>
+      <div class="social">
+        <h1>Join Us</h1>
+        <ul>
+          <li><a href="mailto:hi@lamasix.com">Let's chat!</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="copyright">
+      © LAMASIX  2019 — All Rights Reserved.
+    </div>
+  </div>
+  <div class="logo">
+    <video loop autoplay playsinline muted poster="/assets/media/l6-logo-wink-black.jpg">
+      <source src="/assets/media/l6-logo-wink-black.webm" type="video/webm">
+      <source src="/assets/media/l6-logo-wink-black.mp4" type="video/mp4">
+    </video>
+  </div>
+</footer>

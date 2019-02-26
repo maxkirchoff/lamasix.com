@@ -1,9 +1,3 @@
-<html>
-<head>
-<title>Redirecting to http://uberconference.com/lamasix</title>
-<meta http-equiv="refresh" content="0; URL='http://uberconference.com/lamasix'" />
-</head>
-<body>
-<a href="http://uberconference.com/lamasix">Redirecting to http://uberconference.com/lamasix</a>
-</body>
-</html>
+<script>
+window.location.replace("https://www.uberconference.com/lamasix");
+</script>

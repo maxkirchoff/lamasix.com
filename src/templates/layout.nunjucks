@@ -6,7 +6,7 @@
     <meta name="google-site-verification" content="xnps0vRU9wYkqXKrGEE5xFKnhXHt2N_L4qV3os8WULo">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lama Six, a full-service creative studio.</title>
+    <title>Lama Six, a full service creative agency specializing in women focused brands.</title>
 
     <meta name="description" content="Lama Six is a full-service creative studio based in Brooklyn, NY.">
 
@@ -17,11 +17,11 @@
     <meta name="author" content="LAMA SIX LLC">
 
     <meta property="og:title" content="Lama Six">
-    <meta property="og:image" content="http://lamasix.com/assets/img/og-image.png">
+    <meta property="og:image" content="http://lamasix.com/assets/media/og-image.png">
     <meta property="og:description" content="Lama Six, a full-service creative studio.">
     <meta property="og:url" content="http://lamasix.com">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="http://lamasix.com/assets/img/og-image.png">
+    <meta name="twitter:image" content="http://lamasix.com/assets/media/og-image.png">
     <meta name="twitter:site" content="Lama Six">
     <meta name="twitter:creator" content="@maxisnow">
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/apple-icon-57x57.png">
@@ -41,20 +41,14 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/assets/icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-100866504-1', 'auto');
-      ga('send', 'pageview');</script>
 
     <link href="//www.google-analytics.com" rel="dns-prefetch">
     <link href="//ajax.googleapis.com" rel="dns-prefetch">
+    <link href="/assets/components/slick/slick.css" rel="stylesheet">
+    <link href="/assets/components/slick/slick-theme.css" rel="stylesheet">
     <link href="/assets/css/style.min.css" rel="stylesheet">
 
     <script src="/assets/components/modernizr/modernizr.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
   </head>
   <body id="{{ pageID }}">
 
@@ -69,16 +63,13 @@
         {% endblock %}
       </main>
 
-      <aside class="sidebar" role="complementary">
-      </aside>
-
-      <footer class="footer" role="contentinfo">
-      </footer>
+      {% include "partials/footer.nunjucks" %}
 
     </div>
 
-    <script src="assets/components/jquery/jquery.min.js"></script>
-    <script src="assets/js/scripts.min.js"></script>
+    <script src="/assets/components/jquery/jquery.min.js"></script>
+    <script src="/assets/components/slick/slick.min.js"></script>
+    <script src="/assets/js/scripts.min.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -89,7 +80,7 @@
 			dataLayer.push(arguments);
 		}
 		gtag('js', new Date());
-		gtag('config', 'UA-XXXXX-X');
+		gtag('config', 'UA-100866504-1');
     </script>
 
   </body>

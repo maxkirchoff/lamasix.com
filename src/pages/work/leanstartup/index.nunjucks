@@ -1,0 +1,3 @@
+{% set projectSlug = 'leanstartup' %}
+
+{% extends "project-page.nunjucks" %}

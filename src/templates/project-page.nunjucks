@@ -1,0 +1,9 @@
+{% set pageID = 'work' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+  {% include "partials/project.nunjucks" %}
+
+{% endblock %}

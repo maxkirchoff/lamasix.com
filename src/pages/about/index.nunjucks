@@ -1,0 +1,231 @@
+<!-- about/index.nunjucks -->
+
+{% set services = [
+  "Brand strategy",
+  "Brand & visual identity",
+  "Creative Direction ",
+  "Art Direction",
+  "Visual social strategy",
+  "Illustration ",
+  "Animation",
+  "Photography",
+  "Motion graphics",
+  "Copywriting",
+  "Information architecture ",
+  "UI/UX strategy",
+  "App design",
+  "Web design",
+  "Digital ad design",
+  "Development"
+]
+%}
+
+{% set quotes = [
+  {
+    quote: "Working with Lama Six on The Difference was easily one of my best collaborative experiences in all my years as an entrepreneur. They have fantastic, out of the box ideas, while also being very structured and punctual, and excellent on executing",
+    author: "Bea",
+    company: "The Difference"
+  },
+  {
+    quote: "Working with the LamaSix team has been one of the best decisions our brand has made. From ideation to design, and from build to launch, they truly became an extension of our team who helped us build a beautiful website and corresponding collateral that truly represents the ethos of Clarity.",
+    author: "Serena",
+    company: "Clarity"
+  }
+]
+%}
+
+{% set clients = [
+  "Match Group",
+  "L'Oreal",
+  "essie",
+  "Valve Corporation",
+  "Steam",
+  "The Lean Startup",
+  "Clarity Staffing",
+  "The Difference",
+  "Tradiies",
+  "Arsenal",
+  "Mirra",
+  "Financial Fiduciary Group",
+  "Flor de Maria",
+  "Sked Social",
+  "Curious Elixirs",
+  "Bustle",
+  "The OMG",
+  "Cardstack",
+  "HighPoint",
+  "Monegraph",
+  "Fellow Barber",
+  "Chomps"
+]
+%}
+
+{% set pageID = 'about' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+<section id="who-we-are">
+  <header>
+    <h1>Who we are</h1>
+  </header>
+  <p>
+    LAMA SIX is a full-service creative agency that couldn’t be boring if we tried. We lend our distinctly thoughtful style and inclusive sensibility to brands that want to stand out. We know when things need a new, refreshing perspective or just a little bit more salt to really sing.</p><p>Don’t worry, we won’t actually sing. It was a metaphor.
+  </p>
+</section>
+<section id="what-we-do">
+  <header>
+    <h1>What we do</h1>
+  </header>
+  <ul class="services">
+    {% for service in services %}
+      <li>{{service}}</li>
+    {% endfor %}
+  </ul>
+</section>
+<section id="quotes-about-us">
+  <header>
+    <h1>What clients say about us</h1>
+  </header>
+  <ul class="quotes">
+    {% for quote in quotes %}
+      <li class="quote">
+        <div class="text">
+          “{{quote.quote}}”  
+        </div>
+        <div class="author">- {{quote.author}}, {{quote.company}}</div>
+      </li>
+    {% endfor %}
+  </ul>
+  <div class="slick-navigation">
+    <div class="arrow prev">
+      <svg width="100%" viewBox="0 0 19 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+              <g id="About-page" transform="translate(-60.000000, -2164.000000)" stroke="#000000" stroke-width="3">
+                  <polyline id="Stroke-1" transform="translate(70.000000, 2179.500000) scale(-1, -1) translate(-70.000000, -2179.500000) " points="63 2166 77 2179.50004 63 2193"></polyline>
+              </g>
+          </g>
+      </svg>
+    </div>
+    <div class="arrow next">
+      <svg width="100%" viewBox="0 0 19 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+              <g id="About-page" transform="translate(-1120.000000, -2169.000000)" stroke="#000000" stroke-width="3">
+                  <polyline id="Stroke-1" transform="translate(1129.000000, 2184.500000) scale(1, -1) translate(-1129.000000, -2184.500000) " points="1122 2171 1136 2184.50004 1122 2198"></polyline>
+              </g>
+          </g>
+      </svg>
+    </div>
+  </div>
+</section>
+<section id="our-clients">
+  <header>
+    <h1>Clients</h1>
+  </header>
+  <ul class="clients">
+    {% for client in clients %}
+      <li>{{client}}</li>
+    {% endfor %}
+  </ul>
+</section>
+<section id="our-team">
+  <header>
+    <h1>Team</h1>
+  </header>
+  {# <blockquote class="power-statement">
+    We are the best because we work with the best. We're actually the bestest best. They wrote that song at the end of Karate Kid about us. <i>🎵 You're the best! 🎵 🎶 Arooooooouuuuuuunnd 🎶</i>
+  </blockquote> #}
+  <div class="founders">
+    <h2>Founding partners</h2>
+    <div class="founding-partners">
+      <div class="partner">
+        <div class="photo">
+          <img src="/assets/media/team/isla-bell-murray.jpg" alt="Photo of Isla Bell Murray, Creative Director and CEO">
+        </div>
+        <h3>
+          Isla Murray
+          <br>
+          Creative Director, CEO
+        </h3>
+        <div class="bio">
+          Isla is an inspiring and creative leader who focuses on design, perception and intimately understanding the people she wants to speak to, allowing her to author courageous innovation. She was previously the Creative Director at Bustle.com, the largest millennial women’s publication, which reaches 50 million uniques a month. While she has a masterful sense of visual design, photo and video direction, and content creation, she also draws on her extensive background in Behavioral Psychology to understand, interpret and express the people who interface with her work.
+        </div>
+      </div>
+      <div class="partner">
+        <div class="photo">
+          <img src="/assets/media/team/maximillian-kirchoff.jpg" alt="Photo of Maximillian Kirchoff, Managing Principal">
+        </div>
+        <h3>
+          Maximillian Kirchoff
+          <br>
+          Chief Operating Officer
+        </h3>
+        <div class="bio">
+          Max is a creative technologist with vast domain knowledge, drawing on his thoughtful and engaging presence to build and guide the execution of bold, new ideas. He operates across design, technology and product - unifying the technical understanding of problems and the aesthetic & empathic nuances of design with the heaviness of business requirements, investment and the hard conversations to obtain stakeholder buy-in. While at Google, he operated across many groups and worked to build tools that answered immediate business needs, impacting the day-to-day of thousands of engineers.
+        </div>
+      </div>
+    </div>
+  </div>
+  {% set teamMembers = [
+      {
+        name: "Amber Case",
+        title: "Design Director",
+        photo: "http://lorempixel.com/433/296/people/",
+        bio: "Bacon ipsum dolor amet burgdoggen tri-tip spare ribs jowl ham hock alcatra kielbasa chuck. Bresaola tenderloin jowl sausage biltong ball tip. Short loin tongue rump, beef ribs drumstick corned beef filet mignon pork chop swine frankfurter leberkas t-bone spare ribs strip steak pancetta. Ribeye beef ribs sausage landjaeger. Hamburger turkey tenderloin cupim prosciutto beef ribs tongue alcatra. Pork chop leberkas pig pork belly kielbasa. Buffalo brisket ground round, beef andouille short ribs shoulder drumstick shankle salami tongue pancetta."
+      },
+      {
+        name: "Wendy Steiner",
+        title: "Copywriter, Comedian",
+        photo: "http://lorempixel.com/433/296/people/",
+        bio: "Bacon ipsum dolor amet burgdoggen tri-tip spare ribs jowl ham hock alcatra kielbasa chuck. Bresaola tenderloin jowl sausage biltong ball tip. Short loin tongue rump, beef ribs drumstick corned beef filet mignon pork chop swine frankfurter leberkas t-bone spare ribs strip steak pancetta. Ribeye beef ribs sausage landjaeger. Hamburger turkey tenderloin cupim prosciutto beef ribs tongue alcatra. Pork chop leberkas pig pork belly kielbasa. Buffalo brisket ground round, beef andouille short ribs shoulder drumstick shankle salami tongue pancetta."
+      },
+      {
+        name: "Wendy Steiner",
+        title: "Copywriter, Comedian",
+        photo: "http://lorempixel.com/433/296/people/",
+        bio: "Bacon ipsum dolor amet burgdoggen tri-tip spare ribs jowl ham hock alcatra kielbasa chuck. Bresaola tenderloin jowl sausage biltong ball tip. Short loin tongue rump, beef ribs drumstick corned beef filet mignon pork chop swine frankfurter leberkas t-bone spare ribs strip steak pancetta. Ribeye beef ribs sausage landjaeger. Hamburger turkey tenderloin cupim prosciutto beef ribs tongue alcatra. Pork chop leberkas pig pork belly kielbasa. Buffalo brisket ground round, beef andouille short ribs shoulder drumstick shankle salami tongue pancetta."
+      },
+      {
+        name: "Wendy Steiner",
+        title: "Copywriter, Comedian",
+        photo: "http://lorempixel.com/433/296/people/",
+        bio: "Bacon ipsum dolor amet burgdoggen tri-tip spare ribs jowl ham hock alcatra kielbasa chuck. Bresaola tenderloin jowl sausage biltong ball tip. Short loin tongue rump, beef ribs drumstick corned beef filet mignon pork chop swine frankfurter leberkas t-bone spare ribs strip steak pancetta. Ribeye beef ribs sausage landjaeger. Hamburger turkey tenderloin cupim prosciutto beef ribs tongue alcatra. Pork chop leberkas pig pork belly kielbasa. Buffalo brisket ground round, beef andouille short ribs shoulder drumstick shankle salami tongue pancetta."
+      },
+      {
+        name: "Wendy Steiner",
+        title: "Copywriter, Comedian",
+        photo: "http://lorempixel.com/433/296/people/",
+        bio: "Bacon ipsum dolor amet burgdoggen tri-tip spare ribs jowl ham hock alcatra kielbasa chuck. Bresaola tenderloin jowl sausage biltong ball tip. Short loin tongue rump, beef ribs drumstick corned beef filet mignon pork chop swine frankfurter leberkas t-bone spare ribs strip steak pancetta. Ribeye beef ribs sausage landjaeger. Hamburger turkey tenderloin cupim prosciutto beef ribs tongue alcatra. Pork chop leberkas pig pork belly kielbasa. Buffalo brisket ground round, beef andouille short ribs shoulder drumstick shankle salami tongue pancetta."
+      },
+      {
+        name: "Wendy Steiner",
+        title: "Copywriter, Comedian",
+        photo: "http://lorempixel.com/433/296/people/",
+        bio: "Bacon ipsum dolor amet burgdoggen tri-tip spare ribs jowl ham hock alcatra kielbasa chuck. Bresaola tenderloin jowl sausage biltong ball tip. Short loin tongue rump, beef ribs drumstick corned beef filet mignon pork chop swine frankfurter leberkas t-bone spare ribs strip steak pancetta. Ribeye beef ribs sausage landjaeger. Hamburger turkey tenderloin cupim prosciutto beef ribs tongue alcatra. Pork chop leberkas pig pork belly kielbasa. Buffalo brisket ground round, beef andouille short ribs shoulder drumstick shankle salami tongue pancetta."
+      }
+    ]
+  %}
+  {# <div class="team">
+    <h2>Team</h2>
+    <div class="team-members">
+      {% for teamMember in teamMembers %}
+        <div class="team-member">
+          <div class="photo">
+            <img src="{{teamMember.photo}}" alt="{{teamMember.name}}">
+          </div>
+          <h3>
+            {{teamMember.name}}
+            <br>
+            {{teamMember.title}}
+           </h3>
+          <div class="bio">
+            {{teamMember.bio}}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+#}
+{% endblock %}

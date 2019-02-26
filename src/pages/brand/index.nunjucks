@@ -1,0 +1,13 @@
+<!-- index.nunjucks -->
+
+{% set pageID = 'category-brand' %}
+{% set category = "brand" %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<h1 class="category-title">Brand & visual identity</h1>
+
+{% include "work-category-page.nunjucks" %}
+
+{% endblock %}
