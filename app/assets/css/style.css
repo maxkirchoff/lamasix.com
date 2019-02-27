@@ -607,7 +607,9 @@ nav#site-navigation {
         text-transform: lowercase;
         font-size: 25vw;
         color: #fff;
-        line-height: 1; }
+        line-height: 1;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 250ms ease-out; }
         @media only screen and (min-width: 850px) {
           nav#site-navigation ul li a {
             text-transform: none;

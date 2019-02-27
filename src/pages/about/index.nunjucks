@@ -133,15 +133,15 @@
   <header>
     <h1>Team</h1>
   </header>
-  {# <blockquote class="power-statement">
-    We are the best because we work with the best. We're actually the bestest best. They wrote that song at the end of Karate Kid about us. <i>🎵 You're the best! 🎵 🎶 Arooooooouuuuuuunnd 🎶</i>
-  </blockquote> #}
+  <blockquote class="power-statement">
+    We work with collaborators across creative and technology disciplines, creating community around each project to cultivate the most fulfilling and compelling work possible.
+  </blockquote>
   <div class="founders">
     <h2>Founding partners</h2>
     <div class="founding-partners">
       <div class="partner">
         <div class="photo">
-          <img src="/assets/media/team/isla-bell-murray.jpg" alt="Photo of Isla Bell Murray, Creative Director and CEO">
+          <img src="/assets/media/team/isla-bell-murray-alt.jpg" alt="Photo of Isla Bell Murray, Creative Director and CEO">
         </div>
         <h3>
           Isla Murray
@@ -154,7 +154,7 @@
       </div>
       <div class="partner">
         <div class="photo">
-          <img src="/assets/media/team/maximillian-kirchoff.jpg" alt="Photo of Maximillian Kirchoff, Managing Principal">
+          <img src="/assets/media/team/maximillian-kirchoff-alt.jpg" alt="Photo of Maximillian Kirchoff, Managing Principal">
         </div>
         <h3>
           Maximillian Kirchoff

@@ -111,6 +111,8 @@ nav#site-navigation {
         font-size: 25vw;
         color: #fff;
         line-height: 1;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 250ms ease-out;
 
         @media only screen and (min-width: $md-min-width) {
           text-transform: none;

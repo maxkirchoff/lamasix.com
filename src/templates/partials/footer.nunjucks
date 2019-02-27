@@ -30,7 +30,8 @@
       </div>
     </nav>
     <div class="copyright">
-      © LAMASIX  2019 — All Rights Reserved.
+      © LAMA SIX LLC <script>document.write(new Date().getFullYear())</script>
+ — All Rights Reserved.
     </div>
   </div>
   <div class="logo">
