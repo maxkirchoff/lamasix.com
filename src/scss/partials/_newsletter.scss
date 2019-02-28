@@ -1,0 +1,125 @@
+#newsletter {
+  background: #000;
+  color: #fff;
+
+  header {
+    background: #000;
+    color: #fff;
+
+    nav#site-navigation ul li a {
+      color: #fff;
+    }
+
+    .logo svg path {
+      fill: #fff;
+    }
+  }
+
+  .footer {
+    opacity: 0;
+  }
+
+  #newsletter-signup {
+    position: relative;
+    overflow: hidden;
+    padding: 5vw 7.5vw;
+
+    @media only screen and (min-width: $md-min-width) {
+      padding: 0;
+    }
+
+    .winking-logo {
+      position: absolute;
+      top: -30vw;
+      width: 130vw;
+      margin: 0 -25vw 0;
+
+      @media only screen and (min-width: $md-min-width) {
+        top: -23vw;
+        width: 94vw;
+        margin: 0 0 0 -21vw;
+      }
+
+      video {
+        width: 100%;
+      }
+
+    }
+
+    .sign-up {
+      position: relative;
+      z-index: 999;
+      margin-top: 70vw;
+      font-family: $font-gt-super;
+
+      @media only screen and (min-width: $md-min-width) {
+        margin-top: 23vw;
+        width: 36.67vw;
+        margin-left: 53.33vw;
+        padding-bottom: 10vw;
+        font-size: 2vw;
+      }
+
+      #mc_embed_signup {
+        margin-top: 10vw;
+
+        @media only screen and (min-width: $md-min-width) {
+          margin-top: 5vw;
+        }
+
+        #mc_embed_signup_scroll {
+          @media only screen and (min-width: $md-min-width) {
+            display: flex;
+            flex-direction: row;
+            align-items:flex-end;
+            justify-content: flex-end;
+          }
+
+          .mc-field-group {
+            @media only screen and (min-width: $md-min-width) {
+              width: 100%;
+              padding-right: 2vw;
+            }
+          }
+        }
+
+        label {
+          display: none;
+        }
+
+        input[type=email] {
+          color: #fff;
+          outline: none;
+          border: none;
+          border-bottom: 2px solid #fff;
+          box-shadow: none;
+          width: 100%;
+          border-radius: 0;
+          background: transparent;
+        }
+
+        input[type=submit] {
+          color: #fff;
+          border: 2px solid #fff;
+          background: transparent;
+          outline: none;
+          box-shadow: none;
+          font-family: $font-gt-america;
+          font-size: 4vw;
+          width: 100%;
+          margin: 5vw auto;
+          padding: 2vw 0;
+          display: block;
+          border-radius: 0;
+
+          @media only screen and (min-width: $md-min-width) {
+            width: auto;
+            margin: 0;
+            font-size: 1vw;
+            padding: .75vw 2vw;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+$bg: #324358;
+$fc: #A3C3EB;
+
+body#sleep {
+  background: $bg;
+
+  background: $bg;
+  color: $fc;
+
+  a {
+    color: $fc;
+  }
+
+  section {
+    padding: 5vw 7.5vw;
+
+    @media only screen and (min-width: $md-min-width) {
+
+    }
+    h1 {
+      font-family: $font-gt-america;
+      color: #fff;
+      font-size: 1.5vw;
+      margin: 0;
+    }
+    ul {
+      margin-top: 3vw;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        font-family: $font-gt-super;
+        font-size: 5vw;
+        line-height: 1;
+        margin: 3vw 0;
+
+        a {
+          text-decoration: underline;
+          text-decoration-color: #fff;
+          transition: text-decoration-color ease-out 250ms;
+
+          &:hover {
+            text-decoration-color: $fc;
+          }
+        }
+
+        .help-note {
+          font-family: $font-gt-america;
+          font-size: 1.5vw;
+          margin-top: 0.5vw;
+          margin-left: 1vw;
+        }
+      }
+    }
+
+    &#sleep-suggestions {
+      color: #fff;
+      font-size: 1.75vw;
+
+      a {
+        color: #fff !important;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  header {
+    background: $bg;
+    color: #fff;
+
+    &.menu-active {
+      background: #000;
+    }
+
+    nav#site-navigation ul li a, nav#site-navigation button {
+      color: #fff;
+    }
+
+    .logo svg path {
+      fill: #fff;
+    }
+  }
+
+  .footer {
+    a {
+      color: #fff;
+    }
+  }
+}

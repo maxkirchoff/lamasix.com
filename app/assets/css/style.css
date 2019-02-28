@@ -812,99 +812,6 @@ header.menu-active {
     .main .category-projects .project:last-of-type {
       margin-bottom: 0; }
 
-#newsletter {
-  background: #000;
-  color: #fff; }
-  #newsletter header {
-    background: #000;
-    color: #fff; }
-    #newsletter header nav#site-navigation ul li a {
-      color: #fff; }
-    #newsletter header .logo svg path {
-      fill: #fff; }
-  #newsletter .footer {
-    opacity: 0; }
-  #newsletter #newsletter-signup {
-    position: relative;
-    overflow: hidden;
-    padding: 5vw 7.5vw; }
-    @media only screen and (min-width: 850px) {
-      #newsletter #newsletter-signup {
-        padding: 0; } }
-    #newsletter #newsletter-signup .winking-logo {
-      position: absolute;
-      top: -30vw;
-      width: 130vw;
-      margin: 0 -25vw 0; }
-      @media only screen and (min-width: 850px) {
-        #newsletter #newsletter-signup .winking-logo {
-          top: -23vw;
-          width: 94vw;
-          margin: 0 0 0 -21vw; } }
-      #newsletter #newsletter-signup .winking-logo video {
-        width: 100%; }
-    #newsletter #newsletter-signup .sign-up {
-      position: relative;
-      z-index: 999;
-      margin-top: 70vw;
-      font-family: "GT-Super-Text", "Times New Roman", times, serif; }
-      @media only screen and (min-width: 850px) {
-        #newsletter #newsletter-signup .sign-up {
-          margin-top: 23vw;
-          width: 36.67vw;
-          margin-left: 53.33vw;
-          padding-bottom: 10vw;
-          font-size: 2vw; } }
-      #newsletter #newsletter-signup .sign-up #mc_embed_signup {
-        margin-top: 10vw; }
-        @media only screen and (min-width: 850px) {
-          #newsletter #newsletter-signup .sign-up #mc_embed_signup {
-            margin-top: 5vw; } }
-        @media only screen and (min-width: 850px) {
-          #newsletter #newsletter-signup .sign-up #mc_embed_signup #mc_embed_signup_scroll {
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-direction: row;
-                flex-direction: row;
-            -ms-flex-align: end;
-                align-items: flex-end;
-            -ms-flex-pack: end;
-                justify-content: flex-end; } }
-        @media only screen and (min-width: 850px) {
-          #newsletter #newsletter-signup .sign-up #mc_embed_signup #mc_embed_signup_scroll .mc-field-group {
-            width: 100%;
-            padding-right: 2vw; } }
-        #newsletter #newsletter-signup .sign-up #mc_embed_signup label {
-          display: none; }
-        #newsletter #newsletter-signup .sign-up #mc_embed_signup input[type=email] {
-          color: #fff;
-          outline: none;
-          border: none;
-          border-bottom: 2px solid #fff;
-          box-shadow: none;
-          width: 100%;
-          border-radius: 0;
-          background: transparent; }
-        #newsletter #newsletter-signup .sign-up #mc_embed_signup input[type=submit] {
-          color: #fff;
-          border: 2px solid #fff;
-          background: transparent;
-          outline: none;
-          box-shadow: none;
-          font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif;
-          font-size: 4vw;
-          width: 100%;
-          margin: 5vw auto;
-          padding: 2vw 0;
-          display: block;
-          border-radius: 0; }
-          @media only screen and (min-width: 850px) {
-            #newsletter #newsletter-signup .sign-up #mc_embed_signup input[type=submit] {
-              width: auto;
-              margin: 0;
-              font-size: 1vw;
-              padding: .75vw 2vw; } }
-
 .project header .header-info {
   margin: 5vw 7.5vw; }
   @media only screen and (min-width: 850px) {
@@ -999,6 +906,168 @@ header.menu-active {
 
 .project#ship .project-sample:nth-of-type(7), .project#ship .project-sample:nth-of-type(8), .project#ship .project-sample:nth-of-type(9), .project#ship .project-sample:nth-of-type(11), .project#ship .project-sample:nth-of-type(12), .project#ship .project-sample:nth-of-type(13) {
   width: calc(33.34% - 1.5vw); }
+
+body#daybyday {
+  background: #F1654C;
+  background: #F1654C;
+  color: #F3D5EE; }
+  body#daybyday header {
+    background: #F1654C;
+    color: #fff; }
+    body#daybyday header nav#site-navigation ul li a {
+      color: #fff; }
+    body#daybyday header .logo svg path {
+      fill: #fff; }
+
+body#sleep {
+  background: #324358;
+  background: #324358;
+  color: #A3C3EB; }
+  body#sleep a {
+    color: #A3C3EB; }
+  body#sleep section {
+    padding: 5vw 7.5vw; }
+    body#sleep section h1 {
+      font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif;
+      color: #fff;
+      font-size: 1.5vw;
+      margin: 0; }
+    body#sleep section ul {
+      margin-top: 3vw;
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+      body#sleep section ul li {
+        font-family: "GT-Super-Text", "Times New Roman", times, serif;
+        font-size: 5vw;
+        line-height: 1;
+        margin: 3vw 0; }
+        body#sleep section ul li a {
+          text-decoration: underline;
+          -webkit-text-decoration-color: #fff;
+                  text-decoration-color: #fff;
+          transition: -webkit-text-decoration-color ease-out 250ms;
+          transition: text-decoration-color ease-out 250ms;
+          transition: text-decoration-color ease-out 250ms, -webkit-text-decoration-color ease-out 250ms; }
+          body#sleep section ul li a:hover {
+            -webkit-text-decoration-color: #A3C3EB;
+                    text-decoration-color: #A3C3EB; }
+        body#sleep section ul li .help-note {
+          font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif;
+          font-size: 1.5vw;
+          margin-top: 0.5vw;
+          margin-left: 1vw; }
+    body#sleep section#sleep-suggestions {
+      color: #fff;
+      font-size: 1.75vw; }
+      body#sleep section#sleep-suggestions a {
+        color: #fff !important; }
+        body#sleep section#sleep-suggestions a:hover {
+          text-decoration: underline; }
+  body#sleep header {
+    background: #324358;
+    color: #fff; }
+    body#sleep header.menu-active {
+      background: #000; }
+    body#sleep header nav#site-navigation ul li a, body#sleep header nav#site-navigation button {
+      color: #fff; }
+    body#sleep header .logo svg path {
+      fill: #fff; }
+  body#sleep .footer a {
+    color: #fff; }
+
+#newsletter {
+  background: #000;
+  color: #fff; }
+  #newsletter header {
+    background: #000;
+    color: #fff; }
+    #newsletter header nav#site-navigation ul li a {
+      color: #fff; }
+    #newsletter header .logo svg path {
+      fill: #fff; }
+  #newsletter .footer {
+    opacity: 0; }
+  #newsletter #newsletter-signup {
+    position: relative;
+    overflow: hidden;
+    padding: 5vw 7.5vw; }
+    @media only screen and (min-width: 850px) {
+      #newsletter #newsletter-signup {
+        padding: 0; } }
+    #newsletter #newsletter-signup .winking-logo {
+      position: absolute;
+      top: -30vw;
+      width: 130vw;
+      margin: 0 -25vw 0; }
+      @media only screen and (min-width: 850px) {
+        #newsletter #newsletter-signup .winking-logo {
+          top: -23vw;
+          width: 94vw;
+          margin: 0 0 0 -21vw; } }
+      #newsletter #newsletter-signup .winking-logo video {
+        width: 100%; }
+    #newsletter #newsletter-signup .sign-up {
+      position: relative;
+      z-index: 999;
+      margin-top: 70vw;
+      font-family: "GT-Super-Text", "Times New Roman", times, serif; }
+      @media only screen and (min-width: 850px) {
+        #newsletter #newsletter-signup .sign-up {
+          margin-top: 23vw;
+          width: 36.67vw;
+          margin-left: 53.33vw;
+          padding-bottom: 10vw;
+          font-size: 2vw; } }
+      #newsletter #newsletter-signup .sign-up #mc_embed_signup {
+        margin-top: 10vw; }
+        @media only screen and (min-width: 850px) {
+          #newsletter #newsletter-signup .sign-up #mc_embed_signup {
+            margin-top: 5vw; } }
+        @media only screen and (min-width: 850px) {
+          #newsletter #newsletter-signup .sign-up #mc_embed_signup #mc_embed_signup_scroll {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: row;
+                flex-direction: row;
+            -ms-flex-align: end;
+                align-items: flex-end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; } }
+        @media only screen and (min-width: 850px) {
+          #newsletter #newsletter-signup .sign-up #mc_embed_signup #mc_embed_signup_scroll .mc-field-group {
+            width: 100%;
+            padding-right: 2vw; } }
+        #newsletter #newsletter-signup .sign-up #mc_embed_signup label {
+          display: none; }
+        #newsletter #newsletter-signup .sign-up #mc_embed_signup input[type=email] {
+          color: #fff;
+          outline: none;
+          border: none;
+          border-bottom: 2px solid #fff;
+          box-shadow: none;
+          width: 100%;
+          border-radius: 0;
+          background: transparent; }
+        #newsletter #newsletter-signup .sign-up #mc_embed_signup input[type=submit] {
+          color: #fff;
+          border: 2px solid #fff;
+          background: transparent;
+          outline: none;
+          box-shadow: none;
+          font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif;
+          font-size: 4vw;
+          width: 100%;
+          margin: 5vw auto;
+          padding: 2vw 0;
+          display: block;
+          border-radius: 0; }
+          @media only screen and (min-width: 850px) {
+            #newsletter #newsletter-signup .sign-up #mc_embed_signup input[type=submit] {
+              width: auto;
+              margin: 0;
+              font-size: 1vw;
+              padding: .75vw 2vw; } }
 
 .footer {
   background: #000;

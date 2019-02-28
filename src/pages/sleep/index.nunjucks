@@ -1,0 +1,120 @@
+<!-- newsletter/index.nunjucks -->
+
+{% set pageID = 'sleep' %}
+{% set pageMeta = {
+    title: "Sleep, the things that help me"
+  }
+%}
+
+{% extends "layout.nunjucks" %}
+
+{% set sleepHelps = [
+    {
+      name: "Cold bedroom"
+    },
+    {
+      name: "Blackout curtains",
+      url: "https://www.ikea.com/us/en/catalog/products/30346750/"
+    },
+    {
+      name: "Eye mask"
+    },
+    {
+      name: "Silicone ear plugs",
+      url: "https://www.amazon.com/Macks-Pillow-Soft-Silicone-Earplugs/dp/B003LZQGN6"
+    },
+    {
+      name: "Consistent sleep schedule"
+    },
+    {
+      name: "Natural Vitality Calm",
+      url: "https://www.amazon.com/Natural-Vitality-Supplement-Raspberry-Lemon/dp/B00BPUY3W0"
+    },
+    {
+      name: "Dusk – Gossamer",
+      url: "https://gossamerdusk.com/products/dusk",
+      note: "Makes me groggy the next day, but it knocks me out"
+    },
+    {
+      name: "Melatonin",
+      url: "https://www.amazon.com/Natrol-Melatonin-Dissolve-Tablets-Strawberry/dp/B004KUAI4E",
+      note: "Try to limit this, you can get hooked"
+    },
+    {
+      name: "No screen time 2 hrs before bed"
+    },
+    {
+      name: "No alcohol"
+    },
+    {
+      name: "Mantra: “I will survive tomorrow even with no sleep tonight”"
+    }
+  ]
+%}
+{% set sleepNoHelps = [
+    {
+      name: "Sleep With Me podcast",
+      url: "https://www.sleepwithmepodcast.com/"
+    },
+    {
+      name: "Tryptophan",
+      url: "https://www.amazon.com/Source-Naturals-L-Tryptophan-Essential-Supplement/dp/B000GFSVS2"
+    },
+    {
+      name: "Valerian root",
+      url: "https://www.amazon.com/Natures-Way-Valerian-Gelatin-Capsules/dp/B0010BZQJI"
+    },
+    {
+      name: "Sleepytime tea",
+      url: "https://www.amazon.com/Celestial-Seasonings-Herbal-Sleepytime-Count/dp/B000E65OF6"
+    },
+    {
+      name: "Gravity blankets",
+      url: "https://gravityblankets.com/"
+    },
+    {
+      name: "Kloza Sleep ZPatch",
+      url: "https://www.klova.com/products/sleep-patch"
+    }
+  ]
+%}
+
+{% block content %}
+  <section id="help-me-sleep">
+    <h1>What helps me for a good night sleep</h1>
+    <ul>
+      {% for help in sleepHelps %}
+        <li>
+          {% if help.url %}
+            <a href="{{help.url}}" target="_blank">{{help.name}}</a>
+          {% else %}
+            {{help.name}}
+          {% endif %}
+
+          {% if help.note %}
+            <div class="help-note">* {{help.note}}</div>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section id="didnt-help-me-sleep">
+    <h1>Stuff I’ve tried and it didn’t really do anything but maybe it works for you</h1>
+    <ul>
+      {% for help in sleepNoHelps %}
+        <li>
+          {% if help.url %}
+            <a href="{{help.url}}" target="_blank">{{help.name}}</a>
+          {% else %}
+            {{help.name}}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <section id="sleep-suggestions">
+    <h2>
+      If you have anything to add, or want to suggest something to try, please let me know. <a href="mailto:isla@lamasix.com">isla@lamasix.com</a>
+    </h2>
+  </section>
+{% endblock %}
