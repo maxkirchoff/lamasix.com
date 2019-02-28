@@ -30,8 +30,7 @@
       </div>
     </nav>
     <div class="copyright">
-      © LAMA SIX LLC <script>document.write(new Date().getFullYear())</script>
- — All Rights Reserved.
+      © LAMA SIX LLC <script>document.write(new Date().getFullYear())</script> — All Rights Reserved.
     </div>
   </div>
   <div class="logo">

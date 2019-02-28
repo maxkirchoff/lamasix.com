@@ -387,7 +387,7 @@
         src: 'summary.jpg',
         alt: 'A photo of two women hanging out next to a pool, enjoying a refreshing Curious Elixirs alcohol-free cocktail'
       },
-      description: "",
+      description: "Lama Six worked with Curious on their visual voice to position them as sophisticated, yet curious, handcrafted alcohol-free mocktails. We developed visual strategy for their social and worked on a number of design projects, from digital ads to luxury posters.",
       categories: [
         {
           name: 'Visual social strategy',
@@ -524,8 +524,8 @@
           slug: 'brand'
         },
         {
-          name: 'Visual social identity',
-          slug: 'visual-social-identity'
+          name: 'Visual social strategy',
+          slug: 'visual-social'
         },
         {
           name: 'Web design',
@@ -601,7 +601,7 @@
         webm: 'summary.webm',
         poster: 'summary.jpg'
       },
-      description: "Essie Mani Talks is a series where Essie interviews four female influencers about their lifes, ambitions and routines. We created playful line animations to emphasise the influencers’s stories and the names and colors of the nailpolishes. The series was distributed in the fall of 2018 on Essie’s social media channels and as social media ads.",
+      description: "essie Mani Talks is a series where essie interviews four female influencers about their lifes, ambitions and routines. We created playful line animations to emphasise the influencers’s stories and the names and colors of the nailpolishes. The series was distributed in the fall of 2018 on essie’s social media channels and as social media ads.",
       categories: [
         {
           name: 'Creative Direction',

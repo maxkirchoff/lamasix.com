@@ -217,8 +217,8 @@
           margin: 10vw 0 5vw;
 
           @media only screen and (min-width: $md-min-width) {
-            flex: 1 0 48%;
             margin: 3vw 0 2vw;
+            width: 48%;
           }
 
           &:nth-of-type(2n) {

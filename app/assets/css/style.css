@@ -784,9 +784,8 @@ header.menu-active {
         margin: 10vw 0 5vw; }
         @media only screen and (min-width: 850px) {
           .main #our-team .founders .founding-partners .partner, .main #our-team .founders .founding-partners .team-member, .main #our-team .founders .team-members .partner, .main #our-team .founders .team-members .team-member, .main #our-team .team .founding-partners .partner, .main #our-team .team .founding-partners .team-member, .main #our-team .team .team-members .partner, .main #our-team .team .team-members .team-member {
-            -ms-flex: 1 0 48%;
-                flex: 1 0 48%;
-            margin: 3vw 0 2vw; } }
+            margin: 3vw 0 2vw;
+            width: 48%; } }
         @media only screen and (min-width: 850px) {
           .main #our-team .founders .founding-partners .partner:nth-of-type(2n), .main #our-team .founders .founding-partners .team-member:nth-of-type(2n), .main #our-team .founders .team-members .partner:nth-of-type(2n), .main #our-team .founders .team-members .team-member:nth-of-type(2n), .main #our-team .team .founding-partners .partner:nth-of-type(2n), .main #our-team .team .founding-partners .team-member:nth-of-type(2n), .main #our-team .team .team-members .partner:nth-of-type(2n), .main #our-team .team .team-members .team-member:nth-of-type(2n) {
             margin-left: 4%; } }

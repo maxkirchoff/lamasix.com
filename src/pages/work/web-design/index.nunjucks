@@ -1,0 +1,19 @@
+<!-- index.nunjucks -->
+
+{% set pageID = 'category-brand' %}
+{% set category = "web-design" %}
+{% set pageMeta = {
+    title: "Web Design",
+    description: "Examples of our work in Web Design."
+  }
+%}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+<h1 class="category-title">{{pageMeta.title}}</h1>
+
+{% include "work-category-page.nunjucks" %}
+
+{% endblock %}

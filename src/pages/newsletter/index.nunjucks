@@ -1,6 +1,11 @@
 <!-- newsletter/index.nunjucks -->
 
 {% set pageID = 'newsletter' %}
+{% set pageMeta = {
+    title: "Newsletter Sign-up",
+    description: "Our newsletter is for our partners, collaborators and friends. We will never give or sell your email to anyone else. We will send you notes, updates on our work, and the latest dad jokes."
+  }
+%}
 
 {% extends "layout.nunjucks" %}
 
