@@ -1,10 +1,19 @@
 {% set pageID = 'work' %}
 {% import "data/work.nunjucks" as work %}
 {% if work.projects[projectSlug] %}
+
+  {% if work.projects[projectSlug].hero.src %}
+    {% set ogImage = work.projects[projectSlug].hero.src %}
+  {% endif %}
+  {% if work.projects[projectSlug].hero.poster %}
+    {% set ogImage = work.projects[projectSlug].hero.poster %}
+  {% endif %}
   {% set pageMeta = {
-      title: work.projects[projectSlug].client
+      title: work.projects[projectSlug].client,
+      description: work.projects[projectSlug].description,
+      ogImage: "assets/media/" + projectSlug + "/" + ogImage
     }
-  %}
+    %}
 {% endif %}
 
 {% extends "layout.nunjucks" %}
