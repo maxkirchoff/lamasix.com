@@ -1,0 +1,16 @@
+{% set pageID = 'work' %}
+{% import "data/work.nunjucks" as work %}
+{% if work.projects[projectSlug] %}
+  {% set pageMeta = {
+      title: work.projects[projectSlug].client
+    }
+  %}
+{% endif %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+  {% include "partials/project.nunjucks" %}
+
+{% endblock %}

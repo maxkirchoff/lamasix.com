@@ -1,0 +1,3 @@
+{% set projectSlug = 'essieGifs' %}
+
+{% extends "project-page.nunjucks" %}

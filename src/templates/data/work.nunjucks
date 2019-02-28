@@ -1,0 +1,749 @@
+{%
+  set projects = {
+    ship: {
+      client: 'Ship',
+      href: '/work/ship',
+      hero: {
+        type: 'video',
+        mp4: 'summary.mp4',
+        webm: 'summary.webm',
+        poster: 'summary.jpg'
+      },
+      description: "Lama Six was brought in to work with Match Group and Betches Media to launch a new dating app that would appeal to women by authentically celebrating their friends’ roles in their dating lives. We ideated around a friendly, yet snarky approach to dating that we carried with us from the early stages of creative direction to every detail of brand positioning, from the app UI animations to campaign imagery and digital ads.",
+      categories: [
+        {
+          name: 'Creative Direction',
+          slug: 'creative-direction'
+        },
+        {
+          name: 'Brand Messaging',
+          slug: 'brand-messaging'
+        },
+        {
+          name: 'Digital Ads',
+          slug: 'digital-ads'
+        },
+        {
+          name: 'Illustration',
+          slug: 'illustration'
+        },
+        {
+          name: 'Animation',
+          slug: 'animation'
+        },
+        {
+          name: 'Web Design',
+          slug: 'design'
+        },
+        {
+          name: 'Visual social strategy',
+          slug: 'visual-social'
+        }
+      ],
+      media: [
+        {
+          type: 'video',
+          mp4: 'ads.mp4',
+          webm: 'ads.webm',
+          poster: 'ads.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'app.mp4',
+          webm: 'app.webm',
+          poster: 'app.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'where-is-everyone.mp4',
+          webm: 'where-is-everyone.webm',
+          poster: 'where-is-everyone.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'Ship_AboutPage.m4v',
+          webm: 'Ship_AboutPage.webm',
+          poster: 'Ship_AboutPage.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'disco-ball.mp4',
+          webm: 'disco-ball.webm',
+          poster: 'disco-ball.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'glasseswiggle02.mp4',
+          webm: 'glasseswiggle02.webm',
+          poster: 'glasseswiggle02.jpg'
+        },
+        {
+          type: 'image',
+          src: 'DogKissing.png'
+        },
+        {
+          type: 'image',
+          src: 'ig_17.jpg'
+        },
+        {
+          type: 'image',
+          src: 'Newmatch.png'
+        },
+        {
+          type: 'image',
+          src: 'AppStoreSlides.jpg'
+        },
+        {
+          type: 'image',
+          src: 'ig_25.jpg'
+        },
+        {
+          type: 'image',
+          src: 'ig_18.jpg'
+        },
+        {
+          type: 'image',
+          src: 'ig_7.jpg'
+        }
+      ]
+    },
+    essieGifs: {
+      client: 'essie',
+      href: '/work/essie/gifs',
+      hero: {
+        type: 'video',
+        mp4: 'summary.mp4',
+        webm: 'summary.webm',
+        poster: 'summary.jpg'
+      },
+      description: "essie approached Lama Six to see if we could make people gifs that would also make their day. The idea was to create delightful visuals that reminded folks how fun giving yourself a visual treat can be. We brainstormed and created a cohesive set of gifs that would instantly earn those perfectly manicured double-tap likes from fans of the brands and new eyes alike.",
+      categories: [
+        {
+          name: 'Ideation',
+          slug: 'ideation'
+        },
+        {
+          name: 'Creative Direction',
+          slug: 'creative-direction'
+        },
+        {
+          name: 'Illustration',
+          slug: 'illustration'
+        },
+        {
+          name: 'Animation',
+          slug: 'animation'
+        }
+      ],
+      media: [
+        {
+          type: 'video',
+          mp4: 'Essie_FreshMani.mp4',
+          webm: 'Essie_FreshMani.webm',
+          poster: 'Essie_FreshMani.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'iloveessie.mp4',
+          webm: 'iloveessie.webm',
+          poster: 'iloveessie.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'taxi.mp4',
+          webm: 'taxi.webm',
+          poster: 'taxi.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'sundayfunday.mp4',
+          webm: 'sundayfunday.webm',
+          poster: 'sundayfunday.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'manimonday.mp4',
+          webm: 'manimonday.webm',
+          poster: 'manimonday.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'NailedIt.mp4',
+          webm: 'NailedIt.webm',
+          poster: 'NailedIt.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'instagram.mp4',
+          webm: 'instagram.webm',
+          poster: 'instagram.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'Essie_BottleShakeb.mp4',
+          webm: 'Essie_BottleShakeb.webm',
+          poster: 'Essie_BottleShakeb.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'essieLove.mp4',
+          webm: 'essieLove.webm',
+          poster: 'essieLove.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'Essie_RedCarpet_2018c.mp4',
+          webm: 'Essie_RedCarpet_2018c.webm',
+          poster: 'Essie_RedCarpet_2018c.jpg'
+        },
+        {
+          type: "image",
+          src: "Essie_SmokinHot.jpg"
+        },
+        {
+          type: 'video',
+          mp4: 'Essie_PurpleBottleBrush.mp4',
+          webm: 'Essie_PurpleBottleBrush.webm',
+          poster: 'Essie_PurpleBottleBrush.jpg'
+        }
+      ]
+    },
+    tradiies: {
+      client: 'Tradiies',
+      href: '/work/tradiies',
+      hero: {
+        type: 'video',
+        mp4: 'summary.mp4',
+        webm: 'summary.webm',
+        poster: 'summary.jpg'
+      },
+      description: "We worked with Tradiies on their brand identity to position them as a place for beauty creatives to claim their professional power. We molded a bold visual identity that spoke to a highly visual audience and established Tradiies as a rare mix of best and coolest in class. From their logo and typography to their Instagram strategy, all aspects of their brand identity hinted at being leaders of a new, business model that champions the individual creative spirit.",
+      categories: [
+        {
+          name: 'Brand & visual identity',
+          slug: 'brand'
+        },
+        {
+          name: 'Web Design',
+          slug: 'web-design'
+        }
+      ],
+      media: [
+        {
+          type: "image",
+          src: "TradiiesBeautyMeansBiz.jpg",
+          alt: "Graphic that says 'Beauty Means Business' in black type on a hot pink background"
+        },
+        {
+          type: "image",
+          src: "GirlPhoto.jpg",
+          alt: "A photo of a woman with a septum peircing and glasses"
+        },
+        {
+          type: 'video-website',
+          mp4: 'TradiiesWebsite.mp4',
+          webm: 'TradiiesWebsite.webm',
+          poster: 'TradiiesWebsite.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'Collage.mp4',
+          webm: 'Collage.webm',
+          poster: 'Collage.jpg'
+        },
+        {
+          type: "image",
+          src: "TradiiesIcon.jpg",
+          alt: "Tradiies's icon that is two of the letter I next to each other, like friends"
+        },
+        {
+          type: "image",
+          src: "TradiiesLogo.jpg",
+          alt: "Tradiies's logo, which is a wordmark of the same name"
+        },
+        {
+          type: "image",
+          src: "TradiiesInsta.jpg",
+          alt: "A screenshot of the Tradiies's Instagram profile, it looks fun and exciting"
+        },
+        {
+          type: 'video',
+          mp4: 'TradiiesShineOn.mp4',
+          webm: 'TradiiesShineOn.webm',
+          jpg: 'TradiiesShineOn.jpg'
+        }
+      ]
+    },
+    clarity: {
+      client: 'Clarity',
+      href: '/work/clarity',
+      hero: {
+        type: 'image',
+        src: 'summary.jpg',
+        alt: 'Clarity Staffing wordmark with some green leaves behind it'
+      },
+      description: "Lama Six worked with Clarity to do a soft reset on their visual identity and a complete make-over and re-build of their website to better reflect the fun, exciting and refreshing presence they bring to recruitment and staffing. We worked closely with Clarity to hone their message, refine their visuals and express the spirited and delightful nature of their office and staff onto their website.",
+      categories: [
+        {
+          name: 'Brand & visual identity',
+          slug: 'brand'
+        },
+        {
+          name: 'Web Design',
+          slug: 'web-design'
+        },
+        {
+          name: 'Web Development',
+          slug: 'development'
+        }
+      ],
+      media: [
+        {
+          type: "image",
+          src: "Human.jpg"
+        },
+        {
+          type: "image",
+          src: "cactus.jpg"
+        },
+        {
+          type: "video-website",
+          mp4: "Clarity-Video.mp4",
+          poster: "Clarity-Video.jpg"
+        },
+        {
+          type: "image",
+          src: "leaves.jpg"
+        },
+        {
+          type: 'video',
+          mp4: 'eye_sparkle.mp4',
+          webm: 'eye_sparkle.webm',
+          poster: 'eye_sparkle.jpg'
+        },
+        {
+          type: 'image',
+          src: 'Leaflet_mockup.jpg'
+        },
+        {
+          type: 'image',
+          src: 'door.jpg'
+        }
+      ]
+    },
+    sked: {
+      client: 'SKED',
+      href: '/work/sked',
+      hero: {
+        type: 'image',
+        src: 'summary.jpg',
+        alt: 'SKED Social logo on blue'
+      },
+      description: "Lama Six provided Sked with a visual identity, mascot design, and illustration style with enough polish and unique elements to speak to the brand’s authority as an Instagram tool. Through a dynamic use of disparate visuals and unexpected colors, we alluded to how well this brand understands the highest standards of visual scrutiny while still presenting a welcoming persona with a sense of humor. At the end of the day, the mascot is an animal wearing glasses.",
+      categories: [
+        {
+          name: 'Brand & visual identity',
+          slug: 'brand'
+        },
+        {
+          name: 'Web Design',
+          slug: 'web-design'
+        },
+        {
+          name: 'Mascot Design',
+          slug: 'design'
+        },
+        {
+          name: 'Illustration',
+          slug: 'illustration'
+        }
+      ],
+      media: [
+        {
+          type: "image",
+          src: "SKEDAppicon.jpg"
+        },
+        {
+          type: 'video',
+          mp4: 'MascotGif.mp4',
+          webm: 'MascotGif.webm',
+          poster: 'MascotGif.jpg'
+        },
+        {
+          type: 'image',
+          src: 'logo-treatment.jpg'
+        },
+        {
+          type: 'image',
+          src: 'Website.jpg'
+        }
+      ]
+    },
+    curious: {
+      client: 'Curious Elixirs',
+      href: '/work/curious',
+      hero: {
+        type: 'image',
+        src: 'summary.jpg',
+        alt: 'A photo of two women hanging out next to a pool, enjoying a refreshing Curious Elixirs alcohol-free cocktail'
+      },
+      description: "Lama Six worked with Curious on their visual voice to position them as sophisticated, yet curious, handcrafted alcohol-free mocktails. We developed visual strategy for their social and worked on a number of design projects, from digital ads to luxury posters.",
+      categories: [
+        {
+          name: 'Visual social strategy',
+          slug: 'visual-social'
+        },
+        {
+          name: 'Digital ad design',
+          slug: 'digital-ads'
+        },
+        {
+          name: 'Print design',
+          slug: 'design'
+        },
+        {
+          name: 'Digital design',
+          slug: 'design'
+        }
+      ],
+      media: [
+        {
+          type: 'video',
+          mp4: 'feelitall_01.mp4',
+          webm: 'feelitall_01.webm',
+          poster: 'feelitall_01.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'notdrinking.mp4',
+          webm: 'notdrinking.webm',
+          poster: 'notdrinking.jpg'
+        },
+        {
+          type: "image",
+          src: "curious_now.jpg"
+        },
+        {
+          type: 'video',
+          mp4: 'hugforliver_toon.mp4',
+          webm: 'hugforliver_toon.webm',
+          poster: 'hugforliver_toon.jpg'
+        },
+        {
+          type: "image",
+          src: "CuriousPosters.jpg"
+        },
+        {
+          type: "image",
+          src: "Card-Mockup.jpg"
+        },
+        {
+          type: "image",
+          src: "SNS.jpg"
+        }
+      ]
+    },
+    wdypb: {
+      client: 'Where Does Your Penis Belong?',
+      href: '/work/wdypb',
+      hero: {
+        type: 'image',
+        src: 'summary.jpg',
+        alt: 'Where Does Your Penis Belong?'
+      },
+      description: "“Where Does Your Penis Belong” was born out of the sheer rage following the spate of shocking sexual assault allegations in 2017. Lama Six lent our skills in creative direction, book design, web design, and most importantly, comedic relief to create a hyper-simplified parody of a children’s book. We aimed to make a sarcastic statement about how simple respecting people should be, and to raise money for the Rape, Abuse & Incest National Network. The book was written & illustrated by Ashley Simon, Allison Gore and Isla Murray.",
+      categories: [
+        {
+          name: 'Creative Direction',
+          slug: 'creative-direction'
+        },
+        {
+          name: 'Brand & visual identity',
+          slug: 'brand'
+        },
+        {
+          name: 'Web Design',
+          slug: 'web-design'
+        },
+        {
+          name: 'Web Development',
+          slug: 'development'
+        },
+        {
+          name: 'Book Design',
+          slug: 'design'
+        },
+        {
+          name: 'Photography',
+          slug: 'photography'
+        }
+      ],
+      media: [
+        {
+          type: "image",
+          src: "WDYPB_bookphoto.jpg",
+          alt: "A photograph of the book 'Where Does Your Penis Belog?' open to the page where the character is deciding where his penis belongs while in line for concert tickets"
+        },
+        {
+          type: 'video',
+          mp4: 'grocery.mp4',
+          webm: 'grocery.webm',
+          poster: 'grocery.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'Conference.mp4',
+          webm: 'Conference.webm',
+          poster: 'Conference.jpg'
+        },
+        {
+          type: 'video-website',
+          mp4: 'wdypb-website.mp4',
+          webm: 'wdypb-website.webm',
+          poster: 'wdypb-website.jpg'
+        },
+        {
+          type: "image",
+          src: "WDYPB-mug.jpg",
+          alt: "A photograph of a paper coffee cup next to a computer, the coffee cup has a cartoon man doing a handstand and the slogan 'Your penis belongs in your pants!'"
+        }
+      ]
+    },
+    mirra: {
+      client: 'Mirra',
+      href: '/work/mirra',
+      hero: {
+        type: 'image',
+        src: 'summary.jpg',
+        alt: 'Mirra'
+      },
+      description: "Lama Six provided Mirra with a visual identity, site, and Instagram presence that felt nothing like anything else in the beauty space. We pushed the boundaries of expected, frilly beauty visuals and illustrations to capture immediate attention and represent the radical ethos of this particularly inclusive community and founder. Mirra saw big growth its core newsletter and successfully closed a seed round following the creation of their consistent visual strategy.",
+      categories: [
+        {
+          name: 'Brand & visual identity',
+          slug: 'brand'
+        },
+        {
+          name: 'Visual social strategy',
+          slug: 'visual-social'
+        },
+        {
+          name: 'Web design',
+          slug: 'web-design'
+        },
+        {
+          name: 'Digital design',
+          slug: 'design'
+        },
+        {
+          name: 'Photography',
+          slug: 'photography'
+        }
+      ],
+      media: [
+        {
+          type: "image",
+          src: "Mirra.jpg"
+        },
+        {
+          type: 'image',
+          src: 'PlaceholderBSSkincare.png'
+        },
+        {
+          type: 'image',
+          src: 'MirraTote.jpg'
+        },
+        {
+          type: 'image',
+          src: 'Mirra2.jpg'
+        },
+        {
+          type: 'image',
+          src: 'MirraWeb-1.jpg'
+        },
+        {
+          type: 'image',
+          src: 'Brand03.png'
+        },
+        {
+          type: 'image',
+          src: 'Brand02.png'
+        },
+        {
+          type: 'image',
+          src: 'Brand01.png'
+        },
+        {
+          type: 'video',
+          mp4: 'MirraStickerGif.mp4',
+          webm: 'MirraStickerGif.webm',
+          poster: 'MirraStickerGif.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'MirraMobileVideo.mp4',
+          webm: 'MirraMobileVideo.webm',
+          poster: 'MirraMobileVideo.jpg'
+        },
+        {
+          type: 'image',
+          src: 'Mirra3.jpg'
+        }
+
+      ]
+    },
+    essieVideos: {
+      client: 'essie',
+      href: '/work/essie/influencer-videos',
+      hero: {
+        type: 'video',
+        mp4: 'summary.mp4',
+        webm: 'summary.webm',
+        poster: 'summary.jpg'
+      },
+      description: "essie Mani Talks is a series where essie interviews four female influencers about their lifes, ambitions and routines. We created playful line animations to emphasise the influencers’s stories and the names and colors of the nailpolishes. The series was distributed in the fall of 2018 on essie’s social media channels and as social media ads.",
+      categories: [
+        {
+          name: 'Creative Direction',
+          slug: 'creative-direction'
+        },
+        {
+          name: 'Motion Graphics',
+          slug: 'motion-graphics'
+        },
+        {
+          name: 'Animation',
+          slug: 'animation'
+        }
+      ],
+      media: [
+        {
+          type: 'video',
+          mp4: 'Essie_airplanecut.mp4',
+          webm: 'Essie_airplanecut.webm',
+          poster: 'Essie_airplanecut.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'ESSIE_nail-shape.mp4',
+          webm: 'ESSIE_nail-shape.webm',
+          poster: 'ESSIE_nail-shape.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'ESSIE_new-york.mp4',
+          webm: 'ESSIE_new-york.webm',
+          poster: 'ESSIE_new-york.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'ESSIE_endnailsparkle_Pia_nail_sparkles.mp4',
+          webm: 'ESSIE_endnailsparkle_Pia_nail_sparkles.webm',
+          poster: 'ESSIE_endnailsparkle_Pia_nail_sparkles.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'FULLVIDEO_02_Alice_Long_181113_v03.mp4',
+          webm: 'FULLVIDEO_02_Alice_Long_181113_v03.webm',
+          poster: 'FULLVIDEO_02_Alice_Long_181113_v03.jpg',
+          controls: true
+        },
+        {
+          type: 'video',
+          mp4: 'FULLVIDEO_01_Kirsty_Long_181113_v03.mp4',
+          webm: 'FULLVIDEO_01_Kirsty_Long_181113_v03.webm',
+          poster: 'FULLVIDEO_01_Kirsty_Long_181113_v03.jpg',
+          controls: true
+        },
+        {
+          type: 'video',
+          mp4: 'FULLVIDEO_04_Tylynn_Long_181113_v03.mp4',
+          webm: 'FULLVIDEO_04_Tylynn_Long_181113_v03.webm',
+          poster: 'FULLVIDEO_04_Tylynn_Long_181113_v03.jpg',
+          controls: true
+        },
+        {
+          type: 'video',
+          mp4: 'FULLVIDEO_Pia_Long_181115_v04.mp4',
+          webm: 'FULLVIDEO_Pia_Long_181115_v04.webm',
+          poster: 'FULLVIDEO_Pia_Long_181115_v04.jpg',
+          controls: true
+        }
+      ]
+    },
+    leanstartup: {
+      client: 'Lean Startup Co.',
+      href: '/work/leanstartup',
+      hero: {
+        type: 'image',
+        src: 'summary.png',
+        alt: 'Lean Startup Co. logo, which is a blue enzo'
+      },
+      description: "LAMA SIX collaborated with Melissa Small on this project to do a large repositioning and redesign of Lean Startup's visual identity, website and other collateral. This included their logo and visual language for the core brand and subdivision brands, as well as design and development of their main website and conference websites.",
+      categories: [
+        {
+          name: 'Brand & visual identity',
+          slug: 'brand'
+        },
+        {
+          name: 'Web Design',
+          slug: 'web-design'
+        },
+        {
+          name: 'Web Development',
+          slug: 'development'
+        }
+      ],
+      media: [
+        {
+          type: "image",
+          src: "LI_logo.png"
+        },
+        {
+          type: "image",
+          src: "LSN_logo.png"
+        },
+        {
+          type: "image",
+          src: "LSE_logo.png"
+        },
+        {
+          type: "image",
+          src: "LSW_logo.png"
+        },
+        {
+          type: 'video',
+          mp4: 'site.mp4',
+          webm: 'site.webm',
+          poster: 'site.jpg'
+        },
+        {
+          type: 'image',
+          src: 'LSUMobile.png'
+        },
+        {
+          type: 'image',
+          src: 'logo_main_solo.png'
+        },
+        {
+          type: 'image',
+          src: 'lsw.jpg'
+        },
+        {
+          type: 'video',
+          mp4: 'lsco-week.mp4',
+          webm: 'lsco-week.webm',
+          poster: 'lsco-week.jpg'
+        },
+        {
+          type: 'image',
+          src: 'Tote.jpg'
+        },
+        {
+          type: 'image',
+          src: 'event.png'
+        }
+      ]
+    }
+  }
+%}

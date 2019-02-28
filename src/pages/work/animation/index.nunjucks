@@ -1,0 +1,19 @@
+<!-- index.nunjucks -->
+
+{% set pageID = 'category-brand' %}
+{% set category = "animation" %}
+{% set pageMeta = {
+    title: "Animation & Motion Graphics",
+    description: "Examples of our work in animation & motion graphic design."
+  }
+%}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+<h1 class="category-title">{{pageMeta.title}}</h1>
+
+{% include "work-category-page.nunjucks" %}
+
+{% endblock %}

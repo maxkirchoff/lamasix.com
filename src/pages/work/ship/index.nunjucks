@@ -1,0 +1,3 @@
+{% set projectSlug = 'ship' %}
+
+{% extends "project-page.nunjucks" %}

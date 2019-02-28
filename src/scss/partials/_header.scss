@@ -1,45 +1,45 @@
 .header {
-  position: absolute;
+  position: fixed;
+  left: 0;
+  right: 0;
   top: 0;
-  left: 8vw;
-  right: 8vw;
-  height: 10vw;
+  padding: 3.75vw 5vw;
   z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background: #fff;
+  border-bottom: transparent 1px solid;
+  transition: border-bottom 250ms linear, top 250ms ease-out;
 
-  @media only screen and (min-width:$sm-min-width) {
-    left: 4vw;
-    right: 4vw;
-    top: 40px;
+  @media only screen and (min-width: $md-min-width) {
+    padding: 2vw 5vw 1.75vw;
   }
-  @media only screen and (min-width:$xl-min-width) {
-    width: 1288px;
-    position: relative;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+
+  &.scrolled {
+    border-bottom: #ededed 1px solid;
+
+  }
+
+  &.nav-up {
+    top: -13vw;
+  }
+
+  &.nav-down {
+    top: 0;
   }
 
   .logo {
-    position: absolute;
-    top: 0;
-    display: none;
+	  display: none;
 
-    @media only screen and (min-width:$sm-min-width) {
+    @media only screen and (min-width: $md-min-width) {
       display: block;
-      left: 0;
-      right: auto;
+      width: 9vw;
     }
-  }
 
-  .email {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    @media only screen and (min-width:$sm-min-width) {
-      display: block;
-      right: 0;
-      left: auto;
+    img {
+      width: 100%;
+      height: auto;
     }
   }
 }

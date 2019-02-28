@@ -1,0 +1,3 @@
+{% set projectSlug = 'wdypb' %}
+
+{% extends "project-page.nunjucks" %}

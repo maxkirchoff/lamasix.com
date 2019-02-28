@@ -1,0 +1,3 @@
+{% set projectSlug = 'curious' %}
+
+{% extends "project-page.nunjucks" %}

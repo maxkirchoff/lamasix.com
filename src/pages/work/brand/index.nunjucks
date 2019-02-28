@@ -1,0 +1,19 @@
+<!-- index.nunjucks -->
+
+{% set pageID = 'category-brand' %}
+{% set category = "brand" %}
+{% set pageMeta = {
+    title: "Brand & Visual Identity",
+    description: "Examples of our work in Brand & Visual Identity design."
+  }
+%}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+<h1 class="category-title">{{pageMeta.title}}</h1>
+
+{% include "work-category-page.nunjucks" %}
+
+{% endblock %}

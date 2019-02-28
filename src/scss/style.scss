@@ -1,46 +1,27 @@
-//----------------------------------*\
-// SCSS MIXINS
-//----------------------------------*/
+// Config MODULES
+@import 'configs/_vars.scss';
+@import 'configs/_breakpoints.scss';
 
-@import 'mixins/_position.scss';
-
-//----------------------------------*\
-// CONFIG MODULES
-//----------------------------------*/
-
-// Enhancement modules
-@import 'modules/_breakpoints.scss';
+// Resets
+@import 'modules/_clearfix.scss';
+@import 'modules/_normalize.scss';
+@import 'modules/_defaults.scss';
 @import 'modules/_print.scss';
 
-// Config modules
-@import 'modules/_vars.scss';
-@import 'modules/_clearfix.scss';
-@import 'modules/_defaults.scss';
-@import 'modules/_normalize.scss';
+
+// Components
+@import 'components/_grid.scss';
+@import 'components/_buttons.scss';
+@import 'components/_inputs.scss';
+@import 'components/_lists.scss';
+@import 'components/_typography.scss';
+
+// App
+@import '_app.scss';
 
 
-//----------------------------------*\
-// OBJECTS & MODULES
-//----------------------------------*/
-
-@import 'modules/_buttons.scss';
-@import 'modules/_inputs.scss';
-@import 'modules/_lists.scss';
-@import 'modules/_typography.scss';
-@import 'modules/_misc.scss';
-@import 'modules/_app.scss';
-
-//----------------------------------*\
-// PARTIALS
-//----------------------------------*/
-
+// Partials
 @import 'partials/_header.scss';
 @import 'partials/_nav.scss';
 @import 'partials/_main.scss';
 @import 'partials/_footer.scss';
-
-//----------------------------------*\
-// VENDOR
-//----------------------------------*/
-
-@import 'vendor/_external.scss';

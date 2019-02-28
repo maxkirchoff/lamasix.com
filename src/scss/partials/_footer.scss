@@ -1,3 +1,99 @@
 .footer {
+  background: #000;
+  color: #fff;
+  width: 100vw;
+  padding: 5vw 5vw 20vw;
+  margin: 10vw 0 0 0;
+  position: relative;
 
+  @media only screen and (min-width: $md-min-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5vw -5vw 0;
+    padding: 10vw 10vw;
+  }
+
+  .footer-nav-wrapper {
+
+    @media only screen and (min-width: $md-min-width) {
+      position: relative;
+      width: 60%;
+    }
+
+    nav {
+      margin-left: 50vw;
+      @media only screen and (min-width: $md-min-width) {
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      > div {
+        margin-top: 5vw;
+
+        @media only screen and (min-width: $md-min-width) {
+          margin: 0;
+        }
+      }
+
+      h1 {
+        font-family: $font-gt-america;
+        font-weight: normal;
+        font-size: 5vw;
+        margin: 0 0 2vw;
+
+        @media only screen and (min-width: $md-min-width) {
+          margin-bottom: 2vw;
+          font-size: 1.5vw;
+        }
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          border-bottom: 1px solid #fff;
+        }
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          line-height: 1.5;
+        }
+      }
+    }
+
+    .copyright {
+      position: absolute;
+      bottom: 5vw;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 3vw;
+
+      @media only screen and (min-width: $md-min-width) {
+        font-size: 1.5vw;
+        bottom: 0;
+        left: auto;
+        right: auto;
+        text-align: left;
+      }
+    }
+  }
+  .logo {
+    width: 30vw;
+    position: absolute;
+    left: 10vw;
+    top: 10vw;
+
+    @media only screen and (min-width: $md-min-width) {
+      width: 20vw;
+      position: static;
+    }
+  }
 }

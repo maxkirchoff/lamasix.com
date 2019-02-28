@@ -1,3 +1,156 @@
-.nav {
-  
+body.menu-active {
+  overflow: none;
+  position: fixed;
+}
+
+nav#site-navigation {
+  display: block;
+  width: 70%;
+  min-height: 5vw;
+
+  @media only screen and (min-width: $md-min-width) {
+    margin-top: 0;
+    min-height: 0;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 1px solid #000;
+    }
+  }
+
+  .contact {
+    position: absolute;
+    top: 3.75vw;
+    right: 5vw;
+    font-size: 3.75vw;
+  }
+
+
+  button.menu-toggle {
+    top: 3.75vw;
+    left: 5vw;
+    font-size: 3.75vw;
+    color: #000;
+    display: block;
+    position: absolute;
+    padding: 0;
+    z-index: 999;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    border: 0;
+
+    @media only screen and (min-width: $md-min-width) {
+      display: none
+    }
+
+    .close {
+      display: none;
+      width: 5vw;
+    }
+  }
+
+  ul {
+    display: none;
+    list-style: none;
+    line-height: 1;
+    margin: 0;
+    padding: 40vw 8.33% 0;
+    position: fixed;
+    background: #000;
+    top: 10vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    @media only screen and (min-width: $md-min-width) {
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+      margin-left: 3vw;
+      position: relative;
+      top: auto;
+      left: auto;
+      right: auto;
+      bottom: auto;
+      background: transparent;
+    }
+
+    &.active {
+      display: block;
+      overflow: auto;
+    }
+
+    li {
+      display: block;
+      margin: 5vw 0;
+      text-align: center;
+
+      @media only screen and (min-width: $md-min-width) {
+        text-align: left;
+        vertical-align: top;
+        margin: 5px 1.8vw;
+        display: block;
+      }
+
+      @media only screen and (min-width: $lg-min-width) {
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      a {
+        font-family: $font-gt-super;
+        text-decoration: none;
+        text-transform: lowercase;
+        font-size: 25vw;
+        color: #fff;
+        line-height: 1;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 250ms ease-out;
+
+        @media only screen and (min-width: $md-min-width) {
+          text-transform: none;
+          font-family: $font-gt-america;
+          font-size: 1.3vw;
+          color: #000;
+        }
+
+        &.active {
+          @media only screen and (min-width: $md-min-width) {
+            border-bottom: 1px solid #000;
+          }
+        }
+
+        &.email-us {
+          display: none;
+          @media only screen and (min-width: $md-min-width) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+header.menu-active {
+  background: #000;
+  nav#site-navigation {
+    .contact {
+      color: #fff;
+    }
+    .menu-toggle {
+      color: #fff;
+      .open {
+        display: none;
+      }
+      .close {
+        display: block;
+      }
+    }
+  }
 }

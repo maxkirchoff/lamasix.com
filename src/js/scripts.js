@@ -2,75 +2,132 @@
 
   'use strict';
 
-  function scrollText() {
-    killScrollText();
-    $('.cloned').remove();
+  $(function () {
 
-    var $holder = $(".holder");
-    var $list = $holder.find("ul.list");
-    var $clonedList = $list.clone();
+    var lamasix = function() {
 
-    var listWidth = $(window).width();
-    var endPos = $holder.width() - listWidth;
+      function initMenuToggle() {
+        $('button.menu-toggle').on('click touch', function(ev) {
+          ev.preventDefault();
+          $('ul.nav-items').toggleClass('active');
+          $('ul.social-items').toggleClass('active');
+          $(this).parents('.header').toggleClass('menu-active');
+          $('body').toggleClass('menu-active');
+        });
+      }
 
-    $list.add($clonedList).css({
-    	"width" : listWidth + "px"
-    });
+      function initHeader()  {
 
-    $clonedList.addClass("cloned").appendTo($holder);
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+        // on scroll, let the interval function know the user has scrolled
+        $(window).scroll(function(event) {
+          didScroll = true;
+        });
 
-    //TimelineMax
-    var infinite = new TimelineMax({repeat: -1, paused: false});
-    var time = 30;
+        // run hasScrolled() and reset didScroll status
+        setInterval(function() {
+          if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+          }
+        }, 50);
 
-    infinite.fromTo($list, time, {left:0}, {left: -listWidth, ease: Linear.easeNone}, 0);
-    infinite.fromTo($clonedList, time, {left:listWidth}, {left:0, ease: Linear.easeNone}, 0);
-    infinite.set($list, {left: listWidth});
-    infinite.to($clonedList, time, {left: -listWidth, ease: Linear.easeNone}, time);
-    infinite.to($list, time, {left: 0, ease: Linear.easeNone}, time);
+        function updateHeader() {
+          var $header = $('header.header');
+          var headerPos = $header.offset().top;
 
-    //Pause/Play
+          if (headerPos > 0) {
+            $header.addClass('scrolled');
+          } else {
+            $header.removeClass('scrolled');
+          }
+        }
 
-    $holder.on("mouseenter", function(){
-    	infinite.pause();
-    }).on("mouseleave", function(){
-    	infinite.play();
-    });
-  }
+        function hasScrolled() {
+          updateHeader();
+          var st = $(window).scrollTop();
 
-  function killScrollText() {
-    TweenMax.killAll(false, true, false);
-  }
+          // Make sure they scroll more than delta
+          if(Math.abs(lastScrollTop - st) <= delta)
+              return;
 
-  $(window).on('resize', function() {
-    if ($(window).width() > 768) {
-      killScrollText();
-      scrollText();
-    } else {
-      killScrollText();
+          // If they scrolled down and are past the navbar, add class .nav-up.
+          // This is necessary so you never see what is "behind" the navbar.
+          if (st > lastScrollTop && st > navbarHeight){
+              // Scroll Down
+              $('header.header').removeClass('nav-down').addClass('nav-up');
+          } else {
+              // Scroll Up
+              if(st + $(window).height() < $(document).height()) {
+                  $('header.header').removeClass('nav-up').addClass('nav-down');
+              }
+          }
+
+          if ($('#work').length > 0) {
+            if ( st > $('#work').offset().top && st < ( $('#work').offset().top + $('#work').height() ) ) {
+              $('#home #site-navigation .work').addClass('active');
+            } else {
+              $('#home #site-navigation .work').removeClass('active');
+            }
+          }
+
+          lastScrollTop = st;
+        }
+
+        updateHeader();
+      }
+
+      function initTestimonials() {
+        $('.quotes').slick({
+          arrows: true,
+          prevArrow: $('.slick-navigation .prev'),
+          nextArrow: $('.slick-navigation .next'),
+          centerPadding: '0px',
+          centerMode: true,
+          slidesToShow: 1,
+          dots: false,
+          responsive: [
+            {
+              breakpoint: 800,
+              settings: {
+                dots: true,
+                arrows: false
+              }
+            }
+          ]
+        });
+      }
+
+      function initWorkSmoothScroll() {
+        $('#home a.work').on('click touch', function(ev) {
+          ev.preventDefault();
+          $('ul.nav-items').removeClass('active');
+          $('ul.social-items').removeClass('active');
+          $(this).parents('.header').removeClass('menu-active');
+          $('body').removeClass('menu-active');
+          var workPos = $('#work').offset().top;
+          window.scrollTo({ top: workPos, behavior: 'smooth' });
+        });
+      }
+
+      var init = function() {
+        initMenuToggle();
+        initHeader();
+        initTestimonials();
+        initWorkSmoothScroll();
+      }
+
+      return {
+        init: init
+      }
     }
+
+    var app = lamasix();
+    app.init();
+
   });
-  if ($(window).width() > 768) {
-    scrollText();
-  }
-
-  var vid = document.getElementById("l6-animation-video");
-
-  function playVid() {
-      vid.play();
-  }
-
-  function pauseVid() {
-      vid.pause();
-  }
-
-setTimeout( function() {
-  playVid();
-  setInterval(function() {
-    playVid();
-  }, 7000);
-}, 1000);
-
-
 
 })(jQuery, window, document);

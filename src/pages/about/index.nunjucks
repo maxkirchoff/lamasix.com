@@ -1,0 +1,219 @@
+<!-- about/index.nunjucks -->
+
+{% set services = [
+  "Brand strategy",
+  "Brand & visual identity",
+  "Creative Direction ",
+  "Art Direction",
+  "Visual social strategy",
+  "Illustration ",
+  "Animation",
+  "Photography",
+  "Motion graphics",
+  "Copywriting",
+  "Information architecture ",
+  "UI/UX strategy",
+  "App design",
+  "Web design",
+  "Digital ad design",
+  "Development"
+]
+%}
+
+{% set quotes = [
+  {
+    quote: "Working with Lama Six on The Difference was easily one of my best collaborative experiences in all my years as an entrepreneur. They have fantastic, out of the box ideas, while also being very structured and punctual, and excellent on executing",
+    author: "Bea",
+    company: "The Difference"
+  },
+  {
+    quote: "Working with the LamaSix team has been one of the best decisions our brand has made. From ideation to design, and from build to launch, they truly became an extension of our team who helped us build a beautiful website and corresponding collateral that truly represents the ethos of Clarity.",
+    author: "Serena",
+    company: "Clarity"
+  }
+]
+%}
+
+{% set clients = [
+  "Match Group",
+  "L'Oreal",
+  "essie",
+  "Valve Corporation",
+  "Steam",
+  "The Lean Startup",
+  "Clarity Staffing",
+  "The Difference",
+  "Tradiies",
+  "Arsenal",
+  "Mirra",
+  "Financial Fiduciary Group",
+  "Flor de Maria",
+  "Sked Social",
+  "Curious Elixirs",
+  "Bustle",
+  "The OMG",
+  "Cardstack",
+  "HighPoint",
+  "Monegraph",
+  "Fellow Barber",
+  "Chomps"
+]
+%}
+
+{% set pageID = 'about' %}
+{% set pageMeta = {
+    title: "About us and our team"
+  }
+%}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+<section id="who-we-are">
+  <header>
+    <h1>Who we are</h1>
+  </header>
+  <p>
+    LAMA SIX is a full-service creative agency that couldn’t be boring if we tried. We lend our distinctly thoughtful style and inclusive sensibility to brands that want to stand out. We know when things need a new, refreshing perspective or just a little bit more salt to really sing.</p><p>Don’t worry, we won’t actually sing. It was a metaphor.
+  </p>
+</section>
+<section id="what-we-do">
+  <header>
+    <h1>What we do</h1>
+  </header>
+  <ul class="services">
+    {% for service in services %}
+      <li>{{service}}</li>
+    {% endfor %}
+  </ul>
+</section>
+<section id="quotes-about-us">
+  <header>
+    <h1>What clients say about us</h1>
+  </header>
+  <ul class="quotes">
+    {% for quote in quotes %}
+      <li class="quote">
+        <div class="text">
+          “{{quote.quote}}”  
+        </div>
+        <div class="author">- {{quote.author}}, {{quote.company}}</div>
+      </li>
+    {% endfor %}
+  </ul>
+  <div class="slick-navigation">
+    <div class="arrow prev">
+      <svg width="100%" viewBox="0 0 19 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+              <g id="About-page" transform="translate(-60.000000, -2164.000000)" stroke="#000000" stroke-width="3">
+                  <polyline id="Stroke-1" transform="translate(70.000000, 2179.500000) scale(-1, -1) translate(-70.000000, -2179.500000) " points="63 2166 77 2179.50004 63 2193"></polyline>
+              </g>
+          </g>
+      </svg>
+    </div>
+    <div class="arrow next">
+      <svg width="100%" viewBox="0 0 19 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+              <g id="About-page" transform="translate(-1120.000000, -2169.000000)" stroke="#000000" stroke-width="3">
+                  <polyline id="Stroke-1" transform="translate(1129.000000, 2184.500000) scale(1, -1) translate(-1129.000000, -2184.500000) " points="1122 2171 1136 2184.50004 1122 2198"></polyline>
+              </g>
+          </g>
+      </svg>
+    </div>
+  </div>
+</section>
+<section id="our-clients">
+  <header>
+    <h1>Clients</h1>
+  </header>
+  <ul class="clients">
+    {% for client in clients %}
+      <li>{{client}}</li>
+    {% endfor %}
+  </ul>
+</section>
+<section id="our-team">
+  <header>
+    <h1>Team</h1>
+  </header>
+  <blockquote class="power-statement">
+    We work with collaborators across creative and technology disciplines, creating community around each project to cultivate the most fulfilling and compelling work possible.
+  </blockquote>
+  <div class="founders">
+    <h2>Founding partners</h2>
+    <div class="founding-partners">
+      <div class="partner">
+        <div class="photo">
+          <img src="/assets/media/team/isla-bell-murray.jpg" alt="Photo of Isla Bell Murray, Creative Director and CEO">
+        </div>
+        <h3>
+          Isla Murray
+          <br>
+          Creative Director, CEO
+        </h3>
+        <div class="bio">
+          Isla is an inspiring and visionary creative leader who focuses on design, perception and intimately understanding the human experience of others, allowing her to author courageous innovation. She was previously the Creative Director at Bustle.com, the largest millennial women’s publication, which reaches 50 million uniques a month. While she has a masterful sense of visual design, photo and video direction, and content creation, she also draws on her extensive background in Behavioral Psychology to understand, interpret and express the people who interface with her work.
+        </div>
+      </div>
+      <div class="partner">
+        <div class="photo">
+          <img src="/assets/media/team/maximillian-kirchoff-alt.jpg" alt="Photo of Maximillian Kirchoff, Managing Principal">
+        </div>
+        <h3>
+          Maximillian Kirchoff
+          <br>
+          Technical Director, COO
+        </h3>
+        <div class="bio">
+          Max is a creative technologist with vast domain knowledge, drawing on his thoughtful and engaging presence to guide and support the execution of bold, new ideas. He has worked across design, technology and product - unifying the technical understanding of problems and the aesthetic & empathic nuances of design with the heaviness of business requirements, investment and the hard conversations to obtain stakeholder buy-in. While at Google, he operated across many groups and worked to build tools that answered immediate business needs, impacting the day-to-day of thousands of engineers.
+        </div>
+      </div>
+    </div>
+  </div>
+  {% set teamMembers = [
+      {
+        name: "Amber Case",
+        title: "Design Director",
+        photo: "amber-case.jpg",
+        bio: "Amber is a designer and director with a focus on logo design, typography, visual identity systems, and branding. She has worked with clients in beauty, luxury, fashion, art, lifestyle and service industries. She brings relevance and style to brands through a playful and considered approach. Previous agencies included: Mucca, Collins, and Spring Studios."
+      },
+      {
+        name: "Mary Blount",
+        title: "Art Director",
+        photo: "mary-blount.jpg",
+        bio: "Mary Blount has 8 years of design experience, ranging from art direction, branding, illustration, animation to 3D design. When she's not designing, she loves to play music and hang out with her cat, Gnocchi. "
+      },
+      {
+        name: "Melissa Small",
+        title: "Designer, Artist",
+        photo: "melissa-small.jpg",
+        bio: "Melissa Small is a designer, artist, and creative director with an MFA from the Rhode Island School of Design. Melissa has over ten years of design & brand strategy experience, with a portfolio including visual identities, printed collateral, website and application design. She thrives in a collaborative environment, seeks open-ended problems, and loves color. Melissa has a knack for designing scalable systems from scratch, especially if there's room to draw upon her formal training as a painter. "
+      }
+    ]
+  %}
+  {#
+  <div class="team">
+    <h2>Team</h2>
+    <div class="team-members">
+      {% for teamMember in teamMembers %}
+        <div class="team-member">
+          <div class="photo">
+            <img src="/assets/media/team/{{teamMember.photo}}" alt="Photo of {{teamMember.name}}">
+          </div>
+          <h3>
+            {{teamMember.name}}
+            <br>
+            {{teamMember.title}}
+           </h3>
+          <div class="bio">
+            {{teamMember.bio}}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  #}
+</section>
+
+{% endblock %}

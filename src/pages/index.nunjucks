@@ -5,40 +5,15 @@
 {% extends "layout.nunjucks" %}
 
 {% block content %}
-<section id="about">
-  <div id="l6-animation">
-    <video muted playsinline id="l6-animation-video" poster="/assets/img/l6-animation-poster.png">
-      <source src="assets/video/L6.webm" type="video/webm">
-      <source src="assets/video/L6.mp4" type="video/mp4">
-    </video>
-  </div>
-  <div class="content">
-    <h1>A full-service creative studio.</h1>
-    <p>We build brands and visual identities from the ground up, craft beautiful digital experiences and produce compelling campaigns.</p>
-    <p>Full site coming soon, you can <a href="mailto:hi@lamasix.com">drop us a note</a> for work samples.
-    <a class="email button" href="mailto:hi@lamasix.com">hi@lamasix.com</a>
-  </div>
-</section>
-<section id="coming-soon">
-  <h5>full site</h5>
-  <h2>coming soon</h2>
-  <h2>coming soon</h2>
-  <h2>coming soon</h2>
-  <h2>coming soon</h2>
-  <h2>coming soon</h2>
-  <h2>coming soon</h2>
-  <h2>coming soon</h2>
-</section>
-<section id="ctas" class="holder">
-  <ul class="list">
-    <li class="cta">Read something fun <a href="https://www.linkedin.com/pulse/why-beauty-next-untapped-community-april-dominguez/" target="_blank">from a recent client</a></li>
-    <li class="icon">📖</li>
-    <li class="cta">Sign up for our <a href="/newsletter">newsletter</a></li>
-    <li class="icon">💌</li>
-    <li class="cta">Eat some <a href="https://goo.gl/maps/3peSSzx53Yw" target="_blank">great pizza</a></li>
-    <li class="icon">🍕</li>
-  </ul>
+<section id="power-statement" class="main-heading">
+  <h1 class="desktop-only">
+    A full-service creative agency driven by curiosity and results
+  </h1>
+  <h1 class="mobile-only">
+    Lama Six is a full-service creative agency driven by curiosity and results
+  </h1>
 </section>
 
+{% include "partials/work.nunjucks" %}
 
 {% endblock %}
