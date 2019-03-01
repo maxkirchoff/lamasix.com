@@ -907,16 +907,36 @@ header.menu-active {
 .project#ship .project-sample:nth-of-type(7), .project#ship .project-sample:nth-of-type(8), .project#ship .project-sample:nth-of-type(9), .project#ship .project-sample:nth-of-type(11), .project#ship .project-sample:nth-of-type(12), .project#ship .project-sample:nth-of-type(13) {
   width: calc(33.34% - 1.5vw); }
 
-body#daybyday {
+body#burnout {
   background: #F1654C;
   background: #F1654C;
   color: #F3D5EE; }
-  body#daybyday header {
+  body#burnout .letter {
+    padding: 5vw 7.5vw;
+    font-family: "GT-Super-Text", "Times New Roman", times, serif;
+    font-size: 8vw; }
+    @media only screen and (min-width: 850px) {
+      body#burnout .letter {
+        font-size: 5vw; } }
+    body#burnout .letter p:first-of-type {
+      margin-top: 0; }
+    body#burnout .letter a {
+      color: #F3D5EE;
+      border-bottom: 3px solid #fff;
+      transition: border-bottom ease-out 250ms, color ease-out 250ms; }
+      body#burnout .letter a:hover {
+        border-bottom: 3px solid transparent;
+        color: #fff; }
+      body#burnout .letter a.no-underline {
+        border-bottom: 3px solid transparent; }
+  body#burnout header {
     background: #F1654C;
     color: #fff; }
-    body#daybyday header nav#site-navigation ul li a {
+    body#burnout header.menu-active {
+      background: #000; }
+    body#burnout header nav#site-navigation a, body#burnout header nav#site-navigation ul li a, body#burnout header nav#site-navigation button {
       color: #fff; }
-    body#daybyday header .logo svg path {
+    body#burnout header .logo svg path {
       fill: #fff; }
 
 body#sleep {
@@ -930,8 +950,11 @@ body#sleep {
     body#sleep section h1 {
       font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif;
       color: #fff;
-      font-size: 1.5vw;
+      font-size: 4vw;
       margin: 0; }
+      @media only screen and (min-width: 850px) {
+        body#sleep section h1 {
+          font-size: 1.5vw; } }
     body#sleep section ul {
       margin-top: 3vw;
       list-style: none;
@@ -939,27 +962,35 @@ body#sleep {
       margin: 0; }
       body#sleep section ul li {
         font-family: "GT-Super-Text", "Times New Roman", times, serif;
-        font-size: 5vw;
+        font-size: 8vw;
         line-height: 1;
-        margin: 3vw 0; }
+        margin: 5vw 0; }
+        @media only screen and (min-width: 850px) {
+          body#sleep section ul li {
+            font-size: 5vw;
+            margin: 3vw 0; } }
         body#sleep section ul li a {
-          text-decoration: underline;
-          -webkit-text-decoration-color: #fff;
-                  text-decoration-color: #fff;
-          transition: -webkit-text-decoration-color ease-out 250ms;
-          transition: text-decoration-color ease-out 250ms;
-          transition: text-decoration-color ease-out 250ms, -webkit-text-decoration-color ease-out 250ms; }
+          border-bottom: 3px solid #fff;
+          transition: border-bottom ease-out 250ms, color ease-out 250ms; }
           body#sleep section ul li a:hover {
-            -webkit-text-decoration-color: #A3C3EB;
-                    text-decoration-color: #A3C3EB; }
+            border-bottom: 3px solid transparent;
+            color: #fff; }
         body#sleep section ul li .help-note {
           font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif;
-          font-size: 1.5vw;
-          margin-top: 0.5vw;
+          font-size: 3vw;
+          margin-top: 3vw;
           margin-left: 1vw; }
+          @media only screen and (min-width: 850px) {
+            body#sleep section ul li .help-note {
+              font-size: 1.5vw;
+              margin-top: 1.5vw;
+              margin-left: 1vw; } }
     body#sleep section#sleep-suggestions {
       color: #fff;
-      font-size: 1.75vw; }
+      font-size: 5vw; }
+      @media only screen and (min-width: 850px) {
+        body#sleep section#sleep-suggestions {
+          font-size: 1.75vw; } }
       body#sleep section#sleep-suggestions a {
         color: #fff !important; }
         body#sleep section#sleep-suggestions a:hover {
@@ -969,7 +1000,7 @@ body#sleep {
     color: #fff; }
     body#sleep header.menu-active {
       background: #000; }
-    body#sleep header nav#site-navigation ul li a, body#sleep header nav#site-navigation button {
+    body#sleep header nav#site-navigation a, body#sleep header nav#site-navigation ul li a, body#sleep header nav#site-navigation button {
       color: #fff; }
     body#sleep header .logo svg path {
       fill: #fff; }

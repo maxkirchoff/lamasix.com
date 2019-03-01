@@ -1,0 +1,60 @@
+$bg: #F1654C;
+$fc: #F3D5EE;
+
+body#burnout {
+  background: $bg;
+
+  background: $bg;
+  color: $fc;
+
+  .letter {
+    padding: 5vw 7.5vw;
+    font-family: $font-gt-super;
+    font-size: 8vw;
+
+    @media only screen and (min-width: $md-min-width) {
+      font-size: 5vw;
+    }
+
+    p {
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+
+    a {
+      color: $fc;
+      border-bottom: 3px solid #fff;
+      transition: border-bottom ease-out 250ms, color ease-out 250ms;
+
+      &:hover {
+        border-bottom: 3px solid transparent;
+        color: #fff;
+      }
+
+      &.no-underline {
+        border-bottom: 3px solid transparent;
+      }
+    }
+  }
+
+  header {
+    background: $bg;
+    color: #fff;
+
+    &.menu-active {
+      background: #000;
+    }
+
+    nav#site-navigation a, nav#site-navigation ul li a, nav#site-navigation button {
+      color: #fff;
+    }
+
+    .logo svg path {
+      fill: #fff;
+    }
+  }
+
+  .footer {
+  }
+}

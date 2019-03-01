@@ -14,14 +14,15 @@ body#sleep {
   section {
     padding: 5vw 7.5vw;
 
-    @media only screen and (min-width: $md-min-width) {
-
-    }
     h1 {
       font-family: $font-gt-america;
       color: #fff;
-      font-size: 1.5vw;
+      font-size: 4vw;
       margin: 0;
+
+      @media only screen and (min-width: $md-min-width) {
+        font-size: 1.5vw;
+      }
     }
     ul {
       margin-top: 3vw;
@@ -30,32 +31,47 @@ body#sleep {
       margin: 0;
       li {
         font-family: $font-gt-super;
-        font-size: 5vw;
+        font-size: 8vw;
         line-height: 1;
-        margin: 3vw 0;
+        margin: 5vw 0;
+
+        @media only screen and (min-width: $md-min-width) {
+          font-size: 5vw;
+          margin: 3vw 0;
+        }
 
         a {
-          text-decoration: underline;
-          text-decoration-color: #fff;
-          transition: text-decoration-color ease-out 250ms;
+          border-bottom: 3px solid #fff;
+          transition: border-bottom ease-out 250ms, color ease-out 250ms;
 
           &:hover {
-            text-decoration-color: $fc;
+            border-bottom: 3px solid transparent;
+            color: #fff;
           }
         }
 
         .help-note {
           font-family: $font-gt-america;
-          font-size: 1.5vw;
-          margin-top: 0.5vw;
+          font-size: 3vw;
+          margin-top: 3vw;
           margin-left: 1vw;
+
+          @media only screen and (min-width: $md-min-width) {
+            font-size: 1.5vw;
+            margin-top: 1.5vw;
+            margin-left: 1vw;
+          }
         }
       }
     }
 
     &#sleep-suggestions {
       color: #fff;
-      font-size: 1.75vw;
+      font-size: 5vw;
+
+      @media only screen and (min-width: $md-min-width) {
+        font-size: 1.75vw;
+      }
 
       a {
         color: #fff !important;
@@ -75,7 +91,7 @@ body#sleep {
       background: #000;
     }
 
-    nav#site-navigation ul li a, nav#site-navigation button {
+    nav#site-navigation a, nav#site-navigation ul li a, nav#site-navigation button {
       color: #fff;
     }
 
