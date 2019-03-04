@@ -3,15 +3,15 @@
 {% set services = [
   "Brand strategy",
   "Brand & visual identity",
-  "Creative Direction ",
+  "Creative Direction",
   "Art Direction",
   "Visual social strategy",
-  "Illustration ",
+  "Illustration",
   "Animation",
   "Photography",
   "Motion graphics",
   "Copywriting",
-  "Information architecture ",
+  "Information architecture",
   "UI/UX strategy",
   "App design",
   "Web design",
@@ -96,7 +96,7 @@
     {% for quote in quotes %}
       <li class="quote">
         <div class="text">
-          “{{quote.quote}}”  
+          “{{quote.quote}}”
         </div>
         <div class="author">- {{quote.author}}, {{quote.company}}</div>
       </li>
