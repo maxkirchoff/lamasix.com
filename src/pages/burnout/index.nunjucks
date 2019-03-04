@@ -10,8 +10,8 @@
 
 {% block content %}
   <section class="letter">
-    <p>2019 has been a hard year for me. I’ve been trying to unpack why…but honestly I’m just trying to get through day by day.</p>
-    <p>  I started a morning ritual. I guess it’s a self care/burnout recovery programe? Maybe it will help someone out? Maybe it won’t.</p>
-    <p>You can download a pdf <a href="/daybyday">here</a>. Please feel free to reach out with suggestions or just to say hi. <a class="no-underline" href="mailto:isla@lamasix.com">isla@lamasix.com</a></p>
+    <p>2019 has been a hard year for me. I’ve been trying to unpack why… but honestly, I’m just trying to get through day by day.</p>
+    <p>  To help, I started a morning ritual. I guess it’s a self care or burnout recovery program. Maybe it will help someone out. Maybe it won’t.</p>
+    <p>You can download a pdf <a target="_blank" class="download-pdf" href="/daybyday">here</a>. Please feel free to reach out with suggestions or just to say hi. <a class="no-underline" href="mailto:isla@lamasix.com">isla@lamasix.com</a></p>
   </section>
 {% endblock %}

@@ -136,6 +136,14 @@
     var app = lamasix();
     app.init();
 
+    $('.download-pdf').on('click touch', function(ev) {
+      gtag('event', 'downloadPdf', {
+        'event_category': 'engagement',
+        'event_label': 'download',
+        'value': 'dayByDay'
+      });
+    })
+
   });
 
 })(jQuery, window, document);

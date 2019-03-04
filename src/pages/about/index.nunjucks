@@ -75,7 +75,7 @@
     <h1>Who we are</h1>
   </header>
   <p>
-    LAMA SIX is a full-service creative agency that couldn’t be boring if we tried. We lend our distinctly thoughtful style and inclusive sensibility to brands that want to stand out. We know when things need a new, refreshing perspective or just a little bit more salt to really sing.</p><p>Don’t worry, we won’t actually sing. It was a metaphor.
+    LAMA SIX is a full-service creative agency that couldn’t be boring if we tried. We lend our distinctly thoughtful style and inclusive sensibility to brands that want to stand out. We know when things need a new, refreshing perspective or just a little bit more salt to really sing.</p><p>Don’t worry, we won’t actually sing. It's a metaphor.
   </p>
 </section>
 <section id="what-we-do">
@@ -138,7 +138,7 @@
     <h1>Team</h1>
   </header>
   <blockquote class="power-statement">
-    We work with collaborators across creative and technology disciplines, creating community around each project to cultivate the most fulfilling and compelling work possible.
+    We work with people who are undeniably bright, focused, honest, and quite frankly fun. We are scrappy tech and media people who strive to bring together diverse collaborators with the common denominator being an unapologetic mastery of skills and a sense of adventure.
   </blockquote>
   <div class="founders">
     <h2>Founding partners</h2>
@@ -153,7 +153,7 @@
           Creative Director, CEO
         </h3>
         <div class="bio">
-          Isla is an inspiring and visionary creative leader who focuses on design, perception and intimately understanding the human experience of others, allowing her to author courageous innovation. She was previously the Creative Director at Bustle.com, the largest millennial women’s publication, which reaches 50 million uniques a month. While she has a masterful sense of visual design, photo and video direction, and content creation, she also draws on her extensive background in Behavioral Psychology to understand, interpret and express the people who interface with her work.
+          Isla is an inspiring and inventive creative leader who focuses on using design, perception and empathy as tools for courageous innovation. Previously the Creative Director at Bustle, the largest millennial women’s publication, reaching 50M unique visitors a month, she has a masterful sense of visual design, photo and video direction and content creation. Isla gets some of her imaginative wisdom from her background in Behavioral Psychology, which allows her to understand, interpret and express the people who interface with her work.
         </div>
       </div>
       <div class="partner">
@@ -166,18 +166,12 @@
           Technical Director, COO
         </h3>
         <div class="bio">
-          Max is a creative technologist with vast domain knowledge, drawing on his thoughtful and engaging presence to guide and support the execution of bold, new ideas. He has worked across design, technology and product - unifying the technical understanding of problems and the aesthetic & empathic nuances of design with the heaviness of business requirements, investment and the hard conversations to obtain stakeholder buy-in. While at Google, he operated across many groups and worked to build tools that answered immediate business needs, impacting the day-to-day of thousands of engineers.
+          Max is a rare breed of creative technologist, drawing on his thoughtful and engaging presence to guide and support the execution of bold, new ideas. He has worked across design, technology and product - unifying technical understanding, empathic nuances and firm business realities. Max isn’t afraid of hard conversations in multiple languages, in fact he enjoys them. While at Google, he operated across many groups and worked to build tools that answered immediate business needs, impacting the day-to-day of thousands of engineers.
         </div>
       </div>
     </div>
   </div>
   {% set teamMembers = [
-      {
-        name: "Amber Case",
-        title: "Design Director",
-        photo: "amber-case.jpg",
-        bio: "Amber is a designer and director with a focus on logo design, typography, visual identity systems, and branding. She has worked with clients in beauty, luxury, fashion, art, lifestyle and service industries. She brings relevance and style to brands through a playful and considered approach. Previous agencies included: Mucca, Collins, and Spring Studios."
-      },
       {
         name: "Mary Blount",
         title: "Art Director",
@@ -185,14 +179,25 @@
         bio: "Mary Blount has 8 years of design experience, ranging from art direction, branding, illustration, animation to 3D design. When she's not designing, she loves to play music and hang out with her cat, Gnocchi. "
       },
       {
+        name: "Amber Case",
+        title: "Design Director",
+        photo: "amber-case.jpg",
+        bio: "Amber is a designer and director with a focus on logo design, typography, visual identity systems, and branding. She has worked with clients in beauty, luxury, fashion, art, lifestyle and service industries. She brings relevance and style to brands through a playful and considered approach. Previous agencies included: Mucca, Collins, and Spring Studios."
+      },
+      {
         name: "Melissa Small",
         title: "Designer, Artist",
         photo: "melissa-small.jpg",
         bio: "Melissa Small is a designer, artist, and creative director with an MFA from the Rhode Island School of Design. Melissa has over ten years of design & brand strategy experience, with a portfolio including visual identities, printed collateral, website and application design. She thrives in a collaborative environment, seeks open-ended problems, and loves color. Melissa has a knack for designing scalable systems from scratch, especially if there's room to draw upon her formal training as a painter. "
+      },
+      {
+        name: "Wendy Steiner",
+        title: "Copywriter, Comic",
+        photo: "wendy-steiner.jpg",
+        bio: "Wendy Steiner is a Brooklyn-based copywriter, content strategist, and stand-up comic. The proud Jewpanese entertainer’s past work at Refinery29, The Bold Italic, and terrible open mics have made her as sharp and observant as they come. While she doesn’t do impressions on stage, she will gladly help you discover and powerfully communicate in your own voice."
       }
     ]
   %}
-  {#
   <div class="team">
     <h2>Team</h2>
     <div class="team-members">
@@ -213,7 +218,6 @@
       {% endfor %}
     </div>
   </div>
-  #}
 </section>
 
 {% endblock %}
