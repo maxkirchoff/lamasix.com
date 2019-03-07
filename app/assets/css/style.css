@@ -839,12 +839,30 @@ header.menu-active {
         width: 28.7vw; } }
     .project header .header-info ul.categories a:hover {
       text-decoration: underline; }
-  .project header .header-info .description {
+  .project header .header-info .info {
     line-height: 1.4; }
     @media only screen and (min-width: 850px) {
-      .project header .header-info .description {
+      .project header .header-info .info {
         width: 44.16vw;
         margin-left: 1.67vw; } }
+    .project header .header-info .info .team {
+      margin-top: 5vw; }
+      @media only screen and (min-width: 850px) {
+        .project header .header-info .info .team {
+          margin-top: 1.67vw;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+      .project header .header-info .info .team > div {
+        display: inline;
+        margin-right: 1.5vw; }
+        @media only screen and (min-width: 850px) {
+          .project header .header-info .info .team > div {
+            display: block;
+            margin-right: 0.5vw; } }
+        .project header .header-info .info .team > div .member {
+          white-space: nowrap; }
 
 .project .project-samples {
   display: -ms-flexbox;

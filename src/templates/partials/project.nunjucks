@@ -24,11 +24,24 @@
             {% endfor %}
           </ul>
         </div>
-        {% if project.description %}
-          <div class="description">
-            {{project.description}}
-          </div>
-        {% endif %}
+        <div class="info">
+          {% if project.description %}
+            <div class="description">
+              {{project.description}}
+            </div>
+          {% endif %}
+          {% if project.team %}
+            <div class="team">
+              <div>Team:</div>
+              <div>
+                {% for member in project.team %}
+
+                  <span class="member">{{member}}{% if not loop.last %},{% endif %} </span>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
       </div>
     </header>
     <div class="project-samples">

@@ -304,12 +304,35 @@
         }
       }
 
-      .description {
+      .info {
         line-height: 1.4;
 
         @media only screen and (min-width: $md-min-width) {
           width: 44.16vw;
           margin-left: 1.67vw;
+        }
+
+        .team {
+          margin-top: 5vw;
+          @media only screen and (min-width: $md-min-width) {
+            margin-top: 1.67vw;
+            display: flex;
+            flex-direction: row;
+          }
+
+          > div {
+            display: inline;
+            margin-right: 1.5vw;
+
+            @media only screen and (min-width: $md-min-width) {
+              display: block;
+              margin-right: 0.5vw;
+            }
+
+            .member {
+              white-space: nowrap;
+            }
+          }
         }
       }
     }

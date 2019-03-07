@@ -10,6 +10,13 @@
         poster: 'summary.jpg'
       },
       description: "Lama Six was brought in to work with Match Group and Betches Media to launch a new dating app that would appeal to women by authentically celebrating their friends’ roles in their dating lives. We ideated around a friendly, yet snarky approach to dating that we carried with us from the early stages of creative direction to every detail of brand positioning, from the app UI animations to campaign imagery and digital ads.",
+      team: [
+        "Isla Murray",
+        "Amber Case",
+        "Wendy Steiner",
+        "Anna Sudit",
+        "Alex Liljebladh"
+      ],
       categories: [
         {
           name: 'Creative Direction',
@@ -117,6 +124,10 @@
         poster: 'summary.jpg'
       },
       description: "essie approached Lama Six to see if we could make people gifs that would also make their day. The idea was to create delightful visuals that reminded folks how fun giving yourself a visual treat can be. We brainstormed and created a cohesive set of gifs that would instantly earn those perfectly manicured double-tap likes from fans of the brands and new eyes alike.",
+      team: [
+        "Isla Murray",
+        "Allison Gore"
+      ],
       categories: [
         {
           name: 'Ideation',
@@ -218,6 +229,10 @@
         poster: 'summary.jpg'
       },
       description: "We worked with Tradiies on their brand identity to position them as a place for beauty creatives to claim their professional power. We molded a bold visual identity that spoke to a highly visual audience and established Tradiies as a rare mix of best and coolest in class. From their logo and typography to their Instagram strategy, all aspects of their brand identity hinted at being leaders of a new, business model that champions the individual creative spirit.",
+      team: [
+        "Isla Murray",
+        "Amber Case"
+      ],
       categories: [
         {
           name: 'Brand & visual identity',
@@ -283,6 +298,11 @@
         alt: 'Clarity Staffing wordmark with some green leaves behind it'
       },
       description: "Lama Six was hired by the boutique recruiting firm, Clarity to do creative direction, logo redesign, web design and development. The woman-owned agency is doing something intentionally simple, and we worked to provide them with branding that matched that purposeful approach. We collaborated closely with Clarity to hone their message, refine their visuals and express the spirited and delightful nature of their office and staff throughout their website.",
+      team: [
+        "Isla Murray",
+        "Max Kirchoff",
+        "Alyssa Blank"
+      ],
       categories: [
         {
           name: 'Brand & visual identity',
@@ -340,6 +360,12 @@
         alt: 'SKED Social logo on blue'
       },
       description: "Lama Six provided Sked with a visual identity, mascot design, and illustration style with enough polish and unique elements to speak to the brand’s authority as an Instagram tool. Through a dynamic use of disparate visuals and unexpected colors, we alluded to how well this brand understands the highest standards of visual scrutiny while still presenting a welcoming persona with a sense of humor. At the end of the day, the mascot is an animal wearing glasses.",
+      team: [
+        "Isla Murray",
+        "Melissa Small",
+        "Mary Blount",
+        "Allison Gore"
+      ],
       categories: [
         {
           name: 'Brand & visual identity',
@@ -388,6 +414,10 @@
         alt: 'A photo of two women hanging out next to a pool, enjoying a refreshing Curious Elixirs alcohol-free cocktail'
       },
       description: "Lama Six worked with Curious on their visual voice to position them as sophisticated, yet lighthearted, handcrafted alcohol-free mocktails. We developed visual strategy for their social channels and worked on a number of design projects, from bold and humorous digital ads to luxury posters.",
+      team: [
+        "Isla Murray",
+        "Allison Gore"
+      ],
       categories: [
         {
           name: 'Visual social strategy',
@@ -452,6 +482,11 @@
         alt: 'Where Does Your Penis Belong?'
       },
       description: "“Where Does Your Penis Belong” was born out of the sheer rage following the spate of shocking sexual assault allegations in 2017. Lama Six lent our skills in creative direction, book design, web design, and most importantly, comedic relief to create a hyper-simplified parody of a children’s book. We aimed to make a sarcastic statement about how simple respecting people should be, and to raise money for the Rape, Abuse & Incest National Network. The book was written & illustrated by Ashley Simon, Allison Gore and Isla Murray.",
+      team: [
+        "Isla Murray",
+        "Ashley Simon",
+        "Allison Gore"
+      ],
       categories: [
         {
           name: 'Creative Direction',
@@ -518,6 +553,10 @@
         alt: 'Mirra'
       },
       description: "Lama Six provided Mirra with a visual identity, site, and Instagram presence that felt nothing like anything else in the beauty space. We pushed the boundaries of expected, frilly beauty visuals and illustrations to capture immediate attention and represent the radical ethos of this particularly inclusive community and founder. Mirra saw big growth its core newsletter and successfully closed a seed round following the creation of their consistent visual strategy.",
+      team: [
+        "Isla Murray",
+        "Mary Blount"
+      ],
       categories: [
         {
           name: 'Brand & visual identity',
@@ -602,6 +641,11 @@
         poster: 'summary.jpg'
       },
       description: "essie Mani Talks is a series where essie interviews four female influencers about their lifes, ambitions and routines. We created playful line animations to emphasise the influencers’s stories and the names and colors of the nailpolishes. The series was distributed in the fall of 2018 on essie’s social media channels and as social media ads.",
+      team: [
+        "Isla Murray",
+        "Mary Blount",
+        "Alex Liljebladh"
+      ],
       categories: [
         {
           name: 'Creative Direction',
@@ -680,6 +724,11 @@
         alt: 'Lean Startup Co. logo, which is a blue enzo'
       },
       description: "LAMA SIX collaborated with Melissa Small to reposition and redesign the work-culture education company, Lean Startup's visual identity, website, and other collateral. This included their logo and visual language for the core brand and subdivision brands, as well as design and development of their main website and conference websites.",
+      team: [
+        "Isla Murray",
+        "Melissa Small",
+        "Max Kirchoff"
+      ],
       categories: [
         {
           name: 'Brand & visual identity',

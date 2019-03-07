@@ -2,7 +2,9 @@
 
 {% set pageID = 'burnout' %}
 {% set pageMeta = {
-    title: "Burnout, and how to get through, day by day"
+    title: "Burnout, and how to get through, day by day",
+    ogImage: "assets/media/daybyday/burn-out-og.png",
+    description: "2019 has been a hard year for me. I’ve been trying to unpack why… but honestly, I’m just trying to get through day by day. To help, I started a morning ritual. I guess it’s a self care or burnout recovery program. Maybe it will help someone out. Maybe it won’t."
   }
 %}
 
