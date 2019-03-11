@@ -1,0 +1,3 @@
+{% set projectSlug = 'theDifference' %}
+
+{% extends "project-page.nunjucks" %}

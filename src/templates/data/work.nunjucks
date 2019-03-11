@@ -473,6 +473,51 @@
         }
       ]
     },
+    theDifference: {
+      client: 'The Difference',
+      href: '/work/the-difference',
+      hero: {
+        type: 'image',
+        src: 'summary.png'
+      },
+      description: "Lama Six worked with The Difference to define and create their visual identity, representing  their radical new approach to therapy. We drew on their belief in building a happier, healthier world to craft illustrations and website design that brought a thoughtful lightness to talk therapy.",
+      team: [
+        "Isla Murray",
+        "Allison Gore"
+      ],
+      categories: [
+        {
+          name: 'Brand & visual identity',
+          slug: 'brand'
+        },
+        {
+          name: 'Web Design',
+          slug: 'web-design'
+        },
+        {
+          name: 'Illustration',
+          slug: 'illustration'
+        }
+      ],
+      media: [
+        {
+          type: "image",
+          src: "TheDifferenceHP_withbackground.png"
+        },
+        {
+          type: "image",
+          src: "Sleepingwoman.png"
+        },
+        {
+          type: "image",
+          src: "Righttalk.png"
+        },
+        {
+          type: "image",
+          src: "EndPlant.png"
+        }
+      ]
+    },
     wdypb: {
       client: 'Where Does Your Penis Belong?',
       href: '/work/wdypb',
@@ -631,6 +676,55 @@
 
       ]
     },
+    bustle: {
+      client: 'Bustle',
+      href: '/work/bustle',
+      hero: {
+        type: 'image',
+        src: 'summary.png'
+      },
+      description: "Lama Six’s Creative Director and CEO, Isla Murray entirely redesigned all digital presences of the Bustle brand for Bustle Digital Group, the largest premium publisher reaching millennial women. The large-scale project called for channeling unapologetic femininity, competence, and optimism into a massive visual framework that tens of millions of monthly visitors engage with and recognize. ",
+      categories: [
+        {
+          name: 'Creative Direction',
+          slug: 'creative-direction'
+        },
+        {
+          name: 'Brand & Visual Identity',
+          slug: 'brand'
+        }
+      ],
+      media: [
+        {
+          type: 'image',
+          src: 'Bustle-girls.jpg'
+        },
+        {
+          type: 'image',
+          src: 'Bustle_desktop_backgrouns.jpg'
+        },
+        {
+          type: 'image',
+          src: 'pinkgirl.jpg'
+        },
+        {
+          type: 'image',
+          src: 'AppLogo.png'
+        },
+        {
+          type: 'image',
+          src: 'App.jpg'
+        },
+        {
+          type: 'image',
+          src: 'Bustlecollage.jpg'
+        },
+        {
+          type: 'image',
+          src: 'BustleGradient.png'
+        }
+      ]
+    },
     essieVideos: {
       client: 'essie',
       href: '/work/essie/influencer-videos',
@@ -712,6 +806,52 @@
           webm: 'FULLVIDEO_Pia_Long_181115_v04.webm',
           poster: 'FULLVIDEO_Pia_Long_181115_v04.jpg',
           controls: true
+        }
+      ]
+    },
+    theOmg: {
+      client: 'The OMG',
+      href: '/work/the-omg',
+      hero: {
+        type: 'image',
+        src: 'summary.png'
+      },
+      description: "We were hired to design the branding for The OMG, an innovative social network serving office managers. We crafted a logo and brand book that references this specific group of users’ need for community and calm. The visual choices all include a sense of play that alludes to the brand’s core belief that with the right resources, work is a pleasure.",
+      team: [
+        "Isla Murray",
+        "Allison Gore",
+        "Melissa Small"
+      ],
+      categories: [
+        {
+          name: 'Creative Direction',
+          slug: 'creative-direction'
+        },
+        {
+          name: 'Brand & Visual Identity',
+          slug: 'brand'
+        }
+      ],
+      media: [
+        {
+          type: 'image',
+          src: 'officesupplies.png'
+        },
+        {
+          type: 'image',
+          src: 'OMG-Scattered.png'
+        },
+        {
+          type: 'image',
+          src: 'TheOMGdesktop_background.png'
+        },
+        {
+          type: 'image',
+          src: 'TheOMGicons.png'
+        },
+        {
+          type: 'image',
+          src: 'TheOMGendcard.png'
         }
       ]
     },
