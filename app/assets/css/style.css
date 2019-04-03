@@ -1132,10 +1132,7 @@ body#startups section {
   padding: 15vw 7.5vw; }
   @media only screen and (min-width: 850px) {
     body#startups section {
-      padding: 5vw 7.5vw; } }
-  @media only screen and (min-width: 850px) {
-    body#startups section#startup-intro {
-      padding-right: 17.5%; } }
+      padding: 10vw 7.5vw; } }
   body#startups section#startup-intro h1, body#startups section#startup-intro h2, body#startups section#startup-intro p {
     font-size: 8vw;
     font-family: "GT-Super-Text", "Times New Roman", times, serif;
@@ -1143,6 +1140,10 @@ body#startups section {
     @media only screen and (min-width: 850px) {
       body#startups section#startup-intro h1, body#startups section#startup-intro h2, body#startups section#startup-intro p {
         font-size: 5vw; } }
+  @media only screen and (min-width: 850px) {
+    body#startups section#startup-intro h1 {
+      margin-top: 0;
+      padding-top: 0; } }
   body#startups section#startup-packages {
     background: #000;
     color: #fff; }
@@ -1150,7 +1151,7 @@ body#startups section {
       body#startups section#startup-packages {
         width: 100vw;
         margin: 0 -5vw;
-        padding: 7.5vw 12.5vw; } }
+        padding: 10vw 12.5vw; } }
     body#startups section#startup-packages h1, body#startups section#startup-packages h2, body#startups section#startup-packages h3, body#startups section#startup-packages h4, body#startups section#startup-packages h5, body#startups section#startup-packages p {
       font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif;
       font-weight: normal;
@@ -1163,49 +1164,53 @@ body#startups section {
       @media only screen and (min-width: 850px) {
         body#startups section#startup-packages h3 {
           font-size: 1.5vw; } }
-    body#startups section#startup-packages .startup-package {
-      padding: 15vw 0 0; }
-      body#startups section#startup-packages .startup-package:first-of-type {
+    body#startups section#startup-packages .startup-package, body#startups section#startup-packages #explainer {
+      padding: 15vw 0 0;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 15vw; }
+      body#startups section#startup-packages .startup-package:first-of-type, body#startups section#startup-packages #explainer:first-of-type {
         padding-top: 0; }
+      body#startups section#startup-packages .startup-package:last-of-type, body#startups section#startup-packages #explainer:last-of-type {
+        border-bottom: none;
+        padding-bottom: 0; }
       @media only screen and (min-width: 850px) {
-        body#startups section#startup-packages .startup-package {
+        body#startups section#startup-packages .startup-package, body#startups section#startup-packages #explainer {
           padding: 0;
           display: -ms-flexbox;
           display: flex;
           -ms-flex-direction: row;
               flex-direction: row;
           -ms-flex-pack: justify;
-              justify-content: space-between; }
-          body#startups section#startup-packages .startup-package:first-of-type {
-            border-bottom: 2px solid #fff;
-            padding-bottom: 7.5vw;
-            margin-bottom: 7.5vw; } }
+              justify-content: space-between;
+          padding: 7.5vw 0; }
+          body#startups section#startup-packages .startup-package h2, body#startups section#startup-packages .startup-package p, body#startups section#startup-packages #explainer h2, body#startups section#startup-packages #explainer p {
+            font-size: 2.67vw; } }
       @media only screen and (min-width: 850px) {
-        body#startups section#startup-packages .startup-package .info {
+        body#startups section#startup-packages .startup-package .info, body#startups section#startup-packages #explainer .info {
           width: 35%; }
-          body#startups section#startup-packages .startup-package .info, body#startups section#startup-packages .startup-package .info h2, body#startups section#startup-packages .startup-package .info p {
+          body#startups section#startup-packages .startup-package .info, body#startups section#startup-packages .startup-package .info h2, body#startups section#startup-packages .startup-package .info p, body#startups section#startup-packages #explainer .info, body#startups section#startup-packages #explainer .info h2, body#startups section#startup-packages #explainer .info p {
             font-size: 2.67vw;
             margin-bottom: 5vw; } }
-      body#startups section#startup-packages .startup-package .description {
+      body#startups section#startup-packages .startup-package .description, body#startups section#startup-packages #explainer .description {
         margin-top: 10vw; }
         @media only screen and (min-width: 850px) {
-          body#startups section#startup-packages .startup-package .description {
+          body#startups section#startup-packages .startup-package .description, body#startups section#startup-packages #explainer .description {
             margin: 0;
             width: 40%; } }
-        body#startups section#startup-packages .startup-package .description h3 {
+        body#startups section#startup-packages .startup-package .description h3, body#startups section#startup-packages #explainer .description h3 {
           margin-top: 10vw; }
           @media only screen and (min-width: 850px) {
-            body#startups section#startup-packages .startup-package .description h3 {
+            body#startups section#startup-packages .startup-package .description h3, body#startups section#startup-packages #explainer .description h3 {
               margin: 0; } }
-        body#startups section#startup-packages .startup-package .description ul {
+        body#startups section#startup-packages .startup-package .description ul, body#startups section#startup-packages #explainer .description ul {
           margin: 5vw 0 0;
           padding: 0;
           list-style: none; }
           @media only screen and (min-width: 850px) {
-            body#startups section#startup-packages .startup-package .description ul {
+            body#startups section#startup-packages .startup-package .description ul, body#startups section#startup-packages #explainer .description ul {
               margin: 0.5vw 0;
               font-size: 2.67vw; }
-              body#startups section#startup-packages .startup-package .description ul:first-of-type {
+              body#startups section#startup-packages .startup-package .description ul:first-of-type, body#startups section#startup-packages #explainer .description ul:first-of-type {
                 margin-bottom: 7.5vw; } }
   body#startups section#process h1, body#startups section#process h2, body#startups section#process h3, body#startups section#process h4, body#startups section#process p {
     font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif;

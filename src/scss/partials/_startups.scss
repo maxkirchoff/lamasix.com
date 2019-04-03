@@ -3,14 +3,10 @@ body#startups {
     padding: 15vw 7.5vw;
 
     @media only screen and (min-width: $md-min-width) {
-      padding: 5vw 7.5vw;
+      padding: 10vw 7.5vw;
     }
 
     &#startup-intro {
-
-      @media only screen and (min-width: $md-min-width) {
-        padding-right: 17.5%;
-      }
 
       h1, h2, p {
         font-size: 8vw;
@@ -19,6 +15,12 @@ body#startups {
 
         @media only screen and (min-width: $md-min-width) {
           font-size: 5vw;
+        }
+      }
+      h1 {
+        @media only screen and (min-width: $md-min-width) {
+          margin-top: 0;
+          padding-top: 0;
         }
       }
     }
@@ -30,7 +32,7 @@ body#startups {
       @media only screen and (min-width: $md-min-width) {
         width: 100vw;
         margin: 0 -5vw;
-        padding: 7.5vw 12.5vw;
+        padding: 10vw 12.5vw;
       }
 
       h1, h2, h3, h4, h5, p {
@@ -51,11 +53,19 @@ body#startups {
         }
       }
 
-      .startup-package {
+      .startup-package, #explainer {
         padding: 15vw 0 0;
 
         &:first-of-type {
           padding-top: 0;
+        }
+
+        border-bottom: 2px solid #fff;
+        padding-bottom: 15vw;
+
+        &:last-of-type {
+          border-bottom: none;
+          padding-bottom: 0;
         }
 
         @media only screen and (min-width: $md-min-width) {
@@ -63,11 +73,12 @@ body#startups {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
+          padding: 7.5vw 0;
 
-          &:first-of-type {
-            border-bottom: 2px solid #fff;
-            padding-bottom: 7.5vw;
-            margin-bottom: 7.5vw;
+
+
+          h2, p {
+            font-size: 2.67vw;
           }
         }
 
