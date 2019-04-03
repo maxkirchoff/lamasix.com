@@ -1,0 +1,89 @@
+<!-- newsletter/index.nunjucks -->
+
+{% set pageID = 'startups' %}
+{% set pageMeta = {
+    title: "Startup Package Specials",
+    ogImage: "",
+    description: ""
+  }
+%}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <section id="startup-intro">
+    <h1>Startups, let us build you a brand that stands out. </h1>
+    <p>We have designed two offerings specifically for you, giving you everything you need to hit the ground running. Let's work together to craft a powerful visual voice in the leanest possible way.</p>
+  </section>
+  <section id="startup-packages">
+    <div class="startup-package" id="startup-essential">
+      <div class="info">
+        <h2>Startup Essential Package</h2>
+        <div class="price">$9,999</div>
+      </div>
+      <div class="description">
+          <h3>Basic Visual Indentity</h3>
+          <ul>
+            <li>Wordmark</li>
+            <li>Typeface & Color selection</li>
+            <li>Brand guidelines onesheet</li>
+          </ul>
+          <h3>Pitch Deck Template</h3>
+          <ul>
+            <li>Custom designed to brand spec</li>
+            <li>Deck template</li>
+          </ul>
+      </div>
+    </div>
+    <div class="startup-package" id="startup-complete">
+      <div class="info">
+        <h2>Startup complete Package</h2>
+        <div class="price">$19,999</div>
+      </div>
+      <div class="description">
+          <h3>Full Visual Indentity</h3>
+          <ul>
+            <li>Wordmark and/or icon</li>
+            <li>Typeface selection</li>
+            <li>Color and design elements</li>
+            <li>Brand overview and expanded guidelines</li>
+          </ul>
+          <h3>Pitch Deck Fully Styled</h3>
+          <ul>
+            <li>Custom designed to brand</li>
+            <li>Full deck, up to 30 slides</li>
+          </ul>
+      </div>
+    </div>
+  </section>
+  <section id="process">
+    <h2>Identity design process</h2>
+    <p>We start with a Creative Brief, a questionair of sorts to gather all the information and get us speaking the same language.</p>
+    <p>  Following this we schedule a kick off call with all the stakeholders. We’ll go through the brief, align on all the important details, goals and vision.  </p>
+    <p>From here we’ll offer up creative directions and work through a process of refinment until we have honed in on the perfect visual identity to express your brand.</p>
+  </section>
+  <section id="dont-see">
+    <h2>Don’t see what you’re looking for? Just let us know your needs and we can put together a proposal or estimate. <a href="mailto:hi@lamasix.com">hi@lamasix.com</a></h2>
+    <div class="read-our-interview">
+      <p>Read our interview in <a href="https://techcrunch.com/2019/03/28/startup-branding-how-much-does-it-really-cost/" target="_blank">TechCrunch</a> about why brand matters and what you should invest.</p>
+    </div>
+  </section>
+
+  <section id="startup-work-samples">
+    <h1 class="category-title">Startup Work Samples</h1>
+
+    {% set category = "startup" %}
+
+    <div class="project-links">
+      {% import "data/work.nunjucks" as work %}
+      {% for key, project in work.projects %}
+        {% for cat in project.categories %}
+          {% if 'startup' == cat.slug %}
+            {% set projectSlug = key %}
+            {% include "partials/project-summary.nunjucks" %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </section>
+{% endblock %}

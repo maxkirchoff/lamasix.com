@@ -1,0 +1,12 @@
+<a href="{{project.href}}" class="project-link">
+  {% if project.hero.type == 'video' %}
+    <video loop autoplay playsinline muted poster="/assets/media/{{key}}/{{project.hero.poster}}">
+      {% if project.hero.webm %}
+        <source src="/assets/media/{{key}}/{{project.hero.webm}}" type="video/webm">
+      {% endif %}
+      <source src="/assets/media/{{key}}/{{project.hero.mp4}}" type="video/mp4">
+    </video>
+  {% else %}
+    <img src="/assets/media/{{key}}/{{project.hero.src}}" alt="{{project.hero.alt}}">
+  {% endif %}
+</a>

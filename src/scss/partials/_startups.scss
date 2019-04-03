@@ -1,0 +1,189 @@
+body#startups {
+  section {
+    padding: 15vw 7.5vw;
+
+    @media only screen and (min-width: $md-min-width) {
+      padding: 5vw 7.5vw;
+    }
+
+    &#startup-intro {
+
+      @media only screen and (min-width: $md-min-width) {
+        padding-right: 17.5%;
+      }
+
+      h1, h2, p {
+        font-size: 8vw;
+        font-family: $font-gt-super;
+        margin-bottom: 0;
+
+        @media only screen and (min-width: $md-min-width) {
+          font-size: 5vw;
+        }
+      }
+    }
+
+    &#startup-packages {
+      background: #000;
+      color: #fff;
+
+      @media only screen and (min-width: $md-min-width) {
+        width: 100vw;
+        margin: 0 -5vw;
+        padding: 7.5vw 12.5vw;
+      }
+
+      h1, h2, h3, h4, h5, p {
+        font-family: $font-gt-america;
+        font-weight: normal;
+        margin: 0;
+      }
+
+      h2 {
+        text-transform: uppercase;
+        line-height: 1;
+      }
+
+      h3 {
+        font-size: 3vw;
+        @media only screen and (min-width: $md-min-width) {
+          font-size: 1.5vw;
+        }
+      }
+
+      .startup-package {
+        padding: 15vw 0 0;
+
+        &:first-of-type {
+          padding-top: 0;
+        }
+
+        @media only screen and (min-width: $md-min-width) {
+          padding: 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          &:first-of-type {
+            border-bottom: 2px solid #fff;
+            padding-bottom: 7.5vw;
+            margin-bottom: 7.5vw;
+          }
+        }
+
+        .info {
+          @media only screen and (min-width: $md-min-width) {
+            width: 35%;
+
+            &, h2, p {
+              font-size: 2.67vw;
+              margin-bottom: 5vw;
+            }
+          }
+        }
+
+        .description {
+          margin-top: 10vw;
+
+          @media only screen and (min-width: $md-min-width) {
+            margin: 0;
+            width: 40%;
+          }
+
+          h3 {
+            margin-top: 10vw;
+            @media only screen and (min-width: $md-min-width) {
+              margin: 0;
+            }
+          }
+
+          ul {
+            margin: 5vw 0 0;
+            padding: 0;
+            list-style: none;
+
+            @media only screen and (min-width: $md-min-width) {
+              margin: 0.5vw 0;
+              font-size: 2.67vw;
+              &:first-of-type {
+                margin-bottom: 7.5vw;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &#process {
+      h1, h2, h3, h4, p {
+        font-family: $font-gt-america;
+        font-size: 5vw;
+
+        @media only screen and (min-width: $md-min-width) {
+          font-size: 2.67vw;
+        }
+      }
+    }
+
+    &#dont-see {
+      background: #000;
+      color: #fff;
+
+      @media only screen and (min-width: $md-min-width) {
+        width: 100vw;
+        margin: 0 -5vw;
+        padding: 7.5vw 12.5vw;
+      }
+
+      h2 {
+        @media only screen and (min-width: $md-min-width) {
+          font-size: 5vw;
+        }
+      }
+
+      a {
+        color: #fff;
+
+        &:hover {
+          border-bottom: 2px solid #fff;
+        }
+      }
+
+      p {
+        line-height: 1.4;
+
+        @media only screen and (min-width: $md-min-width) {
+          font-size: 2.67vw;
+        }
+
+        a {
+          border-bottom: 2px solid #fff;
+
+          &:hover {
+            border-bottom: transparent;
+          }
+        }
+      }
+    }
+    &#startup-work-samples {
+      padding: 15vw 0;
+      @media only screen and (min-width: $md-min-width) {
+        padding: 5vw 0;
+      }
+      h1 {
+        text-align: center;
+        margin: 5vw 0 20vw;
+
+        @media only screen and (min-width: $md-min-width) {
+          margin-bottom: 10vw;
+        }
+      }
+    }
+  }
+
+
+  footer.footer {
+    margin-top: 0;
+
+  }
+}

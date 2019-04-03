@@ -20,7 +20,9 @@
           <h1>{{project.client}}</h1>
           <ul class="categories">
             {% for category in project.categories %}
-              <li>{{category.name}}</li>
+              {% if category.slug != 'startup' %}
+                <li>{{category.name}}</li>
+              {% endif %}
             {% endfor %}
           </ul>
         </div>

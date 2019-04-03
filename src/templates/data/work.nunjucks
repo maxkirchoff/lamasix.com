@@ -235,6 +235,10 @@
       ],
       categories: [
         {
+          name: 'Startup',
+          slug: 'startup'
+        },
+        {
           name: 'Brand & visual identity',
           slug: 'brand'
         },
@@ -368,6 +372,10 @@
       ],
       categories: [
         {
+          name: 'Startup',
+          slug: 'startup'
+        },
+        {
           name: 'Brand & visual identity',
           slug: 'brand'
         },
@@ -419,6 +427,10 @@
         "Allison Gore"
       ],
       categories: [
+        {
+          name: 'Startup',
+          slug: 'startup'
+        },
         {
           name: 'Visual social strategy',
           slug: 'visual-social'
@@ -486,6 +498,10 @@
         "Allison Gore"
       ],
       categories: [
+        {
+          name: 'Startup',
+          slug: 'startup'
+        },
         {
           name: 'Brand & visual identity',
           slug: 'brand'
@@ -603,6 +619,10 @@
         "Mary Blount"
       ],
       categories: [
+        {
+          name: 'Startup',
+          slug: 'startup'
+        },
         {
           name: 'Brand & visual identity',
           slug: 'brand'
@@ -823,6 +843,10 @@
         "Melissa Small"
       ],
       categories: [
+        {
+          name: 'Startup',
+          slug: 'startup'
+        },
         {
           name: 'Creative Direction',
           slug: 'creative-direction'

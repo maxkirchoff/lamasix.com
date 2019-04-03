@@ -14,6 +14,11 @@
 
   @media only screen and (min-width: $md-min-width) {
     padding: 2vw 5vw 1.75vw;
+    transition: border-bottom 250ms linear, top 500ms ease-out;
+  }
+
+  @media only screen and (min-width: $xl-min-width) {
+    transition: border-bottom 250ms linear, top 750ms ease-out;
   }
 
   &.scrolled {

@@ -501,7 +501,11 @@ a {
   transition: border-bottom 250ms linear, top 250ms ease-out; }
   @media only screen and (min-width: 850px) {
     .header {
-      padding: 2vw 5vw 1.75vw; } }
+      padding: 2vw 5vw 1.75vw;
+      transition: border-bottom 250ms linear, top 500ms ease-out; } }
+  @media only screen and (min-width: 1500px) {
+    .header {
+      transition: border-bottom 250ms linear, top 750ms ease-out; } }
   .header.scrolled {
     border-bottom: #ededed 1px solid; }
   .header.nav-up {
@@ -1123,6 +1127,130 @@ body#sleep {
               margin: 0;
               font-size: 1vw;
               padding: .75vw 2vw; } }
+
+body#startups section {
+  padding: 15vw 7.5vw; }
+  @media only screen and (min-width: 850px) {
+    body#startups section {
+      padding: 5vw 7.5vw; } }
+  @media only screen and (min-width: 850px) {
+    body#startups section#startup-intro {
+      padding-right: 17.5%; } }
+  body#startups section#startup-intro h1, body#startups section#startup-intro h2, body#startups section#startup-intro p {
+    font-size: 8vw;
+    font-family: "GT-Super-Text", "Times New Roman", times, serif;
+    margin-bottom: 0; }
+    @media only screen and (min-width: 850px) {
+      body#startups section#startup-intro h1, body#startups section#startup-intro h2, body#startups section#startup-intro p {
+        font-size: 5vw; } }
+  body#startups section#startup-packages {
+    background: #000;
+    color: #fff; }
+    @media only screen and (min-width: 850px) {
+      body#startups section#startup-packages {
+        width: 100vw;
+        margin: 0 -5vw;
+        padding: 7.5vw 12.5vw; } }
+    body#startups section#startup-packages h1, body#startups section#startup-packages h2, body#startups section#startup-packages h3, body#startups section#startup-packages h4, body#startups section#startup-packages h5, body#startups section#startup-packages p {
+      font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif;
+      font-weight: normal;
+      margin: 0; }
+    body#startups section#startup-packages h2 {
+      text-transform: uppercase;
+      line-height: 1; }
+    body#startups section#startup-packages h3 {
+      font-size: 3vw; }
+      @media only screen and (min-width: 850px) {
+        body#startups section#startup-packages h3 {
+          font-size: 1.5vw; } }
+    body#startups section#startup-packages .startup-package {
+      padding: 15vw 0 0; }
+      body#startups section#startup-packages .startup-package:first-of-type {
+        padding-top: 0; }
+      @media only screen and (min-width: 850px) {
+        body#startups section#startup-packages .startup-package {
+          padding: 0;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: row;
+              flex-direction: row;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+          body#startups section#startup-packages .startup-package:first-of-type {
+            border-bottom: 2px solid #fff;
+            padding-bottom: 7.5vw;
+            margin-bottom: 7.5vw; } }
+      @media only screen and (min-width: 850px) {
+        body#startups section#startup-packages .startup-package .info {
+          width: 35%; }
+          body#startups section#startup-packages .startup-package .info, body#startups section#startup-packages .startup-package .info h2, body#startups section#startup-packages .startup-package .info p {
+            font-size: 2.67vw;
+            margin-bottom: 5vw; } }
+      body#startups section#startup-packages .startup-package .description {
+        margin-top: 10vw; }
+        @media only screen and (min-width: 850px) {
+          body#startups section#startup-packages .startup-package .description {
+            margin: 0;
+            width: 40%; } }
+        body#startups section#startup-packages .startup-package .description h3 {
+          margin-top: 10vw; }
+          @media only screen and (min-width: 850px) {
+            body#startups section#startup-packages .startup-package .description h3 {
+              margin: 0; } }
+        body#startups section#startup-packages .startup-package .description ul {
+          margin: 5vw 0 0;
+          padding: 0;
+          list-style: none; }
+          @media only screen and (min-width: 850px) {
+            body#startups section#startup-packages .startup-package .description ul {
+              margin: 0.5vw 0;
+              font-size: 2.67vw; }
+              body#startups section#startup-packages .startup-package .description ul:first-of-type {
+                margin-bottom: 7.5vw; } }
+  body#startups section#process h1, body#startups section#process h2, body#startups section#process h3, body#startups section#process h4, body#startups section#process p {
+    font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif;
+    font-size: 5vw; }
+    @media only screen and (min-width: 850px) {
+      body#startups section#process h1, body#startups section#process h2, body#startups section#process h3, body#startups section#process h4, body#startups section#process p {
+        font-size: 2.67vw; } }
+  body#startups section#dont-see {
+    background: #000;
+    color: #fff; }
+    @media only screen and (min-width: 850px) {
+      body#startups section#dont-see {
+        width: 100vw;
+        margin: 0 -5vw;
+        padding: 7.5vw 12.5vw; } }
+    @media only screen and (min-width: 850px) {
+      body#startups section#dont-see h2 {
+        font-size: 5vw; } }
+    body#startups section#dont-see a {
+      color: #fff; }
+      body#startups section#dont-see a:hover {
+        border-bottom: 2px solid #fff; }
+    body#startups section#dont-see p {
+      line-height: 1.4; }
+      @media only screen and (min-width: 850px) {
+        body#startups section#dont-see p {
+          font-size: 2.67vw; } }
+      body#startups section#dont-see p a {
+        border-bottom: 2px solid #fff; }
+        body#startups section#dont-see p a:hover {
+          border-bottom: transparent; }
+  body#startups section#startup-work-samples {
+    padding: 15vw 0; }
+    @media only screen and (min-width: 850px) {
+      body#startups section#startup-work-samples {
+        padding: 5vw 0; } }
+    body#startups section#startup-work-samples h1 {
+      text-align: center;
+      margin: 5vw 0 20vw; }
+      @media only screen and (min-width: 850px) {
+        body#startups section#startup-work-samples h1 {
+          margin-bottom: 10vw; } }
+
+body#startups footer.footer {
+  margin-top: 0; }
 
 .footer {
   background: #000;
