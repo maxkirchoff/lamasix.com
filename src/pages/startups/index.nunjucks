@@ -2,7 +2,7 @@
 
 {% set pageID = 'startups' %}
 {% set pageMeta = {
-    title: "Startup Package Specials",
+    title: "Brand packages for startups",
     ogImage: "",
     description: "We have designed two offerings specifically for early stage startups. They give you everything you need to hit the ground running. Let's work together to craft a powerful brand and stay as lean as possible."
   }
