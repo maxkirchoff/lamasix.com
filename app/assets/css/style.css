@@ -651,7 +651,7 @@ header.menu-active {
     @media only screen and (min-width: 850px) {
       .main #power-statement h1 {
         text-align: center;
-        font-size: 7vw;
+        font-size: 8vw;
         line-height: 1;
         margin: 20vw 0 20vw; } }
   .main .section header h4 {

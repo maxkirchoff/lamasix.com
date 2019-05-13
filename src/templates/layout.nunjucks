@@ -9,10 +9,10 @@
     {% if pageMeta.title %}
       <title>{{ pageMeta.title }} - Lama Six</title>
     {% else %}
-      <title>Lama Six, a full-service creative agency driven by curiosity and results</title>
+      <title>Lama Six, a full service creative studio driven by curiosity and results</title>
     {% endif %}
 
-    <meta name="description" content="Lama Six is a full-service creative studio based in Brooklyn, NY.">
+    <meta name="description" content="Lama Six, a full service creative studio driven by curiosity and results">
 
     <meta name="keywords" content="lama six, llama six, lama 6, llama 6, llama, six, brooklyn, creative studio, max kirchoff, isla murray, creative, design, web development, brand, visual identity, social media">
 
