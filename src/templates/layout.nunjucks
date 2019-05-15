@@ -23,7 +23,7 @@
     {% if pageMeta.title %}
       <meta property="og:title" content="{{ pageMeta.title }} - Lama Six">
     {% else %}
-      <meta property="og:title" content="Lama Six, a full-service creative agency driven by curiosity and results">
+      <meta property="og:title" content="Lama Six, a full service creative studio driven by curiosity and results">
     {% endif %}
     {% if pageMeta.description %}
       <meta property="og:description" content="{{ pageMeta.description }}">
@@ -60,7 +60,7 @@
     <link href="//ajax.googleapis.com" rel="dns-prefetch">
     <link href="/assets/components/slick/slick.css" rel="stylesheet">
     <link href="/assets/components/slick/slick-theme.css" rel="stylesheet">
-    <link href="/assets/css/style.min.css" rel="stylesheet">
+    <link href="/assets/css/style.min.css?v2" rel="stylesheet">
 
     <script src="/assets/components/modernizr/modernizr.js"></script>
   </head>
