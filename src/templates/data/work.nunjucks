@@ -1,5 +1,52 @@
 {%
   set projects = {
+    ozy: {
+      client: 'Ozy',
+      href: '/work/ozy',
+      hero: {
+        type: 'image',
+        src: 'summary.jpg',
+        alt: 'A street view of the Ozy ad campaign'
+      },
+      description: "When OZY was ready to debut a bold new brand identity, they called on Lama Six to craft an unapologetic and evocative campaign to match it. Our team produced extreme and playful original photography and wrote irreverent and antagonistic power phrases to leave a lasting impression and start big conversations about OZY.",
+      team: [
+        "Isla Murray",
+        "Bry Crasch",
+        "Wendy Steiner"
+      ],
+      categories: [
+        {
+          name: 'Creative Direction',
+          slug: 'creative-direction'
+        },
+        {
+          name: 'Photography',
+          slug: 'photography'
+        }
+      ],
+      media: [
+        {
+          type: 'image',
+          src: 'ozy-tv-ad.jpg'
+        },
+        {
+          type: 'image',
+          src: 'ozy-ipad-ad.jpg'
+        },
+        {
+          type: 'image',
+          src: 'ozy-laptop-ad.jpg'
+        },
+        {
+          type: 'image',
+          src: 'ozy-phone-ad.jpg'
+        },
+        {
+          type: 'image',
+          src: 'ozy-newspaper-ad.jpg'
+        }
+      ]
+    },
     ship: {
       client: 'Ship',
       href: '/work/ship',
