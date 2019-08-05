@@ -12,7 +12,8 @@
       team: [
         "Isla Murray",
         "Bry Crasch",
-        "Wendy Steiner"
+        "Wendy Steiner",
+        "Production Team"
       ],
       categories: [
         {
@@ -28,8 +29,8 @@
           slug: 'photography'
         },
         {
-          name: 'Production',
-          slug: 'production'
+          name: 'Photo Production',
+          slug: 'photo-production'
         }
       ],
       media: [
