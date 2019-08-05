@@ -1,5 +1,61 @@
 {%
   set projects = {
+    ozy: {
+      client: 'Ozy',
+      href: '/work/ozy',
+      hero: {
+        type: 'image',
+        src: 'summary.jpg',
+        alt: 'A street view of the Ozy ad campaign'
+      },
+      description: "When OZY wanted to raise brand awareness, they called on us to create an unapologetic and evocative, brand-building campaign. We crafted a campaign that demonstrated the glaring flaws in our current media landscape and presented OZY as a refreshing and slick alternative. Lama Six produced original photos and wrote urgent and memorable power phrases, which were used in digital and OOH ads.",
+      team: [
+        "Isla Murray",
+        "Bry Crasch",
+        "Wendy Steiner",
+        "Production Team"
+      ],
+      categories: [
+        {
+          name: 'Creative Direction',
+          slug: 'creative-direction'
+        },
+        {
+          name: 'Copy Writing',
+          slug: 'copy-writing'
+        },
+        {
+          name: 'Photography',
+          slug: 'photography'
+        },
+        {
+          name: 'Photo Production',
+          slug: 'photo-production'
+        }
+      ],
+      media: [
+        {
+          type: 'image',
+          src: 'ozy-tv-ad.jpg'
+        },
+        {
+          type: 'image',
+          src: 'ozy-ipad-ad.jpg'
+        },
+        {
+          type: 'image',
+          src: 'ozy-laptop-ad.jpg'
+        },
+        {
+          type: 'image',
+          src: 'ozy-phone-ad.jpg'
+        },
+        {
+          type: 'image',
+          src: 'ozy-newspaper-ad.jpg'
+        }
+      ]
+    },
     ship: {
       client: 'Ship',
       href: '/work/ship',
