@@ -275,6 +275,65 @@
         }
       ]
     },
+    valveSoftware: {
+      client: 'Valve',
+      href: '/work/valve/valvesoftware',
+      hero: {
+        type: 'video',
+        logo: 'valve-logo.svg',
+        mp4: 'summary.mp4',
+        webm: 'summary.webm',
+        poster: 'summary.jpg'
+      },
+      description: "Valve brought in LAMA SIX to work with Melissa Small to ideate, design and develop a fresh new look for their website. We embedded with their team to develop a new dimension of Valve's brand. The new look was developed to attract the attention of both video game industry folks and others, in an effort to broaden their brand image. The website references the classic humor and voice of Valve, with a bright, direct new visual presentation.",
+      team: [
+        "Melissa Small",
+        "Max Kirchoff",
+        "Valve's Team"
+      ],
+      categories: [
+        {
+          name: 'Ideation',
+          slug: 'ideation'
+        },
+        {
+          name: 'Web Design',
+          slug: 'web-design'
+        },
+        {
+          name: 'Web Development',
+          slug: 'web-development'
+        }
+      ],
+      media: [
+        {
+          type: 'video',
+          mp4: 'p-body.mp4',
+          webm: 'p-body.webm',
+          poster: 'p-body.jpg'
+        },
+        {
+          type: 'image',
+          src: 'our-games.png',
+          alt: 'Our games attract millions and define genres.'
+        },
+        {
+          type: 'video',
+          mp4: 'valve-website.mp4',
+          poster: 'valve-website.jpg'
+        },
+        {
+          type: 'image',
+          src: 'controllers.jpg',
+          alt: 'A grid of video game controller prototypes.'
+        },
+        {
+          type: 'image',
+          src: 'steam-stats.png',
+          alt: 'A sample of stats from Steam.'
+        }
+      ]
+    },
     tradiies: {
       client: 'Tradiies',
       href: '/work/tradiies',

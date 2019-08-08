@@ -6,7 +6,12 @@
       {% endif %}
       <source src="/assets/media/{{key}}/{{project.hero.mp4}}" type="video/mp4">
     </video>
+    {% if project.hero.logo %}
+      <div class="logo-overlay">
+        <img class="video-logo" src="/assets/media/{{key}}/{{project.hero.logo}}">
+      </div>
+    {% endif %}
   {% else %}
-    <img src="/assets/media/{{key}}/{{project.hero.src}}" alt="{{project.hero.alt}}">
+      <img src="/assets/media/{{key}}/{{project.hero.src}}" alt="{{project.hero.alt}}">
   {% endif %}
 </a>

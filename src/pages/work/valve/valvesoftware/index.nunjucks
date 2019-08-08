@@ -1,0 +1,3 @@
+{% set projectSlug = 'valveSoftware' %}
+
+{% extends "project-page.nunjucks" %}
