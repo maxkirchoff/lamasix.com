@@ -1,17 +1,33 @@
-<a href="{{project.href}}" class="project-link">
-  {% if project.hero.type == 'video' %}
-    <video loop autoplay playsinline muted poster="/assets/media/{{key}}/{{project.hero.poster}}">
-      {% if project.hero.webm %}
-        <source src="/assets/media/{{key}}/{{project.hero.webm}}" type="video/webm">
+{% import "data/work.nunjucks" as work %}
+{% if work.projects[projectSlug] %}
+  {% set project = work.projects[projectSlug] %}<div class="project">
+    <a href="{{project.href}}" class="project-link">
+      {% if project.hero.type == 'video' %}
+        <video loop autoplay playsinline muted poster="/assets/media/{{key}}/{{project.hero.poster}}">
+          {% if project.hero.webm %}
+            <source src="/assets/media/{{key}}/{{project.hero.webm}}" type="video/webm">
+          {% endif %}
+          <source src="/assets/media/{{key}}/{{project.hero.mp4}}" type="video/mp4">
+        </video>
+        {% if project.hero.logo %}
+          <div class="logo-overlay">
+            <img class="video-logo" src="/assets/media/{{key}}/{{project.hero.logo}}">
+          </div>
+        {% endif %}
+      {% else %}
+          <img src="/assets/media/{{key}}/{{project.hero.src}}" alt="{{project.hero.alt}}">
       {% endif %}
-      <source src="/assets/media/{{key}}/{{project.hero.mp4}}" type="video/mp4">
-    </video>
-    {% if project.hero.logo %}
-      <div class="logo-overlay">
-        <img class="video-logo" src="/assets/media/{{key}}/{{project.hero.logo}}">
-      </div>
-    {% endif %}
-  {% else %}
-      <img src="/assets/media/{{key}}/{{project.hero.src}}" alt="{{project.hero.alt}}">
+    </a>
+    <div class="project-header">
+      <h2><a href="{{project.href}}">{{ project.client }}</a></h2>
+      <a class="view-project" href="{{project.href}}">
+        View project
+      </a>
+    </div>
+    <div class="summary">
+      <p>
+        {{ project.shortDescription }}
+      </p>
+    </div>
+  </div>
   {% endif %}
-</a>

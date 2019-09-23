@@ -1,0 +1,10 @@
+<div class="startups-examples">
+  {% set items = ['tradiies', 'ship', 'mirra', 'sked'] %}
+  {% import "data/work.nunjucks" as work %}
+  {% for key in items %}
+    {% if work.projects[key] %}
+      {% set projectSlug = key %}
+      {% include "partials/project-summary.nunjucks" %}
+    {% endif %}
+  {% endfor %}
+</div>

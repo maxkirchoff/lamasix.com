@@ -66,6 +66,7 @@
         poster: 'summary.jpg'
       },
       description: "Lama Six was brought in to work with Match Group and Betches Media to launch a new dating app that would appeal to women by authentically celebrating their friends’ roles in their dating lives. We ideated around a friendly, yet snarky approach to dating that we carried with us from the early stages of creative direction to every detail of brand positioning, from the app UI animations to campaign imagery and digital ads.",
+      shortDescription: "We ideated with Match Group and Betches Media to launch a new dating app, providing creative direction and strategy ans well as producting digital ads for their launch.",
       team: [
         "Isla Murray",
         "Amber Case",
@@ -286,6 +287,7 @@
         poster: 'summary.jpg'
       },
       description: "Valve brought in LAMA SIX to work with Melissa Small to ideate, design and develop a fresh new look for their website. We embedded with their team to develop a new dimension of Valve's brand. The new look was developed to attract the attention of both video game industry folks and others, in an effort to broaden their brand image. The website references the classic humor and voice of Valve, with a bright, direct new visual presentation.",
+      shortDescription: "We embedded with Valve’s team to develop a new dimension of Valve's brand expressed on their powerful new website.",
       team: [
         "Melissa Small",
         "Max Kirchoff",
@@ -344,6 +346,7 @@
         poster: 'summary.jpg'
       },
       description: "We worked with Tradiies on their brand identity to position them as a place for beauty creatives to claim their professional power. We molded a bold visual identity that spoke to a highly visual audience and established Tradiies as a rare mix of best and coolest in class. From their logo and typography to their Instagram strategy, all aspects of their brand identity hinted at being leaders of a new, business model that champions the individual creative spirit.",
+      shortDescription: "We crafted a bold visual identity to position Tradiies as a place for beauty creatives to claim their professional power.",
       team: [
         "Isla Murray",
         "Amber Case"
@@ -479,6 +482,7 @@
         alt: 'SKED Social logo on blue'
       },
       description: "Lama Six provided Sked with a visual identity, mascot design, and illustration style with enough polish and unique elements to speak to the brand’s authority as an Instagram tool. Through a dynamic use of disparate visuals and unexpected colors, we alluded to how well this brand understands the highest standards of visual scrutiny while still presenting a welcoming persona with a sense of humor. At the end of the day, the mascot is an animal wearing glasses.",
+      shortDescription: "We brought life to Schedugram's transition to their new name Sked Social with a fresh, powerful, new visual identity and website. Their business pivot was captured well in this colorful expression of delgiht.",
       team: [
         "Isla Murray",
         "Melissa Small",
@@ -729,6 +733,7 @@
         alt: 'Mirra'
       },
       description: "Lama Six provided Mirra with a visual identity, site, and Instagram presence that felt nothing like anything else in the beauty space. We pushed the boundaries of expected, frilly beauty visuals and illustrations to capture immediate attention and represent the radical ethos of this particularly inclusive community and founder. Mirra saw big growth its core newsletter and successfully closed a seed round following the creation of their consistent visual strategy.",
+      shortDescription: "With this visual identity we pushed boundaries of expected, frilly beauty visuals and illustrations to capture immediate attention and represent the radical ethos of this particularly inclusive community and founder.",
       team: [
         "Isla Murray",
         "Mary Blount"

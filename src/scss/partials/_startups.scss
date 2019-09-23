@@ -6,189 +6,271 @@ body#startups {
       padding: 10vw 7.5vw;
     }
 
-    &#startup-intro {
+    h1, h2 {
+      font-size: 7vw;
+      font-family: $font-gt-america;
+      margin-bottom: 10vw;
 
-      h1, h2, p {
+      @media only screen and (min-width: $md-min-width) {
+        font-size: 2.67vw;
+      }
+    }
+
+    &#startup-intro {
+      background-image: url('/assets/media/startups-header-bg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+
+      @media only screen and (min-width: $md-min-width) {
+        background-size: 40% 100%;
+        padding-bottom: 25vw;
+      }
+
+      h1, h2 {
         font-size: 8vw;
         font-family: $font-gt-super;
-        margin-bottom: 0;
+        margin-bottom: 10vw;
 
         @media only screen and (min-width: $md-min-width) {
           font-size: 5vw;
+          margin-bottom: 5vw;
         }
       }
       h1 {
         @media only screen and (min-width: $md-min-width) {
           margin-top: 0;
           padding-top: 0;
+
+          .differentiator {
+            text-align: right;
+          }
+        }
+
+        span {
+          display: block;
+        }
+      }
+
+      .content {
+        width: 25vw;
+      }
+    }
+
+    &#startup-bookings {
+      @media only screen and (min-width: $md-min-width) {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 30vw;
+        width: 30vw;
+        right: 7.5vw;
+      }
+      .bookings {
+        .booking {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid #000;
+          padding: 3vw 0;
+          @media only screen and (min-width: $md-min-width) {
+            padding: 1vw 0;
+            justify-content: flex-start;
+          }
+          .month {
+            font-size: 9vw;
+            @media only screen and (min-width: $md-min-width) {
+              font-size: 2.67vw;
+              width: 50%;
+            }
+          }
+          .status {
+            font-size: 4vw;
+            @media only screen and (min-width: $md-min-width) {
+              font-size: 1.5vw;
+            }
+          }
         }
       }
     }
 
-    &#startup-packages {
-      background: #000;
-      color: #fff;
-
-      @media only screen and (min-width: $md-min-width) {
-        width: 100vw;
-        margin: 0 -5vw;
-        padding: 10vw 12.5vw;
-      }
-
-      h1, h2, h3, h4, h5, p {
-        font-family: $font-gt-america;
-        font-weight: normal;
-        margin: 0;
-      }
-
-      h2 {
-        text-transform: uppercase;
-        line-height: 1;
-      }
-
-      h3 {
-        font-size: 3vw;
-        @media only screen and (min-width: $md-min-width) {
-          font-size: 1.5vw;
-        }
-      }
-
-      .startup-package, #explainer {
-        padding: 15vw 0 0;
-
-        &:first-of-type {
-          padding-top: 0;
-        }
-
-        border-bottom: 2px solid #fff;
-        padding-bottom: 15vw;
-
-        &:last-of-type {
-          border-bottom: none;
-          padding-bottom: 0;
-        }
+    &#startups-examples {
+      .startups-examples {
 
         @media only screen and (min-width: $md-min-width) {
-          padding: 0;
           display: flex;
           flex-direction: row;
+          flex-wrap: wrap;
           justify-content: space-between;
-          padding: 7.5vw 0;
-
-
-
-          h2, p {
-            font-size: 2.67vw;
-          }
         }
 
-        .info {
-          @media only screen and (min-width: $md-min-width) {
-            width: 35%;
-
-            &, h2, p {
-              font-size: 2.67vw;
-              margin-bottom: 5vw;
-            }
-          }
-        }
-
-        .description {
-          margin-top: 10vw;
+        .project {
+          margin-bottom: 10vw;
 
           @media only screen and (min-width: $md-min-width) {
-            margin: 0;
-            width: 40%;
+            width: 49%;
+            font-size: 1.167vw;
+            margin-bottom: 2vw;
           }
 
-          h3 {
-            margin-top: 10vw;
+          .project-link {
+
+          }
+          .project-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 5vw 0 2vw;
+            border-bottom: 1px solid #000;
+
             @media only screen and (min-width: $md-min-width) {
+              padding: 2vw 0 0.5vw;
+            }
+
+            h2 {
+              font-size: 5vw;
+              line-height: 1;
               margin: 0;
+              @media only screen and (min-width: $md-min-width) {
+                font-size: 1.167vw;
+              }
             }
-          }
 
-          ul {
-            margin: 5vw 0 0;
-            padding: 0;
-            list-style: none;
+            .view-project {
+              font-size: 5vw;
+              line-height: 1;
+              @media only screen and (min-width: $md-min-width) {
+                font-size: 1.167vw;
+              }
 
-            @media only screen and (min-width: $md-min-width) {
-              margin: 0.5vw 0;
-              font-size: 2.67vw;
-              &:first-of-type {
-                margin-bottom: 7.5vw;
+              &:after {
+                content: '+';
               }
             }
           }
-        }
-      }
-    }
 
-    &#process {
-      h1, h2, h3, h4, p {
-        font-family: $font-gt-america;
-        font-size: 5vw;
 
-        @media only screen and (min-width: $md-min-width) {
-          font-size: 2.67vw;
-        }
-      }
-    }
 
-    &#dont-see {
-      background: #000;
-      color: #fff;
+          .summary {
 
-      @media only screen and (min-width: $md-min-width) {
-        width: 100vw;
-        margin: 0 -5vw;
-        padding: 7.5vw 12.5vw;
-      }
-
-      h2 {
-        @media only screen and (min-width: $md-min-width) {
-          font-size: 5vw;
-        }
-      }
-
-      a {
-        color: #fff;
-
-        &:hover {
-          border-bottom: 2px solid #fff;
-        }
-      }
-
-      p {
-        line-height: 1.4;
-
-        @media only screen and (min-width: $md-min-width) {
-          font-size: 2.67vw;
-        }
-
-        a {
-          border-bottom: 2px solid #fff;
-
-          &:hover {
-            border-bottom: transparent;
           }
         }
       }
     }
-    &#startup-work-samples {
-      padding: 15vw 0;
+    &#startup-application {
       @media only screen and (min-width: $md-min-width) {
-        padding: 5vw 0;
+        padding-top: 0;
       }
-      h1 {
-        text-align: center;
-        margin: 5vw 0 20vw;
-
+      h2 {
+        font-family: $font-gt-super;
+        font-size: 15vw;
         @media only screen and (min-width: $md-min-width) {
-          margin-bottom: 10vw;
+          padding-top: 0;
+          width: 60vw;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 5vw;
+          margin-bottom: 5vw;
         }
       }
+
+      form {
+        @media only screen and (min-width: $md-min-width) {
+          width: 60vw;
+          margin-left: auto;
+          margin-right: auto;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
+        > div {
+          @media only screen and (min-width: $md-min-width) {
+
+            width: 100%;
+
+            &:nth-of-type(1),
+            &:nth-of-type(2),
+            &:nth-of-type(3),
+            &:nth-of-type(4) {
+              width: 48%;
+            }
+          }
+        }
+
+
+        label {
+          display: block;
+          margin-bottom: 3vw;
+
+          @media only screen and (min-width: $md-min-width) {
+            margin-bottom: 1vw;
+          }
+
+        }
+        input, textarea {
+          display: block;
+          border: 1px solid #000;
+          width: 100%;
+          padding: 4vw;
+          margin-bottom: 8vw;
+          resize: none;
+
+          @media only screen and (min-width: $md-min-width) {
+            padding: 1vw;
+            margin-bottom: 1.5vw;
+          }
+
+          &:focus {
+            color: #BD10E0;
+            border: 1px solid #BD10E0;
+            outline: none;
+          }
+        }
+
+        textarea {
+          height: 35vw;
+        }
+
+        button {
+          background: #000;
+          border: none;
+          border-radius: none;
+          color: #fff;
+          outline: none;
+          padding: 4vw 15vw;
+          width: 100%;
+
+          @media only screen and (min-width: $md-min-width) {
+            padding: 1vw 5vw;
+            width: auto;
+          }
+
+          &.disabled {
+            background-color: #999999;
+            color: #ededed;
+          }
+        }
+
+        img {
+          @media only screen and (min-width: $md-min-width) {
+            width: 40%;
+            display: block;
+            
+          }
+        }
+
+        .error {
+          margin-top: 10vw;
+          a {
+            border-bottom: 1px solid #000;
+          }
+        }
+      }
+
+
     }
   }
 

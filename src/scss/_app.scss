@@ -1,9 +1,9 @@
 .site-container {
   position: relative;
-  width: 100vw;
+  width: 100%;
 
   @media only screen and (min-width: $md-min-width) {
     margin: 0 5vw;
-    width: 90vw;
+    width: 90%;
   }
 }

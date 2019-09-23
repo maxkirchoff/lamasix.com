@@ -113,11 +113,61 @@
         });
       }
 
+      function initFormSubmissionHandler() {
+        $('form').on('submit', function(ev) {
+          ev.preventDefault();
+          var $this = $(this);
+          $this.find("button").attr('disabled', true).addClass('disabled');
+
+          function failure() {
+            $this.append("<div class='error'>Sorry, but something went wrong. Contact us directly at <a href='mailto:hi@lamasix.com'>hi@lamasix.com</a></div>")
+          }
+
+          var formInputs = {
+            name: $this.find('.name input').val(),
+            email: $this.find('.email input').val(),
+            businessName: $this.find('.business-name input').val(),
+            website: $this.find('.website input').val(),
+            focus: $this.find('.focus textarea').val(),
+            communities: $this.find('.communities textarea').val(),
+            stage: $this.find('.stage textarea').val(),
+            why: $this.find('.why textarea').val(),
+            sixmonths: $this.find('.sixmonths textarea').val()
+          }
+
+          $.ajax({
+            type: "POST",
+            url: $(this).attr('action'),
+            dataType: 'json',
+            contentType: "application/json",
+            data: JSON.stringify(formInputs)
+
+          }).done(function(data) {
+
+            if(data['statusCode'] == 200) {
+              $this.fadeOut( function(){
+                $this.html("<img src='/assets/media/thumbs.gif'><div>Application sent.</div>").fadeIn();
+              });
+            } else {
+              failure();
+            }
+          }).fail(function() {
+            failure();
+          })
+        });
+      }
+
       var init = function() {
         initMenuToggle();
         initHeader();
         initTestimonials();
         initWorkSmoothScroll();
+        initFormSubmissionHandler();
+
+        $('textarea').autogrow({
+          verticle: true,
+          horizontal: false
+        });
       }
 
       return {
