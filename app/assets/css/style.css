@@ -382,7 +382,8 @@ textarea {
 body {
   font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif;
   font-size: 5vw;
-  font-weight: normal; }
+  font-weight: normal;
+  overflow-x: hidden; }
   @media only screen and (min-width: 850px) {
     body {
       font-size: 1.5vw; } }
@@ -1177,6 +1178,7 @@ body#startups section {
       body#startups section h1, body#startups section h2 {
         font-size: 2.67vw; } }
   body#startups section#startup-intro {
+    padding: 20vw 7.5vw;
     background-image: url("/assets/media/startups-header-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1184,25 +1186,27 @@ body#startups section {
     @media only screen and (min-width: 850px) {
       body#startups section#startup-intro {
         background-size: 40% 100%;
-        padding-bottom: 25vw; } }
+        padding: 10vw 7.5vw 25vw; } }
     body#startups section#startup-intro h1, body#startups section#startup-intro h2 {
-      font-size: 8vw;
+      font-size: 14vw;
       font-family: "GT-Super-Text", "Times New Roman", times, serif;
       margin-bottom: 10vw; }
       @media only screen and (min-width: 850px) {
         body#startups section#startup-intro h1, body#startups section#startup-intro h2 {
           font-size: 5vw;
           margin-bottom: 5vw; } }
+    body#startups section#startup-intro h1 {
+      margin-top: 0; }
+      @media only screen and (min-width: 850px) {
+        body#startups section#startup-intro h1 {
+          padding-top: 0; }
+          body#startups section#startup-intro h1 .differentiator {
+            text-align: right; } }
+      body#startups section#startup-intro h1 span {
+        display: block; }
     @media only screen and (min-width: 850px) {
-      body#startups section#startup-intro h1 {
-        margin-top: 0;
-        padding-top: 0; }
-        body#startups section#startup-intro h1 .differentiator {
-          text-align: right; } }
-    body#startups section#startup-intro h1 span {
-      display: block; }
-    body#startups section#startup-intro .content {
-      width: 25vw; }
+      body#startups section#startup-intro .content {
+        width: 25vw; } }
   @media only screen and (min-width: 850px) {
     body#startups section#startup-bookings {
       padding: 0;
@@ -1238,128 +1242,146 @@ body#startups section {
       @media only screen and (min-width: 850px) {
         body#startups section#startup-bookings .bookings .booking .status {
           font-size: 1.5vw; } }
-  @media only screen and (min-width: 850px) {
-    body#startups section#startups-examples .startups-examples {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row;
-          flex-direction: row;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -ms-flex-pack: justify;
-          justify-content: space-between; } }
-  body#startups section#startups-examples .startups-examples .project {
-    margin-bottom: 10vw; }
+  body#startups section#startups-examples {
+    padding-top: 0; }
     @media only screen and (min-width: 850px) {
-      body#startups section#startups-examples .startups-examples .project {
-        width: 49%;
-        font-size: 1.167vw;
-        margin-bottom: 2vw; } }
-    body#startups section#startups-examples .startups-examples .project .project-header {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row;
-          flex-direction: row;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-      padding: 5vw 0 2vw;
-      border-bottom: 1px solid #000; }
+      body#startups section#startups-examples {
+        padding-top: 10vw; } }
+    @media only screen and (min-width: 850px) {
+      body#startups section#startups-examples .startups-examples {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+    body#startups section#startups-examples .startups-examples .project {
+      margin-bottom: 10vw; }
       @media only screen and (min-width: 850px) {
-        body#startups section#startups-examples .startups-examples .project .project-header {
-          padding: 2vw 0 0.5vw; } }
-      body#startups section#startups-examples .startups-examples .project .project-header h2 {
-        font-size: 5vw;
-        line-height: 1;
-        margin: 0; }
+        body#startups section#startups-examples .startups-examples .project {
+          width: 49%;
+          font-size: 1.167vw;
+          margin-bottom: 2vw; } }
+      body#startups section#startups-examples .startups-examples .project .project-header {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        padding: 5vw 0 2vw;
+        border-bottom: 1px solid #000; }
         @media only screen and (min-width: 850px) {
-          body#startups section#startups-examples .startups-examples .project .project-header h2 {
-            font-size: 1.167vw; } }
-      body#startups section#startups-examples .startups-examples .project .project-header .view-project {
-        font-size: 5vw;
-        line-height: 1; }
-        @media only screen and (min-width: 850px) {
-          body#startups section#startups-examples .startups-examples .project .project-header .view-project {
-            font-size: 1.167vw; } }
-        body#startups section#startups-examples .startups-examples .project .project-header .view-project:after {
-          content: '+'; }
-  @media only screen and (min-width: 850px) {
-    body#startups section#startup-application {
-      padding-top: 0; } }
-  body#startups section#startup-application h2 {
-    font-family: "GT-Super-Text", "Times New Roman", times, serif;
-    font-size: 15vw; }
+          body#startups section#startups-examples .startups-examples .project .project-header {
+            padding: 2vw 0 0.5vw; } }
+        body#startups section#startups-examples .startups-examples .project .project-header h2 {
+          font-size: 5vw;
+          line-height: 1;
+          margin: 0; }
+          @media only screen and (min-width: 850px) {
+            body#startups section#startups-examples .startups-examples .project .project-header h2 {
+              font-size: 1.167vw; } }
+        body#startups section#startups-examples .startups-examples .project .project-header .view-project {
+          font-size: 5vw;
+          line-height: 1; }
+          @media only screen and (min-width: 850px) {
+            body#startups section#startups-examples .startups-examples .project .project-header .view-project {
+              font-size: 1.167vw; } }
+          body#startups section#startups-examples .startups-examples .project .project-header .view-project:after {
+            content: '+'; }
+  body#startups section#startup-application {
+    padding-top: 0; }
+    body#startups section#startup-application .titles {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse; }
+      @media only screen and (min-width: 850px) {
+        body#startups section#startup-application .titles {
+          -ms-flex-direction: column;
+              flex-direction: column; } }
     @media only screen and (min-width: 850px) {
-      body#startups section#startup-application h2 {
-        padding-top: 0;
+      body#startups section#startup-application h1 {
+        margin-top: 0; } }
+    body#startups section#startup-application h2 {
+      font-family: "GT-Super-Text", "Times New Roman", times, serif;
+      font-size: 15vw;
+      margin-top: 0; }
+      @media only screen and (min-width: 850px) {
+        body#startups section#startup-application h2 {
+          padding-top: 0;
+          width: 60vw;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 5vw;
+          margin-bottom: 5vw; } }
+    @media only screen and (min-width: 850px) {
+      body#startups section#startup-application form {
         width: 60vw;
         margin-left: auto;
         margin-right: auto;
-        font-size: 5vw;
-        margin-bottom: 5vw; } }
-  @media only screen and (min-width: 850px) {
-    body#startups section#startup-application form {
-      width: 60vw;
-      margin-left: auto;
-      margin-right: auto;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row;
-          flex-direction: row;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -ms-flex-pack: justify;
-          justify-content: space-between; } }
-  @media only screen and (min-width: 850px) {
-    body#startups section#startup-application form > div {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+    @media only screen and (min-width: 850px) {
+      body#startups section#startup-application form > div {
+        width: 100%; }
+        body#startups section#startup-application form > div:nth-of-type(1), body#startups section#startup-application form > div:nth-of-type(2), body#startups section#startup-application form > div:nth-of-type(3), body#startups section#startup-application form > div:nth-of-type(4) {
+          width: 48%; } }
+    body#startups section#startup-application form label {
+      display: block;
+      margin-bottom: 3vw; }
+      @media only screen and (min-width: 850px) {
+        body#startups section#startup-application form label {
+          margin-bottom: 1vw; } }
+    body#startups section#startup-application form input, body#startups section#startup-application form textarea {
+      border-radius: 0;
+      display: block;
+      border: 1px solid #000;
+      width: 100%;
+      padding: 4vw;
+      margin-bottom: 8vw;
+      resize: none; }
+      @media only screen and (min-width: 850px) {
+        body#startups section#startup-application form input, body#startups section#startup-application form textarea {
+          padding: 1vw;
+          margin-bottom: 1.5vw; } }
+      body#startups section#startup-application form input:focus, body#startups section#startup-application form textarea:focus {
+        color: #BD10E0;
+        border: 1px solid #BD10E0;
+        outline: none; }
+    body#startups section#startup-application form textarea {
+      height: 35vw; }
+    body#startups section#startup-application form button {
+      background: #000;
+      border: none;
+      border-radius: 0;
+      color: #fff;
+      outline: none;
+      padding: 4vw 15vw;
       width: 100%; }
-      body#startups section#startup-application form > div:nth-of-type(1), body#startups section#startup-application form > div:nth-of-type(2), body#startups section#startup-application form > div:nth-of-type(3), body#startups section#startup-application form > div:nth-of-type(4) {
-        width: 48%; } }
-  body#startups section#startup-application form label {
-    display: block;
-    margin-bottom: 3vw; }
+      @media only screen and (min-width: 850px) {
+        body#startups section#startup-application form button {
+          padding: 1vw 5vw;
+          width: auto; } }
+      body#startups section#startup-application form button.disabled {
+        background-color: #999999;
+        color: #ededed; }
     @media only screen and (min-width: 850px) {
-      body#startups section#startup-application form label {
-        margin-bottom: 1vw; } }
-  body#startups section#startup-application form input, body#startups section#startup-application form textarea {
-    display: block;
-    border: 1px solid #000;
-    width: 100%;
-    padding: 4vw;
-    margin-bottom: 8vw;
-    resize: none; }
-    @media only screen and (min-width: 850px) {
-      body#startups section#startup-application form input, body#startups section#startup-application form textarea {
-        padding: 1vw;
-        margin-bottom: 1.5vw; } }
-    body#startups section#startup-application form input:focus, body#startups section#startup-application form textarea:focus {
-      color: #BD10E0;
-      border: 1px solid #BD10E0;
-      outline: none; }
-  body#startups section#startup-application form textarea {
-    height: 35vw; }
-  body#startups section#startup-application form button {
-    background: #000;
-    border: none;
-    border-radius: none;
-    color: #fff;
-    outline: none;
-    padding: 4vw 15vw;
-    width: 100%; }
-    @media only screen and (min-width: 850px) {
-      body#startups section#startup-application form button {
-        padding: 1vw 5vw;
-        width: auto; } }
-    body#startups section#startup-application form button.disabled {
-      background-color: #999999;
-      color: #ededed; }
-  @media only screen and (min-width: 850px) {
-    body#startups section#startup-application form img {
-      width: 40%;
-      display: block; } }
-  body#startups section#startup-application form .error {
-    margin-top: 10vw; }
-    body#startups section#startup-application form .error a {
-      border-bottom: 1px solid #000; }
+      body#startups section#startup-application form img {
+        width: 40%;
+        display: block; } }
+    body#startups section#startup-application form .error {
+      margin-top: 10vw; }
+      body#startups section#startup-application form .error a {
+        border-bottom: 1px solid #000; }
 
 body#startups footer.footer {
   margin-top: 0; }

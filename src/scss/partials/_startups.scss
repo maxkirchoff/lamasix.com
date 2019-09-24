@@ -17,6 +17,7 @@ body#startups {
     }
 
     &#startup-intro {
+      padding: 20vw 7.5vw;
       background-image: url('/assets/media/startups-header-bg.jpg');
       background-repeat: no-repeat;
       background-size: cover;
@@ -24,11 +25,11 @@ body#startups {
 
       @media only screen and (min-width: $md-min-width) {
         background-size: 40% 100%;
-        padding-bottom: 25vw;
+        padding: 10vw 7.5vw 25vw;
       }
 
       h1, h2 {
-        font-size: 8vw;
+        font-size: 14vw;
         font-family: $font-gt-super;
         margin-bottom: 10vw;
 
@@ -38,8 +39,9 @@ body#startups {
         }
       }
       h1 {
+        margin-top: 0;
         @media only screen and (min-width: $md-min-width) {
-          margin-top: 0;
+
           padding-top: 0;
 
           .differentiator {
@@ -53,7 +55,9 @@ body#startups {
       }
 
       .content {
-        width: 25vw;
+        @media only screen and (min-width: $md-min-width) {
+          width: 25vw;
+        }
       }
     }
 
@@ -96,6 +100,10 @@ body#startups {
     }
 
     &#startups-examples {
+      padding-top: 0;
+      @media only screen and (min-width: $md-min-width) {
+        padding-top: 10vw;
+      }
       .startups-examples {
 
         @media only screen and (min-width: $md-min-width) {
@@ -159,12 +167,26 @@ body#startups {
       }
     }
     &#startup-application {
-      @media only screen and (min-width: $md-min-width) {
-        padding-top: 0;
+      padding-top: 0;
+
+      .titles {
+        display: flex;
+        flex-direction: column-reverse;
+        @media only screen and (min-width: $md-min-width) {
+          flex-direction: column;
+        }
       }
+
+      h1 {
+        @media only screen and (min-width: $md-min-width) {
+          margin-top: 0;
+        }
+      }
+
       h2 {
         font-family: $font-gt-super;
         font-size: 15vw;
+        margin-top: 0;
         @media only screen and (min-width: $md-min-width) {
           padding-top: 0;
           width: 60vw;
@@ -211,6 +233,7 @@ body#startups {
 
         }
         input, textarea {
+          border-radius: 0;
           display: block;
           border: 1px solid #000;
           width: 100%;
@@ -237,7 +260,7 @@ body#startups {
         button {
           background: #000;
           border: none;
-          border-radius: none;
+          border-radius: 0;
           color: #fff;
           outline: none;
           padding: 4vw 15vw;
@@ -258,7 +281,7 @@ body#startups {
           @media only screen and (min-width: $md-min-width) {
             width: 40%;
             display: block;
-            
+
           }
         }
 
