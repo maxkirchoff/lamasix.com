@@ -652,9 +652,9 @@ header.menu-active {
     @media only screen and (min-width: 850px) {
       .main #power-statement h1 {
         text-align: center;
-        font-size: 8vw;
+        font-size: 10vw;
         line-height: 1;
-        margin: 20vw 0 20vw; } }
+        margin: 16vw 0; } }
   .main .section header h4 {
     font-size: 7vw;
     text-align: center; }
@@ -715,7 +715,7 @@ header.menu-active {
         text-align: left;
         width: 100vw;
         margin: 0 -5vw;
-        padding: 7.5vw 12.5vw; } }
+        padding: 10vw 12.5vw; } }
     .main #what-we-do h1, .main #our-clients h1 {
       font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif;
       font-size: 4vw; }

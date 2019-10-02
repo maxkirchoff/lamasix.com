@@ -22,14 +22,6 @@
     <div class="bookings">
       <div class="booking">
         <div class="month">
-          September
-        </div>
-        <div class="status">
-          Fully Booked
-        </div>
-      </div>
-      <div class="booking">
-        <div class="month">
           October
         </div>
         <div class="status">
@@ -41,7 +33,7 @@
           November
         </div>
         <div class="status">
-          Contract pending
+          Two spots available
         </div>
       </div>
       <div class="booking">

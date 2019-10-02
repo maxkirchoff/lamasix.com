@@ -1,22 +1,18 @@
 <!-- about/index.nunjucks -->
 
 {% set services = [
-  "Brand strategy",
-  "Brand & visual identity",
-  "Creative Direction",
-  "Art Direction",
-  "Visual social strategy",
+  "Visual identity",
+  "Branding",
+  "Social design",
   "Illustration",
   "Animation",
   "Photography",
+  "Video production",
   "Motion graphics",
   "Copywriting",
-  "Information architecture",
-  "UI/UX strategy",
-  "App design",
   "Web design",
-  "Digital ad design",
-  "Development"
+  "Web development",
+  "Advertising design"
 ]
 %}
 
@@ -27,7 +23,7 @@
     company: "The Difference"
   },
   {
-    quote: "Working with the LamaSix team has been one of the best decisions our brand has made. From ideation to design, and from build to launch, they truly became an extension of our team who helped us build a beautiful website and corresponding collateral that truly represents the ethos of Clarity.",
+    quote: "Working with the Lama Six team has been one of the best decisions our brand has made. From ideation to design, and from build to launch, they truly became an extension of our team who helped us build a beautiful website and corresponding collateral that truly represents the ethos of Clarity.",
     author: "Serena",
     company: "Clarity"
   }
@@ -36,6 +32,7 @@
 
 {% set clients = [
   "Match Group",
+  "OZY",
   "L'Oreal",
   "essie",
   "Valve Corporation",
@@ -53,10 +50,11 @@
   "Bustle",
   "The OMG",
   "Cardstack",
-  "HighPoint",
   "Monegraph",
   "Fellow Barber",
-  "Chomps"
+  "Chomps",
+  "TK Kader",
+  "Reia"
 ]
 %}
 
@@ -75,7 +73,7 @@
     <h1>Who we are</h1>
   </header>
   <p>
-    LAMA SIX is a full service creative studio that couldn’t be boring if we tried. We lend our distinctly thoughtful style and inclusive approach to brands that want to stand out. We know when things need a new, refreshing perspective or just a little bit more salt to really sing.</p><p>Don’t worry, we won’t actually sing. It's a metaphor.
+    LAMA SIX is a creative studio that couldn’t be boring if we tried. We lend our distinctly thoughtful style and inclusive approach to brands that want to stand out.
   </p>
 </section>
 <section id="what-we-do">
