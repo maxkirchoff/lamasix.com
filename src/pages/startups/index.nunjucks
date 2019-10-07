@@ -2,9 +2,9 @@
 
 {% set pageID = 'startups' %}
 {% set pageMeta = {
-    title: "Brand & Visual Identity for Startups",
+    title: "Creative Studio Accelerator for Startups",
     ogImage: "",
-    description: "We have created an offering for early stage startups that gives you everything you need to hit the ground running. Let's work together to craft a powerful brand while staying as lean as possible."
+    description: "We have created an accelerated offering for early stage startups that gives you everything you need to hit the ground running. Let's work together to craft a powerful brand while staying as lean as possible."
   }
 %}
 
