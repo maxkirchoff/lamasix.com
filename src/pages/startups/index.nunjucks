@@ -2,7 +2,7 @@
 
 {% set pageID = 'startups' %}
 {% set pageMeta = {
-    title: "Creative Studio Accelerator for Startups",
+    title: "Creative Partnership for Startups",
     ogImage: "",
     description: "We have created an accelerated offering for early stage startups that gives you everything you need to hit the ground running. Let's work together to craft a powerful brand while staying as lean as possible."
   }
@@ -14,7 +14,7 @@
   <section id="startup-intro">
     <h1>You're the innovator, <span class="differentiator">we're the differentiator. </span></h1>
     <div class="content">
-      <p>We partner with select  start-ups and small businesses to create bold branding and compelling design.</p>
+      <p>We partner with select  startups and small businesses to create bold branding and compelling design.</p>
       <p>We set aside space in our books for up-and-coming entrepreneurs who are ready to start the wild ride.</p>
     </div>
   </section>
