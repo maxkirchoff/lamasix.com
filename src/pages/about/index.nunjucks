@@ -195,6 +195,12 @@
         bio: "Marie Michèle had been teaching marketing and advertising for over 10 years before coming back to her first love, design. Her studies in fashion and graphic design, coupled with her experience in marketing and advertising, allow her to understand her clients and their customers fully. She enjoys working on branding, logos, corporate materials, advertisement and website elements. As a digital nomad, Marie Michèle draws inspiration from the countries she travels to and the people she meets along the way."
       },
       {
+        name: "Linsey Peterson",
+        title: "Brand Designer",
+        photo: "linsey-peterson.jpg",
+        bio: "Linsey Peterson is a New York City based designer focused on creating bold, fun and unique brands for passionate people. With years of experience in digital agency settings, she helps brands bring their identities to life through app and web design. She loves illustrating whenever she gets the chance and finds inspiration from her love of travel, food, wine and puppies."
+      },
+      {
         name: "Melissa Small",
         title: "Designer, Artist",
         photo: "melissa-small.jpg",
