@@ -114,7 +114,7 @@
       }
 
       function initFormSubmissionHandler() {
-        $('form').on('submit', function(ev) {
+        $('form.application').on('submit', function(ev) {
           ev.preventDefault();
           var $this = $(this);
           $this.find("button").attr('disabled', true).addClass('disabled');
