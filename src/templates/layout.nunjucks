@@ -84,7 +84,7 @@
     <script src="/assets/components/jquery/jquery.min.js"></script>
     <script src="/assets/components/jquery/autogrow.jquery.js"></script>
     <script src="/assets/components/slick/slick.min.js"></script>
-    <script src="/assets/js/scripts.min.js"></script>
+    <script src="/assets/js/scripts.min.js?v=1.2"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100866504-1"></script>
