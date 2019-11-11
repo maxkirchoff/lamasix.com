@@ -1484,10 +1484,12 @@ body#startups footer.footer {
     .case-study section blockquote .attribution {
       display: block;
       font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif;
-      font-size: 3vw; }
+      font-size: 3vw;
+      margin-top: 2vw; }
       @media only screen and (min-width: 850px) {
         .case-study section blockquote .attribution {
-          font-size: 1.5vw; } }
+          font-size: 1.5vw;
+          margin-top: 1vw; } }
   @media only screen and (min-width: 850px) {
     .case-study section.image {
       position: relative; }

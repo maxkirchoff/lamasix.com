@@ -112,8 +112,10 @@
         display: block;
         font-family: $font-gt-america;
         font-size: 3vw;
+        margin-top: 2vw;
         @media only screen and (min-width: $md-min-width) {
           font-size: 1.5vw;
+          margin-top: 1vw;
         }
       }
     }
