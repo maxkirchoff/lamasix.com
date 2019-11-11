@@ -1,0 +1,59 @@
+<!-- newsletter/index.nunjucks -->
+
+{% set pageID = 'case-study-reia' %}
+{% set pageMeta = {
+    title: "Case Study: Reia",
+    ogImage: "",
+    description: "Branding a groundbreaking women’s health startup. Supporting women, inside and out."
+  }
+%}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <article class="case-study">
+    <header class="hero">
+      <img src="/assets/media/case-study/reia/title-reia.png" alt="Reia: Supporting women, inside and out.">
+    </header>
+    <section>
+      <h1>Case study</h1>
+      <div class="statement">Branding a groundbreaking women’s health startup</div>
+    </section>
+    <div class="row">
+      <section>
+        <h2>Background</h2>
+        <p>Reia is designing a product to increase comfort, independence, and quality of life. They want to present their brand as upbeat and approachable. However this is a serious and often quite sensitive medical condition so they had to make sure people perceived their brand as respectful and scientifically-backed.</p>
+      </section>
+      <section>
+        <h2>Objetive</h2>
+        <p>Reia wanted to establish a brand that could effectively comfortably communicate with an older, baby-boomer target audience, while also appealing to younger women - both of whom can suffer from pelvic organ prolapse. They wanted to build a visual identity that would bridge the education gap surrounding pelvic floor dysfunction and destigmatize this prevalent condition.</p>
+      </section>
+    </div>
+    <div class="row-reverse">
+      <section class="image">
+        <img src="/assets/media/case-study/reia/product-mockup.jpg" alt="Product box with the Reia logo">
+      </section>
+      <section>
+        <h2>Approach</h2>
+        <p>We dove in with Reia immediately, and were able to kick-off their visual identity very quickly. Reia provided incredible research on similar products, the lack of education and awareness, and the target customers of their products. This information was paired with anecdotal information about their customers, to create a conceptual framework for our initial designs. Through these concepts we worked with Reia to establish a visual identity that represented their customers and expressed the core values of Reia, with an extra emphasis on normalcy, comfort and safety.</p>
+        <p>The final visual identity deliverables included the logomark, typeface selection, colors, and related design elements.</p>
+      </section>
+    </div>
+    <section class="tagline">
+      "Supporting women, inside and out."
+    </section>
+    <div class="row-reverse" id="outcome-quote">
+      <section>
+        <h2>Outcomes</h2>
+        <p>Upon showing the new logo and visual identity to members of their focus groups, they received overwhelmingly positive reactions. These focus group customers said it struck a balance between being positive and uplifting yet clean and candid. An ideal expression of their values.</p>
+        <p>Reia also re-styled their pitch deck for meetings with strategic partners and pitch competitions. They won a Brooklyn-based competition for female hardware start-up founders, and also saw a 233% increase in unique visitors to their landing page.</p>
+      </section>
+      <section>
+        <blockquote>
+          <span class="quote">We were over-the-moon with all of the materials Lama Six sent us. Everything they sent was really thoughtfully done and made us excited about building a pelvic organ prolapse education and awareness campaign from these brand elements.</span><span class="attribution">— Ariana Sopher, Reia</span>
+        </blockquote>
+      </section>
+    </div>
+  </article>
+
+{% endblock %}

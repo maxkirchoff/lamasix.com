@@ -1,0 +1,156 @@
+.case-study {
+  @media only screen and (min-width: $md-min-width) {
+    .row, .row-reverse {
+      display: flex;
+      flex-direction: row;
+
+      > section {
+        margin: 2.5vw 2.5vw;
+        &:first-child {
+          width: 50%;
+          margin-left: 7.5vw;
+        }
+        &:last-child {
+          width: 50%;
+          margin-right: 7.5vw;
+        }
+      }
+
+      &.row-reverse {
+        flex-direction: row-reverse;
+
+        > section {
+          margin: 2.5vw 2.5vw;
+          &:last-child {
+            width: 50%;
+            margin-left: 7.5vw;
+          }
+          &:first-child {
+            width: 50%;
+            margin-right: 7.5vw;
+          }
+        }
+      }
+
+      &#outcome-quote {
+        > section {
+          &:last-child {
+            width: 60%;
+          }
+          &:first-child {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+  section {
+    margin: 5vw 7.5vw 10vw;
+    @media only screen and (min-width: $md-min-width) {
+      margin: 2.5vw 7.5vw;
+    }
+
+    h1, h2, p {
+      font-family: $font-gt-america;
+      font-size: 4vw;
+      @media only screen and (min-width: $md-min-width) {
+        font-size: 1.5vw;
+      }
+    }
+    h1, h2 {
+      font-weight: bold;
+      margin: 0 0 4vw;
+      @media only screen and (min-width: $md-min-width) {
+        margin: 0 0 2vw;
+      }
+    }
+
+    .statement {
+      font-family: $font-gt-super;
+      font-size: 10vw;
+      line-height: 1.1;
+      @media only screen and (min-width: $md-min-width) {
+        font-size: 5vw;
+      }
+    }
+
+    &.tagline {
+      font-size: 8vw;
+      font-weight: bold;
+      margin: 5vw 0 10vw;
+      text-align: center;
+      @media only screen and (min-width: $md-min-width) {
+        margin: 5vw 0;
+        font-size: 4.25vw;
+
+      }
+    }
+
+    blockquote {
+      font-family: $font-gt-super;
+      font-size: 6vw;
+      @media only screen and (min-width: $md-min-width) {
+        font-size: 3vw;
+      }
+
+      .quote {
+        position: relative;
+        &:before, &:after {
+          content: "“";
+        }
+        &:before {
+          display: block;
+          position: absolute;
+          left: -2.5vw;
+          @media only screen and (min-width: $md-min-width) {
+            left: -1.5vw;
+          }
+        }
+      }
+
+      .attribution {
+        display: block;
+        font-family: $font-gt-america;
+        font-size: 3vw;
+        @media only screen and (min-width: $md-min-width) {
+          font-size: 1.5vw;
+        }
+      }
+    }
+
+    &.image {
+      @media only screen and (min-width: $md-min-width) {
+        position: relative;
+        img {
+          position: absolute;
+          width: 130%;
+          max-width: 130%;
+          right: 0;
+          z-index: -1;
+        }
+      }
+    }
+
+  }
+}
+
+
+#case-study-reia .case-study {
+
+  .statement, blockquote {
+    color: #7FB8F0;
+  }
+  blockquote {
+    margin: 0;
+  }
+  .tagline {
+    color: #fff;
+    background-image: url('/assets/media/case-study/reia/tagline-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10vw;
+    @media only screen and (min-width: $md-min-width) {
+      padding: 5vw 7.5vw;
+    }
+  }
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Example media query selectors */
 .clear:before, .clear:after {
   content: ' ';
@@ -473,6 +474,20 @@ a {
   font-family: 'GT-America';
   src: url("/assets/fonts/GT-America-Standard-Regular-Italic.eot");
   src: url("/assets/fonts/GT-America-Standard-Regular-Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-America-Standard-Regular-Italic.woff") format("woff"), url("/assets/fonts/GT-America-Standard-Regular-Italic.woff2") format("woff2"), url("/assets/fonts/GT-America-Standard-Regular-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'GT-America';
+  src: url("/assets/fonts/GT-America-Standard-Bold.eot");
+  src: url("/assets/fonts/GT-America-Standard-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-America-Standard-Bold.woff") format("woff"), url("/assets/fonts/GT-America-Standard-Bold.woff2") format("woff2"), url("/assets/fonts/GT-America-Standard-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'GT-America';
+  src: url("/assets/fonts/GT-America-Standard-Bold-Italic.eot");
+  src: url("/assets/fonts/GT-America-Standard-Bold-Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-America-Standard-Bold-Italic.woff") format("woff"), url("/assets/fonts/GT-America-Standard-Bold-Italic.woff2") format("woff2"), url("/assets/fonts/GT-America-Standard-Bold-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic; }
 
@@ -1385,6 +1400,119 @@ body#startups section {
 
 body#startups footer.footer {
   margin-top: 0; }
+
+@media only screen and (min-width: 850px) {
+  .case-study .row, .case-study .row-reverse {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+    .case-study .row > section, .case-study .row-reverse > section {
+      margin: 2.5vw 2.5vw; }
+      .case-study .row > section:first-child, .case-study .row-reverse > section:first-child {
+        width: 50%;
+        margin-left: 7.5vw; }
+      .case-study .row > section:last-child, .case-study .row-reverse > section:last-child {
+        width: 50%;
+        margin-right: 7.5vw; }
+    .case-study .row.row-reverse, .case-study .row-reverse.row-reverse {
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+      .case-study .row.row-reverse > section, .case-study .row-reverse.row-reverse > section {
+        margin: 2.5vw 2.5vw; }
+        .case-study .row.row-reverse > section:last-child, .case-study .row-reverse.row-reverse > section:last-child {
+          width: 50%;
+          margin-left: 7.5vw; }
+        .case-study .row.row-reverse > section:first-child, .case-study .row-reverse.row-reverse > section:first-child {
+          width: 50%;
+          margin-right: 7.5vw; }
+    .case-study .row#outcome-quote > section:last-child, .case-study .row-reverse#outcome-quote > section:last-child {
+      width: 60%; }
+    .case-study .row#outcome-quote > section:first-child, .case-study .row-reverse#outcome-quote > section:first-child {
+      width: 40%; } }
+
+.case-study section {
+  margin: 5vw 7.5vw 10vw; }
+  @media only screen and (min-width: 850px) {
+    .case-study section {
+      margin: 2.5vw 7.5vw; } }
+  .case-study section h1, .case-study section h2, .case-study section p {
+    font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif;
+    font-size: 4vw; }
+    @media only screen and (min-width: 850px) {
+      .case-study section h1, .case-study section h2, .case-study section p {
+        font-size: 1.5vw; } }
+  .case-study section h1, .case-study section h2 {
+    font-weight: bold;
+    margin: 0 0 4vw; }
+    @media only screen and (min-width: 850px) {
+      .case-study section h1, .case-study section h2 {
+        margin: 0 0 2vw; } }
+  .case-study section .statement {
+    font-family: "GT-Super-Text", "Times New Roman", times, serif;
+    font-size: 10vw;
+    line-height: 1.1; }
+    @media only screen and (min-width: 850px) {
+      .case-study section .statement {
+        font-size: 5vw; } }
+  .case-study section.tagline {
+    font-size: 8vw;
+    font-weight: bold;
+    margin: 5vw 0 10vw;
+    text-align: center; }
+    @media only screen and (min-width: 850px) {
+      .case-study section.tagline {
+        margin: 5vw 0;
+        font-size: 4.25vw; } }
+  .case-study section blockquote {
+    font-family: "GT-Super-Text", "Times New Roman", times, serif;
+    font-size: 6vw; }
+    @media only screen and (min-width: 850px) {
+      .case-study section blockquote {
+        font-size: 3vw; } }
+    .case-study section blockquote .quote {
+      position: relative; }
+      .case-study section blockquote .quote:before, .case-study section blockquote .quote:after {
+        content: "“"; }
+      .case-study section blockquote .quote:before {
+        display: block;
+        position: absolute;
+        left: -2.5vw; }
+        @media only screen and (min-width: 850px) {
+          .case-study section blockquote .quote:before {
+            left: -1.5vw; } }
+    .case-study section blockquote .attribution {
+      display: block;
+      font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif;
+      font-size: 3vw; }
+      @media only screen and (min-width: 850px) {
+        .case-study section blockquote .attribution {
+          font-size: 1.5vw; } }
+  @media only screen and (min-width: 850px) {
+    .case-study section.image {
+      position: relative; }
+      .case-study section.image img {
+        position: absolute;
+        width: 130%;
+        max-width: 130%;
+        right: 0;
+        z-index: -1; } }
+
+#case-study-reia .case-study .statement, #case-study-reia .case-study blockquote {
+  color: #7FB8F0; }
+
+#case-study-reia .case-study blockquote {
+  margin: 0; }
+
+#case-study-reia .case-study .tagline {
+  color: #fff;
+  background-image: url("/assets/media/case-study/reia/tagline-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10vw; }
+  @media only screen and (min-width: 850px) {
+    #case-study-reia .case-study .tagline {
+      padding: 5vw 7.5vw; } }
 
 .footer {
   background: #000;

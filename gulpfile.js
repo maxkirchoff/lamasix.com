@@ -25,7 +25,7 @@ var banner = [
   '\n'
 ].join('');
 
-gulp.task('css', function () {
+gulp.task('css', gulp.series(function (done) {
     return gulp.src('src/scss/style.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
@@ -37,9 +37,10 @@ gulp.task('css', function () {
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('app/assets/css'))
     .pipe(browserSync.reload({stream:true}));
-});
+    done();
+}));
 
-gulp.task('js',function(){
+gulp.task('js', gulp.series(function(done){
   gulp.src('src/js/scripts.js')
     .pipe(sourcemaps.init())
     .pipe(jshint('.jshintrc'))
@@ -53,9 +54,10 @@ gulp.task('js',function(){
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('app/assets/js'))
     .pipe(browserSync.reload({stream:true, once: true}));
-});
+    done();
+}));
 
-gulp.task('nunjucks', function() {
+gulp.task('nunjucks', gulp.series(function(done) {
   // Gets .html and .nunjucks files in pages
   return gulp.src('src/pages/**/*.+(html|nunjucks)')
   // Renders template with nunjucks
@@ -66,25 +68,30 @@ gulp.task('nunjucks', function() {
       console.log(error);
     }))
   // output files in app folder
-  .pipe(gulp.dest('app'))
-});
+  .pipe(gulp.dest('app'));
+  done();
+}));
 
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', gulp.series(function(done) {
     browserSync.init(null, {
         server: {
             baseDir: "app"
         }
     });
-});
-gulp.task('bs-reload', function () {
+    done();
+}));
+
+gulp.task('bs-reload', gulp.series(function (done) {
     browserSync.reload();
-});
+    done();
+}));
 
-gulp.task('dev', ['css','js', 'nunjucks', 'browser-sync'], function() {
-  gulp.watch("src/scss/**/*.scss", ['css']);
-  gulp.watch("src/js/*.js", ['js']);
-  gulp.watch("src/**/*.nunjucks", ['nunjucks']);
-  gulp.watch("app/*.html", ['bs-reload']);
-})
+gulp.task('dev', gulp.series('css','js', 'nunjucks', 'browser-sync', function(done) {
+  gulp.watch("src/scss/**/*.scss", gulp.series('css'));
+  gulp.watch("src/js/*.js", gulp.series('js'));
+  gulp.watch("src/**/*.nunjucks", gulp.series('nunjucks'));
+  gulp.watch("app/*.html", gulp.series('bs-reload'));
+  done();
+}));
 
-gulp.task('default', ['css', 'js', 'nunjucks']);
+gulp.task('default', gulp.series('css', 'js', 'nunjucks'));
