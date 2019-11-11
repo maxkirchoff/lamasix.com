@@ -928,6 +928,10 @@ header.menu-active {
 .project#tradiies .project-sample:nth-of-type(1), .project#tradiies .project-sample:nth-of-type(2), .project#tradiies .project-sample:nth-of-type(4), .project#tradiies .project-sample:nth-of-type(5), .project#tradiies .project-sample:nth-of-type(7), .project#tradiies .project-sample:nth-of-type(8) {
   width: calc(50% - 1vw); }
 
+.project#tkKader .project-sample:nth-of-type(3) {
+  background: #e6e6e6;
+  padding: 5vw 10vw; }
+
 .project#wdypb .project-sample:nth-of-type(2), .project#wdypb .project-sample:nth-of-type(3) {
   width: calc(50% - 1vw); }
 

@@ -1,0 +1,3 @@
+{% set projectSlug = 'tkKader' %}
+
+{% extends "project-page.nunjucks" %}

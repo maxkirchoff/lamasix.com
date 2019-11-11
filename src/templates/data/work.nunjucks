@@ -411,6 +411,51 @@
         }
       ]
     },
+    tkKader: {
+      client: 'TK Kader',
+      href: '/work/tk-kader',
+      hero: {
+        type: 'image',
+        src: 'summary.jpg'
+      },
+      description: "We worked with TK Kader to create a bold, compelling and colorful visual identity, visual identity for social and website design. We drew on TK's own personality and approach to shape a visual identity that spoke clearly to his customers and fans. TK appears across multiple channels and platforms, where standing out is just as important as conveying a serious, yet fun attitude and perspective. The visual system conveys TK's unqiue voice throughout his website, social channels and print materials.",
+      shortDescription: "We worked with TK Kader to create a bold, compelling and colorful visual identity, visual identity for social and website design.",
+      team: [
+        "Isla Murray",
+        "Linsey Peterson"
+      ],
+      categories: [
+        {
+          name: 'Visual Identity',
+          slug: 'visual-identity'
+        },
+        {
+          name: 'Web Design',
+          slug: 'web-design'
+        },
+        {
+          name: 'Visual social identity',
+          slug: 'visual-social'
+        }
+      ],
+      media: [
+        {
+          type: "image",
+          src: "highlights.png",
+          alt: "Get Shit Done, Let's Do This, Make It Rain"
+        },
+        {
+          type: "image",
+          src: "logo.png",
+          alt: "The logo for TK Kader"
+        },
+        {
+          type: "image",
+          src: "website.png",
+          alt: "A screencapture of tkkader.com's design"
+        }
+      ]
+    },
     clarity: {
       client: 'Clarity',
       href: '/work/clarity',

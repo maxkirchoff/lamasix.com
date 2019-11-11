@@ -399,6 +399,14 @@
       }
     }
   }
+  &#tkKader {
+    .project-sample {
+      &:nth-of-type(3) {
+        background: #e6e6e6;
+        padding: 5vw 10vw;
+      }
+    }
+  }
   &#wdypb {
     .project-sample {
       &:nth-of-type(2),
