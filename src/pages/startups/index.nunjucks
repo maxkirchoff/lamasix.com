@@ -103,6 +103,10 @@
         <label for="sixmonths">What are your important goals in the next 6 months?</label>
         <textarea name="sixmonths" required></textarea>
       </div>
+      <div class="referral">
+        <label for="referral">How did you hear about our program?</label>
+        <input type="text" name="referral">
+      </div>
       <button>Submit</button>
     </form>
   </section>

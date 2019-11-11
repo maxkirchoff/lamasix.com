@@ -132,7 +132,8 @@
             communities: $this.find('.communities textarea').val(),
             stage: $this.find('.stage textarea').val(),
             why: $this.find('.why textarea').val(),
-            sixmonths: $this.find('.sixmonths textarea').val()
+            sixmonths: $this.find('.sixmonths textarea').val(),
+            referral: $this.find('.referral input').val()
           }
 
           $.ajax({
