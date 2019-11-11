@@ -1,8 +1,8 @@
 {% set pageID = 'our-process' %}
 {% set pageMeta = {
-    title: "Case Study: Reia",
-    ogImage: "",
-    description: "Branding a groundbreaking women’s health startup. Supporting women, inside and out."
+    title: "Our process for visual identity",
+    ogImage: "/assets/media/our-process/og-image.jpg",
+    description: "A walkthrough of our process for visual identity projects. This outlines the major milestones and expectations of you as a collaborator and client."
   }
 %}
 

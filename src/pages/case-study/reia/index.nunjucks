@@ -3,7 +3,7 @@
 {% set pageID = 'case-study-reia' %}
 {% set pageMeta = {
     title: "Case Study: Reia",
-    ogImage: "",
+    ogImage: "/assets/media/case-study/reia/title-reia.png",
     description: "Branding a groundbreaking women’s health startup. Supporting women, inside and out."
   }
 %}
