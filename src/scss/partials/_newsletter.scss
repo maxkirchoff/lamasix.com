@@ -6,12 +6,18 @@
     background: #000;
     color: #fff;
 
-    nav#site-navigation ul li a {
-      color: #fff;
+    nav#site-navigation {
+      a, ul li a {
+        color: #fff;
+      }
     }
 
     .logo svg path {
       fill: #fff;
+    }
+
+    button.menu-toggle {
+      color: #fff;
     }
   }
 

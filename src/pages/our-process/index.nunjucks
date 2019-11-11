@@ -1,0 +1,91 @@
+{% set pageID = 'our-process' %}
+{% set pageMeta = {
+    title: "Case Study: Reia",
+    ogImage: "",
+    description: "Branding a groundbreaking women’s health startup. Supporting women, inside and out."
+  }
+%}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+    <div class="row">
+      <div class="column">
+        <div class="animation">
+          <video loop autoplay playsinline muted poster="/assets/media/our-process/L6_01.jpg">
+            <source src="/assets/media/our-process/L6_01.webm" type="video/webm">
+            <source src="/assets/media/our-process/L6_01.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="statement">
+          We need to speak the same visual language
+        </div>
+      </div>
+      <div class="column">
+          <h1>Our visual identity process</h1>
+          <section id="branding-workshop">
+            <h2> 1. Branding workshop</h2>
+            <p>We collaborate with you to define the goals and mission of your brand, which will serve as the foundation of your unique perspective.</p>
+            <p>You will be invited to participate in a workshop of ideation and definition with our team, to better understand and express your brand, existing problems or challenges, and strategic positioning.</p>
+            <p>At the end of this process, you will have a clear idea of your brand and we will craft your brand’s Creative Brief together.</p>
+          </section>
+          <section id="research">
+            <h2>2. Design research and moodboarding</h2>
+            <p>We immerse ourselves in the environment of your future brand in order to process and plan for all the factors that will influence its success. This includes everything from analyzing your target audience, to closely studying the market and potential competitors.</p>
+            <p>Armed with our research, we will craft several stylistic directions that express your brand’s personality and goals and present them to you as moodboards. Our moodboards are compilations of visual inspiration, pulled from various sources to allow us to start being more precise with our visual choices and get all stakeholders to adopt the same visual language moving forward.</p>
+            <p>You will participate in a session where we discuss the moodboards and select the direction we wish to pursue.</p>
+          </section>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="animation">
+          <video loop autoplay playsinline muted poster="/assets/media/our-process/L6_02.png">
+            <source src="/assets/media/our-process/L6_02.webm" type="video/webm">
+            <source src="/assets/media/our-process/L6_02.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="statement">
+          The devil is in the details
+        </div>
+      </div>
+      <div class="column">
+          <section id="concepting">
+            <h2>3. Concepting</h2>
+            <p>We get to work building your unique look and feel based on the direction we have decided on. We’ll craft your logo, explore color, typography, and other visual elements. We’ll mock the concepts up in real-world examples to allow you to see how your brand will be expressed in context.</p>
+            <p>You will select the direction you wish to move forward with.</p>
+          </section>
+          <section id="refinement">
+            <h2>4. Refinement and iteration</h2>
+            <p>The designer fully develops the direction and works over the slightest details. This is the time when our design team rolls up their sleeves to experiments and perfect your brand’s visual personality down to the exact hue, tint, tone, and shade, while still working within the agreed-upon stylistic concept.</p>
+            <p>We deliver your final wordmark and visual identity, along with a PDF guide that explains how to deploy and maintain your new visual system - including your brand’s colors, typography, and any other visual elements of your brand.</p>
+            <p>You will be asked for feedback through a couple of rounds of refinement and iteration until we have landed at the perfect visual identity together.</p>
+          </section>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="animation">
+          <video loop autoplay playsinline muted poster="/assets/media/our-process/float.jpg">
+            <source src="/assets/media/our-process/float.webm" type="video/webm">
+            <source src="/assets/media/our-process/float.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="column">
+        <section id="touch-points">
+          <h2>5. Using the design system</h2>
+          <p>We’ll advise you in all the ways you can strategically extend your brand. We can design your website, app UI, social media, advertisements, packaging, business cards, and can guide you in finding smart moments where your brand can and should be expressed most effectively.</p>
+        </section>
+        <section>
+          <p>Want to work with us?</p><p>Apply for our Creative Partnership Program or <a href="mailto:hi@lamasix.com">send us an email.</a></p>
+          <a href="/startups" class="button">Creative Partnership Application</a>
+        </section>
+      </div>
+    </div>
+
+
+
+
+{% endblock %}
