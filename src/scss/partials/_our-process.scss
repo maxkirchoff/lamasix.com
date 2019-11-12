@@ -9,6 +9,10 @@
     nav#site-navigation {
       a, ul li a {
         color: #fff;
+
+        &.active {
+          border-color: #fff;
+        }
       }
     }
 
@@ -67,14 +71,13 @@
         color: #000;
         border: none;
         padding: 5vw 2vw;
-        border-radius: 1vw;
+        border-radius: 0;
         margin-top: 10vw;
         display: block;
         text-align: center;
 
         @media only screen and (min-width: $md-min-width) {
           padding: 1.75vw 2vw;
-          border-radius: .25vw;
           margin-top: 2vw;
         }
 

@@ -59,7 +59,7 @@ nav#site-navigation {
     list-style: none;
     line-height: 1;
     margin: 0;
-    padding: 40vw 8.33% 0;
+    padding: 30vw 8.33% 0;
     position: fixed;
     background: #000;
     top: 10vw;
@@ -81,8 +81,10 @@ nav#site-navigation {
     }
 
     &.active {
-      display: block;
-      overflow: auto;
+      @media only screen and (max-width: $sm-max-width) {
+        display: block;
+        overflow: auto;
+      }
     }
 
     li {
@@ -108,7 +110,7 @@ nav#site-navigation {
         font-family: $font-gt-super;
         text-decoration: none;
         text-transform: lowercase;
-        font-size: 25vw;
+        font-size: 20vw;
         color: #fff;
         line-height: 1;
         border-bottom: 1px solid transparent;
@@ -138,18 +140,20 @@ nav#site-navigation {
   }
 }
 header.menu-active {
-  background: #000;
-  nav#site-navigation {
-    .contact {
-      color: #fff;
-    }
-    .menu-toggle {
-      color: #fff;
-      .open {
-        display: none;
+  @media only screen and (max-width: $sm-max-width) {
+    background: #000;
+    nav#site-navigation {
+      .contact {
+        color: #fff;
       }
-      .close {
-        display: block;
+      .menu-toggle {
+        color: #fff;
+        .open {
+          display: none;
+        }
+        .close {
+          display: block;
+        }
       }
     }
   }

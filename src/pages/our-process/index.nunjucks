@@ -13,10 +13,14 @@
     <div class="row">
       <div class="column">
         <div class="animation">
-          <video loop autoplay playsinline muted poster="/assets/media/our-process/L6_01.jpg">
+          <video loop playsinline muted poster="/assets/media/our-process/L6_01.jpg" id="walk-animation">
             <source src="/assets/media/our-process/L6_01.webm" type="video/webm">
             <source src="/assets/media/our-process/L6_01.mp4" type="video/mp4">
           </video>
+          <script type="text/javascript">
+            document.getElementById('walk-animation').playbackRate = 0.3;
+            document.getElementById('walk-animation').play();
+          </script>
         </div>
         <div class="statement">
           We need to speak the same visual language

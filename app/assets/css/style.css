@@ -584,7 +584,7 @@ nav#site-navigation {
     list-style: none;
     line-height: 1;
     margin: 0;
-    padding: 40vw 8.33% 0;
+    padding: 30vw 8.33% 0;
     position: fixed;
     background: #000;
     top: 10vw;
@@ -605,9 +605,10 @@ nav#site-navigation {
         right: auto;
         bottom: auto;
         background: transparent; } }
-    nav#site-navigation ul.active {
-      display: block;
-      overflow: auto; }
+    @media only screen and (max-width: 849px) {
+      nav#site-navigation ul.active {
+        display: block;
+        overflow: auto; } }
     nav#site-navigation ul li {
       display: block;
       margin: 5vw 0;
@@ -625,7 +626,7 @@ nav#site-navigation {
         font-family: "GT-Super-Text", "Times New Roman", times, serif;
         text-decoration: none;
         text-transform: lowercase;
-        font-size: 25vw;
+        font-size: 20vw;
         color: #fff;
         line-height: 1;
         border-bottom: 1px solid transparent;
@@ -645,16 +646,17 @@ nav#site-navigation {
             nav#site-navigation ul li a.email-us {
               display: block; } }
 
-header.menu-active {
-  background: #000; }
-  header.menu-active nav#site-navigation .contact {
-    color: #fff; }
-  header.menu-active nav#site-navigation .menu-toggle {
-    color: #fff; }
-    header.menu-active nav#site-navigation .menu-toggle .open {
-      display: none; }
-    header.menu-active nav#site-navigation .menu-toggle .close {
-      display: block; }
+@media only screen and (max-width: 849px) {
+  header.menu-active {
+    background: #000; }
+    header.menu-active nav#site-navigation .contact {
+      color: #fff; }
+    header.menu-active nav#site-navigation .menu-toggle {
+      color: #fff; }
+      header.menu-active nav#site-navigation .menu-toggle .open {
+        display: none; }
+      header.menu-active nav#site-navigation .menu-toggle .close {
+        display: block; } }
 
 .main {
   margin-top: 15vw; }
@@ -1194,6 +1196,8 @@ body#sleep {
     color: #fff; }
     #our-process header nav#site-navigation a, #our-process header nav#site-navigation ul li a {
       color: #fff; }
+      #our-process header nav#site-navigation a.active, #our-process header nav#site-navigation ul li a.active {
+        border-color: #fff; }
     #our-process header .logo svg path {
       fill: #fff; }
     #our-process header button.menu-toggle {
@@ -1233,14 +1237,13 @@ body#sleep {
       color: #000;
       border: none;
       padding: 5vw 2vw;
-      border-radius: 1vw;
+      border-radius: 0;
       margin-top: 10vw;
       display: block;
       text-align: center; }
       @media only screen and (min-width: 850px) {
         #our-process main.main a.button {
           padding: 1.75vw 2vw;
-          border-radius: .25vw;
           margin-top: 2vw; } }
       #our-process main.main a.button:hover {
         color: #fff;

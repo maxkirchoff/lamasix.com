@@ -1,13 +1,23 @@
 {% set navItems = [
 	{
-		url: '/about',
-		slug: 'about',
-		title: 'About'
-	},
-	{
 		url: '/#work',
 		slug: 'work',
 		title: 'Work'
+	},
+	{
+		url: '/startups',
+		slug: 'startups',
+		title: 'Startups'
+	},
+	{
+		url: '/our-process',
+		slug: 'our-process',
+		title: 'Process'
+	},
+	{
+		url: '/about',
+		slug: 'about',
+		title: 'About'
 	},
 	{
 		url: 'mailto:hi@lamasix.com',
