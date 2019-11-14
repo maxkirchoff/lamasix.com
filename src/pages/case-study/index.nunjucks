@@ -1,0 +1,13 @@
+<html>
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <script>
+  window.location.replace("/case-study/reia");
+  </script>
+</head>
+<body>
+  <h1>You are being redirected to the meeting...</h1>
+  <p>If this meeting has not loaded, please try manually navigating there: <a href="/case-study/reia">/case-study/reia</a>
+  </p>
+</body>
+</html>
