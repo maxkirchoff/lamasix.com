@@ -30,24 +30,32 @@
   }
 
   main.main {
-    h1 {
-      margin: 10vw 7.5vw;
-      font-size: 16vw;
-      font-family: $font-gt-super;
-      font-weight: normal;
-      @media only screen and (min-width: $md-min-width) {
-        font-size: 7.67vw;
-        margin: 5vw 0 5vw;
+    header {
+      h1 {
+        line-height: 1;
+        margin: 10vw 7.5vw;
+        font-size: 16vw;
+        font-family: $font-gt-super;
+        font-weight: normal;
+        @media only screen and (min-width: $md-min-width) {
+          font-size: 7.67vw;
+          margin: 5vw 0 5vw;
+        }
       }
     }
-    .statement {
-      font-size: 6.85vw;
+    .statement, h1 {
+      line-height: 1;
+      font-size: 12vw;
       font-family: $font-gt-super;
       font-weight: normal;
-      display: none;
 
       @media only screen and (min-width: $md-min-width) {
         display: block;
+        font-size: 6.6vw;
+      }
+
+      &.statement {
+        display: none;
       }
     }
 
@@ -79,6 +87,7 @@
         @media only screen and (min-width: $md-min-width) {
           padding: 1.75vw 2vw;
           margin-top: 2vw;
+          display: inline-block;
         }
 
         &:hover {
@@ -95,6 +104,41 @@
         flex-direction: row;
         justify-content: space-between;
       }
+
+      &#cta {
+        @media only screen and (min-width: $md-min-width) {
+          margin-top: 5vw;
+        }
+        .column {
+          width: 100%;
+        }
+        h1 {
+          margin: 10vw 20vw 0 7.5vw;
+          @media only screen and (min-width: $md-min-width) {
+            margin: -5vw 0 0;
+            text-align: center;
+          }
+        }
+        section {
+
+          @media only screen and (min-width: $md-min-width) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5vw 7.5vw 5vw;
+          }
+        }
+        p {
+          display: inline-block;
+        }
+        .button {
+
+          @media only screen and (min-width: $md-min-width) {
+            margin: 0 0 0 5vw;
+          }
+        }
+      }
+
       .column {
         @media only screen and (min-width: $md-min-width) {
           display: flex;
@@ -108,17 +152,17 @@
           }
         }
       }
-      &:nth-of-type(1) {
+      &:nth-child(1) {
         @media only screen and (min-width: $md-min-width) {
           flex-direction: row-reverse;
         }
         .column {
-          &:nth-of-type(2) {
+          &:nth-child(2) {
             @media only screen and (min-width: $md-min-width) {
               width: 45%;
             }
           }
-          &:nth-of-type(1) {
+          &:nth-child(1) {
             @media only screen and (min-width: $md-min-width) {
               width: 50%;
             }
@@ -129,15 +173,15 @@
             }
             .statement {
               @media only screen and (min-width: $md-min-width) {
-                margin-top: 20vw;
+                margin-top: 15vw;
               }
             }
           }
         }
       }
-      &:nth-of-type(2) {
+      &:nth-child(2) {
         .column {
-          &:nth-of-type(1) {
+          &:nth-child(1) {
 
             @media only screen and (min-width: $md-min-width) {
               width: 50%;
@@ -149,15 +193,15 @@
             }
             .statement {
               @media only screen and (min-width: $md-min-width) {
-                margin-top: 10vw;
-                width: 90%;
+                margin-top: 17vw;
                 margin-left: auto;
               }
             }
           }
-          &:nth-of-type(2) {
+          &:nth-child(2) {
             @media only screen and (min-width: $md-min-width) {
               width: 45%;
+              margin-top: -25vw;
             }
           }
 
@@ -168,19 +212,21 @@
           }
         }
       }
-      &:nth-of-type(3) {
+      &:nth-child(3) {
         @media only screen and (min-width: $md-min-width) {
           flex-direction: row-reverse;
         }
         .column {
-          &:nth-of-type(2) {
+          &:nth-child(2) {
             @media only screen and (min-width: $md-min-width) {
               width: 45%;
+              margin-top: -10vw;
             }
           }
-          &:nth-of-type(1) {
+          &:nth-child(1) {
             @media only screen and (min-width: $md-min-width) {
               width: 50%;
+              margin-top: 0;
             }
             .animation {
               @media only screen and (min-width: $md-min-width) {

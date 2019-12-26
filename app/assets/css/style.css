@@ -1204,23 +1204,27 @@ body#sleep {
       color: #fff; }
   #our-process .footer {
     color: #fff; }
-  #our-process main.main h1 {
+  #our-process main.main header h1 {
+    line-height: 1;
     margin: 10vw 7.5vw;
     font-size: 16vw;
     font-family: "GT-Super-Text", "Times New Roman", times, serif;
     font-weight: normal; }
     @media only screen and (min-width: 850px) {
-      #our-process main.main h1 {
+      #our-process main.main header h1 {
         font-size: 7.67vw;
         margin: 5vw 0 5vw; } }
-  #our-process main.main .statement {
-    font-size: 6.85vw;
+  #our-process main.main .statement, #our-process main.main h1 {
+    line-height: 1;
+    font-size: 12vw;
     font-family: "GT-Super-Text", "Times New Roman", times, serif;
-    font-weight: normal;
-    display: none; }
+    font-weight: normal; }
     @media only screen and (min-width: 850px) {
-      #our-process main.main .statement {
-        display: block; } }
+      #our-process main.main .statement, #our-process main.main h1 {
+        display: block;
+        font-size: 6.6vw; } }
+    #our-process main.main .statement.statement, #our-process main.main h1.statement {
+      display: none; }
   #our-process main.main h2, #our-process main.main p {
     font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif;
     font-size: 5vw; }
@@ -1244,7 +1248,8 @@ body#sleep {
       @media only screen and (min-width: 850px) {
         #our-process main.main a.button {
           padding: 1.75vw 2vw;
-          margin-top: 2vw; } }
+          margin-top: 2vw;
+          display: inline-block; } }
       #our-process main.main a.button:hover {
         color: #fff;
         background: #111; }
@@ -1256,6 +1261,31 @@ body#sleep {
           flex-direction: row;
       -ms-flex-pack: justify;
           justify-content: space-between; } }
+  @media only screen and (min-width: 850px) {
+    #our-process main.main .row#cta {
+      margin-top: 5vw; } }
+  #our-process main.main .row#cta .column {
+    width: 100%; }
+  #our-process main.main .row#cta h1 {
+    margin: 10vw 20vw 0 7.5vw; }
+    @media only screen and (min-width: 850px) {
+      #our-process main.main .row#cta h1 {
+        margin: -5vw 0 0;
+        text-align: center; } }
+  @media only screen and (min-width: 850px) {
+    #our-process main.main .row#cta section {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-align: center;
+          align-items: center;
+      margin: 5vw 7.5vw 5vw; } }
+  #our-process main.main .row#cta p {
+    display: inline-block; }
+  @media only screen and (min-width: 850px) {
+    #our-process main.main .row#cta .button {
+      margin: 0 0 0 5vw; } }
   @media only screen and (min-width: 850px) {
     #our-process main.main .row .column {
       display: -ms-flexbox;
@@ -1269,50 +1299,52 @@ body#sleep {
       #our-process main.main .row .column section {
         margin: 0 5vw 5vw 7.5vw; } }
   @media only screen and (min-width: 850px) {
-    #our-process main.main .row:nth-of-type(1) {
+    #our-process main.main .row:nth-child(1) {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; } }
   @media only screen and (min-width: 850px) {
-    #our-process main.main .row:nth-of-type(1) .column:nth-of-type(2) {
+    #our-process main.main .row:nth-child(1) .column:nth-child(2) {
       width: 45%; } }
   @media only screen and (min-width: 850px) {
-    #our-process main.main .row:nth-of-type(1) .column:nth-of-type(1) {
+    #our-process main.main .row:nth-child(1) .column:nth-child(1) {
       width: 50%; } }
   @media only screen and (min-width: 850px) {
-    #our-process main.main .row:nth-of-type(1) .column:nth-of-type(1) .animation {
+    #our-process main.main .row:nth-child(1) .column:nth-child(1) .animation {
       margin-top: 13vw; } }
   @media only screen and (min-width: 850px) {
-    #our-process main.main .row:nth-of-type(1) .column:nth-of-type(1) .statement {
-      margin-top: 20vw; } }
+    #our-process main.main .row:nth-child(1) .column:nth-child(1) .statement {
+      margin-top: 15vw; } }
   @media only screen and (min-width: 850px) {
-    #our-process main.main .row:nth-of-type(2) .column:nth-of-type(1) {
+    #our-process main.main .row:nth-child(2) .column:nth-child(1) {
       width: 50%; } }
   @media only screen and (min-width: 850px) {
-    #our-process main.main .row:nth-of-type(2) .column:nth-of-type(1) .animation {
+    #our-process main.main .row:nth-child(2) .column:nth-child(1) .animation {
       margin-top: -1vw; } }
   @media only screen and (min-width: 850px) {
-    #our-process main.main .row:nth-of-type(2) .column:nth-of-type(1) .statement {
-      margin-top: 10vw;
-      width: 90%;
+    #our-process main.main .row:nth-child(2) .column:nth-child(1) .statement {
+      margin-top: 17vw;
       margin-left: auto; } }
   @media only screen and (min-width: 850px) {
-    #our-process main.main .row:nth-of-type(2) .column:nth-of-type(2) {
-      width: 45%; } }
+    #our-process main.main .row:nth-child(2) .column:nth-child(2) {
+      width: 45%;
+      margin-top: -25vw; } }
   @media only screen and (min-width: 850px) {
-    #our-process main.main .row:nth-of-type(2) .column section {
+    #our-process main.main .row:nth-child(2) .column section {
       margin: 0 7.5vw 5vw 5vw; } }
   @media only screen and (min-width: 850px) {
-    #our-process main.main .row:nth-of-type(3) {
+    #our-process main.main .row:nth-child(3) {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; } }
   @media only screen and (min-width: 850px) {
-    #our-process main.main .row:nth-of-type(3) .column:nth-of-type(2) {
-      width: 45%; } }
+    #our-process main.main .row:nth-child(3) .column:nth-child(2) {
+      width: 45%;
+      margin-top: -10vw; } }
   @media only screen and (min-width: 850px) {
-    #our-process main.main .row:nth-of-type(3) .column:nth-of-type(1) {
-      width: 50%; } }
+    #our-process main.main .row:nth-child(3) .column:nth-child(1) {
+      width: 50%;
+      margin-top: 0; } }
   @media only screen and (min-width: 850px) {
-    #our-process main.main .row:nth-of-type(3) .column:nth-of-type(1) .animation {
+    #our-process main.main .row:nth-child(3) .column:nth-child(1) .animation {
       margin-top: 0; } }
 
 body#startups section {

@@ -10,7 +10,7 @@
 
 {% block content %}
 
-    <div class="row">
+    <header class="row">
       <div class="column">
         <div class="animation">
           <video loop playsinline muted poster="/assets/media/our-process/L6_01.jpg" id="walk-animation">
@@ -22,26 +22,16 @@
             document.getElementById('walk-animation').play();
           </script>
         </div>
-        <div class="statement">
-          We need to speak the same visual language
-        </div>
       </div>
       <div class="column">
-          <h1>Our visual identity process</h1>
-          <section id="branding-workshop">
-            <h2> 1. Branding workshop</h2>
-            <p>We collaborate with you to define the goals and mission of your brand, which will serve as the foundation of your unique perspective.</p>
-            <p>You will be invited to participate in a workshop of ideation and definition with our team, to better understand and express your brand, existing problems or challenges, and strategic positioning.</p>
-            <p>At the end of this process, you will have a clear idea of your brand and we will craft your brand’s Creative Brief together.</p>
-          </section>
-          <section id="research">
-            <h2>2. Design research and moodboarding</h2>
-            <p>We immerse ourselves in the environment of your future brand in order to process and plan for all the factors that will influence its success. This includes everything from analyzing your target audience, to closely studying the market and potential competitors.</p>
-            <p>Armed with our research, we will craft several stylistic directions that express your brand’s personality and goals and present them to you as moodboards. Our moodboards are compilations of visual inspiration, pulled from various sources to allow us to start being more precise with our visual choices and get all stakeholders to adopt the same visual language moving forward.</p>
-            <p>You will participate in a session where we discuss the moodboards and select the direction we wish to pursue.</p>
+          <h1>How We Build Your Visual Identity</h1>
+          <section id="intro">
+            <p>We believe that what we do should not be a mystery. We also believe you should be there with us every step of the way. Our process is highly collaborative and as transparent as possible.</p>
+            <p>We developed our process after seeing the frustration that many had working with an agency or individual. They would give the agency a brief or just some loose objectives, the agency would disappear for a while and return with a hit-or-miss piece of creative work. It’s a dream, to be sure, until it’s a nightmare… which it often is.</p>
+            <p>Knowledge is power, and we want to give you as much power as possible throughout our relationship. We believe that you are part of our best work.</p>
           </section>
       </div>
-    </div>
+    </header>
     <div class="row">
       <div class="column">
         <div class="animation">
@@ -51,21 +41,27 @@
           </video>
         </div>
         <div class="statement">
-          The devil is in the details
+          Collaboration is at the heart of eveything we do.
         </div>
       </div>
       <div class="column">
-          <section id="concepting">
-            <h2>3. Concepting</h2>
-            <p>We get to work building your unique look and feel based on the direction we have decided on. We’ll craft your logo, explore color, typography, and other visual elements. We’ll mock the concepts up in real-world examples to allow you to see how your brand will be expressed in context.</p>
-            <p>You will select the direction you wish to move forward with.</p>
-          </section>
-          <section id="refinement">
-            <h2>4. Refinement and iteration</h2>
-            <p>The designer fully develops the direction and works over the slightest details. This is the time when our design team rolls up their sleeves to experiment and perfect your brand’s visual personality down to the exact hue, tint, tone, and shade, while still working within the agreed-upon stylistic concept.</p>
-            <p>We deliver your final wordmark and visual identity, along with a PDF guide that explains how to deploy and maintain your new visual system - including your brand’s colors, typography, and any other visual elements of your brand.</p>
-            <p>You will be asked for feedback through a couple of rounds of refinement and iteration until we have landed at the perfect visual identity together.</p>
-          </section>
+        <section id="branding-workshop">
+          <h1>Our Process</h1>
+          <h2>PHASE 1. Branding workshop</h2>
+          <p>We collaborate with you to define the goals and mission of your brand, which serves as the foundation of your unique perspective. We lead a workshop of ideation and definition, to understand your brand, existing problems or challenges, and strategic positioning.</p>
+          <p>At the end of this process, you have a clear idea of your brand and we will craft a Creative Brief together.</p>
+        </section>
+        <section id="research">
+          <h2>PHASE 2. Design research and moodboarding</h2>
+          <p>We immerse ourselves in the environment of your brand in order to plan for the factors that determine its success, including analyzing your target audience and closely studying the market & potential competitors.</p>
+          <p>We craft several stylistic directions that express your brand’s positioning and goals which we present as moodboards. Our moodboards are compilations of visual inspiration pulled from various sources that allow us to be more precise with the visual choices and align stakeholders under the same visual language.</p>
+          <p>We lead a session where we discuss the moodboards and select the direction you wish to pursue.</p>
+        </section>
+        <section id="concepting">
+          <h2>PHASE 3. Concepting</h2>
+          <p>Based on the decided direction, we build your unique look and feel. We craft your logo, explore color, typography, and other visual elements. We mock-up the concepts in real-world examples to allow you to see how your brand is expressed in context.</p>
+          <p>We present the concepts, lead a discussion on them and then you select the direction you wish to move forward with.</p>
+        </section>
       </div>
     </div>
     <div class="row">
@@ -78,12 +74,23 @@
         </div>
       </div>
       <div class="column">
-        <section id="touch-points">
-          <h2>5. Using the design system</h2>
-          <p>We’ll advise you in all the ways you can strategically extend your brand. We can design your website, app UI, social media, advertisements, packaging, business cards, and can guide you in finding smart moments where your brand can and should be expressed most effectively.</p>
+        <section id="refinement">
+          <h2>PHASE 4. Refinement and iteration</h2>
+          <p>We further develop the direction and work over the details. Our design team refines your brand’s visual personality down to the exact hue, tint, tone, and shade.</p>
+          <p>Your feedback is integrated through rounds of refinement and iteration until we have created an ideal representation of your brand’s visual identity.</p>
+          <p>We deliver your visual identity along with a PDF guide that explains how to deploy and maintain the new system. This includes your brand’s logo, colors, typography, and any other visual elements.</p>
         </section>
+        <section id="touch-points">
+          <h2>PHASE 5. Using the design system</h2>
+          <p>We advise you on strategically presenting your brand. Depending on our agreement, we design your website, app UI, social media, advertisements, packaging, business cards, or other materials. We guide you in finding smart moments where your brand can and should be expressed most effectively.</p>
+        </section>
+      </div>
+    </div>
+    <div class="row" id="cta">
+      <div class="column">
+        <h1>Want to work with us?</h1>
         <section>
-          <p>Want to work with us?</p><p>Apply for our Creative Partnership Program or <a href="mailto:hi@lamasix.com">send us an email.</a></p>
+          <p>Apply for our Creative Partnership Program or <a href="mailto:hi@lamasix.com">send us an email.</a></p>
           <a href="/startups" class="button">Creative Partnership Application</a>
         </section>
       </div>
