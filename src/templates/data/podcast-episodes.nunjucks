@@ -1,0 +1,48 @@
+{%
+  set episodes = {
+    "0": {
+      title: "Welcome to People Not Things!",
+      summary: "We're launching our very own podcast! Wooooooooo! We aim to inspire entrepreneurs, marketers and creatives to explore how people are the critical connection of our work, and ask why we often take them for granted.",
+      description: "Hey! It's Max & Isla here. We wanted to introduce the podcast, the idea behind it and why you might want to be listening. We'd love for you to share this journey with us as we talk to some really great folks from all over the business and creative world. <br><br>Check out out website if you'd like to be a guest @ peoplenotthings.party",
+      guests: "Isla and Max",
+      publish_date: "Jan 27th 2020",
+      play_time: "11mins",
+      image: "/assets/media/podcast/guests/islaMax.jpg",
+      url_slug: "0-welcome",
+      transistor_player_slug: "b003cb58"
+    },
+    "1": {
+      title: "Building teams & relationships that matter",
+      summary: "We are joined by Serena Bartolucci Rubino of Clarity Recruiting to talk about how they build teams based on values, why relationships matter across your career and how Clarity has expressed its mission through its culture and brand experience.",
+      description: "We are joined by Serena Bartolucci Rubino of Clarity Recruiting to talk about how they build teams based on values, why relationships matter across your career and how Clarity has expressed its mission through its culture and brand experience.<br><br>Serena is the Director of Communications for Clarity Recruiting, a woman-owned, boutique recruiting agency. Since 2000, Clarity’s goal has been to simplify the recruitment process in order to build better teams, the human way. Their approach to recruiting and staffing centers on the experience of the people behind the numbers and jobs, focusing their efforts on building relationships on trust and values.<br><br>More about Clarity Recruiting - https://clarityrecruiting.com",
+      guests: "Serena Bartolucci Rubino",
+      publish_date: "Jan 28th 2020",
+      play_time: "37mins",
+      image: "/assets/media/podcast/guests/SerenaBartolucciRubino.jpg",
+      url_slug: "1-building-teams",
+      transistor_player_slug: ""
+    },
+    "2": {
+      title: "Personal brand",
+      summary: "We are joined by Rachel Charlesworth, founder of Icono, to chat about personal brand, the importance of making the right impression when you're in the room and when you're not.",
+      description: "We are joined by Rachel Charlesworth, founder of Icono, to chat about personal brand, the importance of making the right impression when you're in the room and when you're not.<br><br>Rachel recently founded Icono, a startup that provides high-quality creative headshots in NYC. Rachel is a brand strategist, launch marketer, and avid follower of consumer trends. For 8 years, she  worked in-house with visionary entrepreneurs, creatives, and teams to launch products, drive user growth, and increase revenue. Today, she works with brave startups looking to make a real change. <br><br>More about Icono - http://helloicono.com<br>More about Rachel's work - https://www.charlesworth.co",
+      guests: "Rachel Charleasworth",
+      publish_date: "Jan 28th 2020",
+      play_time: "39mins",
+      image: "/assets/media/podcast/guests/RachelCharlesworth.jpg",
+      url_slug: "2-personal-brand",
+      transistor_player_slug: ""
+    },
+    "3": {
+      title: "Purposeful dating & relationships",
+      summary: "We were joined by Lily Womble of Date Brazen to chat about how she works with people at all stages of life as they navigate dating.",
+      description: "We were joined by Lily Womble of Date Brazen to chat about how she works with people at all stages of life as they navigate dating. Lily has built a coaching framework that helps individuals better understand their needs and desires, and how to find those in the world — rather than just endlessly swiping.<br><br>Lily Womble was a top matchmaker at the largest firm in the U.S. After matching hundreds, she realized that with training, individuals can match themselves better than anyone else ever could. She founded Date Brazen to empower those people to build purposeful, fulfilling dating lives.<br><br>More about Date Brazen at http://datebrazen.com",
+      guests: "Lily Womble",
+      publish_date: "Jan 28th 2020",
+      play_time: "43mins",
+      image: "/assets/media/podcast/guests/LilyWomble.jpg",
+      url_slug: "3-purposeful-dating",
+      transistor_player_slug: ""
+    }
+  }
+%}

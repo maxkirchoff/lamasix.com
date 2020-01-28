@@ -488,7 +488,7 @@ a {
   font-family: 'GT-America';
   src: url("/assets/fonts/GT-America-Standard-Bold-Italic.eot");
   src: url("/assets/fonts/GT-America-Standard-Bold-Italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/GT-America-Standard-Bold-Italic.woff") format("woff"), url("/assets/fonts/GT-America-Standard-Bold-Italic.woff2") format("woff2"), url("/assets/fonts/GT-America-Standard-Bold-Italic.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: bold;
   font-style: italic; }
 
 .site-container {
@@ -1221,10 +1221,12 @@ body#sleep {
     font-weight: normal; }
     @media only screen and (min-width: 850px) {
       #our-process main.main .statement, #our-process main.main h1 {
-        display: block;
         font-size: 6.6vw; } }
     #our-process main.main .statement.statement, #our-process main.main h1.statement {
       display: none; }
+      @media only screen and (min-width: 850px) {
+        #our-process main.main .statement.statement, #our-process main.main h1.statement {
+          display: block; } }
   #our-process main.main h2, #our-process main.main p {
     font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif;
     font-size: 5vw; }
@@ -1346,6 +1348,369 @@ body#sleep {
   @media only screen and (min-width: 850px) {
     #our-process main.main .row:nth-child(3) .column:nth-child(1) .animation {
       margin-top: 0; } }
+
+#podcast, #podcast-episode {
+  background: #000;
+  color: #cccccc; }
+  #podcast#podcast-episode, #podcast-episode#podcast-episode {
+    background: #6300FF; }
+    #podcast#podcast-episode header.header, #podcast-episode#podcast-episode header.header {
+      background: #6300FF; }
+    #podcast#podcast-episode .podcast-main, #podcast-episode#podcast-episode .podcast-main {
+      background: #000;
+      padding-top: 1px; }
+      @media only screen and (min-width: 850px) {
+        #podcast#podcast-episode .podcast-main, #podcast-episode#podcast-episode .podcast-main {
+          padding-top: 10vw; } }
+    #podcast#podcast-episode .episode-details, #podcast-episode#podcast-episode .episode-details {
+      width: 85%;
+      margin: 25vw auto 10vw; }
+      @media only screen and (min-width: 850px) {
+        #podcast#podcast-episode .episode-details, #podcast-episode#podcast-episode .episode-details {
+          width: 65%;
+          margin: 15vw auto 10vw; } }
+      #podcast#podcast-episode .episode-details .description, #podcast-episode#podcast-episode .episode-details .description {
+        margin: 15vw auto;
+        width: 100%; }
+        @media only screen and (min-width: 850px) {
+          #podcast#podcast-episode .episode-details .description, #podcast-episode#podcast-episode .episode-details .description {
+            width: 70%;
+            margin: 5vw auto; } }
+      #podcast#podcast-episode .episode-details .player, #podcast-episode#podcast-episode .episode-details .player {
+        width: 100%;
+        margin: 10vw auto; }
+        @media only screen and (min-width: 850px) {
+          #podcast#podcast-episode .episode-details .player, #podcast-episode#podcast-episode .episode-details .player {
+            width: 69%;
+            margin: 5vw auto 0; } }
+      #podcast#podcast-episode .episode-details .hero, #podcast-episode#podcast-episode .episode-details .hero {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+        width: 100%; }
+        @media only screen and (min-width: 850px) {
+          #podcast#podcast-episode .episode-details .hero, #podcast-episode#podcast-episode .episode-details .hero {
+            -ms-flex-direction: row;
+                flex-direction: row;
+            -ms-flex-pack: center;
+                justify-content: center;
+            -ms-flex-align: center;
+                align-items: center; } }
+        @media only screen and (min-width: 850px) {
+          #podcast#podcast-episode .episode-details .hero .content, #podcast-episode#podcast-episode .episode-details .hero .content {
+            width: 50%;
+            padding-right: 5vw; } }
+        #podcast#podcast-episode .episode-details .hero .content h1, #podcast-episode#podcast-episode .episode-details .hero .content h1 {
+          font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif;
+          font-weight: bold;
+          color: #E1FF66;
+          font-size: 8vw;
+          line-height: 1.1; }
+          @media only screen and (min-width: 850px) {
+            #podcast#podcast-episode .episode-details .hero .content h1, #podcast-episode#podcast-episode .episode-details .hero .content h1 {
+              font-size: 3.67vw;
+              margin-top: 0; } }
+        #podcast#podcast-episode .episode-details .hero .content .guests, #podcast-episode#podcast-episode .episode-details .hero .content .guests {
+          text-transform: uppercase;
+          font-weight: bold; }
+        #podcast#podcast-episode .episode-details .hero .content .button, #podcast-episode#podcast-episode .episode-details .hero .content .button {
+          display: inline-block;
+          background: #E1FF66;
+          border-radius: 2vw;
+          text-transform: uppercase;
+          color: #6300FF;
+          font-size: 1vw;
+          letter-spacing: 0.1vw;
+          font-weight: bold;
+          margin: 2vw 0 0;
+          padding: 0.5vw 3vw; }
+          #podcast#podcast-episode .episode-details .hero .content .button img, #podcast-episode#podcast-episode .episode-details .hero .content .button img {
+            width: 0.75vw;
+            margin-left: 0.75vw; }
+        @media only screen and (min-width: 850px) {
+          #podcast#podcast-episode .episode-details .hero .image, #podcast-episode#podcast-episode .episode-details .hero .image {
+            width: 50%; } }
+  @media only screen and (min-width: 850px) {
+    #podcast .site-container, #podcast-episode .site-container {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%; } }
+  #podcast .site-container .footer, #podcast-episode .site-container .footer {
+    margin-top: 0; }
+    @media only screen and (min-width: 850px) {
+      #podcast .site-container .footer, #podcast-episode .site-container .footer {
+        margin-left: 0;
+        margin-right: 0; } }
+  #podcast header.header, #podcast-episode header.header {
+    background: transparent;
+    color: #fff; }
+    #podcast header.header.scrolled, #podcast-episode header.header.scrolled {
+      background: #000; }
+    #podcast header.header nav#site-navigation a, #podcast header.header nav#site-navigation ul li a, #podcast-episode header.header nav#site-navigation a, #podcast-episode header.header nav#site-navigation ul li a {
+      color: #fff; }
+      #podcast header.header nav#site-navigation a.active, #podcast header.header nav#site-navigation ul li a.active, #podcast-episode header.header nav#site-navigation a.active, #podcast-episode header.header nav#site-navigation ul li a.active {
+        border-color: #fff; }
+    #podcast header.header .logo svg path, #podcast-episode header.header .logo svg path {
+      fill: #fff; }
+    #podcast header.header button.menu-toggle, #podcast-episode header.header button.menu-toggle {
+      color: #fff; }
+  #podcast .footer, #podcast-episode .footer {
+    color: #fff; }
+  #podcast main.main, #podcast-episode main.main {
+    margin-top: 0; }
+    #podcast main.main .podcast-main, #podcast-episode main.main .podcast-main {
+      background-image: url("/assets/media/podcast/bg-horizontal.png");
+      background-repeat: no-repeat;
+      background-size: 200% auto;
+      background-position: center top;
+      padding-top: 15vw; }
+      @media only screen and (min-width: 850px) {
+        #podcast main.main .podcast-main, #podcast-episode main.main .podcast-main {
+          padding-top: 9vw; } }
+      @media only screen and (min-width: 850px) {
+        #podcast main.main .podcast-main, #podcast-episode main.main .podcast-main {
+          background-size: 100% auto; } }
+      #podcast main.main .podcast-main > .inner-wrapper, #podcast-episode main.main .podcast-main > .inner-wrapper {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-right: 7.5%; }
+        @media only screen and (min-width: 850px) {
+          #podcast main.main .podcast-main > .inner-wrapper, #podcast-episode main.main .podcast-main > .inner-wrapper {
+            width: 45%;
+            margin-left: auto;
+            margin-right: auto; } }
+        #podcast main.main .podcast-main > .inner-wrapper h3, #podcast-episode main.main .podcast-main > .inner-wrapper h3 {
+          font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif; }
+        #podcast main.main .podcast-main > .inner-wrapper a, #podcast-episode main.main .podcast-main > .inner-wrapper a {
+          color: #fff;
+          border-bottom: 1px solid #fff; }
+          #podcast main.main .podcast-main > .inner-wrapper a.button, #podcast-episode main.main .podcast-main > .inner-wrapper a.button {
+            background: #fff;
+            color: #000;
+            border: none;
+            padding: 5vw 2vw;
+            border-radius: 0;
+            margin-top: 10vw;
+            display: block;
+            text-align: center; }
+            @media only screen and (min-width: 850px) {
+              #podcast main.main .podcast-main > .inner-wrapper a.button, #podcast-episode main.main .podcast-main > .inner-wrapper a.button {
+                padding: 1.75vw 2vw;
+                margin-top: 2vw;
+                display: inline-block; } }
+            #podcast main.main .podcast-main > .inner-wrapper a.button:hover, #podcast-episode main.main .podcast-main > .inner-wrapper a.button:hover {
+              color: #fff;
+              background: #111; }
+        #podcast main.main .podcast-main > .inner-wrapper .podcast-logo, #podcast-episode main.main .podcast-main > .inner-wrapper .podcast-logo {
+          width: 90%;
+          margin: 20vw 5%; }
+          @media only screen and (min-width: 850px) {
+            #podcast main.main .podcast-main > .inner-wrapper .podcast-logo, #podcast-episode main.main .podcast-main > .inner-wrapper .podcast-logo {
+              width: calc( 100% + 5vw);
+              margin: 0 -2.5vw; } }
+        #podcast main.main .podcast-main > .inner-wrapper .subscribe, #podcast-episode main.main .podcast-main > .inner-wrapper .subscribe {
+          margin-top: 7vw;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+              flex-direction: column;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center; }
+          @media only screen and (min-width: 850px) {
+            #podcast main.main .podcast-main > .inner-wrapper .subscribe, #podcast-episode main.main .podcast-main > .inner-wrapper .subscribe {
+              -ms-flex-direction: row;
+                  flex-direction: row;
+              -ms-flex-pack: center;
+                  justify-content: center; } }
+          #podcast main.main .podcast-main > .inner-wrapper .subscribe .button, #podcast-episode main.main .podcast-main > .inner-wrapper .subscribe .button {
+            width: 60%; }
+            @media only screen and (min-width: 850px) {
+              #podcast main.main .podcast-main > .inner-wrapper .subscribe .button, #podcast-episode main.main .podcast-main > .inner-wrapper .subscribe .button {
+                width: 30%; } }
+            #podcast main.main .podcast-main > .inner-wrapper .subscribe .button:first-of-type, #podcast-episode main.main .podcast-main > .inner-wrapper .subscribe .button:first-of-type {
+              margin-bottom: 5vw; }
+              @media only screen and (min-width: 850px) {
+                #podcast main.main .podcast-main > .inner-wrapper .subscribe .button:first-of-type, #podcast-episode main.main .podcast-main > .inner-wrapper .subscribe .button:first-of-type {
+                  margin-right: 2.5vw;
+                  margin-bottom: 0; } }
+            #podcast main.main .podcast-main > .inner-wrapper .subscribe .button img, #podcast-episode main.main .podcast-main > .inner-wrapper .subscribe .button img {
+              display: block; }
+          #podcast main.main .podcast-main > .inner-wrapper .subscribe a, #podcast-episode main.main .podcast-main > .inner-wrapper .subscribe a {
+            border: none;
+            text-decoration: none; }
+        #podcast main.main .podcast-main > .inner-wrapper .about, #podcast-episode main.main .podcast-main > .inner-wrapper .about {
+          margin-top: 15vw;
+          margin-left: auto;
+          margin-right: auto; }
+          @media only screen and (min-width: 850px) {
+            #podcast main.main .podcast-main > .inner-wrapper .about, #podcast-episode main.main .podcast-main > .inner-wrapper .about {
+              margin-top: 5vw;
+              width: auto; } }
+          #podcast main.main .podcast-main > .inner-wrapper .about .hosts, #podcast-episode main.main .podcast-main > .inner-wrapper .about .hosts {
+            text-align: center;
+            margin-top: 15vw; }
+            @media only screen and (min-width: 850px) {
+              #podcast main.main .podcast-main > .inner-wrapper .about .hosts, #podcast-episode main.main .podcast-main > .inner-wrapper .about .hosts {
+                text-align: left;
+                margin-top: 5vw;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+                -ms-flex-align: center;
+                    align-items: center; } }
+            #podcast main.main .podcast-main > .inner-wrapper .about .hosts .image, #podcast-episode main.main .podcast-main > .inner-wrapper .about .hosts .image {
+              width: 20vw;
+              margin-bottom: 5vw;
+              margin-left: auto;
+              margin-right: auto; }
+              @media only screen and (min-width: 850px) {
+                #podcast main.main .podcast-main > .inner-wrapper .about .hosts .image, #podcast-episode main.main .podcast-main > .inner-wrapper .about .hosts .image {
+                  width: 8vw;
+                  margin-left: 0;
+                  margin-right: 2.5vw;
+                  margin-bottom: auto; } }
+              #podcast main.main .podcast-main > .inner-wrapper .about .hosts .image img, #podcast-episode main.main .podcast-main > .inner-wrapper .about .hosts .image img {
+                display: block;
+                border-radius: 50%; }
+        #podcast main.main .podcast-main > .inner-wrapper .podcast-episode-list, #podcast-episode main.main .podcast-main > .inner-wrapper .podcast-episode-list {
+          margin-top: 20vw;
+          padding-bottom: 20vw; }
+          @media only screen and (min-width: 850px) {
+            #podcast main.main .podcast-main > .inner-wrapper .podcast-episode-list, #podcast-episode main.main .podcast-main > .inner-wrapper .podcast-episode-list {
+              margin-top: 10vw;
+              padding-bottom: 10vw; } }
+          #podcast main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode, #podcast-episode main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode {
+            margin-top: 10vw;
+            display: block;
+            border: none;
+            cursor: pointer; }
+            @media only screen and (min-width: 850px) {
+              #podcast main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode, #podcast-episode main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode {
+                margin-top: 4.167vw; } }
+            #podcast main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode .title, #podcast-episode main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode .title {
+              font-weight: bold;
+              border-bottom: 1px solid #E1FF66;
+              display: inline;
+              line-height: 1.4; }
+              @media only screen and (min-width: 850px) {
+                #podcast main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode .title, #podcast-episode main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode .title {
+                  display: inline-block; } }
+            #podcast main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode .summary, #podcast-episode main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode .summary {
+              margin-top: 0.5vw; }
+            #podcast main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode .meta, #podcast-episode main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode .meta {
+              color: #6300FF;
+              font-style: italic;
+              font-weight: 500; }
+  #podcast .podcast-shirt, #podcast-episode .podcast-shirt {
+    display: block; }
+    @media only screen and (min-width: 850px) {
+      #podcast .podcast-shirt, #podcast-episode .podcast-shirt {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+    @media only screen and (min-width: 850px) {
+      #podcast .podcast-shirt > div, #podcast-episode .podcast-shirt > div {
+        width: 50%; } }
+    #podcast .podcast-shirt > div.title, #podcast-episode .podcast-shirt > div.title {
+      background: #E1FF66;
+      color: #000;
+      padding: 10vw;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      #podcast .podcast-shirt > div.title h1, #podcast-episode .podcast-shirt > div.title h1 {
+        margin: 0;
+        font-size: 12vw; }
+        @media only screen and (min-width: 850px) {
+          #podcast .podcast-shirt > div.title h1, #podcast-episode .podcast-shirt > div.title h1 {
+            font-size: 6vw; } }
+    #podcast .podcast-shirt > div.shirt, #podcast-episode .podcast-shirt > div.shirt {
+      background: #fff;
+      color: #000;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      padding: 10vw 0; }
+      @media only screen and (min-width: 850px) {
+        #podcast .podcast-shirt > div.shirt, #podcast-episode .podcast-shirt > div.shirt {
+          padding: 2.5vw 0; } }
+      #podcast .podcast-shirt > div.shirt .image, #podcast-episode .podcast-shirt > div.shirt .image {
+        width: 80%; }
+        @media only screen and (min-width: 850px) {
+          #podcast .podcast-shirt > div.shirt .image, #podcast-episode .podcast-shirt > div.shirt .image {
+            width: 60%; } }
+        #podcast .podcast-shirt > div.shirt .image .caption, #podcast-episode .podcast-shirt > div.shirt .image .caption {
+          font-size: 3vw;
+          color: #666;
+          text-align: center;
+          margin: -5vw 0 10vw; }
+          @media only screen and (min-width: 850px) {
+            #podcast .podcast-shirt > div.shirt .image .caption, #podcast-episode .podcast-shirt > div.shirt .image .caption {
+              font-size: 1.2vw;
+              margin: -2.5vw 0 2.5vw; } }
+      #podcast .podcast-shirt > div.shirt .paypal-stuff, #podcast-episode .podcast-shirt > div.shirt .paypal-stuff {
+        width: 60%; }
+        @media only screen and (min-width: 850px) {
+          #podcast .podcast-shirt > div.shirt .paypal-stuff, #podcast-episode .podcast-shirt > div.shirt .paypal-stuff {
+            width: auto; } }
+        #podcast .podcast-shirt > div.shirt .paypal-stuff form, #podcast-episode .podcast-shirt > div.shirt .paypal-stuff form {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+              flex-direction: column;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center;
+          width: 100%; }
+          @media only screen and (min-width: 850px) {
+            #podcast .podcast-shirt > div.shirt .paypal-stuff form, #podcast-episode .podcast-shirt > div.shirt .paypal-stuff form {
+              width: auto;
+              -ms-flex-direction: row;
+                  flex-direction: row; } }
+        #podcast .podcast-shirt > div.shirt .paypal-stuff input, #podcast .podcast-shirt > div.shirt .paypal-stuff select, #podcast-episode .podcast-shirt > div.shirt .paypal-stuff input, #podcast-episode .podcast-shirt > div.shirt .paypal-stuff select {
+          width: auto;
+          display: block;
+          border: 0.7vw solid #000;
+          border-radius: 0;
+          -webkit-border-radius: 0;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          background: #fff;
+          width: 100%;
+          padding: 2vw 4vw; }
+          @media only screen and (min-width: 850px) {
+            #podcast .podcast-shirt > div.shirt .paypal-stuff input, #podcast .podcast-shirt > div.shirt .paypal-stuff select, #podcast-episode .podcast-shirt > div.shirt .paypal-stuff input, #podcast-episode .podcast-shirt > div.shirt .paypal-stuff select {
+              width: auto;
+              border: 0.25vw solid #000;
+              padding: 0.75vw 1vw; } }
+        #podcast .podcast-shirt > div.shirt .paypal-stuff select, #podcast-episode .podcast-shirt > div.shirt .paypal-stuff select {
+          background-image: url("/assets/media/podcast/down-arrow.png");
+          background-repeat: no-repeat;
+          background-position: 95% center;
+          background-size: auto 30%;
+          margin-bottom: 5vw; }
+          @media only screen and (min-width: 850px) {
+            #podcast .podcast-shirt > div.shirt .paypal-stuff select, #podcast-episode .podcast-shirt > div.shirt .paypal-stuff select {
+              background-position: 85% center;
+              margin-bottom: 0;
+              margin-right: 2.5vw; } }
 
 body#startups section {
   padding: 15vw 7.5vw; }

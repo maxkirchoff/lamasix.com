@@ -1,0 +1,16 @@
+{% set pageID = 'podcast' %}
+{% set pageMeta = {
+    title: "People Not Things, a podcast about people.",
+    ogImage: "/assets/media/podcast/og-image.png",
+    description: "People and relationships are often an ignored part of business, marketing, design and our lives in general. They are at the core of every successful startup, compelling campaign, and any big idea that is worth spreading. We’re sitting down with entrepreneurs, creatives, marketers, artists and others to talk about their passion, their process, and how to focus on the people and relationships that matter.",
+    rssLink: "https://feeds.transistor.fm/people-not-things"
+  }
+%}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+  {% include "podcast.nunjucks" %}
+
+{% endblock %}

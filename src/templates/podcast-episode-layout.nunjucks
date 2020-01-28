@@ -1,0 +1,47 @@
+
+{% import "data/podcast-episodes.nunjucks" as podcast %}
+
+{% if podcast.episodes[episodeId] %}
+  {% set pageMeta = {
+      title: podcast.episodes[episodeId].title,
+      description: podcast.episodes[episodeId].summary,
+      ogImage: "/assets/media/podcast/"+podcast.episodes[episodeId].image,
+      rssLink: "https://feeds.transistor.fm/people-not-things"
+    }
+  %}
+{% endif %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+  <div class="episode-details">
+    {% import "data/podcast-episodes.nunjucks" as podcast %}
+    {% if podcast.episodes[episodeId] %}
+      {% set episode = podcast.episodes[episodeId] %}
+      <div class="hero">
+        <div class="content">
+          <h1 class="title">
+            {{episodeId}}. {{ episode.title }}
+          </h1>
+          <div class="guests">
+            With {{episode.guests}}
+          </div>
+        </div>
+        <div class="image">
+          <img src="{{episode.image}}">
+        </div>
+      </div>
+      {% if episode.transistor_player_slug %}
+        <div class="player">
+          <iframe src='https://share.transistor.fm/e/{{episode.transistor_player_slug}}' width='100%' height='180' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:180px; margin: 0 auto;'></iframe>
+        </div>
+      {% endif %}
+      <div class="description">
+        {{episode.description | safe}}
+      </div>
+    {% endif %}
+  </div>
+
+  {% include "podcast.nunjucks" %}
+{% endblock %}

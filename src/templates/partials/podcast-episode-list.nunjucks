@@ -1,0 +1,16 @@
+{% import "data/podcast-episodes.nunjucks" as podcast %}
+
+<div class="podcast-episode-list">
+  {% for key, episode in podcast.episodes %}
+    <a class="episode" href="/podcast/episodes/{{ episode.url_slug }}">
+      <div class="title">EPISODE {{ key }} &nbsp;&nbsp;•&nbsp;&nbsp; {{ episode.title }}</div>
+      <div class="summary">
+        {{ episode.summary }}
+      </div>
+      <div class="meta">
+        <span class="publish-date">{{ episode.publish_date }}</span> —
+         <span class="play_time">{{ episode.play_time }}</span>
+      </div>
+    </a>
+  {% endfor %}
+</div>

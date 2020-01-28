@@ -1,0 +1,68 @@
+<div class="podcast-main">
+  <div class="inner-wrapper">
+    <header>
+      <div class="podcast-logo">
+        <img src="/assets/media/podcast/people-not-things-logo.png">
+      </div>
+      <div class="subscribe">
+        <div class="apple button">
+          <a href="">
+            <img src="/assets/media/podcast/US_UK_Apple_Podcasts_Listen_Badge_RGB.svg">
+          </a>
+        </div>
+        <div class="spotify button">
+          <a href="https://open.spotify.com/show/6FeXl2adTSU7uneedgnh5j" target="_blank">
+            <img src="/assets/media/podcast/spotify-podcast-badge-blk-grn-660x160.png">
+          </a>
+        </div>
+      </div>
+      <div class="about">
+        <div class="description">
+          <p>A podcast about people from Lama Six.</p>
+          <p>  People and relationships are often an ignored part of business, marketing, design and our lives in general. They are at the core of every successful startup, compelling campaign, and any big idea that is worth spreading. We’re sitting down with entrepreneurs, creatives, marketers, artists and others to talk about their passion, their process, and how to focus on the people and relationships that matter.</p>
+        </div>
+        <div class="hosts">
+          <div class="image">
+            <img src="/assets/media/podcast/isla-max-1.jpg">
+          </div>
+          <div class="content">
+            Hosted by Isla Murray & Maximillian Kirchoff
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="episodes">
+      {% include "partials/podcast-episode-list.nunjucks" %}
+    </div>
+  </div>
+</div>
+<div class="podcast-shirt">
+  <div class="title">
+    <h1>Cover your body in People Not Things</h1>
+  </div>
+  <div class="shirt">
+    <div class="image">
+      <img src="/assets/media/podcast/podcast-ls-shirt.png">
+      <div class="caption">Printed on back, front is blank</div>
+    </div>
+    <div class="paypal-stuff">
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="U3P6X5JNNL33N">
+      <input type="hidden" name="on0" value="Size">
+      <select name="os0">
+      	<option value="Small">Small </option>
+      	<option value="Medium">Medium </option>
+      	<option value="Large">Large </option>
+      	<option value="XL">XL </option>
+      	<option value="XXL">XXL </option>
+      	<option value="XXXL">XXXL </option>
+      </select>
+      <input type="submit" value="Buy for $32" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+
+    </div>
+  </div>
+</div>

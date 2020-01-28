@@ -23,17 +23,9 @@
         var delta = 5;
         var navbarHeight = $('header').outerHeight();
         // on scroll, let the interval function know the user has scrolled
-        $(window).scroll(function(event) {
+        $(window).scroll(function() {
           didScroll = true;
         });
-
-        // run hasScrolled() and reset didScroll status
-        setInterval(function() {
-          if (didScroll) {
-            hasScrolled();
-            didScroll = false;
-          }
-        }, 50);
 
         function updateHeader() {
           var $header = $('header.header');
@@ -51,8 +43,9 @@
           var st = $(window).scrollTop();
 
           // Make sure they scroll more than delta
-          if(Math.abs(lastScrollTop - st) <= delta)
-              return;
+          if(Math.abs(lastScrollTop - st) <= delta) {
+            return;
+          }
 
           // If they scrolled down and are past the navbar, add class .nav-up.
           // This is necessary so you never see what is "behind" the navbar.
@@ -76,6 +69,14 @@
 
           lastScrollTop = st;
         }
+
+        // run hasScrolled() and reset didScroll status
+        setInterval(function() {
+          if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+          }
+        }, 50);
 
         updateHeader();
       }
@@ -117,10 +118,10 @@
         $('form.application').on('submit', function(ev) {
           ev.preventDefault();
           var $this = $(this);
-          $this.find("button").attr('disabled', true).addClass('disabled');
+          $this.find('button').attr('disabled', true).addClass('disabled');
 
           function failure() {
-            $this.append("<div class='error'>Sorry, but something went wrong. Contact us directly at <a href='mailto:hi@lamasix.com'>hi@lamasix.com</a></div>")
+            $this.append('<div class="error">Sorry, but something went wrong. Contact us directly at <a href="mailto:hi@lamasix.com">hi@lamasix.com</a></div>');
           }
 
           var formInputs = {
@@ -134,27 +135,27 @@
             why: $this.find('.why textarea').val(),
             sixmonths: $this.find('.sixmonths textarea').val(),
             referral: $this.find('.referral input').val()
-          }
+          };
 
           $.ajax({
-            type: "POST",
+            type: 'POST',
             url: $(this).attr('action'),
             dataType: 'json',
-            contentType: "application/json",
+            contentType: 'application/json',
             data: JSON.stringify(formInputs)
 
           }).done(function(data) {
 
             if(data['statusCode'] == 200) {
               $this.fadeOut( function(){
-                $this.html("<img src='/assets/media/thumbs.gif'><div>Application sent.</div>").fadeIn();
+                $this.html('<img src="/assets/media/thumbs.gif"><div>Application sent.</div>').fadeIn();
               });
             } else {
               failure();
             }
           }).fail(function() {
             failure();
-          })
+          });
         });
       }
 
@@ -169,23 +170,23 @@
           verticle: true,
           horizontal: false
         });
-      }
+      };
 
       return {
         init: init
-      }
-    }
+      };
+    };
 
     var app = lamasix();
     app.init();
 
-    $('.download-pdf').on('click touch', function(ev) {
+    $('.download-pdf').on('click touch', function() {
       gtag('event', 'downloadPdf', {
         'event_category': 'engagement',
         'event_label': 'download',
         'value': 'dayByDay'
       });
-    })
+    });
 
   });
 

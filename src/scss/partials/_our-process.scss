@@ -50,12 +50,14 @@
       font-weight: normal;
 
       @media only screen and (min-width: $md-min-width) {
-        display: block;
         font-size: 6.6vw;
       }
 
       &.statement {
         display: none;
+        @media only screen and (min-width: $md-min-width) {
+          display: block;
+        }
       }
     }
 

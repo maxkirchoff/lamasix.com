@@ -1,0 +1,473 @@
+#podcast, #podcast-episode {
+  background: #000;
+  color: rgb(204, 204, 204);
+
+  &#podcast-episode {
+    background: #6300FF;
+
+    header.header {
+      background: #6300FF;
+    }
+    .podcast-main {
+      background: #000;
+      padding-top: 1px;
+
+      @media only screen and (min-width: $md-min-width) {
+        padding-top: 10vw;
+      }
+    }
+
+    .episode-details {
+      width: 85%;
+      margin: 25vw auto 10vw;
+
+      @media only screen and (min-width: $md-min-width) {
+        width: 65%;
+        margin: 15vw auto 10vw;
+      }
+      .description {
+        margin: 15vw auto;
+        width: 100%;
+
+        @media only screen and (min-width: $md-min-width) {
+          width: 70%;
+          margin: 5vw auto;
+        }
+      }
+      .player {
+        width: 100%;
+        margin: 10vw auto;
+
+        @media only screen and (min-width: $md-min-width) {
+          width: 69%;
+          margin: 5vw auto 0;
+        }
+      }
+      .hero {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+
+        @media only screen and (min-width: $md-min-width) {
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .content {
+
+
+          @media only screen and (min-width: $md-min-width) {
+            width: 50%;
+            padding-right: 5vw;
+          }
+
+          h1 {
+            font-family: $font-gt-america;
+            font-weight: bold;
+            color: #E1FF66;
+            font-size: 8vw;
+            line-height: 1.1;
+
+            @media only screen and (min-width: $md-min-width) {
+              font-size: 3.67vw;
+              margin-top: 0;
+            }
+          }
+
+          .guests {
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+
+          .button {
+            display: inline-block;
+            background: #E1FF66;
+            border-radius: 2vw;
+            text-transform: uppercase;
+            color: #6300FF;
+            font-size: 1vw;
+            letter-spacing: 0.1vw;
+            font-weight: bold;
+            margin: 2vw 0 0;
+            padding: 0.5vw 3vw;
+
+            img {
+              width: 0.75vw;
+              margin-left: 0.75vw;
+            }
+          }
+        }
+
+        .image {
+
+          @media only screen and (min-width: $md-min-width) {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  .site-container {
+
+
+    @media only screen and (min-width: $md-min-width) {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+
+
+    }
+
+    .footer {
+
+      margin-top: 0;
+
+      @media only screen and (min-width: $md-min-width) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+
+  }
+
+  header.header {
+    background: transparent;
+    color: #fff;
+
+    &.scrolled {
+      background: #000;
+    }
+
+    nav#site-navigation {
+      a, ul li a {
+        color: #fff;
+
+        &.active {
+          border-color: #fff;
+        }
+      }
+    }
+
+    .logo svg path {
+      fill: #fff;
+    }
+
+    button.menu-toggle {
+      color: #fff;
+    }
+  }
+
+  .footer {
+    color: #fff;
+  }
+
+  main.main {
+
+    margin-top: 0;
+
+
+    .podcast-main {
+      background-image: url('/assets/media/podcast/bg-horizontal.png');
+      background-repeat: no-repeat;
+      background-size: 200% auto;
+      background-position: center top;
+      padding-top: 15vw;
+
+      @media only screen and (min-width: $md-min-width) {
+        padding-top: 9vw;
+      }
+
+      @media only screen and (min-width: $md-min-width) {
+        background-size: 100% auto;
+      }
+
+      & > .inner-wrapper {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+        @media only screen and (min-width: $md-min-width) {
+          width: 45%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        h3 {
+          font-family: $font-gt-america;
+        }
+
+        a {
+          color: #fff;
+          border-bottom: 1px solid #fff;
+
+          &.button {
+            background: #fff;
+            color: #000;
+            border: none;
+            padding: 5vw 2vw;
+            border-radius: 0;
+            margin-top: 10vw;
+            display: block;
+            text-align: center;
+
+            @media only screen and (min-width: $md-min-width) {
+              padding: 1.75vw 2vw;
+              margin-top: 2vw;
+              display: inline-block;
+            }
+
+            &:hover {
+              color: #fff;
+              background: #111;
+            }
+          }
+        }
+
+        .podcast-logo {
+          width: 90%;
+          margin: 20vw 5%;
+
+          @media only screen and (min-width: $md-min-width) {
+            width: calc( 100% + 5vw );
+            margin: 0 -2.5vw;
+          }
+        }
+
+        .subscribe {
+          margin-top: 7vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          @media only screen and (min-width: $md-min-width) {
+            flex-direction: row;
+            justify-content: center;
+          }
+
+          .button {
+            width: 60%;
+
+            @media only screen and (min-width: $md-min-width) {
+              width: 30%;
+            }
+
+            &:first-of-type {
+              margin-bottom: 5vw;
+              @media only screen and (min-width: $md-min-width) {
+                margin-right: 2.5vw;
+                margin-bottom: 0;
+              }
+            }
+
+            img {
+              display: block;
+            }
+          }
+
+          a {
+            border: none;
+            text-decoration: none;
+          }
+        }
+
+        .about {
+          margin-top: 15vw;
+          margin-left: auto;
+          margin-right: auto;
+
+          @media only screen and (min-width: $md-min-width) {
+            margin-top: 5vw;
+            width: auto;
+          }
+
+          .hosts {
+            text-align: center;
+            margin-top: 15vw;
+            @media only screen and (min-width: $md-min-width) {
+              text-align: left;
+              margin-top: 5vw;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+            }
+            .image {
+              width: 20vw;
+              margin-bottom: 5vw;
+              margin-left: auto;
+              margin-right: auto;
+
+              @media only screen and (min-width: $md-min-width) {
+                width: 8vw;
+                margin-left: 0;
+                margin-right: 2.5vw;
+                margin-bottom: auto;
+              }
+              img {
+                display: block;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+
+        .podcast-episode-list {
+          margin-top: 20vw;
+          padding-bottom: 20vw;
+
+          @media only screen and (min-width: $md-min-width) {
+            margin-top: 10vw;
+            padding-bottom: 10vw;
+          }
+
+          .episode {
+            margin-top: 10vw;
+            display: block;
+            border: none;
+            cursor: pointer;
+
+            @media only screen and (min-width: $md-min-width) {
+              margin-top: 4.167vw;
+            }
+
+            .title {
+              font-weight: bold;
+              border-bottom: 1px solid #E1FF66;
+              display: inline;
+              line-height: 1.4;
+
+              @media only screen and (min-width: $md-min-width) {
+                display: inline-block;
+              }
+            }
+
+            .summary {
+              margin-top: 0.5vw;
+            }
+
+            .meta {
+              color: #6300FF;
+              font-style: italic;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .podcast-shirt {
+    display: block;
+
+    @media only screen and (min-width: $md-min-width) {
+      display: flex;
+      flex-direction: row;
+    }
+
+    > div {
+
+      @media only screen and (min-width: $md-min-width) {
+        width: 50%;
+      }
+
+      &.title {
+        background: #E1FF66;
+        color: #000;
+        padding: 10vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+          margin: 0;
+          font-size: 12vw;
+          @media only screen and (min-width: $md-min-width) {
+            font-size: 6vw;
+          }
+        }
+      }
+
+      &.shirt {
+        background: #fff;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10vw 0;
+
+        @media only screen and (min-width: $md-min-width) {
+          padding: 2.5vw 0;
+        }
+        .image {
+          width: 80%;
+          @media only screen and (min-width: $md-min-width) {
+            width: 60%
+          }
+          .caption {
+            font-size: 3vw;
+            color: #666;
+            text-align: center;
+            margin: -5vw 0 10vw;
+            @media only screen and (min-width: $md-min-width) {
+              font-size: 1.2vw;
+              margin: -2.5vw 0 2.5vw;
+            }
+          }
+        }
+
+        .paypal-stuff {
+          width: 60%;
+          @media only screen and (min-width: $md-min-width) {
+            width: auto;
+          }
+          form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            @media only screen and (min-width: $md-min-width) {
+              width: auto;
+              flex-direction: row;
+            }
+          }
+
+          input, select {
+            width: auto;
+            display: block;
+            border: 0.7vw solid #000;
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: #fff;
+            width: 100%;
+            padding: 2vw 4vw;
+            @media only screen and (min-width: $md-min-width) {
+              width: auto;
+              border: 0.25vw solid #000;
+              padding: 0.75vw 1vw;
+            }
+          }
+          select {
+            background-image: url("/assets/media/podcast/down-arrow.png");
+            background-repeat: no-repeat;
+            background-position: 95% center;
+            background-size: auto 30%;
+            margin-bottom: 5vw;
+            @media only screen and (min-width: $md-min-width) {
+              background-position: 85% center;
+              margin-bottom: 0;
+              margin-right: 2.5vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -6,8 +6,8 @@
   </script>
 </head>
 <body>
-  <h1>You are being redirected to the meeting...</h1>
-  <p>If this meeting has not loaded, please try manually navigating there: <a href="/case-study/reia">/case-study/reia</a>
+  <h1>You are being redirected to our case studies</h1>
+  <p>If this case study has not loaded, please try manually navigating there: <a href="/case-study/reia">/case-study/reia</a>
   </p>
 </body>
 </html>
