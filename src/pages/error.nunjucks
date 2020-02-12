@@ -1,3 +1,14 @@
-<script>
-window.location.replace("/");
-</script>
+<!-- index.nunjucks -->
+
+{% set pageID = 'error' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<section id="power-statement" class="main-heading">
+  <h1>
+    Sorry, this page doesn't exist.
+  </h1>
+</section>
+
+{% endblock %}

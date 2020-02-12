@@ -1,6 +1,6 @@
 #podcast, #podcast-episode {
   background: #000;
-  color: rgb(204, 204, 204);
+  color: rgb(220, 220, 220);
 
   &#podcast-episode {
     background: #6300FF;
@@ -20,13 +20,19 @@
     .episode-details {
       width: 85%;
       margin: 25vw auto 10vw;
+      color: #fff;
 
       @media only screen and (min-width: $md-min-width) {
         width: 65%;
         margin: 15vw auto 10vw;
       }
+
+      a {
+        color: #e1ff66;
+      }
+      
       .description {
-        margin: 15vw auto;
+        margin: 15vw auto 20vw;
         width: 100%;
 
         @media only screen and (min-width: $md-min-width) {
@@ -36,7 +42,7 @@
       }
       .player {
         width: 100%;
-        margin: 10vw auto;
+        margin: 5vw auto;
 
         @media only screen and (min-width: $md-min-width) {
           width: 69%;
@@ -68,35 +74,39 @@
             color: #E1FF66;
             font-size: 8vw;
             line-height: 1.1;
+            margin-bottom: 2.5vw;
 
             @media only screen and (min-width: $md-min-width) {
               font-size: 3.67vw;
               margin-top: 0;
+              margin-bottom: 1vw;
             }
           }
 
           .guests {
-            text-transform: uppercase;
-            font-weight: bold;
+
           }
 
-          .button {
-            display: inline-block;
-            background: #E1FF66;
-            border-radius: 2vw;
-            text-transform: uppercase;
-            color: #6300FF;
-            font-size: 1vw;
-            letter-spacing: 0.1vw;
-            font-weight: bold;
-            margin: 2vw 0 0;
-            padding: 0.5vw 3vw;
+          .subscribe {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
 
-            img {
-              width: 0.75vw;
-              margin-left: 0.75vw;
+            @media only screen and (min-width: $md-min-width) {
+            }
+
+            .button {
+              display: inline-block;
+              width: 48%;
+              margin-top: 15vw;
+
+              @media only screen and (min-width: $md-min-width) {
+                margin-top: 2.5vw;
+              }
             }
           }
+
+
         }
 
         .image {
@@ -199,8 +209,8 @@
         }
 
         a {
-          color: #fff;
-          border-bottom: 1px solid #fff;
+          color: rgb(220, 220, 220);
+          border-bottom: 1px solid rgb(220, 220, 220);
 
           &.button {
             background: #fff;
@@ -238,8 +248,8 @@
         .subscribe {
           margin-top: 7vw;
           display: flex;
-          flex-direction: column;
-          justify-content: center;
+          flex-direction: row;
+          justify-content: space-between;
           align-items: center;
 
           @media only screen and (min-width: $md-min-width) {
@@ -248,17 +258,15 @@
           }
 
           .button {
-            width: 60%;
+            width: 48%;
 
             @media only screen and (min-width: $md-min-width) {
               width: 30%;
             }
 
             &:first-of-type {
-              margin-bottom: 5vw;
               @media only screen and (min-width: $md-min-width) {
                 margin-right: 2.5vw;
-                margin-bottom: 0;
               }
             }
 
@@ -274,7 +282,7 @@
         }
 
         .about {
-          margin-top: 15vw;
+          margin-top: 10vw;
           margin-left: auto;
           margin-right: auto;
 
@@ -294,7 +302,7 @@
               align-items: center;
             }
             .image {
-              width: 20vw;
+              width: 50vw;
               margin-bottom: 5vw;
               margin-left: auto;
               margin-right: auto;
@@ -315,7 +323,7 @@
 
         .podcast-episode-list {
           margin-top: 20vw;
-          padding-bottom: 20vw;
+          padding-bottom: 30vw;
 
           @media only screen and (min-width: $md-min-width) {
             margin-top: 10vw;
@@ -323,7 +331,7 @@
           }
 
           .episode {
-            margin-top: 10vw;
+            margin-top: 15vw;
             display: block;
             border: none;
             cursor: pointer;
@@ -344,7 +352,12 @@
             }
 
             .summary {
-              margin-top: 0.5vw;
+              margin-top: 3vw;
+              margin-bottom: 2vw;
+              @media only screen and (min-width: $md-min-width) {
+                margin-top: 1vw;
+                margin-bottom: 0.5vw;
+              }
             }
 
             .meta {
@@ -375,15 +388,18 @@
       &.title {
         background: #E1FF66;
         color: #000;
-        padding: 10vw;
+        padding: 20vw 10vw;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        @media only screen and (min-width: $md-min-width) {
+          padding: 15vw 10vw;
+        }
 
         h1 {
           margin: 0;
-          font-size: 12vw;
+          font-size: 16vw;
           @media only screen and (min-width: $md-min-width) {
             font-size: 6vw;
           }
@@ -397,7 +413,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 10vw 0;
+        padding: 20vw 0 30vw;
 
         @media only screen and (min-width: $md-min-width) {
           padding: 2.5vw 0;
@@ -412,6 +428,7 @@
             color: #666;
             text-align: center;
             margin: -5vw 0 10vw;
+            font-style: italic;
             @media only screen and (min-width: $md-min-width) {
               font-size: 1.2vw;
               margin: -2.5vw 0 2.5vw;
@@ -451,7 +468,7 @@
             @media only screen and (min-width: $md-min-width) {
               width: auto;
               border: 0.25vw solid #000;
-              padding: 0.75vw 1vw;
+              padding: 1vw 2vw;
             }
           }
           select {
@@ -462,6 +479,7 @@
             margin-bottom: 5vw;
             @media only screen and (min-width: $md-min-width) {
               background-position: 85% center;
+              background-size: auto 25%;
               margin-bottom: 0;
               margin-right: 2.5vw;
             }

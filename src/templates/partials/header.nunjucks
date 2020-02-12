@@ -5,6 +5,11 @@
 		title: 'Work'
 	},
 	{
+		url: '/podcast',
+		slug: 'podcast',
+		title: 'Podcast'
+	},
+	{
 		url: '/startups',
 		slug: 'startups',
 		title: 'Startups'

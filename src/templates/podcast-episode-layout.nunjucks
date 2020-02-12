@@ -3,9 +3,9 @@
 
 {% if podcast.episodes[episodeId] %}
   {% set pageMeta = {
-      title: podcast.episodes[episodeId].title,
+      title: podcast.episodes[episodeId].title + ' with ' + podcast.episodes[episodeId].guests + ' on People Not Things podcast',
       description: podcast.episodes[episodeId].summary,
-      ogImage: "/assets/media/podcast/"+podcast.episodes[episodeId].image,
+      ogImage: podcast.episodes[episodeId].image,
       rssLink: "https://feeds.transistor.fm/people-not-things"
     }
   %}
@@ -26,6 +26,18 @@
           </h1>
           <div class="guests">
             With {{episode.guests}}
+          </div>
+          <div class="subscribe">
+            <div class="apple button">
+              <a href="{% if episode.itunes_url %}{{episode.itunes_url}}{% else %}https://podcasts.apple.com/us/podcast/people-not-things/id1496658058{% endif %}" target="_blank">
+                <img src="/assets/media/podcast/US_UK_Apple_Podcasts_Listen_Badge_RGB.svg">
+              </a>
+            </div>
+            <div class="spotify button">
+              <a href="https://open.spotify.com/show/6FeXl2adTSU7uneedgnh5j" target="_blank">
+                <img src="/assets/media/podcast/spotify-podcast-badge-blk-grn-660x160.png">
+              </a>
+            </div>
           </div>
         </div>
         <div class="image">

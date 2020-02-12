@@ -499,6 +499,18 @@ a {
       margin: 0 5vw;
       width: 90%; } }
 
+#error:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/assets/media/our-process/L6_01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1; }
+
 .header {
   position: fixed;
   left: 0;
@@ -584,7 +596,7 @@ nav#site-navigation {
     list-style: none;
     line-height: 1;
     margin: 0;
-    padding: 30vw 8.33% 0;
+    padding: 20vw 8.33% 0;
     position: fixed;
     background: #000;
     top: 10vw;
@@ -626,7 +638,7 @@ nav#site-navigation {
         font-family: "GT-Super-Text", "Times New Roman", times, serif;
         text-decoration: none;
         text-transform: lowercase;
-        font-size: 20vw;
+        font-size: 15vw;
         color: #fff;
         line-height: 1;
         border-bottom: 1px solid transparent;
@@ -1351,7 +1363,7 @@ body#sleep {
 
 #podcast, #podcast-episode {
   background: #000;
-  color: #cccccc; }
+  color: gainsboro; }
   #podcast#podcast-episode, #podcast-episode#podcast-episode {
     background: #6300FF; }
     #podcast#podcast-episode header.header, #podcast-episode#podcast-episode header.header {
@@ -1364,13 +1376,16 @@ body#sleep {
           padding-top: 10vw; } }
     #podcast#podcast-episode .episode-details, #podcast-episode#podcast-episode .episode-details {
       width: 85%;
-      margin: 25vw auto 10vw; }
+      margin: 25vw auto 10vw;
+      color: #fff; }
       @media only screen and (min-width: 850px) {
         #podcast#podcast-episode .episode-details, #podcast-episode#podcast-episode .episode-details {
           width: 65%;
           margin: 15vw auto 10vw; } }
+      #podcast#podcast-episode .episode-details a, #podcast-episode#podcast-episode .episode-details a {
+        color: #e1ff66; }
       #podcast#podcast-episode .episode-details .description, #podcast-episode#podcast-episode .episode-details .description {
-        margin: 15vw auto;
+        margin: 15vw auto 20vw;
         width: 100%; }
         @media only screen and (min-width: 850px) {
           #podcast#podcast-episode .episode-details .description, #podcast-episode#podcast-episode .episode-details .description {
@@ -1378,7 +1393,7 @@ body#sleep {
             margin: 5vw auto; } }
       #podcast#podcast-episode .episode-details .player, #podcast-episode#podcast-episode .episode-details .player {
         width: 100%;
-        margin: 10vw auto; }
+        margin: 5vw auto; }
         @media only screen and (min-width: 850px) {
           #podcast#podcast-episode .episode-details .player, #podcast-episode#podcast-episode .episode-details .player {
             width: 69%;
@@ -1406,28 +1421,27 @@ body#sleep {
           font-weight: bold;
           color: #E1FF66;
           font-size: 8vw;
-          line-height: 1.1; }
+          line-height: 1.1;
+          margin-bottom: 2.5vw; }
           @media only screen and (min-width: 850px) {
             #podcast#podcast-episode .episode-details .hero .content h1, #podcast-episode#podcast-episode .episode-details .hero .content h1 {
               font-size: 3.67vw;
-              margin-top: 0; } }
-        #podcast#podcast-episode .episode-details .hero .content .guests, #podcast-episode#podcast-episode .episode-details .hero .content .guests {
-          text-transform: uppercase;
-          font-weight: bold; }
-        #podcast#podcast-episode .episode-details .hero .content .button, #podcast-episode#podcast-episode .episode-details .hero .content .button {
-          display: inline-block;
-          background: #E1FF66;
-          border-radius: 2vw;
-          text-transform: uppercase;
-          color: #6300FF;
-          font-size: 1vw;
-          letter-spacing: 0.1vw;
-          font-weight: bold;
-          margin: 2vw 0 0;
-          padding: 0.5vw 3vw; }
-          #podcast#podcast-episode .episode-details .hero .content .button img, #podcast-episode#podcast-episode .episode-details .hero .content .button img {
-            width: 0.75vw;
-            margin-left: 0.75vw; }
+              margin-top: 0;
+              margin-bottom: 1vw; } }
+        #podcast#podcast-episode .episode-details .hero .content .subscribe, #podcast-episode#podcast-episode .episode-details .hero .content .subscribe {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: row;
+              flex-direction: row;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+          #podcast#podcast-episode .episode-details .hero .content .subscribe .button, #podcast-episode#podcast-episode .episode-details .hero .content .subscribe .button {
+            display: inline-block;
+            width: 48%;
+            margin-top: 15vw; }
+            @media only screen and (min-width: 850px) {
+              #podcast#podcast-episode .episode-details .hero .content .subscribe .button, #podcast-episode#podcast-episode .episode-details .hero .content .subscribe .button {
+                margin-top: 2.5vw; } }
         @media only screen and (min-width: 850px) {
           #podcast#podcast-episode .episode-details .hero .image, #podcast-episode#podcast-episode .episode-details .hero .image {
             width: 50%; } }
@@ -1483,8 +1497,8 @@ body#sleep {
         #podcast main.main .podcast-main > .inner-wrapper h3, #podcast-episode main.main .podcast-main > .inner-wrapper h3 {
           font-family: "GT-America", "Helvetica", Helvetica, system, Arial, sans-serif; }
         #podcast main.main .podcast-main > .inner-wrapper a, #podcast-episode main.main .podcast-main > .inner-wrapper a {
-          color: #fff;
-          border-bottom: 1px solid #fff; }
+          color: gainsboro;
+          border-bottom: 1px solid gainsboro; }
           #podcast main.main .podcast-main > .inner-wrapper a.button, #podcast-episode main.main .podcast-main > .inner-wrapper a.button {
             background: #fff;
             color: #000;
@@ -1513,10 +1527,10 @@ body#sleep {
           margin-top: 7vw;
           display: -ms-flexbox;
           display: flex;
-          -ms-flex-direction: column;
-              flex-direction: column;
-          -ms-flex-pack: center;
-              justify-content: center;
+          -ms-flex-direction: row;
+              flex-direction: row;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
           -ms-flex-align: center;
               align-items: center; }
           @media only screen and (min-width: 850px) {
@@ -1526,23 +1540,20 @@ body#sleep {
               -ms-flex-pack: center;
                   justify-content: center; } }
           #podcast main.main .podcast-main > .inner-wrapper .subscribe .button, #podcast-episode main.main .podcast-main > .inner-wrapper .subscribe .button {
-            width: 60%; }
+            width: 48%; }
             @media only screen and (min-width: 850px) {
               #podcast main.main .podcast-main > .inner-wrapper .subscribe .button, #podcast-episode main.main .podcast-main > .inner-wrapper .subscribe .button {
                 width: 30%; } }
-            #podcast main.main .podcast-main > .inner-wrapper .subscribe .button:first-of-type, #podcast-episode main.main .podcast-main > .inner-wrapper .subscribe .button:first-of-type {
-              margin-bottom: 5vw; }
-              @media only screen and (min-width: 850px) {
-                #podcast main.main .podcast-main > .inner-wrapper .subscribe .button:first-of-type, #podcast-episode main.main .podcast-main > .inner-wrapper .subscribe .button:first-of-type {
-                  margin-right: 2.5vw;
-                  margin-bottom: 0; } }
+            @media only screen and (min-width: 850px) {
+              #podcast main.main .podcast-main > .inner-wrapper .subscribe .button:first-of-type, #podcast-episode main.main .podcast-main > .inner-wrapper .subscribe .button:first-of-type {
+                margin-right: 2.5vw; } }
             #podcast main.main .podcast-main > .inner-wrapper .subscribe .button img, #podcast-episode main.main .podcast-main > .inner-wrapper .subscribe .button img {
               display: block; }
           #podcast main.main .podcast-main > .inner-wrapper .subscribe a, #podcast-episode main.main .podcast-main > .inner-wrapper .subscribe a {
             border: none;
             text-decoration: none; }
         #podcast main.main .podcast-main > .inner-wrapper .about, #podcast-episode main.main .podcast-main > .inner-wrapper .about {
-          margin-top: 15vw;
+          margin-top: 10vw;
           margin-left: auto;
           margin-right: auto; }
           @media only screen and (min-width: 850px) {
@@ -1563,7 +1574,7 @@ body#sleep {
                 -ms-flex-align: center;
                     align-items: center; } }
             #podcast main.main .podcast-main > .inner-wrapper .about .hosts .image, #podcast-episode main.main .podcast-main > .inner-wrapper .about .hosts .image {
-              width: 20vw;
+              width: 50vw;
               margin-bottom: 5vw;
               margin-left: auto;
               margin-right: auto; }
@@ -1578,13 +1589,13 @@ body#sleep {
                 border-radius: 50%; }
         #podcast main.main .podcast-main > .inner-wrapper .podcast-episode-list, #podcast-episode main.main .podcast-main > .inner-wrapper .podcast-episode-list {
           margin-top: 20vw;
-          padding-bottom: 20vw; }
+          padding-bottom: 30vw; }
           @media only screen and (min-width: 850px) {
             #podcast main.main .podcast-main > .inner-wrapper .podcast-episode-list, #podcast-episode main.main .podcast-main > .inner-wrapper .podcast-episode-list {
               margin-top: 10vw;
               padding-bottom: 10vw; } }
           #podcast main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode, #podcast-episode main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode {
-            margin-top: 10vw;
+            margin-top: 15vw;
             display: block;
             border: none;
             cursor: pointer; }
@@ -1600,7 +1611,12 @@ body#sleep {
                 #podcast main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode .title, #podcast-episode main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode .title {
                   display: inline-block; } }
             #podcast main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode .summary, #podcast-episode main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode .summary {
-              margin-top: 0.5vw; }
+              margin-top: 3vw;
+              margin-bottom: 2vw; }
+              @media only screen and (min-width: 850px) {
+                #podcast main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode .summary, #podcast-episode main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode .summary {
+                  margin-top: 1vw;
+                  margin-bottom: 0.5vw; } }
             #podcast main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode .meta, #podcast-episode main.main .podcast-main > .inner-wrapper .podcast-episode-list .episode .meta {
               color: #6300FF;
               font-style: italic;
@@ -1619,7 +1635,7 @@ body#sleep {
     #podcast .podcast-shirt > div.title, #podcast-episode .podcast-shirt > div.title {
       background: #E1FF66;
       color: #000;
-      padding: 10vw;
+      padding: 20vw 10vw;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
@@ -1628,9 +1644,12 @@ body#sleep {
           align-items: center;
       -ms-flex-pack: center;
           justify-content: center; }
+      @media only screen and (min-width: 850px) {
+        #podcast .podcast-shirt > div.title, #podcast-episode .podcast-shirt > div.title {
+          padding: 15vw 10vw; } }
       #podcast .podcast-shirt > div.title h1, #podcast-episode .podcast-shirt > div.title h1 {
         margin: 0;
-        font-size: 12vw; }
+        font-size: 16vw; }
         @media only screen and (min-width: 850px) {
           #podcast .podcast-shirt > div.title h1, #podcast-episode .podcast-shirt > div.title h1 {
             font-size: 6vw; } }
@@ -1645,7 +1664,7 @@ body#sleep {
           align-items: center;
       -ms-flex-pack: center;
           justify-content: center;
-      padding: 10vw 0; }
+      padding: 20vw 0 30vw; }
       @media only screen and (min-width: 850px) {
         #podcast .podcast-shirt > div.shirt, #podcast-episode .podcast-shirt > div.shirt {
           padding: 2.5vw 0; } }
@@ -1658,7 +1677,8 @@ body#sleep {
           font-size: 3vw;
           color: #666;
           text-align: center;
-          margin: -5vw 0 10vw; }
+          margin: -5vw 0 10vw;
+          font-style: italic; }
           @media only screen and (min-width: 850px) {
             #podcast .podcast-shirt > div.shirt .image .caption, #podcast-episode .podcast-shirt > div.shirt .image .caption {
               font-size: 1.2vw;
@@ -1699,7 +1719,7 @@ body#sleep {
             #podcast .podcast-shirt > div.shirt .paypal-stuff input, #podcast .podcast-shirt > div.shirt .paypal-stuff select, #podcast-episode .podcast-shirt > div.shirt .paypal-stuff input, #podcast-episode .podcast-shirt > div.shirt .paypal-stuff select {
               width: auto;
               border: 0.25vw solid #000;
-              padding: 0.75vw 1vw; } }
+              padding: 1vw 2vw; } }
         #podcast .podcast-shirt > div.shirt .paypal-stuff select, #podcast-episode .podcast-shirt > div.shirt .paypal-stuff select {
           background-image: url("/assets/media/podcast/down-arrow.png");
           background-repeat: no-repeat;
@@ -1709,6 +1729,7 @@ body#sleep {
           @media only screen and (min-width: 850px) {
             #podcast .podcast-shirt > div.shirt .paypal-stuff select, #podcast-episode .podcast-shirt > div.shirt .paypal-stuff select {
               background-position: 85% center;
+              background-size: auto 25%;
               margin-bottom: 0;
               margin-right: 2.5vw; } }
 

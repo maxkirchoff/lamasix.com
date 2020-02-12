@@ -1,9 +1,12 @@
 {% import "data/podcast-episodes.nunjucks" as podcast %}
 
 <div class="podcast-episode-list">
-  {% for key, episode in podcast.episodes %}
+  {% set podCount = podcast.episodes|length %}
+  {% for i in range(0, podcast.episodes|length) %}
+    {% set podCount = podcast.episodes|length - 1 - i %}
+    {% set episode = podcast.episodes[podCount] %}
     <a class="episode" href="/podcast/episodes/{{ episode.url_slug }}">
-      <div class="title">EPISODE {{ key }} &nbsp;&nbsp;•&nbsp;&nbsp; {{ episode.title }}</div>
+      <div class="title">EPISODE {{ podCount }} &nbsp;&nbsp;•&nbsp;&nbsp; {{ episode.title }}</div>
       <div class="summary">
         {{ episode.summary }}
       </div>

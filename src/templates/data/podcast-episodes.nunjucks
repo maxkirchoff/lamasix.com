@@ -1,37 +1,15 @@
 {%
   set episodes = {
-    "0": {
-      title: "Welcome to People Not Things!",
-      summary: "We're launching our very own podcast! Wooooooooo! We aim to inspire entrepreneurs, marketers and creatives to explore how people are the critical connection of our work, and ask why we often take them for granted.",
-      description: "Hey! It's Max & Isla here. We wanted to introduce the podcast, the idea behind it and why you might want to be listening. We'd love for you to share this journey with us as we talk to some really great folks from all over the business and creative world. <br><br>Check out out website if you'd like to be a guest @ peoplenotthings.party",
-      guests: "Isla and Max",
-      publish_date: "Jan 27th 2020",
-      play_time: "11mins",
-      image: "/assets/media/podcast/guests/islaMax.jpg",
-      url_slug: "0-welcome",
-      transistor_player_slug: "b003cb58"
-    },
-    "1": {
-      title: "Building teams & relationships that matter",
-      summary: "We are joined by Serena Bartolucci Rubino of Clarity Recruiting to talk about how they build teams based on values, why relationships matter across your career and how Clarity has expressed its mission through its culture and brand experience.",
-      description: "We are joined by Serena Bartolucci Rubino of Clarity Recruiting to talk about how they build teams based on values, why relationships matter across your career and how Clarity has expressed its mission through its culture and brand experience.<br><br>Serena is the Director of Communications for Clarity Recruiting, a woman-owned, boutique recruiting agency. Since 2000, Clarity’s goal has been to simplify the recruitment process in order to build better teams, the human way. Their approach to recruiting and staffing centers on the experience of the people behind the numbers and jobs, focusing their efforts on building relationships on trust and values.<br><br>More about Clarity Recruiting - https://clarityrecruiting.com",
-      guests: "Serena Bartolucci Rubino",
-      publish_date: "Jan 28th 2020",
-      play_time: "37mins",
-      image: "/assets/media/podcast/guests/SerenaBartolucciRubino.jpg",
-      url_slug: "1-building-teams",
-      transistor_player_slug: ""
-    },
-    "2": {
-      title: "Personal brand",
-      summary: "We are joined by Rachel Charlesworth, founder of Icono, to chat about personal brand, the importance of making the right impression when you're in the room and when you're not.",
-      description: "We are joined by Rachel Charlesworth, founder of Icono, to chat about personal brand, the importance of making the right impression when you're in the room and when you're not.<br><br>Rachel recently founded Icono, a startup that provides high-quality creative headshots in NYC. Rachel is a brand strategist, launch marketer, and avid follower of consumer trends. For 8 years, she  worked in-house with visionary entrepreneurs, creatives, and teams to launch products, drive user growth, and increase revenue. Today, she works with brave startups looking to make a real change. <br><br>More about Icono - http://helloicono.com<br>More about Rachel's work - https://www.charlesworth.co",
-      guests: "Rachel Charleasworth",
-      publish_date: "Jan 28th 2020",
-      play_time: "39mins",
-      image: "/assets/media/podcast/guests/RachelCharlesworth.jpg",
-      url_slug: "2-personal-brand",
-      transistor_player_slug: ""
+    "4": {
+      title: "Community building as a start-up",
+      summary: "Nikki and April Dominguez, co-founders of Handsome, joined us to talk about their experience as start-up entrepreneurs, from building relationships with investors and their peers to how they deal with critical feedback.",
+      description: "Nikki and April Dominguez, co-founders of Handsome, joined us to talk about their experience as start-up entrepreneurs, from building relationships with investors and their peers to how they deal with critical feedback. We discussed their backgrounds leading up to Handsome, how they worked towards getting a foothold in entrepreneur networks, the makings of their customer community and how vital critical feedback was to their growth.<br><br>Nikki and April are sisters who launched an app called Handsome (previously known as Tradiies), which is the #1 resource for folks in the beauty industry. They combined their two very different backgrounds to create and service an often misunderstood and underserved community of beauty professionals.<br><br>More about Handsome at <a href='https://handsomeapp.com' target='_blank'>https://handsomeapp.com</a><br><br>We also wanted to invite our listeners to give us their feedback. We'd love to hear from you. Please email us at <a href='mailto:hi@lamasix.com'>hi@lamasix.com</a>",
+      guests: "April & Nikki Dominguez",
+      publish_date: "Feb 12th 2020",
+      play_time: "48mins",
+      image: "/assets/media/podcast/guests/AprilNikkiDominguez.jpg",
+      url_slug: "4-community-building-as-a-startup",
+      transistor_player_slug: "84d926c7"
     },
     "3": {
       title: "Purposeful dating & relationships",
@@ -42,7 +20,44 @@
       play_time: "43mins",
       image: "/assets/media/podcast/guests/LilyWomble.jpg",
       url_slug: "3-purposeful-dating",
-      transistor_player_slug: ""
+      transistor_player_slug: "a367c256",
+      itunes_url: "https://podcasts.apple.com/us/podcast/purposeful-dating-relationships/id1496658058?i=1000463931505"
+    },
+    "2": {
+      title: "Personal brand",
+      summary: "We are joined by Rachel Charlesworth, founder of Icono, to chat about personal brand, the importance of making the right impression when you're in the room and when you're not.",
+      description: "We are joined by Rachel Charlesworth, founder of Icono, to chat about personal brand, the importance of making the right impression when you're in the room and when you're not.<br><br>Rachel recently founded Icono, a startup that provides high-quality creative headshots in NYC. Rachel is a brand strategist, launch marketer, and avid follower of consumer trends. For 8 years, she  worked in-house with visionary entrepreneurs, creatives, and teams to launch products, drive user growth, and increase revenue. Today, she works with brave startups looking to make a real change. <br><br>More about Icono - http://helloicono.com<br>More about Rachel's work - https://www.charlesworth.co",
+      guests: "Rachel Charleasworth",
+      publish_date: "Jan 28th 2020",
+      play_time: "39mins",
+      image: "/assets/media/podcast/guests/RachelCharlesworth.jpg",
+      url_slug: "2-personal-brand",
+      transistor_player_slug: "06fbc75d",
+      itunes_url: "https://podcasts.apple.com/us/podcast/personal-brand/id1496658058?i=1000463931503"
+    },
+    "1": {
+      title: "Building teams & relationships that matter",
+      summary: "We are joined by Serena Bartolucci Rubino of Clarity Recruiting to talk about how they build teams based on values, why relationships matter across your career and how Clarity has expressed its mission through its culture and brand experience.",
+      description: "We are joined by Serena Bartolucci Rubino of Clarity Recruiting to talk about how they build teams based on values, why relationships matter across your career and how Clarity has expressed its mission through its culture and brand experience.<br><br>Serena is the Director of Communications for Clarity Recruiting, a woman-owned, boutique recruiting agency. Since 2000, Clarity’s goal has been to simplify the recruitment process in order to build better teams, the human way. Their approach to recruiting and staffing centers on the experience of the people behind the numbers and jobs, focusing their efforts on building relationships on trust and values.<br><br>More about Clarity Recruiting - https://clarityrecruiting.com",
+      guests: "Serena Bartolucci Rubino",
+      publish_date: "Jan 28th 2020",
+      play_time: "37mins",
+      image: "/assets/media/podcast/guests/SerenaBartolucciRubino.jpg",
+      url_slug: "1-building-teams",
+      transistor_player_slug: "439d5399",
+      itunes_url: "https://podcasts.apple.com/us/podcast/building-teams-relationships-that-matter/id1496658058?i=1000463931504"
+    },
+    "0": {
+      title: "Welcome to People Not Things!",
+      summary: "We're launching our very own podcast! Wooooooooo! We aim to inspire entrepreneurs, marketers and creatives to explore how people are the critical connection of our work, and ask why we often take them for granted.",
+      description: "Hey! It's Max & Isla here. We wanted to introduce the podcast, the idea behind it and why you might want to be listening. We'd love for you to share this journey with us as we talk to some really great folks from all over the business and creative world. <br><br>Check out out website if you'd like to be a guest @ peoplenotthings.party",
+      guests: "Isla and Max",
+      publish_date: "Jan 27th 2020",
+      play_time: "11mins",
+      image: "/assets/media/podcast/guests/islaMax.jpg",
+      url_slug: "0-welcome",
+      transistor_player_slug: "b003cb58",
+      itunes_url: "https://podcasts.apple.com/us/podcast/welcome-to-people-not-things/id1496658058?i=1000463819455"
     }
   }
 %}

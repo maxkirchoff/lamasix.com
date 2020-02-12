@@ -12,9 +12,9 @@
 
 {% block content %}
   <section id="startup-intro">
-    <h1>You're the innovator, <span class="differentiator">we're the differentiator. </span></h1>
+    <h1>You're the innovator, <span class="differentiator">we're the differentiator.</span></h1>
     <div class="content">
-      <p>We partner with select  startups and small businesses to create bold branding and compelling design.</p>
+      <p>We partner with select startups and small businesses to create bold branding and compelling design.</p>
       <p>We set aside space in our books for up-and-coming entrepreneurs who are ready to start the wild ride.</p>
     </div>
   </section>
@@ -22,18 +22,10 @@
     <div class="bookings">
       <div class="booking">
         <div class="month">
-          January
-        </div>
-        <div class="status">
-          Fully booked
-        </div>
-      </div>
-      <div class="booking">
-        <div class="month">
           February
         </div>
         <div class="status">
-          One spot available
+          Two spots available
         </div>
       </div>
       <div class="booking">
@@ -55,6 +47,14 @@
       <div class="booking">
         <div class="month">
           May
+        </div>
+        <div class="status">
+          Booking available
+        </div>
+      </div>
+      <div class="booking">
+        <div class="month">
+          June
         </div>
         <div class="status">
           Booking available
