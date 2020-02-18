@@ -1,6 +1,12 @@
-#podcast, #podcast-episode {
+#podcast, #podcast-episode, #podcast-shirt {
   background: #000;
   color: rgb(220, 220, 220);
+
+  &#podcast-shirt {
+    header.header {
+      background: #000;
+    }
+  }
 
   &#podcast-episode {
     background: #6300FF;
@@ -30,7 +36,7 @@
       a {
         color: #e1ff66;
       }
-      
+
       .description {
         margin: 15vw auto 20vw;
         width: 100%;

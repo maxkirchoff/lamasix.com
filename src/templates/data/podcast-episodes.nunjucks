@@ -9,7 +9,8 @@
       play_time: "48mins",
       image: "/assets/media/podcast/guests/AprilNikkiDominguez.jpg",
       url_slug: "4-community-building-as-a-startup",
-      transistor_player_slug: "84d926c7"
+      transistor_player_slug: "84d926c7",
+      itunes_url: "https://podcasts.apple.com/us/podcast/community-building-as-a-start-up/id1496658058?i=1000465378408"
     },
     "3": {
       title: "Purposeful dating & relationships",
