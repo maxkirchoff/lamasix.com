@@ -22,14 +22,6 @@
     <div class="bookings">
       <div class="booking">
         <div class="month">
-          February
-        </div>
-        <div class="status">
-          One spot available
-        </div>
-      </div>
-      <div class="booking">
-        <div class="month">
           March
         </div>
         <div class="status">
