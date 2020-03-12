@@ -1952,6 +1952,75 @@ body#startups section {
       margin-top: 10vw; }
       body#startups section#startup-application form .error a {
         border-bottom: 1px solid #000; }
+  body#startups section#offerings, body#startups section#just-deck {
+    background: #000;
+    color: #fff; }
+    @media only screen and (min-width: 850px) {
+      body#startups section#offerings, body#startups section#just-deck {
+        margin: 0 -5vw;
+        width: calc( 100% + 10vw);
+        padding: 10vw 17.5vw; } }
+    body#startups section#offerings#just-deck, body#startups section#just-deck#just-deck {
+      margin-top: 1vw; }
+      @media only screen and (min-width: 850px) {
+        body#startups section#offerings#just-deck, body#startups section#just-deck#just-deck {
+          margin-top: 0.2vw; } }
+    body#startups section#offerings .intro, body#startups section#just-deck .intro {
+      margin-bottom: 10vw;
+      font-size: 8vw;
+      font-family: "GT-Super-Text", "Times New Roman", times, serif;
+      font-weight: 200;
+      color: #fff; }
+      @media only screen and (min-width: 850px) {
+        body#startups section#offerings .intro, body#startups section#just-deck .intro {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: row;
+              flex-direction: row;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center;
+          margin-bottom: 7.5vw;
+          font-size: 2.67vw; } }
+      body#startups section#offerings .intro .content, body#startups section#just-deck .intro .content {
+        background: radial-gradient(circle at bottom left, #FEA9D2, #7CD3E5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+        @media only screen and (min-width: 850px) {
+          body#startups section#offerings .intro .content, body#startups section#just-deck .intro .content {
+            width: 80%; } }
+      body#startups section#offerings .intro .image, body#startups section#just-deck .intro .image {
+        width: 80%;
+        margin: 10vw auto; }
+        @media only screen and (min-width: 850px) {
+          body#startups section#offerings .intro .image, body#startups section#just-deck .intro .image {
+            margin: 0 0 0 2.5%;
+            width: 17.5%; } }
+    body#startups section#offerings .package .title, body#startups section#just-deck .package .title {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 5vw; }
+      @media only screen and (min-width: 850px) {
+        body#startups section#offerings .package .title, body#startups section#just-deck .package .title {
+          margin-bottom: 1vw; } }
+      body#startups section#offerings .package .title .price, body#startups section#just-deck .package .title .price {
+        font-weight: normal; }
+    @media only screen and (min-width: 850px) {
+      body#startups section#offerings .package .add-ons, body#startups section#just-deck .package .add-ons {
+        margin-top: 3vw;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+    body#startups section#offerings .package .add-ons .add-on, body#startups section#just-deck .package .add-ons .add-on {
+      margin-top: 10vw; }
+      @media only screen and (min-width: 850px) {
+        body#startups section#offerings .package .add-ons .add-on, body#startups section#just-deck .package .add-ons .add-on {
+          margin-top: 0;
+          width: 32%; } }
 
 body#startups footer.footer {
   margin-top: 0; }

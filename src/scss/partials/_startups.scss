@@ -295,6 +295,96 @@ body#startups {
 
 
     }
+
+    &#offerings, &#just-deck {
+      background: #000;
+
+      color: #fff;
+
+      @media only screen and (min-width: $md-min-width) {
+        margin: 0 -5vw;
+        width: calc( 100% + 10vw );
+        padding: 10vw 17.5vw;
+
+      }
+
+      &#just-deck {
+        margin-top: 1vw;
+        @media only screen and (min-width: $md-min-width) {
+          margin-top: 0.2vw;
+        }
+      }
+
+      .intro {
+
+        margin-bottom: 10vw;
+        font-size: 8vw;
+        font-family: $font-gt-super;
+        font-weight: 200;
+        color: #fff;
+
+        @media only screen and (min-width: $md-min-width) {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 7.5vw;
+          font-size: 2.67vw;
+        }
+
+        .content {
+          background: radial-gradient( circle at bottom left, #FEA9D2, #7CD3E5 );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          @media only screen and (min-width: $md-min-width) {
+            width: 80%;
+          }
+        }
+        .image {
+          width: 80%;
+          margin: 10vw auto;
+          @media only screen and (min-width: $md-min-width) {
+            margin: 0 0 0 2.5%;
+            width: 17.5%;
+          }
+        }
+      }
+      .package {
+        .title {
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-bottom: 5vw;
+          @media only screen and (min-width: $md-min-width) {
+            margin-bottom: 1vw;
+          }
+
+          .price {
+            font-weight: normal;
+          }
+        }
+
+        .branding {
+
+        }
+        .add-ons {
+          @media only screen and (min-width: $md-min-width) {
+            margin-top: 3vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+
+          .add-on {
+            margin-top: 10vw;
+            @media only screen and (min-width: $md-min-width) {
+              margin-top: 0;
+              width: 32%;
+            }
+          }
+        }
+      }
+    }
   }
 
 

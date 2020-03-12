@@ -54,6 +54,57 @@
       </div>
     </div>
   </section>
+  <section id="offerings">
+    <div class="intro">
+      <div class="content">
+        Our start-up partners are select pre-funded or early stage startups. Buisnesses must have less than 8 employees or have less than $2mm in funding to qualify.
+      </div>
+      <div class="image">
+        <img src="/assets/media/startup-hands.png">
+      </div>
+    </div>
+    <div class="package">
+      <div class="branding">
+        <div class="title">Brand for Start-ups <span class="price">$10,500</span></div>
+        <div class="description">
+          A strong brand is one of the core components of any sucessful consumer facing company. We will work with you to visually express your unique POV. Crafting you a custom look and feel that speeks to your audience, and sets you apart from the competition. At the end of this process you will have a logo, color palet, type styles and also supporting design elements. To fit into a startup budget we have scoped back our standard visual identity offering to fit within a startup budget. We have 2 rounds of design and  2 creative directions.
+        </div>
+      </div>
+      <div class="add-ons">
+        <div class="add-on">
+          <div class="title">+ Landing Page <span class="price">$8,000</span></div>
+          <div class="description">
+            A landing page for launch! This is not a full-blown website. But its everything you need to get people excited for your upcoming product launch.
+          </div>
+        </div>
+        <div class="add-on">
+          <div class="title">+ Social Guide <span class="price">$4,500</span></div>
+          <div class="description">
+            Everything you need to kick-off your social! Branding for instagram, facebook and youtube or pinterest. Including up to 3 templates and guide on what to post.
+          </div>
+        </div>
+        <div class="add-on">
+          <div class="title">+ Custom Deck <span class="price">$5,500</span></div>
+          <div class="description">
+            Make that money honey! A beautifully styled, compelling pitch deck that’s up to 15 pages long! This will be delievered as a working file so you can updated it as needed.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="just-deck">
+    <div class="intro">
+      <div class="content">
+        Sometimes all you need is a killer deck!
+      </div>
+    </div>
+    <div class="package deck-template">
+      <div class="title">Deck Template <span class="price">$3,000</span></div>
+      <div class="description">
+        We have designed ALOT of pitch decks. We know raising money can hinge on looking like you have your shit together. This is our most afforadable option. A 15 page deck template with custom fonts and colors picked just for you, that will feel "on brand" for your product. The deck can be delivered in keynote or powerpoint.
+      </div>
+    </div>
+  </section>
   <section id="startups-examples">
     <h1>Our clients run the gamut of wildly successful apps to beautiful consumer goods, groundbreaking media platforms to giants in software and gaming.</h1>
     <div id="client-examples">
