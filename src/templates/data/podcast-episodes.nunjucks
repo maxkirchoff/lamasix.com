@@ -1,5 +1,17 @@
 {%
   set episodes = {
+    "6": {
+      title: "Influencer marketing",
+      summary: "Alyssa Kaplan joined us to share her experience and insights in influencer marketing and on starting her own project, The Scrunchie Club that sources creative influencers for signature scrunchies.",
+      description: "This episode we were joined by Alyssa Kaplan, founder of The Scrunchie Club and expert on influencer marketing. Alyssa shared her insights working with influencer marketing and how she has implemented those insights into The Scrunchie Club, a project which features artists and allows them to donate proceeds from custom scrunchies to their favorite charities.<br><br>We were able to chat about influencers generally as well as some ideas about how to get started as a business who wants to partner with influencers and the strategies that Alyssa recommends.<br><br><br><b>THINGS WE MENTIONED IN THE PODCAST</b><br><ul><li>The Scrunchie Club - <a href='https://thescrunchieclub.com/' target='_blank'>link</a></li><li>Walmart's Tiktok 'shuffle' campaign - <a href='https://www.trendhunter.com/trends/influencerled-bargain-dances-shoppers-are-doing-the-savings-shuffle-in-walm' target='_blank'>link</a></li></ul><br><br>We also wanted to invite our listeners to give us their feedback. We'd love to hear from you. Please email us at <a href='mailto:hi@lamasix.com'>hi@lamasix.com</a>",
+      guests: "Alyssa Kaplan",
+      publish_date: "Apr 16th 2020",
+      play_time: "30mins",
+      image: "/assets/media/podcast/guests/AlyssaBKaplan.jpg",
+      url_slug: "6-influencer-marketing",
+      transistor_player_slug: "0b52405b",
+      itunes_url: ""
+    },
     "5": {
       title: "The future of work",
       summary: "Conor Miller joined us to talk about the future of work which includes his research and projects that aim to inform and guide businesses and individuals through this new era.",

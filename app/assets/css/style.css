@@ -867,6 +867,31 @@ nav#site-navigation {
       margin-top: 0; }
     .main .category-projects .project:last-of-type {
       margin-bottom: 0; }
+  .main .zoom {
+    text-align: center;
+    padding-bottom: 15vw; }
+    @media only screen and (min-width: 850px) {
+      .main .zoom {
+        padding-bottom: 10vw; } }
+    .main .zoom h1 {
+      font-size: 15vw;
+      margin: 25vw 5vw 15vw; }
+      @media only screen and (min-width: 850px) {
+        .main .zoom h1 {
+          font-size: 5vw;
+          margin: 10vw 0 5vw; } }
+    .main .zoom pre {
+      background: #000;
+      color: #fff;
+      margin: 5vw 0;
+      padding: 5vw 0; }
+      @media only screen and (min-width: 850px) {
+        .main .zoom pre {
+          padding: 1vw 0;
+          max-width: 35vw;
+          margin: 0 auto; } }
+      .main .zoom pre a {
+        color: #fff; }
 
 .project header .header-info {
   margin: 5vw 7.5vw; }

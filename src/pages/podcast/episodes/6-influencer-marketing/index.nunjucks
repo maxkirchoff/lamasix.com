@@ -1,0 +1,6 @@
+<!-- index.nunjucks -->
+
+{% set pageID = 'podcast-episode' %}
+{% set episodeId = "6" %}
+
+{% extends "podcast-episode-layout.nunjucks" %}

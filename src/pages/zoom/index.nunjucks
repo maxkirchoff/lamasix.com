@@ -1,0 +1,15 @@
+
+<!-- meet/index.nunjucks -->
+
+{% set pageID = 'zoom' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <section class="zoom">
+    <h1>We can't wait to meet!</h1>
+    <p>Zoom URL <br><pre><a href="https://zoom.us/j/5720705296">https://zoom.us/j/5720705296</a></pre></p>
+    <p>Zoom ID <br><pre>572-070-5296</pre></p>
+    <p>Zoom password <br><pre>lamasix</pre></p>
+  </section>
+{% endblock %}
