@@ -1,5 +1,17 @@
 {%
   set episodes = {
+    "7": {
+      title: "Building character into your business",
+      summary: "Jason Harris, CEO of Mekanism & author of The Soulful Art of Persuasion, joined us for a chat on building character, the balance of social good and getting paid, and being vulnerable with clients.",
+      description: "Jason Harris, CEO of Mekanism & author of The Soulful Art of Persuasion, joined us for a chat on building character, the balance of social good and getting paid, and being vulnerable with clients. Jason has cut his own path in business, with a unique perspective on building character and embracing your true self as key components to gaining influence with customers, colleagues, and peers. His experience leading a large creative agency informs that approach and he shared with us how that developed into his book.<br><br>We also had a chance to ask how we thought COVID-19 and the related economic impact might affect the creative industry at large.<br><br>Jason has a lot of great insight, a refreshingly hopeful approach to business, and a great knack for storytelling, so this is absolutely an episode for those running a business, those in the creative industry, or anyone who is interested in building character in their work life.<br><br>You can find Jason's book here - <a href='https://www.thesoulfulart.com/'>https://www.thesoulfulart.com/</a><br><br>We also wanted to invite our listeners to give us their feedback. We'd love to hear from you. Please email us at <a href='mailto:hi@lamasix.com'>hi@lamasix.com</a>",
+      guests: "Jason Harris",
+      publish_date: "Apr 24th 2020",
+      play_time: "42mins",
+      image: "/assets/media/podcast/guests/JasonHarris.jpg",
+      url_slug: "7-building-character-into-your-business",
+      transistor_player_slug: "09328d4c",
+      itunes_url: ""
+    },
     "6": {
       title: "Influencer marketing",
       summary: "Alyssa Kaplan joined us to share her experience and insights in influencer marketing and on starting her own project, The Scrunchie Club that sources creative influencers for signature scrunchies.",
