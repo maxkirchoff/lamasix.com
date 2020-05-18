@@ -1,5 +1,17 @@
 {%
   set episodes = {
+    "8": {
+      title: "Media consumption & COVID-19",
+      summary: "Julie Alvin joined us to talk about the media we're consuming during COVID-19 and how our appetite for different types of content is changing. Julie is senior vice president of editorial strategy and development at Refinery29.",
+      description: "This episode we were joined by Julie Alvin, the senior vice president of editorial strategy and development at Refinery29. We talked with Julie about her experience at Refinery29 during COVID-19, the information that their audience are looking for, and how our appetites for content is changing during this time. Julie brings her expertise to the conversation to share insights on how they adapt quickly and try to really focus on providing their readers with accurate and timely information that they want.<br><br>We also wanted to invite our listeners to give us their feedback. We'd love to hear from you. Please email us at <a href='mailto:hi@lamasix.com'>hi@lamasix.com</a>",
+      guests: "Julie Alvin",
+      publish_date: "May 18th 2020",
+      play_time: "30mins",
+      image: "/assets/media/podcast/guests/JulieAlvin.jpg",
+      url_slug: "8-media-consumption-during-covid-19",
+      transistor_player_slug: "176883fd",
+      itunes_url: ""
+    },
     "7": {
       title: "Building character into your business",
       summary: "Jason Harris, CEO of Mekanism & author of The Soulful Art of Persuasion, joined us for a chat on building character, the balance of social good and getting paid, and being vulnerable with clients.",
