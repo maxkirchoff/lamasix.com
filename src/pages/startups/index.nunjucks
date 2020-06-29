@@ -22,31 +22,31 @@
     <div class="bookings">
       <div class="booking">
         <div class="month">
-          April
-        </div>
-        <div class="status">
-          One spot available
-        </div>
-      </div>
-      <div class="booking">
-        <div class="month">
-          May
-        </div>
-        <div class="status">
-          Booking available
-        </div>
-      </div>
-      <div class="booking">
-        <div class="month">
-          June
-        </div>
-        <div class="status">
-          Booking available
-        </div>
-      </div>
-      <div class="booking">
-        <div class="month">
           July
+        </div>
+        <div class="status">
+          Booking available
+        </div>
+      </div>
+      <div class="booking">
+        <div class="month">
+          August
+        </div>
+        <div class="status">
+          Booking available
+        </div>
+      </div>
+      <div class="booking">
+        <div class="month">
+          September
+        </div>
+        <div class="status">
+          Booking available
+        </div>
+      </div>
+      <div class="booking">
+        <div class="month">
+          October
         </div>
         <div class="status">
           Booking available

@@ -94,4 +94,6 @@ gulp.task('dev', gulp.series('css','js', 'nunjucks', 'browser-sync', function(do
   done();
 }));
 
-gulp.task('default', gulp.series('css', 'js', 'nunjucks'));
+gulp.task('build', gulp.series('css', 'js', 'nunjucks'))
+
+gulp.task('default', gulp.series('build'));
