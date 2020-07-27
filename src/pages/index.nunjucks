@@ -7,10 +7,10 @@
 {% block content %}
 <section id="power-statement" class="main-heading">
   <h1 class="desktop-only">
-    A digital creative studio for humans
+    An emotionally intelligent digital creative studio
   </h1>
   <h1 class="mobile-only">
-    Lama Six is a creative studio driven by curiosity and results
+    Lama Six is an emotionally intelligent digital creative studio
   </h1>
 </section>
 
