@@ -1,5 +1,17 @@
 {%
   set episodes = {
+    "8": {
+      title: "Pursuing self approval",
+      summary: "We spoke with Alexandra Hammond about pursuing and defining self approval in life and work.",
+      description: "Alexandra Hammond is a communications designer working at the intersection of image, stories and physical space, to enhance our understanding of the interconnectedness of all ideas, beings, places and objects. She works with businesses, organizations and individuals with purpose, who serve people and the planet as well as their own bottom line. Alexandra holds a bachelor’s degree from New York University and an MFA from the School of Visual Arts.<br><br>You can see Alexandra's work at <a href='https://agency.alexhammondstudio.com/'>https://agency.alexhammondstudio.com/</a>.<br><br>We also wanted to invite our listeners to give us their feedback. We'd love to hear from you. Please email us at <a href='mailto:hi@lamasix.com'>hi@lamasix.com</a>",
+      guests: "Alexandra Hammond",
+      publish_date: "Aug 18th 2020",
+      play_time: "34mins",
+      image: "/assets/media/podcast/guests/AlexandraHammond.jpg",
+      url_slug: "8-pursuing-self-approval",
+      transistor_player_slug: "cc3b3464",
+      itunes_url: "https://podcasts.apple.com/us/podcast/people-not-things/id1496658058#episodeGuid=ac66148a-a8be-467c-a04e-57077b199454"
+    },
     "7": {
       title: "Building character into your business",
       summary: "Jason Harris, CEO of Mekanism & author of The Soulful Art of Persuasion, joined us for a chat on building character, the balance of social good and getting paid, and being vulnerable with clients.",
