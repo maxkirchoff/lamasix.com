@@ -9,7 +9,7 @@
       play_time: "34mins",
       image: "/assets/media/podcast/guests/AlexandraHammond.jpg",
       url_slug: "8-pursuing-self-approval",
-      transistor_player_slug: "cc3b3464",
+      transistor_player_slug: "Pursuing-Self-Approval-emjqqq",
       itunes_url: "https://podcasts.apple.com/us/podcast/people-not-things/id1496658058#episodeGuid=ac66148a-a8be-467c-a04e-57077b199454"
     },
     "7": {
@@ -21,7 +21,7 @@
       play_time: "42mins",
       image: "/assets/media/podcast/guests/JasonHarris.jpg",
       url_slug: "7-building-character-into-your-business",
-      transistor_player_slug: "09328d4c",
+      transistor_player_slug: "Building-character-into-your-business-emjqrf",
       itunes_url: "https://podcasts.apple.com/us/podcast/building-character-into-your-business/id1496658058?i=1000472521539"
     },
     "6": {
@@ -33,7 +33,7 @@
       play_time: "30mins",
       image: "/assets/media/podcast/guests/AlyssaBKaplan.jpg",
       url_slug: "6-influencer-marketing",
-      transistor_player_slug: "0b52405b",
+      transistor_player_slug: "Influencer-marketing-emjqqo",
       itunes_url: "https://podcasts.apple.com/us/podcast/influencer-marketing/id1496658058?i=1000471663543"
     },
     "5": {
@@ -45,7 +45,7 @@
       play_time: "40mins",
       image: "/assets/media/podcast/guests/ConnorMiller.jpg",
       url_slug: "5-the-future-of-work",
-      transistor_player_slug: "1901a6a9",
+      transistor_player_slug: "The-future-of-work-emjqr5",
       itunes_url: "https://podcasts.apple.com/us/podcast/people-not-things/id1496658058?i=1000467445966"
     },
     "4": {
@@ -57,7 +57,7 @@
       play_time: "48mins",
       image: "/assets/media/podcast/guests/AprilNikkiDominguez.jpg",
       url_slug: "4-community-building-as-a-startup",
-      transistor_player_slug: "84d926c7",
+      transistor_player_slug: "Community-building-as-a-start-up-emjqqs",
       itunes_url: "https://podcasts.apple.com/us/podcast/community-building-as-a-start-up/id1496658058?i=1000465378408"
     },
     "3": {
@@ -69,7 +69,7 @@
       play_time: "43mins",
       image: "/assets/media/podcast/guests/LilyWomble.jpg",
       url_slug: "3-purposeful-dating",
-      transistor_player_slug: "a367c256",
+      transistor_player_slug: "Purposeful-dating--relationships-emjqqg",
       itunes_url: "https://podcasts.apple.com/us/podcast/purposeful-dating-relationships/id1496658058?i=1000463931505"
     },
     "2": {
@@ -81,7 +81,7 @@
       play_time: "39mins",
       image: "/assets/media/podcast/guests/RachelCharlesworth.jpg",
       url_slug: "2-personal-brand",
-      transistor_player_slug: "06fbc75d",
+      transistor_player_slug: "Personal-brand-emjqqd",
       itunes_url: "https://podcasts.apple.com/us/podcast/personal-brand/id1496658058?i=1000463931503"
     },
     "1": {
@@ -93,7 +93,7 @@
       play_time: "37mins",
       image: "/assets/media/podcast/guests/SerenaBartolucciRubino.jpg",
       url_slug: "1-building-teams",
-      transistor_player_slug: "439d5399",
+      transistor_player_slug: "Building-teams--relationships-that-matter-emjqqj",
       itunes_url: "https://podcasts.apple.com/us/podcast/building-teams-relationships-that-matter/id1496658058?i=1000463931504"
     },
     "0": {
@@ -105,7 +105,7 @@
       play_time: "11mins",
       image: "/assets/media/podcast/guests/islaMax.jpg",
       url_slug: "0-welcome",
-      transistor_player_slug: "b003cb58",
+      transistor_player_slug: "Welcome-to-People-Not-Things-emjqqb",
       itunes_url: "https://podcasts.apple.com/us/podcast/welcome-to-people-not-things/id1496658058?i=1000463819455"
     }
   }
