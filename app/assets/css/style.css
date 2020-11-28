@@ -1781,7 +1781,7 @@ body#startups section {
     @media only screen and (min-width: 850px) {
       body#startups section#startup-intro {
         background-size: 40% 100%;
-        padding: 10vw 7.5vw 25vw; } }
+        padding: 10vw 7.5vw 12.5vw; } }
     body#startups section#startup-intro h1, body#startups section#startup-intro h2 {
       font-size: 14vw;
       font-family: "GT-Super-Text", "Times New Roman", times, serif;

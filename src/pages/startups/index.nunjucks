@@ -18,42 +18,6 @@
       <p>We set aside space in our books for up-and-coming entrepreneurs who are ready to start the wild ride.</p>
     </div>
   </section>
-  <section id="startup-bookings">
-    <div class="bookings">
-      <div class="booking">
-        <div class="month">
-          October
-        </div>
-        <div class="status">
-          One spot available
-        </div>
-      </div>
-      <div class="booking">
-        <div class="month">
-          November
-        </div>
-        <div class="status">
-          Booking available
-        </div>
-      </div>
-      <div class="booking">
-        <div class="month">
-          December
-        </div>
-        <div class="status">
-          Booking available
-        </div>
-      </div>
-      <div class="booking">
-        <div class="month">
-          January
-        </div>
-        <div class="status">
-          Booking available
-        </div>
-      </div>
-    </div>
-  </section>
   <section id="offerings">
     <div class="intro">
       <div class="content">
